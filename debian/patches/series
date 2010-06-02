@@ -1,0 +1,11 @@
+# upstream patches
+0001_fix_qtwebkit.pc_corruption_bug36826.diff
+
+# debian patches
+#01_hide_std_symbols.diff
+#02_enable_debug_information.diff
+#03_sparc_unaligned_access.diff
+#04_s390_stabs_format_debugging_information.diff
+#05_powerpc_no_gc_sections.diff
+#06_link_as_needed.diff
+#07_no_strip.diff

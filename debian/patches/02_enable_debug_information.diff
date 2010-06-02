@@ -1,0 +1,26 @@
+Description: on Qt >= 4.5, debug info are disabled for QtWebkit.
+             enable debug information in JavaScriptCore and WebCore.
+author: Fathi Boudra <fabo@debian.org>
+
+--- a/WebCore/WebCore.pro
++++ b/WebCore/WebCore.pro
+@@ -2894,8 +2894,6 @@ WEBKIT_INSTALL_HEADERS = $$WEBKIT_API_HE
+ 
+ CONFIG(QTDIR_build) {
+     # Remove the following 2 lines if you want debug information in WebCore
+-    CONFIG -= separate_debug_info
+-    CONFIG += no_debug_info
+ }
+ 
+ !win32-g++:win32:contains(QMAKE_HOST.arch, x86_64):{
+--- a/JavaScriptCore/JavaScriptCore.pro
++++ b/JavaScriptCore/JavaScriptCore.pro
+@@ -24,8 +24,6 @@ contains(QT_CONFIG, embedded):CONFIG +=
+ 
+ CONFIG(QTDIR_build) {
+     # Remove the following 2 lines if you want debug information in JavaScriptCore
+-    CONFIG -= separate_debug_info
+-    CONFIG += no_debug_info
+ }
+ 
+ # Pick up 3rdparty libraries from INCLUDE/LIB just like with MSVC

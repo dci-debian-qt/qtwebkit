@@ -1,0 +1,15 @@
+Description: do not pass -Wl,--gc-sections on powerpc when building libQtWebKit.so;
+             works around a binutils bug that results in a segfault.
+Author: Steve Langasek <vorlon@debian.org>
+
+--- a/WebCore/WebCore.pro
++++ b/WebCore/WebCore.pro
+@@ -79,7 +79,7 @@ unix {
+ }
+ 
+ unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffunction-sections -fdata-sections 
+-unix:!mac:*-g++*:QMAKE_LFLAGS += -Wl,--gc-sections
++unix:!mac:*-g++*:!equals(QT_ARCH, powerpc):QMAKE_LFLAGS += -Wl,--gc-sections
+ linux*-g++*:QMAKE_LFLAGS += $$QMAKE_LFLAGS_NOUNDEF
+ 
+ CONFIG(release):!CONFIG(standalone_package) {

@@ -1,0 +1,40 @@
+Source: qtwebkit
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Fathi Boudra <fabo@debian.org>
+Build-Depends: debhelper (>= 7.4.15), pkg-kde-tools (>= 0.6.4),
+ libqt4-dev (>= 4:4.6.0), libqt4-opengl-dev (>= 4:4.6.0),
+ libphonon-dev (>= 4:4.6.0), libicu-dev, libsqlite3-dev,
+ libxext-dev, libxrender-dev, gperf
+Standards-Version: 3.8.4
+Section: libs
+Homepage: http://trac.webkit.org/wiki/QtWebKit
+
+Package: libqtwebkit-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends}, libqtwebkit4 (= ${binary:Version})
+Description: Web content engine library for Qt - development files
+ QtWebKit provides a Web browser engine that makes it easy to embed content
+ from the World Wide Web into your Qt application.
+ .
+ This package contains the development files needed to build Qt 4 applications
+ using QtWebKit library.
+
+Package: libqtwebkit4
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Web content engine library for Qt
+ QtWebKit provides a Web browser engine that makes it easy to embed content
+ from the World Wide Web into your Qt application.
+
+Package: libqtwebkit4-dbg
+Priority: extra
+Architecture: any
+Section: debug
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqtwebkit4 (= ${binary:Version})
+Description: Web content engine library for Qt - debugging symbols
+ QtWebKit provides a Web browser engine that makes it easy to embed content
+ from the World Wide Web into your Qt application.
+ .
+ This package contains the debugging symbols for the Qt WebKit library.
