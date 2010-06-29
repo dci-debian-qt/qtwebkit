@@ -1,4 +1,5 @@
 # upstream patches
+0001_fix_symbols_visibility_for_webcore.diff
 
 # debian patches
 #01_hide_std_symbols.diff
