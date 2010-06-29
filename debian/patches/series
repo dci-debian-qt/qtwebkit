@@ -1,5 +1,4 @@
 # upstream patches
-0001_fix_qtwebkit.pc_corruption_bug36826.diff
 
 # debian patches
 #01_hide_std_symbols.diff
