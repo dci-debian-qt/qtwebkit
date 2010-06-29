@@ -6,9 +6,11 @@ Build-Depends: debhelper (>= 7.4.15), pkg-kde-tools (>= 0.6.4),
  libqt4-dev (>= 4:4.6.0), libqt4-opengl-dev (>= 4:4.6.0),
  libphonon-dev (>= 4:4.6.0), libicu-dev, libsqlite3-dev,
  libxext-dev, libxrender-dev, gperf
-Standards-Version: 3.8.4
+Standards-Version: 3.9.0
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
+Vcs-Git: git://git.debian.org/pkg-kde/qtwebkit.git
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/qtwebkit.git;a=summary
 
 Package: libqtwebkit-dev
 Section: libdevel

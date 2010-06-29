@@ -2,4 +2,3 @@
 - useless linkage against Xext
 - qwebview designer plugin is not shipped with standalone QtWebKit
 - some headers were moved
-- DONE QtWebKit.pc is broken (http://bugs.webkit.org/show_bug.cgi?id=36826)
