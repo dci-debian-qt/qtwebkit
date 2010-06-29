@@ -15,7 +15,10 @@ Vcs-Browser: http://git.debian.org/?p=pkg-kde/qtwebkit.git;a=summary
 Package: libqtwebkit-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libqtwebkit4 (= ${binary:Version})
+Depends: ${misc:Depends}, libqtwebkit4 (= ${binary:Version}),
+ libqt4-dev (>= 4:4.6.0)
+Breaks: libqt4-dev (<< 4:4.7.0~beta1+git3529+59c5857)
+Replaces: libqt4-dev (<< 4:4.7.0~beta1+git3529+59c5857)
 Description: Web content engine library for Qt - development files
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
@@ -26,6 +29,8 @@ Description: Web content engine library for Qt - development files
 Package: libqtwebkit4
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: libqt4-webkit (<< 4:4.7.0~beta1+git3529+59c5857)
+Replaces: libqt4-webkit (<< 4:4.7.0~beta1+git3529+59c5857)
 Description: Web content engine library for Qt
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
@@ -35,6 +40,8 @@ Priority: extra
 Architecture: any
 Section: debug
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqtwebkit4 (= ${binary:Version})
+Breaks: libqt4-webkit-dbg (<< 4:4.7.0~beta1+git3529+59c5857)
+Replaces: libqt4-webkit-dbg (<< 4:4.7.0~beta1+git3529+59c5857)
 Description: Web content engine library for Qt - debugging symbols
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.

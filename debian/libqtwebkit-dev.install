@@ -31,3 +31,4 @@ usr/include/qt4/QtWebKit/qwebview.h
 usr/lib/libQtWebKit.prl
 usr/lib/libQtWebKit.so
 usr/lib/pkgconfig/QtWebKit.pc
+usr/share/qt4/mkspecs/modules/qt_webkit_version.pri
