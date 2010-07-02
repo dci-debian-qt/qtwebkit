@@ -1,5 +1,5 @@
-qtwebkit (2.0~week25-1) experimental; urgency=low
+qtwebkit (2.0~week26-1) experimental; urgency=low
 
   * Initial release (Closes: #576006)
 
- -- Fathi Boudra <fabo@debian.org>  Tue, 29 Jun 2010 13:34:00 +0300
+ -- Fathi Boudra <fabo@debian.org>  Fri, 02 Jul 2010 15:37:23 +0300
