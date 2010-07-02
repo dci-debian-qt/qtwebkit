@@ -4,7 +4,7 @@ author: Fathi Boudra <fabo@debian.org>
 
 --- a/WebCore/WebCore.pro
 +++ b/WebCore/WebCore.pro
-@@ -2894,8 +2894,6 @@ WEBKIT_INSTALL_HEADERS = $$WEBKIT_API_HE
+@@ -2935,8 +2935,6 @@ HEADERS += $$WEBKIT_API_HEADERS
  
  CONFIG(QTDIR_build) {
      # Remove the following 2 lines if you want debug information in WebCore
@@ -12,10 +12,10 @@ author: Fathi Boudra <fabo@debian.org>
 -    CONFIG += no_debug_info
  }
  
- !win32-g++:win32:contains(QMAKE_HOST.arch, x86_64):{
+ win32:!win32-g++*:contains(QMAKE_HOST.arch, x86_64):{
 --- a/JavaScriptCore/JavaScriptCore.pro
 +++ b/JavaScriptCore/JavaScriptCore.pro
-@@ -24,8 +24,6 @@ contains(QT_CONFIG, embedded):CONFIG +=
+@@ -38,8 +38,6 @@ unix:contains(QT_CONFIG, reduce_relocati
  
  CONFIG(QTDIR_build) {
      # Remove the following 2 lines if you want debug information in JavaScriptCore

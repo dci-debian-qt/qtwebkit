@@ -1,0 +1,15 @@
+Description: set CONFIG += nostrip to avoid stripping and
+             let dh_strip do it to generate debug packages.
+Author: Fathi Boudra <fabo@debian.org>
+
+--- a/WebKit.pri
++++ b/WebKit.pri
+@@ -8,6 +8,8 @@ else:exists($$PWD/WebCore/generated): CO
+ 
+ CONFIG += depend_includepath
+ 
++CONFIG += nostrip
++
+ DEFINES += BUILDING_QT__=1
+ building-libs {
+     win32-msvc*|win32-icc: INCLUDEPATH += $$PWD/JavaScriptCore/os-win32
