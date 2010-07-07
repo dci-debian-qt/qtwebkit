@@ -1,3 +1,9 @@
+qtwebkit (2.0~week26-2) experimental; urgency=low
+
+  * Fix FTBFS on GNU/kFreeBSD caused by missing strnstr() on glibc systems.
+
+ -- Fathi Boudra <fabo@debian.org>  Wed, 07 Jul 2010 09:51:03 +0300
+
 qtwebkit (2.0~week26-1) experimental; urgency=low
 
   * Initial release (Closes: #576006)
