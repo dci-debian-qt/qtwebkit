@@ -1,3 +1,11 @@
+qtwebkit (1:2.0~week27-1) experimental; urgency=low
+
+  * New upstream release.
+  * Add epoch to avoid conflict with libqt4-dev.
+  * Update debian/control: build depends on Qt 4.7.0 beta 2.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 13 Jul 2010 13:24:07 +0300
+
 qtwebkit (2.0~week26-2) experimental; urgency=low
 
   * Fix FTBFS on GNU/kFreeBSD caused by missing strnstr() on glibc systems.

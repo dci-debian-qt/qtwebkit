@@ -3,7 +3,7 @@ Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>
 Build-Depends: debhelper (>= 7.4.15), pkg-kde-tools (>= 0.6.4),
- libqt4-dev (>= 4:4.6.0), libqt4-opengl-dev (>= 4:4.6.0),
+ libqt4-dev (>= 4:4.7.0~beta2), libqt4-opengl-dev (>= 4:4.7.0~beta2),
  libphonon-dev (>= 4:4.6.0), libicu-dev, libsqlite3-dev,
  libxext-dev, libxrender-dev, gperf
 Standards-Version: 3.9.0
@@ -16,7 +16,7 @@ Package: libqtwebkit-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, libqtwebkit4 (= ${binary:Version}),
- libqt4-dev (>= 4:4.6.0)
+ libqt4-dev (>= 4:4.7.0~beta2)
 Replaces: libqt4-dev (<= 4:4.7.0~beta1)
 Description: Web content engine library for Qt - development files
  QtWebKit provides a Web browser engine that makes it easy to embed content
