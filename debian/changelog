@@ -1,7 +1,6 @@
-qtwebkit (1:2.0~week27-1) experimental; urgency=low
+qtwebkit (2.0~week27-1) UNRELEASED; urgency=low
 
   * New upstream release.
-  * Add epoch to avoid conflict with libqt4-dev.
   * Update debian/control:
     - build depends on Qt 4.7.0 beta 2.
     - add libqtwebkit-qmlwebkitplugin package.
