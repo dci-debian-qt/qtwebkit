@@ -2,7 +2,9 @@ qtwebkit (1:2.0~week27-1) experimental; urgency=low
 
   * New upstream release.
   * Add epoch to avoid conflict with libqt4-dev.
-  * Update debian/control: build depends on Qt 4.7.0 beta 2.
+  * Update debian/control:
+    - build depends on Qt 4.7.0 beta 2.
+    - add libqtwebkit-qmlwebkitplugin package.
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 13 Jul 2010 13:24:07 +0300
 
