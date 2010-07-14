@@ -1,4 +1,4 @@
-qtwebkit (2.0~week27-1) UNRELEASED; urgency=low
+qtwebkit (2.0~week27-1) experimental; urgency=low
 
   * New upstream release.
   * Update debian/control:
