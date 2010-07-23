@@ -1,5 +1,6 @@
 # upstream patches
 0001_fix_symbols_visibility_for_webcore.diff
+0002_add_webkit_qt_config.patch
 
 # debian patches
 01_lflags_as-needed.diff
