@@ -1,18 +1,17 @@
-qtwebkit (2.0~week27-2) UNRELEASED; urgency=low
-
-  * Fix debian/control Vcs fields to point to the new location.
-
- -- Modestas Vainius <modax@debian.org>  Mon, 26 Jul 2010 11:16:45 +0300
-
-qtwebkit (2.0~week27-1) experimental; urgency=low
+qtwebkit (2.0~week27-1) UNRELEASED; urgency=low
 
   * New upstream release.
+
+  [ Fathi Boudra ]
   * Add 0002_add_webkit_qt_config.patch to include webkit in QT_CONFIG.
   * Update debian/control:
     - build depends on Qt 4.7.0 beta 2.
     - add libqtwebkit-qmlwebkitplugin package.
   * Update debian/rules:
     - pass DEFINES+=ENABLE_VIDEO to build with audio/video support.
+
+  [ Modestas Vainius ]
+  * Fix debian/control Vcs fields to point to the new location.
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 13 Jul 2010 13:24:07 +0300
 
