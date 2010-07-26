@@ -1,3 +1,9 @@
+qtwebkit (2.0~week27-2) UNRELEASED; urgency=low
+
+  * Fix debian/control Vcs fields to point to the new location.
+
+ -- Modestas Vainius <modax@debian.org>  Mon, 26 Jul 2010 11:16:45 +0300
+
 qtwebkit (2.0~week27-1) experimental; urgency=low
 
   * New upstream release.
