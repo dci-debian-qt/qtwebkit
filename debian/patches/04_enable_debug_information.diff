@@ -4,7 +4,7 @@ author: Fathi Boudra <fabo@debian.org>
 
 --- a/WebCore/WebCore.pro
 +++ b/WebCore/WebCore.pro
-@@ -2935,8 +2935,6 @@ HEADERS += $$WEBKIT_API_HEADERS
+@@ -3158,8 +3158,6 @@ HEADERS += $$WEBKIT_API_HEADERS
  
  CONFIG(QTDIR_build) {
      # Remove the following 2 lines if you want debug information in WebCore

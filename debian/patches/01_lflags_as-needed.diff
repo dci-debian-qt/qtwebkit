@@ -3,9 +3,9 @@ Author: Fathi Boudra <fabo@debian.org>
 
 --- a/WebKit.pri
 +++ b/WebKit.pri
-@@ -58,6 +58,8 @@ symbian {
+@@ -60,6 +60,8 @@ symbian {
  CONFIG -= warn_on
- *-g++*:QMAKE_CXXFLAGS += -Wall -Wreturn-type -fno-strict-aliasing -Wcast-align -Wchar-subscripts -Wformat-security -Wreturn-type -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-switch-enum -Wundef -Wmissing-noreturn -Winit-self
+ *-g++*:QMAKE_CXXFLAGS += -Wall -Wextra -Wreturn-type -fno-strict-aliasing -Wcast-align -Wchar-subscripts -Wformat-security -Wreturn-type -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-switch-enum -Wundef -Wmissing-noreturn -Winit-self
  
 +*-g++*:QMAKE_LFLAGS += -Wl,--as-needed
 +

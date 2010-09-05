@@ -4,7 +4,7 @@ Author: Fathi Boudra <fabo@debian.org>
 
 --- a/WebKit.pri
 +++ b/WebKit.pri
-@@ -8,6 +8,8 @@ else:exists($$PWD/WebCore/generated): CO
+@@ -10,6 +10,8 @@ CONFIG += production
  
  CONFIG += depend_includepath
  

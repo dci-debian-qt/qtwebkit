@@ -1,6 +1,7 @@
 qtwebkit (2.1~week35-1) UNRELEASED; urgency=low
 
   * New upstream release: switch to Qt WebKit 2.1 branch.
+  * Remove 0002_add_webkit_qt_config.patch - merged upstream.
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 05 Sep 2010 09:08:05 +0300
 

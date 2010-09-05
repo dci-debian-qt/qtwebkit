@@ -1,24 +1,6 @@
 Description: fix some alignment problems on sparc.
 Author: Mike Hommey <glandium@debian.org>
 
---- a/JavaScriptCore/wtf/FastMalloc.cpp
-+++ b/JavaScriptCore/wtf/FastMalloc.cpp
-@@ -2336,13 +2336,13 @@ static TCMalloc_Central_FreeListPadded c
- 
- // Page-level allocator
- static SpinLock pageheap_lock = SPINLOCK_INITIALIZER;
--static void* pageheap_memory[(sizeof(TCMalloc_PageHeap) + sizeof(void*) - 1) / sizeof(void*)];
-+static uint64_t pageheap_memory[(sizeof(TCMalloc_PageHeap) + sizeof(uint64_t) - 1) / sizeof(uint64_t)];
- static bool phinited = false;
- 
- // Avoid extra level of indirection by making "pageheap" be just an alias
- // of pageheap_memory.
- typedef union {
--    void* m_memory;
-+    uint64_t* m_memory;
-     TCMalloc_PageHeap* m_pageHeap;
- } PageHeapUnion;
- 
 --- a/JavaScriptCore/wtf/ListHashSet.h
 +++ b/JavaScriptCore/wtf/ListHashSet.h
 @@ -127,7 +127,7 @@ namespace WTF {
@@ -51,9 +33,9 @@ Author: Mike Hommey <glandium@debian.org>
      };
  
      template<typename ValueArg, size_t inlineCapacity> struct ListHashSetNode {
---- a/WebCore/platform/text/AtomicString.cpp
-+++ b/WebCore/platform/text/AtomicString.cpp
-@@ -103,9 +103,9 @@ static inline bool equal(StringImpl* str
+--- a/JavaScriptCore/wtf/text/AtomicString.cpp
++++ b/JavaScriptCore/wtf/text/AtomicString.cpp
+@@ -128,9 +128,9 @@ static inline bool equal(StringImpl* str
      if (string->length() != length)
          return false;
  
@@ -64,9 +46,9 @@ Author: Mike Hommey <glandium@debian.org>
      const UChar* stringCharacters = string->characters();
      for (unsigned i = 0; i != length; ++i) {
          if (*stringCharacters++ != *characters++)
---- a/WebCore/platform/text/StringHash.h
-+++ b/WebCore/platform/text/StringHash.h
-@@ -54,13 +54,13 @@ namespace WebCore {
+--- a/JavaScriptCore/wtf/text/StringHash.h
++++ b/JavaScriptCore/wtf/text/StringHash.h
+@@ -56,13 +56,13 @@ namespace WebCore {
  
              // FIXME: perhaps we should have a more abstract macro that indicates when
              // going 4 bytes at a time is unsafe

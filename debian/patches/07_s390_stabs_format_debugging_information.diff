@@ -6,7 +6,7 @@ Bug-Debian: http://bugs.debian.org/528485
 
 --- a/WebKit.pri
 +++ b/WebKit.pri
-@@ -49,6 +49,13 @@ CONFIG(release, debug|release) {
+@@ -51,6 +51,13 @@ CONFIG(release, debug|release) {
      DEFINES += NDEBUG
  }
  
