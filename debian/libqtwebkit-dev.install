@@ -22,6 +22,7 @@ usr/include/qt4/QtWebKit/qwebhistory.h
 usr/include/qt4/QtWebKit/qwebhistoryinterface.h
 usr/include/qt4/QtWebKit/qwebinspector.h
 usr/include/qt4/QtWebKit/qwebkitglobal.h
+usr/include/qt4/QtWebKit/qwebkitplatformplugin.h
 usr/include/qt4/QtWebKit/qwebkitversion.h
 usr/include/qt4/QtWebKit/qwebpage.h
 usr/include/qt4/QtWebKit/qwebpluginfactory.h
