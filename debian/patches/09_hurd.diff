@@ -1,0 +1,24 @@
+Author: Pino Toscano <pino@kde.org>
+Description: quick fix for compilation on Debian/Hurd
+ Patch 06_kfreebsd_strnstr.diff uses __GLIBC__, so make sure to have this
+ definition (provided by any C stdlib header) at this time. Include stdlib.h
+ on Hurd only, as it seems to be working already on the other archs.
+ A better fix (adding WTF_OS_HURD and using it where needed) should be done
+ upstream.
+Forwarded: no
+Last-Update: 2011-01-04
+
+--- a/JavaScriptCore/wtf/Platform.h
++++ b/JavaScriptCore/wtf/Platform.h
+@@ -27,6 +27,11 @@
+ #ifndef WTF_Platform_h
+ #define WTF_Platform_h
+ 
++/* make sure to have __GLIBC__, at least on Hurd */
++#ifdef __GNU__
++#include <stdlib.h>
++#endif
++
+ /* ==== PLATFORM handles OS, operating environment, graphics API, and
+    CPU. This macro will be phased out in favor of platform adaptation
+    macros, policy decision macros, and top-level port definitions. ==== */
