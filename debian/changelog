@@ -1,4 +1,4 @@
-qtwebkit (2.1.0~2011week03-1) UNRELEASED; urgency=low
+qtwebkit (2.1.0~2011week03-1) experimental; urgency=low
 
   * New upstream release: switch to Qt WebKit 2.1 branch.
 
