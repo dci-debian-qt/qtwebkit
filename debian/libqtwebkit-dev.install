@@ -14,6 +14,7 @@ usr/include/qt4/QtWebKit/QWebSecurityOrigin
 usr/include/qt4/QtWebKit/QWebSettings
 usr/include/qt4/QtWebKit/QWebView
 usr/include/qt4/QtWebKit/QtWebKit
+usr/include/qt4/QtWebKit/ViewportAttributes
 usr/include/qt4/QtWebKit/qgraphicswebview.h
 usr/include/qt4/QtWebKit/qwebdatabase.h
 usr/include/qt4/QtWebKit/qwebelement.h
