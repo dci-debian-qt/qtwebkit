@@ -10,7 +10,7 @@ Last-Update: 2011-01-04
 
 --- a/JavaScriptCore/wtf/Platform.h
 +++ b/JavaScriptCore/wtf/Platform.h
-@@ -27,6 +27,11 @@
+@@ -28,6 +28,11 @@
  #ifndef WTF_Platform_h
  #define WTF_Platform_h
  
