@@ -1,3 +1,9 @@
+qtwebkit (2.1.0~2011week08-1) UNRELEASED; urgency=low
+
+  * New upstream release - upload to Sid.
+
+ -- Fathi Boudra <fabo@debian.org>  Sun, 06 Mar 2011 10:05:46 +0200
+
 qtwebkit (2.1.0~2011week03-1) experimental; urgency=low
 
   * New upstream release: switch to Qt WebKit 2.1 branch.
