@@ -1,6 +1,8 @@
 qtwebkit (2.1.0~2011week09-1) unstable; urgency=low
 
   * New upstream release - upload to Sid.
+  * Add webcore_qtplatformplugin_createfullscreenvideohandler_ftbfs.patch to
+    work around the build failure.
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 06 Mar 2011 10:05:46 +0200
 
