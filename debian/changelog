@@ -3,6 +3,10 @@ qtwebkit (2.1.0~2011week09-1) unstable; urgency=low
   * New upstream release - upload to Sid.
   * Add webcore_qtplatformplugin_createfullscreenvideohandler_ftbfs.patch to
     work around the build failure.
+  * Switch to Qt MultimediaKit for the video support (instead of Phonon), build
+    depends on QtMultimediaKit.
+  * Enable geolocation support: build depends on QtLocation and define
+    ENABLE_GEOLOCATION.
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 06 Mar 2011 10:05:46 +0200
 
