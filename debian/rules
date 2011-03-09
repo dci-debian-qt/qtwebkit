@@ -3,8 +3,12 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+ifeq ($(DEB_HOST_ARCH_OS),linux)
+	extra_configure_opts = DEFINES+=ENABLE_GEOLOCATION=1
+endif
+
 %:
 	dh $@ --buildsystem=qmake --parallel --list-missing --dbg-package=libqtwebkit4-dbg --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
-	dh_auto_configure -- DEFINES+=ENABLE_VIDEO=1 DEFINES+=ENABLE_GEOLOCATION=1
+	dh_auto_configure -- DEFINES+=ENABLE_VIDEO=1 $(extra_configure_opts)
