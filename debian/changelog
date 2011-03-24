@@ -1,3 +1,8 @@
+qtwebkit (2.1.0~2011week09-2) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Mar 2011 14:02:36 +0100
+
 qtwebkit (2.1.0~2011week09-1) unstable; urgency=low
 
   * New upstream release - upload to Sid.
