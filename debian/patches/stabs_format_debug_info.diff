@@ -2,7 +2,9 @@ Description: build s390 debugging symbols with -gstabs instead of with -g
              to reduce linker memory usage.
              Thanks to Oswald Buddenhagen for the hint.
 author: Sune Vuorela <sune@debian.org>
+Author: Modestas Vainius <modax@debian.org>
 Bug-Debian: http://bugs.debian.org/528485
+Bug: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=618325
 
 --- a/WebKit.pri
 +++ b/WebKit.pri
@@ -10,8 +12,8 @@ Bug-Debian: http://bugs.debian.org/528485
      DEFINES += NDEBUG
  }
  
-+equals(QT_ARCH, s390) {
-+	message("S/390 workaround for QtWebkit: do not build with -g, but with -gstabs")
++equals(QT_ARCH, s390)|equals(QT_ARCH, arm) {
++	message("S/390 and armel workaround for QtWebkit: do not build with -g, but with -gstabs")
 +	QMAKE_CXXFLAGS -= -g
 +	QMAKE_CXXFLAGS += -gstabs
 +}

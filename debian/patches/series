@@ -8,7 +8,7 @@
 04_enable_debug_information.diff
 05_sparc_unaligned_access.diff
 06_kfreebsd_strnstr.diff
-07_s390_stabs_format_debugging_information.diff
+stabs_format_debug_info.diff
 08_powerpc_s390_no_gc_sections.diff
 09_hurd.diff
 webcore_qtplatformplugin_createfullscreenvideohandler_ftbfs.patch

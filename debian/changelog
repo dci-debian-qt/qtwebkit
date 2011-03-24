@@ -3,6 +3,11 @@ qtwebkit (2.1.0~2011week09-2) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Build-depend on libphonon-dev on non-Linux architectures. (Closes: #617656)
 
+  [ Modestas Vainius ]
+  * Build with -gstabs on armel (Closes: #618325). Added to the
+    stabs_format_debug_info.diff patch (former
+    07_s390_stabs_format_debugging_information.diff).
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Mar 2011 14:02:36 +0100
 
 qtwebkit (2.1.0~2011week09-1) unstable; urgency=low
