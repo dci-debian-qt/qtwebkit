@@ -5,7 +5,8 @@ Uploaders: Fathi Boudra <fabo@debian.org>
 Build-Depends: debhelper (>= 7.4.15), pkg-kde-tools (>= 0.6.4),
  libqt4-dev (>= 4:4.7.0), libqt4-opengl-dev (>= 4:4.7.0),
  libicu-dev, libsqlite3-dev, libxext-dev, libxrender-dev, gperf,
- qtmobility-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386]
+ qtmobility-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
+ libphonon-dev [kfreebsd-amd64 kfreebsd-i386 hurd-i386]
 Standards-Version: 3.9.1
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
