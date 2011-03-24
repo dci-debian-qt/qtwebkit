@@ -1,4 +1,4 @@
-qtwebkit (2.1.0~2011week09-2) UNRELEASED; urgency=high
+qtwebkit (2.1.0~2011week09-2) unstable; urgency=high
 
   [ Pino Toscano ]
   * Build-depend on libphonon-dev on non-Linux architectures. (Closes: #617656)
@@ -9,7 +9,7 @@ qtwebkit (2.1.0~2011week09-2) UNRELEASED; urgency=high
     07_s390_stabs_format_debugging_information.diff).
   * Urgency=high, transition stuff.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Mar 2011 14:02:36 +0100
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 24 Mar 2011 16:12:43 +0200
 
 qtwebkit (2.1.0~2011week09-1) unstable; urgency=low
 
