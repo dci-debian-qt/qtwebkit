@@ -1,4 +1,4 @@
-qtwebkit (2.1.0~2011week09-3) UNRELEASED; urgency=low
+qtwebkit (2.1.0~2011week09-3) UNRELEASED; urgency=high
 
   * Rename 08_powerpc_s390_no_gc_sections.diff to no_gc_sections.diff and
     extend it to cover armel and mip* as well. Full list: powerpc, s390, arm*,
@@ -6,6 +6,7 @@ qtwebkit (2.1.0~2011week09-3) UNRELEASED; urgency=low
   * Really replace -g with -gstabs on s390, mips, mipsel and armel. Previously
     it used to grab -g from environment CXXFLAGS.  Hopefully this will truly
     fix OOMs when linking. (Closes: #618325)
+  * Urgency=high, transition stuff.
 
  -- Modestas Vainius <modax@debian.org>  Mon, 28 Mar 2011 03:11:16 +0300
 
