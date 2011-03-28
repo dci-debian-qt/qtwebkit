@@ -3,6 +3,14 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+# Filter -g from environment on troublesome arches. Replace it with -gstabs
+# See also: stabs_format_debug_info.diff
+DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
+ifneq (,$(filter $(DEB_HOST_ARCH),s390 armel mips mipsel))
+    export CFLAGS := $(filter-out -g,$(CFLAGS)) -gstabs
+    export CXXFLAGS := $(filter-out -g,$(CXXFLAGS)) -gstabs
+endif
+
 ifeq ($(DEB_HOST_ARCH_OS),linux)
 	extra_configure_opts = DEFINES+=ENABLE_VIDEO=1 DEFINES+=ENABLE_GEOLOCATION=1
 endif
