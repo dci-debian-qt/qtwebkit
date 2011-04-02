@@ -1,6 +1,7 @@
 qtwebkit (2.1.0~2011week09-4) UNRELEASED; urgency=low
 
-  * 
+  * Add linux_amd64_no_overcommit.diff to avoid crashes on amd64 with less than
+    3 or 4GB of RAM. Thanks to Felix Geyer for his help with this issue.
 
  -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 28 Mar 2011 18:50:18 +0200
 
