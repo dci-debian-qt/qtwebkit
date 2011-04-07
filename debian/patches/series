@@ -11,5 +11,4 @@
 stabs_format_debug_info.diff
 no_gc_sections.diff
 09_hurd.diff
-webcore_qtplatformplugin_createfullscreenvideohandler_ftbfs.patch
 linux_amd64_no_overcommit.diff

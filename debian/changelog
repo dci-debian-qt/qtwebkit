@@ -1,4 +1,4 @@
-qtwebkit (2.1.0~2011week13-1) UNRELEASED; urgency=low
+qtwebkit (2.1.0~2011week13-1) unstable; urgency=low
 
   * New upstream release.
 
@@ -8,6 +8,7 @@ qtwebkit (2.1.0~2011week13-1) UNRELEASED; urgency=low
 
   [ Fathi Boudra ]
   * Ship libqtwebkit-qmlwebkitplugin package. (Closes: #601650)
+  * Drop webcore_qtplatformplugin_createfullscreenvideohandler_ftbfs.patch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Apr 2011 11:37:59 +0300
 
