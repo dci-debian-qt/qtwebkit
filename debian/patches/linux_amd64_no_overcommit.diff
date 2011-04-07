@@ -63,7 +63,7 @@ Description: Avoid crashes on amd64 with less than 3 or 4GB of RAM.
  #endif
  
  // ASLR currently only works on darwin (due to arc4random) & 64-bit (due to address space size).
-@@ -331,7 +346,7 @@
+@@ -331,7 +346,7 @@ public:
          // 16MB of allocations have been freed, sweep m_freeList
          // coalescing any neighboring fragments.
          m_countFreedSinceLastCoalesce += size;
@@ -72,7 +72,7 @@ Description: Avoid crashes on amd64 with less than 3 or 4GB of RAM.
              m_countFreedSinceLastCoalesce = 0;
              coalesceFreeSpace();
          }
-@@ -435,11 +450,33 @@
+@@ -435,11 +450,33 @@ void ExecutableAllocator::intializePageS
  static FixedVMPoolAllocator* allocator = 0;
  static SpinLock spinlock = SPINLOCK_INITIALIZER;
  
