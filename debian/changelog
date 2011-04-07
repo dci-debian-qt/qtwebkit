@@ -6,6 +6,9 @@ qtwebkit (2.1.0~2011week13-1) UNRELEASED; urgency=low
   * Add linux_amd64_no_overcommit.diff to avoid crashes on amd64 with less than
     3 or 4GB of RAM. Thanks to Felix Geyer for his help with this issue.
 
+  [ Fathi Boudra ]
+  * Ship libqtwebkit-qmlwebkitplugin package. (Closes: #601650)
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 06 Apr 2011 11:37:59 +0300
 
 qtwebkit (2.1.0~2011week09-3) unstable; urgency=high

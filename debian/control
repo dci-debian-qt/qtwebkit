@@ -34,14 +34,14 @@ Description: Web content engine library for Qt
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
 
-#Package: libqtwebkit-qmlwebkitplugin
-#Architecture: any
-#Depends: ${shlibs:Depends}, ${misc:Depends}
-#Description: Qt WebKit QML plugin
-# QtWebKit provides a Web browser engine that makes it easy to embed content
-# from the World Wide Web into your Qt application.
-# .
-# This package contains the WebKit QML plugin for QtDeclarative.
+Package: libqtwebkit-qmlwebkitplugin
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt WebKit QML plugin
+ QtWebKit provides a Web browser engine that makes it easy to embed content
+ from the World Wide Web into your Qt application.
+ .
+ This package contains the WebKit QML plugin for QtDeclarative.
 
 Package: libqtwebkit4-dbg
 Priority: extra
