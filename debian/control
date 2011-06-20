@@ -2,11 +2,17 @@ Source: qtwebkit
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>
-Build-Depends: debhelper (>= 7.4.15), pkg-kde-tools (>= 0.6.4),
- libqt4-dev (>= 4:4.7.0), libqt4-opengl-dev (>= 4:4.7.0),
- libicu-dev, libsqlite3-dev, libxext-dev, libxrender-dev, gperf,
- qtmobility-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
- libphonon-dev [kfreebsd-amd64 kfreebsd-i386 hurd-i386]
+Build-Depends: debhelper (>= 7.4.15),
+               gperf,
+               libicu-dev,
+               libphonon-dev [kfreebsd-amd64 kfreebsd-i386 hurd-i386],
+               libqt4-dev (>= 4:4.7.0),
+               libqt4-opengl-dev (>= 4:4.7.0),
+               libsqlite3-dev,
+               libxext-dev,
+               libxrender-dev,
+               pkg-kde-tools (>= 0.6.4),
+               qtmobility-dev [!kfreebsd-amd64 !kfreebsd-i386 !hurd-i386]
 Standards-Version: 3.9.1
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
@@ -16,8 +22,9 @@ Vcs-Browser: http://git.debian.org/?p=pkg-kde/qt/qtwebkit.git;a=summary
 Package: libqtwebkit-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libqtwebkit4 (= ${binary:Version}),
- libqt4-dev (>= 4:4.7.0)
+Depends: libqt4-dev (>= 4:4.7.0),
+         libqtwebkit4 (= ${binary:Version}),
+         ${misc:Depends}
 Replaces: libqt4-dev (<= 4:4.7.0~beta1)
 Description: Web content engine library for Qt - development files
  QtWebKit provides a Web browser engine that makes it easy to embed content
@@ -28,7 +35,7 @@ Description: Web content engine library for Qt - development files
 
 Package: libqtwebkit4
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Replaces: libqt4-webkit (<= 4:4.7.0~beta1)
 Description: Web content engine library for Qt
  QtWebKit provides a Web browser engine that makes it easy to embed content
@@ -36,7 +43,7 @@ Description: Web content engine library for Qt
 
 Package: libqtwebkit-qmlwebkitplugin
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt WebKit QML plugin
  QtWebKit provides a Web browser engine that makes it easy to embed content
  from the World Wide Web into your Qt application.
@@ -47,7 +54,7 @@ Package: libqtwebkit4-dbg
 Priority: extra
 Architecture: any
 Section: debug
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqtwebkit4 (= ${binary:Version})
+Depends: libqtwebkit4 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Replaces: libqt4-webkit-dbg (<= 4:4.7.0~beta1)
 Description: Web content engine library for Qt - debugging symbols
  QtWebKit provides a Web browser engine that makes it easy to embed content
