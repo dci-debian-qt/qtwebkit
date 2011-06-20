@@ -2,6 +2,7 @@ qtwebkit (2.1.0~2011week13-2) unstable; urgency=low
 
   * Add defines_qt_webkit.diff to display correctly documentation in Qt Creator
     Help plugin. (Closes: #619443)
+  * Bump Standards-Version to 3.9.2 (no changes needed).
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 19 Jun 2011 12:35:00 +0300
 
