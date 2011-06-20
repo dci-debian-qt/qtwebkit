@@ -1,6 +1,7 @@
-qtwebkit (2.1.1~beta1-1) UNRELEASED; urgency=low
+qtwebkit (2.1.0~2011week13-2) unstable; urgency=low
 
-  * New upstream release.
+  * Add defines_qt_webkit.diff to display correctly documentation in Qt Creator
+    Help plugin. (Closes: #619443)
 
  -- Fathi Boudra <fabo@debian.org>  Sun, 19 Jun 2011 12:35:00 +0300
 
