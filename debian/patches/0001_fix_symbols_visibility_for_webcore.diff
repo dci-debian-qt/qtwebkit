@@ -2,6 +2,10 @@ Description: Corrects symbols visibility for WebCore.
 Author: Jocelyn Turcotte < jocelyn.turcotte@nokia.com>
 Bug: https://bugs.webkit.org/show_bug.cgi?id=40237
 
+---
+ WebCore/WebCore.pro |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/WebCore/WebCore.pro
 +++ b/WebCore/WebCore.pro
 @@ -94,7 +94,7 @@ unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffun

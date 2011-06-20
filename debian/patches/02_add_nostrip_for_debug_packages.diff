@@ -2,6 +2,10 @@ Description: set CONFIG += nostrip to avoid stripping and
              let dh_strip do it to generate debug packages.
 Author: Fathi Boudra <fabo@debian.org>
 
+---
+ WebKit.pri |    2 ++
+ 1 file changed, 2 insertions(+)
+
 --- a/WebKit.pri
 +++ b/WebKit.pri
 @@ -10,6 +10,8 @@ CONFIG += production

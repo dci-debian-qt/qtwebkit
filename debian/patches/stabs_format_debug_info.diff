@@ -6,6 +6,10 @@ Bug-Debian: http://bugs.debian.org/528485
 Bug-Debian: http://bugs.debian.org/618325
 Bug: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=618325
 
+---
+ WebKit.pri |    7 +++++++
+ 1 file changed, 7 insertions(+)
+
 --- a/WebKit.pri
 +++ b/WebKit.pri
 @@ -59,6 +59,13 @@ CONFIG(release, debug|release) {

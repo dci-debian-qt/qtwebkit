@@ -2,6 +2,11 @@ Description: on Qt >= 4.5, debug info are disabled for QtWebkit.
              enable debug information in JavaScriptCore and WebCore.
 author: Fathi Boudra <fabo@debian.org>
 
+---
+ JavaScriptCore/JavaScriptCore.pro |    2 --
+ WebCore/WebCore.pro               |    2 --
+ 2 files changed, 4 deletions(-)
+
 --- a/WebCore/WebCore.pro
 +++ b/WebCore/WebCore.pro
 @@ -3160,8 +3160,6 @@ HEADERS += $$WEBKIT_API_HEADERS

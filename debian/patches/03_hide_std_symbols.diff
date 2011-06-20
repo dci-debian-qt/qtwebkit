@@ -2,6 +2,11 @@ Description: do not make the std:: symbols in webkit public.
              based on Mike Hommey work in the webkit package.
 Author: Sune Vuorela <sune@debian.org>
 
+---
+ WebKit.pri     |    1 +
+ symbols.filter |    5 +++++
+ 2 files changed, 6 insertions(+)
+
 --- a/WebKit.pri
 +++ b/WebKit.pri
 @@ -71,6 +71,7 @@ CONFIG -= warn_on

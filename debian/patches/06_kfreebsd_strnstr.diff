@@ -2,6 +2,10 @@ Description: Fix FTBFS on GNU/kFreeBSD caused by missing strnstr() on glibc syst
 Author: Fathi Boudra <fabo@debian.org>
 Bug: https://bugs.webkit.org/show_bug.cgi?id=33903
 
+---
+ JavaScriptCore/wtf/Platform.h |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/JavaScriptCore/wtf/Platform.h
 +++ b/JavaScriptCore/wtf/Platform.h
 @@ -385,7 +385,7 @@

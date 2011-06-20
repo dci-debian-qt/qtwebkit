@@ -1,6 +1,10 @@
 Description: set --as-needed linker flag to avoid useless linking.
 Author: Fathi Boudra <fabo@debian.org>
 
+---
+ WebKit.pri |    2 ++
+ 1 file changed, 2 insertions(+)
+
 --- a/WebKit.pri
 +++ b/WebKit.pri
 @@ -68,6 +68,8 @@ symbian {
