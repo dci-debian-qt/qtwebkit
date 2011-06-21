@@ -1,3 +1,8 @@
+qtwebkit (2.1.0~2011week13-3) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 21 Jun 2011 12:52:21 +0200
+
 qtwebkit (2.1.0~2011week13-2) unstable; urgency=low
 
   * Add defines_qt_webkit.diff to display correctly documentation in Qt Creator
