@@ -1,5 +1,9 @@
 qtwebkit (2.1.0~2011week13-3) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Use wildcard architectures:
+    - !kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 -> linux-any
+    - kfreebsd-i386 kfreebsd-amd64 hurd-i386 -> !linux-any
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 21 Jun 2011 12:52:21 +0200
 
