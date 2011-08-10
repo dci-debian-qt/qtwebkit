@@ -13,3 +13,4 @@ no_gc_sections.diff
 09_hurd.diff
 linux_amd64_no_overcommit.diff
 defines_qt_webkit.diff
+s390.diff
