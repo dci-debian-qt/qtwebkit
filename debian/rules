@@ -6,7 +6,7 @@
 # Filter -g from environment on troublesome arches. Replace it with -gstabs
 # See also: stabs_format_debug_info.diff
 DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
-ifneq (,$(filter $(DEB_HOST_ARCH),s390 armel mips mipsel))
+ifneq (,$(filter $(DEB_HOST_ARCH),s390 s390x armel mips mipsel))
     export CFLAGS := $(filter-out -g,$(CFLAGS)) -gstabs
     export CXXFLAGS := $(filter-out -g,$(CXXFLAGS)) -gstabs
 endif
