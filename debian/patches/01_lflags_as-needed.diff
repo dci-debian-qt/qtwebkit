@@ -2,17 +2,17 @@ Description: set --as-needed linker flag to avoid useless linking.
 Author: Fathi Boudra <fabo@debian.org>
 
 ---
- WebKit.pri |    2 ++
+ Source/WebKit.pri |    2 ++
  1 file changed, 2 insertions(+)
 
---- a/WebKit.pri
-+++ b/WebKit.pri
-@@ -68,6 +68,8 @@ symbian {
+--- a/Source/WebKit.pri
++++ b/Source/WebKit.pri
+@@ -91,6 +91,8 @@ win32-g++* {
  CONFIG -= warn_on
  *-g++*:QMAKE_CXXFLAGS += -Wall -Wextra -Wreturn-type -fno-strict-aliasing -Wcast-align -Wchar-subscripts -Wformat-security -Wreturn-type -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-switch-enum -Wundef -Wmissing-noreturn -Winit-self
  
 +*-g++*:QMAKE_LFLAGS += -Wl,--as-needed
 +
- # Enable GNU compiler extensions to the ARM compiler for all Qt ports using RVCT
- symbian|*-armcc {
-     RVCT_COMMON_CFLAGS = --gnu --diag_suppress 68,111,177,368,830,1293
+ # Treat warnings as errors on x86/Linux/GCC
+ linux-g++* {
+     isEqual(QT_ARCH,x86_64)|isEqual(QT_ARCH,i386): QMAKE_CXXFLAGS += -Werror

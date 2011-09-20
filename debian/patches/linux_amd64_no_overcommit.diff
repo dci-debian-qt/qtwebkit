@@ -29,8 +29,8 @@ Description: Avoid crashes on amd64 with less than 3 or 4GB of RAM.
  JavaScriptCore/jit/ExecutableAllocatorFixedVMPool.cpp |   55 +++++++++++++++---
  1 file changed, 46 insertions(+), 9 deletions(-)
 
---- a/JavaScriptCore/jit/ExecutableAllocatorFixedVMPool.cpp
-+++ b/JavaScriptCore/jit/ExecutableAllocatorFixedVMPool.cpp
+--- a/Source/JavaScriptCore/jit/ExecutableAllocatorFixedVMPool.cpp
++++ b/Source/JavaScriptCore/jit/ExecutableAllocatorFixedVMPool.cpp
 @@ -38,14 +38,29 @@
  #include <wtf/PageReservation.h>
  #include <wtf/VMTags.h>

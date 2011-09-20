@@ -9,11 +9,11 @@ Forwarded: no
 Last-Update: 2011-01-04
 
 ---
- JavaScriptCore/wtf/Platform.h |    5 +++++
+ Source/JavaScriptCore/wtf/Platform.h |    5 +++++
  1 file changed, 5 insertions(+)
 
---- a/JavaScriptCore/wtf/Platform.h
-+++ b/JavaScriptCore/wtf/Platform.h
+--- a/Source/JavaScriptCore/wtf/Platform.h
++++ b/Source/JavaScriptCore/wtf/Platform.h
 @@ -28,6 +28,11 @@
  #ifndef WTF_Platform_h
  #define WTF_Platform_h

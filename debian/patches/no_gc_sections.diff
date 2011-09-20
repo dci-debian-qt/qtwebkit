@@ -11,8 +11,8 @@ Last-Update: 2011-03-28 (mips* and arm* added)
  WebCore/WebCore.pro |    2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
---- a/WebCore/WebCore.pro
-+++ b/WebCore/WebCore.pro
+--- a/Source/WebCore/WebCore.pro
++++ b/Source/WebCore/WebCore.pro
 @@ -91,7 +91,7 @@ unix {
  }
  

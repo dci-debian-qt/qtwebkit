@@ -6,8 +6,8 @@ Bug: https://bugs.webkit.org/show_bug.cgi?id=40237
  WebCore/WebCore.pro |    2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
---- a/WebCore/WebCore.pro
-+++ b/WebCore/WebCore.pro
+--- a/Source/WebCore/WebCore.pro
++++ b/Source/WebCore/WebCore.pro
 @@ -94,7 +94,7 @@ unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffun
  unix:!mac:*-g++*:QMAKE_LFLAGS += -Wl,--gc-sections
  linux*-g++*:QMAKE_LFLAGS += $$QMAKE_LFLAGS_NOUNDEF

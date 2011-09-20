@@ -4,12 +4,12 @@ Origin: vendor (http://trac.webkit.org/changeset?old_path=%2Ftrunk&old=71843+&ne
 Forwarded: no
 Last-Update: 2011-08-06
 
---- a/JavaScriptCore/wtf/Platform.h
-+++ b/JavaScriptCore/wtf/Platform.h
+--- a/Source/JavaScriptCore/wtf/Platform.h
++++ b/Source/JavaScriptCore/wtf/Platform.h
 @@ -186,6 +186,18 @@
  #define WTF_CPU_SPARC 1
  #endif
- 
+
 +/* CPU(S390X) - S390 64-bit */
 +#if defined(__s390x__)
 +#define WTF_CPU_S390X 1

@@ -3,22 +3,22 @@ Description: do not make the std:: symbols in webkit public.
 Author: Sune Vuorela <sune@debian.org>
 
 ---
- WebKit.pri     |    1 +
- symbols.filter |    5 +++++
+ Source/WebKit.pri     |    1 +
+ Source/symbols.filter |    5 +++++
  2 files changed, 6 insertions(+)
 
---- a/WebKit.pri
-+++ b/WebKit.pri
-@@ -71,6 +71,7 @@ CONFIG -= warn_on
+--- a/Source/WebKit.pri
++++ b/Source/WebKit.pri
+@@ -94,6 +94,7 @@ CONFIG -= warn_on
  *-g++*:QMAKE_CXXFLAGS += -Wall -Wextra -Wreturn-type -fno-strict-aliasing -Wcast-align -Wchar-subscripts -Wformat-security -Wreturn-type -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-switch-enum -Wundef -Wmissing-noreturn -Winit-self
  
  *-g++*:QMAKE_LFLAGS += -Wl,--as-needed
-+*-g++*:QMAKE_LFLAGS += -Wl,--version-script,$$BASE_DIR/symbols.filter
++*-g++*:QMAKE_LFLAGS += -Wl,--version-script,$$PWD/symbols.filter
  
- # Enable GNU compiler extensions to the ARM compiler for all Qt ports using RVCT
- symbian|*-armcc {
+ # Treat warnings as errors on x86/Linux/GCC
+ linux-g++* {
 --- /dev/null
-+++ b/symbols.filter
++++ b/Source/symbols.filter
 @@ -0,0 +1,5 @@
 +{
 +local:
