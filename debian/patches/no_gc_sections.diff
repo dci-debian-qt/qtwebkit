@@ -8,7 +8,7 @@ Forwarded: no
 Last-Update: 2011-03-28 (mips* and arm* added)
 
 ---
- WebCore/WebCore.pri |    2 +-
+ Source/WebCore/WebCore.pri |    2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 --- a/Source/WebCore/WebCore.pri

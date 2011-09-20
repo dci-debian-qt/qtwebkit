@@ -2,10 +2,8 @@ Description: fix some alignment problems on sparc.
 Author: Mike Hommey <glandium@debian.org>
 
 ---
- JavaScriptCore/wtf/ListHashSet.h         |    9 +++------
- JavaScriptCore/wtf/text/AtomicString.cpp |    2 +-
- JavaScriptCore/wtf/text/StringHash.h     |    6 +++---
- 3 files changed, 7 insertions(+), 10 deletions(-)
+ Source/JavaScriptCore/wtf/ListHashSet.h |    9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
 
 --- a/Source/JavaScriptCore/wtf/ListHashSet.h
 +++ b/Source/JavaScriptCore/wtf/ListHashSet.h
