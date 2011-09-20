@@ -11,6 +11,7 @@ qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Add -gstabs to the C(XX)FLAGS also for s390x. (see #637004)
+  * Enable the video support for all the OSes, not just on Linux.
 
   [ Fathi Boudra ]
   * Update debian/control:

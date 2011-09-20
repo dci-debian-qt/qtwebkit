@@ -11,15 +11,11 @@ ifneq (,$(filter $(DEB_HOST_ARCH),s390 s390x armel mips mipsel))
     export CXXFLAGS := $(filter-out -g,$(CXXFLAGS)) -gstabs
 endif
 
-ifeq ($(DEB_HOST_ARCH_OS),linux)
-	extra_configure_opts = DEFINES+=ENABLE_VIDEO=1 DEFINES+=WTF_USE_GSTREAMER=1
-endif
-
 %:
 	dh $@ --sourcedirectory=Source --buildsystem=qmake --parallel --list-missing --dbg-package=libqtwebkit4-dbg --with pkgkde_symbolshelper
 
 override_dh_auto_configure:
-	dh_auto_configure -- $(extra_configure_opts)
+	dh_auto_configure -- DEFINES+=ENABLE_VIDEO=1 DEFINES+=WTF_USE_GSTREAMER=1
 #	TODO: qwebview configure/build/install
 
 override_dh_auto_clean:
