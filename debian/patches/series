@@ -8,7 +8,7 @@
 05_sparc_unaligned_access.diff
 06_kfreebsd_strnstr.diff
 stabs_format_debug_info.diff
-#no_gc_sections.diff
+no_gc_sections.diff
 09_hurd.diff
 #linux_amd64_no_overcommit.diff
 defines_qt_webkit.diff
