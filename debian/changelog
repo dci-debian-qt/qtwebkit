@@ -6,6 +6,8 @@ qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
     - 0001_fix_symbols_visibility_for_webcore.diff: drop, stolen upstream.
     - 05_sparc_unaligned_access.diff: refresh
     - no_gc_sections.diff: refresh
+    - 06_kfreebsd_strnstr.diff, 09_hurd.diff: drop, now strnstr() is properly
+      enabled
 
   [ Pino Toscano ]
   * Use wildcard architectures: (Closes: #634388)
