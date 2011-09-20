@@ -12,6 +12,8 @@ qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
   [ Pino Toscano ]
   * Add -gstabs to the C(XX)FLAGS also for s390x. (see #637004)
   * Enable the video support for all the OSes, not just on Linux.
+  * Add patch glibc_mkspec.diff, to enable/fix compile options for platforms
+    using our custom glibc-g++ mkspec.
 
   [ Fathi Boudra ]
   * Update debian/control:
