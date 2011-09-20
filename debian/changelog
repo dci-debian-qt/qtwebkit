@@ -18,7 +18,7 @@ qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
       libgstreamer0.10-dev build dependencies.
     - drop libphonon-dev build and qt-mobility build dependencies. GStreamer
       will be used as the multimedia backend as recommended by upstream.
-
+  * Update debian/*.install files for multiarch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Sep 2011 16:32:18 +0300
 
