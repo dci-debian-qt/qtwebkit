@@ -20,7 +20,9 @@ endif
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(extra_configure_opts)
+#	TODO: qwebview configure/build/install
 
 override_dh_auto_clean:
 	rm -f Source/Makefile
 	dh_auto_clean
+#	TODO: qwebview clean
