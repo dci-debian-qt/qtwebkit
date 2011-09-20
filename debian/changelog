@@ -20,7 +20,13 @@ qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
       will be used as the multimedia backend as recommended by upstream.
   * Update debian/*.install files for multiarch.
   * Add debian/README.source: explain how to create a new upstream tarball.
-
+  * Update debian/rules:
+    - drop ENABLE_GEOLOCATION as qt-mobility build dependency is removed.
+    - add WTF_USE_GSTREAMER to enable GStreamer as the multimedia backend.
+    - pass --sourcedirectory=Source to dh as the upstream tarball format has
+      changed.
+    - add override_dh_auto_clean to remove Source/Makefile file and avoid
+      dh_clean failure.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Sep 2011 16:32:18 +0300
 
