@@ -1,6 +1,7 @@
 qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
 
-  * New upstream release.
+  * New upstream release:
+    - include 0001_fix_symbols_visibility_for_webcore.diff - stolen upstream.
 
   [ Pino Toscano ]
   * Use wildcard architectures: (Closes: #634388)
