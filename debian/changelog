@@ -1,14 +1,15 @@
 qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
 
   * New upstream release:
-    - include 0001_fix_symbols_visibility_for_webcore.diff - stolen upstream.
     - provides support for s390/s390x. (Closes: #637004)
+  * Update patches:
+    - 0001_fix_symbols_visibility_for_webcore.diff: drop, stolen upstream.
+    - 05_sparc_unaligned_access.diff: refresh
 
   [ Pino Toscano ]
   * Use wildcard architectures: (Closes: #634388)
     - !kfreebsd-i386 !kfreebsd-amd64 !hurd-i386 -> linux-any
     - kfreebsd-i386 kfreebsd-amd64 hurd-i386 -> !linux-any
-  * Patch 05_sparc_unaligned_access.diff: reduce unneeded changes.
   * Add -gstabs to the C(XX)FLAGS also for s390x. (see #637004)
 
   [Fathi Boudra]

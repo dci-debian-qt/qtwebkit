@@ -9,25 +9,25 @@ Author: Mike Hommey <glandium@debian.org>
 
 --- a/Source/JavaScriptCore/wtf/ListHashSet.h
 +++ b/Source/JavaScriptCore/wtf/ListHashSet.h
-@@ -127,7 +127,7 @@ namespace WTF {
+@@ -145,7 +145,7 @@ namespace WTF {
              : m_freeList(pool())
              , m_isDoneWithInitialFreeList(false)
-         {
+         { 
 -            memset(m_pool.pool, 0, sizeof(m_pool.pool));
 +            memset(m_pool, 0, sizeof(m_pool));
          }
-
+ 
          Node* allocate()
-@@ -171,7 +171,7 @@ namespace WTF {
+@@ -189,7 +189,7 @@ namespace WTF {
          }
-
+ 
      private:
--        Node* pool() { return reinterpret_cast<Node*>(m_pool.pool); }
-+        Node* pool() { return reinterpret_cast<Node*>(m_pool); }
+-        Node* pool() { return reinterpret_cast_ptr<Node*>(m_pool.pool); }
++        Node* pool() { return reinterpret_cast_ptr<Node*>(m_pool); }
          Node* pastPool() { return pool() + m_poolSize; }
-
+ 
          bool inPool(Node* node)
-@@ -182,10 +182,7 @@ namespace WTF {
+@@ -200,10 +200,7 @@ namespace WTF {
          Node* m_freeList;
          bool m_isDoneWithInitialFreeList;
          static const size_t m_poolSize = inlineCapacity;
@@ -37,27 +37,5 @@ Author: Mike Hommey <glandium@debian.org>
 -        } m_pool;
 +        uint32_t m_pool[(sizeof(Node) * m_poolSize + sizeof(uint32_t) - 1) / sizeof(uint32_t)];
      };
-
+ 
      template<typename ValueArg, size_t inlineCapacity> struct ListHashSetNode {
---- a/Source/JavaScriptCore/wtf/text/AtomicString.cpp
-+++ b/Source/JavaScriptCore/wtf/text/AtomicString.cpp
-@@ -130,7 +130,7 @@ static inline bool equal(StringImpl* str
-
-     // FIXME: perhaps we should have a more abstract macro that indicates when
-     // going 4 bytes at a time is unsafe
--#if CPU(ARM) || CPU(SH4)
-+#if CPU(ARM) || CPU(SH4) || CPU(SPARC)
-     const UChar* stringCharacters = string->characters();
-     for (unsigned i = 0; i != length; ++i) {
-         if (*stringCharacters++ != *characters++)
---- a/Source/JavaScriptCore/wtf/text/StringHash.h
-+++ b/Source/JavaScriptCore/wtf/text/StringHash.h
-@@ -56,7 +56,7 @@ namespace WebCore {
-
-             // FIXME: perhaps we should have a more abstract macro that indicates when
-             // going 4 bytes at a time is unsafe
--#if CPU(ARM) || CPU(SH4)
-+#if CPU(ARM) || CPU(SH4) || CPU(SPARC)
-             const UChar* aChars = a->characters();
-             const UChar* bChars = b->characters();
-             for (unsigned i = 0; i != aLength; ++i) {

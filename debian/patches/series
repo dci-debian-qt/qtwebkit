@@ -5,7 +5,7 @@
 02_add_nostrip_for_debug_packages.diff
 03_hide_std_symbols.diff
 04_enable_debug_information.diff
-#05_sparc_unaligned_access.diff
+05_sparc_unaligned_access.diff
 06_kfreebsd_strnstr.diff
 stabs_format_debug_info.diff
 #no_gc_sections.diff
