@@ -10,6 +10,16 @@ qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
   * Patch 05_sparc_unaligned_access.diff: reduce unneeded changes.
   * Add -gstabs to the C(XX)FLAGS also for s390x. (see #637004)
 
+  [Fathi Boudra]
+  * Update debian/control:
+    - bump debhelper build dependency to 8.1.3~.
+    - bump Qt build dependency to 4:4.7.4~. This version introduce multiarch.
+    - add pkg-config, libgstreamer-plugins-base0.10-dev and
+      libgstreamer0.10-dev build dependencies.
+    - drop libphonon-dev build and qt-mobility build dependencies. GStreamer
+      will be used as the multimedia backend as recommended by upstream.
+
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Sep 2011 16:32:18 +0300
 
 qtwebkit (2.1.0~2011week13-2) unstable; urgency=low
