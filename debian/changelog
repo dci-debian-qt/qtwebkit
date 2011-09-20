@@ -1,4 +1,6 @@
-qtwebkit (2.1.0~2011week13-3) UNRELEASED; urgency=low
+qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
+
+  * New upstream release.
 
   [ Pino Toscano ]
   * Use wildcard architectures: (Closes: #634388)
@@ -8,7 +10,7 @@ qtwebkit (2.1.0~2011week13-3) UNRELEASED; urgency=low
   * Patch 05_sparc_unaligned_access.diff: reduce unneeded changes.
   * Add -gstabs to the C(XX)FLAGS also for s390x. (see #637004)
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 21 Jun 2011 12:52:21 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Sep 2011 16:32:18 +0300
 
 qtwebkit (2.1.0~2011week13-2) unstable; urgency=low
 
