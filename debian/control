@@ -25,7 +25,8 @@ Section: libdevel
 Architecture: any
 Depends: libqt4-dev (>= 4:4.7.4~),
          libqtwebkit4 (= ${binary:Version}),
-         ${misc:Depends}
+         ${misc:Depends},
+         ${shlibs:Depends}
 Replaces: libqt4-dev (<= 4:4.7.0~beta1)
 Description: Web content engine library for Qt - development files
  QtWebKit provides a Web browser engine that makes it easy to embed content

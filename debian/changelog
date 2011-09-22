@@ -1,4 +1,4 @@
-qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
+qtwebkit (2.2.0~rc1-1) UNSTABLE; urgency=low
 
   * New upstream release:
     - provides support for s390/s390x. (Closes: #637004)
@@ -21,9 +21,9 @@ qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
     - bump Qt build dependency to 4:4.7.4~. This version introduce multiarch.
     - add pkg-config, libgstreamer-plugins-base0.10-dev and
       libgstreamer0.10-dev build dependencies.
-    - drop libphonon-dev build and qt-mobility build dependencies.
-      (Closes: #634388) GStreamer will be used as the multimedia backend as
-      recommended by upstream.
+    - drop libphonon-dev build and qt-mobility build dependencies. GStreamer
+      will be used as the multimedia backend as recommended by upstream.
+      (Closes: #634388) 
   * Update debian/*.install files for multiarch.
   * Add debian/README.source: explain how to create a new upstream tarball.
   * Update debian/rules:
@@ -33,6 +33,9 @@ qtwebkit (2.2.0~rc1-1) UNRELEASED; urgency=low
       changed.
     - add override_dh_auto_clean to remove Source/Makefile file and avoid
       dh_clean failure.
+  * Add qwebview designer plugin and make libqtwebkit-dev depend on
+    ${shlibs:Depends} as we are shipping the qwebview designer plugin.
+    (Closes: #612974)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Sep 2011 16:32:18 +0300
 
