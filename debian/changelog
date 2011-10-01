@@ -1,4 +1,4 @@
-qtwebkit (2.2.0~rc1-1) UNSTABLE; urgency=low
+qtwebkit (2.2.0-1) UNSTABLE; urgency=low
 
   * New upstream release:
     - provides support for s390/s390x. (Closes: #637004)
