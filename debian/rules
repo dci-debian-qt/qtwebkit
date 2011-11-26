@@ -18,13 +18,17 @@ endif
 
 override_dh_auto_configure:
 	dh_auto_configure -- DEFINES+=ENABLE_VIDEO=1 DEFINES+=WTF_USE_GSTREAMER=1
-	cd $(QWEBVIEW_DIR); qmake-qt4
+	dh_auto_configure --sourcedirectory=$(QWEBVIEW_DIR)
+
+override_dh_auto_build:
+	dh_auto_build
+	dh_auto_build --sourcedirectory=$(QWEBVIEW_DIR)
 
 override_dh_auto_install:
 	dh_auto_install
-	$(MAKE) -C $(QWEBVIEW_DIR) INSTALL_ROOT=$(CURDIR)/debian/tmp install
+	dh_auto_install --sourcedirectory=$(QWEBVIEW_DIR)
 
 override_dh_auto_clean:
 	rm -f Source/Makefile
-	[ ! -f $(QWEBVIEW_DIR)/Makefile ] || $(MAKE) -C $(QWEBVIEW_DIR) distclean
 	dh_auto_clean
+	dh_auto_clean --sourcedirectory=$(QWEBVIEW_DIR)
