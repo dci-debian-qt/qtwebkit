@@ -14,6 +14,7 @@ qtwebkit (2.2.0-1) UNSTABLE; urgency=low
   * Enable the video support for all the OSes, not just on Linux.
   * Add patch glibc_mkspec.diff, to enable/fix compile options for platforms
     using our custom glibc-g++ mkspec.
+  * Add a symbols file, based on the previous version (2.1.0~2011week13).
 
   [ Fathi Boudra ]
   * Update debian/control:
