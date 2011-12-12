@@ -1,5 +1,6 @@
 # SymbolsHelper-Confirmed: 2.1.0~2011week13 amd64 i386
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
+* Build-Depends-Package: libqtwebkit-dev
  JSClassCreate@Base 2.1.0~2011week13
  JSClassRelease@Base 2.1.0~2011week13
  JSClassRetain@Base 2.1.0~2011week13
