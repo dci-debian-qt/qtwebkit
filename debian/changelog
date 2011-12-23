@@ -35,6 +35,8 @@ qtwebkit (2.2.0-1) unstable; urgency=low
   * Add qwebview designer plugin and make libqtwebkit-dev depend on
     ${shlibs:Depends} as we are shipping the qwebview designer plugin.
     (Closes: #612974)
+  * Add adjust_symbols_visibility_for_webcore.diff to fix WebCore symbols
+    visibility.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 19 Sep 2011 16:32:18 +0300
 
