@@ -1,5 +1,4 @@
 # upstream patches
-adjust_symbols_visibility_for_webcore.diff
 
 # debian patches
 01_lflags_as-needed.diff

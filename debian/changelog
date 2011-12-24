@@ -1,3 +1,12 @@
+qtwebkit (2.2.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Drop adjust_symbols_visibility_for_webcore.diff - stolen upstream.
+  * Update debian/control:
+    - bump build dependency on Qt 4.8.
+
+ -- Fathi Boudra <fabo@debian.org>  Fri, 23 Dec 2011 20:32:21 +0200
+
 qtwebkit (2.2.0-1) unstable; urgency=low
 
   * New upstream release:
