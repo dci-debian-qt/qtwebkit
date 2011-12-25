@@ -26,7 +26,7 @@ Forwarded: not-needed
          PKGCONFIG += glib-2.0 gio-2.0
 --- a/Source/WebKit.pri
 +++ b/Source/WebKit.pri
-@@ -113,7 +113,7 @@ CONFIG -= warn_on
+@@ -104,7 +104,7 @@ CONFIG -= warn_on
  *-g++*:QMAKE_LFLAGS += -Wl,--version-script,$$PWD/symbols.filter
  
  # Treat warnings as errors on x86/Linux/GCC
