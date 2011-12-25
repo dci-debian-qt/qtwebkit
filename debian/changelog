@@ -1,5 +1,8 @@
 qtwebkit (2.2.0-2) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Improve the symbols file for more archs (based on their build logs):
+    armel ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 s390x sparc
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 25 Dec 2011 21:46:36 +0100
 
