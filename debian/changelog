@@ -2,6 +2,8 @@ qtwebkit (2.2.1-0multiarch1) UNRELEASED; urgency=low
 
   * New upstream release.
   * Drop adjust_symbols_visibility_for_webcore.diff - stolen upstream.
+  * Update debian/control:
+    - bump Qt build dependency to 4:4.8.0~. This version introduce multiarch.
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 28 Dec 2011 10:10:59 +0200
 
