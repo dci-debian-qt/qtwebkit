@@ -1,4 +1,4 @@
-qtwebkit (2.2.1-0multiarch1) UNRELEASED; urgency=low
+qtwebkit (2.2.1-1) experimental; urgency=low
 
   * New upstream release.
   * Drop adjust_symbols_visibility_for_webcore.diff - stolen upstream.
