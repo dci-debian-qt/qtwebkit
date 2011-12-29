@@ -1,6 +1,6 @@
-qtwebkit (2.2.0-3) UNRELEASED; urgency=low
+qtwebkit (2.2.1-0multiarch1) UNRELEASED; urgency=low
 
-  * Update the symbols file for ia64 and mipsel architectures.
+  * New upstream release.
 
  -- Fathi Boudra <fabo@debian.org>  Wed, 28 Dec 2011 10:10:59 +0200
 
