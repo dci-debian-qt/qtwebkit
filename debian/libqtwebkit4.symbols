@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 2.2.0 amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 2.2.1 amd64
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
  JSClassCreate@Base 2.1.0~2011week13
@@ -4765,9 +4765,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore9SVGLengthEL{size_t}0EE2atE{size_t}@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore9SVGLengthEL{size_t}0EE6insertIS2_EEv{size_t}RKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore9SVGLengthEL{size_t}0EE6removeE{size_t}@Base 2.2.0
- (subst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE14expandCapacityE{size_t}@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE14expandCapacityIKNS_10PassOwnPtrIS3_EEEEPT_{size_t}SB_@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE15reserveCapacityE{size_t}@Base 2.2.0
+ (optional=templinst|arch=amd64 armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE14expandCapacityIKNS_10PassOwnPtrIS3_EEEEPT_{size_t}SB_@Base 2.2.0
+ (optional=templinst|arch=amd64 armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE15reserveCapacityE{size_t}@Base 2.2.0
+ (optional=templinst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore17CSSParserSelectorEEELm0EE14expandCapacityIKNS_10PassOwnPtrIS3_EEEEPT_mSB_@Base 2.2.1
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN3JSC11ProfileNodeEEEL{size_t}0EE3endEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN3JSC11ProfileNodeEEEL{size_t}0EE4dataEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN3JSC11ProfileNodeEEEL{size_t}0EE5beginEv@Base 2.2.0
@@ -4805,6 +4805,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6StringEL{size_t}0EE6insertIA46_cEEv{size_t}RKT_@Base 2.2.0
  (arch=!armel !mips !mipsel !s390 !s390x|subst)_ZN3WTF6VectorIPN7WebCore5XPath10ExpressionEL{size_t}0EE14expandCapacityE{size_t}PKS4_@Base 2.2.0
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIPN7WebCore5XPath10ExpressionEL{size_t}0EEnwE{size_t}@Base 2.2.0
+ (optional=templinst)_ZN3WTF6VectorIPN7WebCore5XPath9PredicateELm0EE15reserveCapacityEm@Base 2.2.1
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIPN7WebCore5XPath9PredicateEL{size_t}0EEnwE{size_t}@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIfL{size_t}0EE6insertIfEEv{size_t}RKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIfL{size_t}0EE6removeE{size_t}@Base 2.2.0
@@ -5546,7 +5547,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN5QListIP19QWebSettingsPrivateE6appendERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE6detachEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE9node_copyEPNS2_4NodeES4_S4_@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE9removeAllERKS1_@Base 2.2.0
+ (optional=templinst|arch=amd64 armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE9removeAllERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateEC1ERKS2_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateEC1Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateEC2ERKS2_@Base 2.2.0
@@ -5694,7 +5695,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=sparc)_ZN7QStringC2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7QStringaSERK13QLatin1String@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7QStringixEi@Base 2.2.0
- (arch=powerpc sparc)_ZN7QStringpLE5QChar@Base 2.2.0
  (arch=!armel !mips !mipsel !s390 !s390x)_ZN7QVectorI5QRectED1Ev@Base 2.2.0
  (arch=!armel !mips !mipsel !s390 !s390x)_ZN7QVectorI5QRectED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7QVectorI6QPointE4freeEP16QVectorTypedDataIS0_E@Base 2.2.0
@@ -8268,10 +8268,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore15JSXMLSerializerD0Ev@Base 2.2.0
  _ZN7WebCore15JSXMLSerializerD1Ev@Base 2.2.0
  _ZN7WebCore15JSXMLSerializerD2Ev@Base 2.2.0
- (arch=amd64 kfreebsd-amd64 powerpc sparc)_ZN7WebCore15ResourceRequestC1ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
- (arch=amd64 kfreebsd-amd64 powerpc sparc)_ZN7WebCore15ResourceRequestC1Ev@Base 2.2.0
- (arch=amd64 kfreebsd-amd64 powerpc sparc)_ZN7WebCore15ResourceRequestC2ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
- (arch=amd64 kfreebsd-amd64 powerpc sparc)_ZN7WebCore15ResourceRequestC2Ev@Base 2.2.0
+ (arch=kfreebsd-amd64 powerpc sparc)_ZN7WebCore15ResourceRequestC1ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
+ (arch=kfreebsd-amd64 powerpc sparc)_ZN7WebCore15ResourceRequestC1Ev@Base 2.2.0
+ (arch=kfreebsd-amd64 powerpc sparc)_ZN7WebCore15ResourceRequestC2ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
+ (arch=kfreebsd-amd64 powerpc sparc)_ZN7WebCore15ResourceRequestC2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore15SVGListPropertyINS_12SVGPointListEE10canGetItemERS1_jRi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore15SVGListPropertyINS_12SVGPointListEE13canRemoveItemERS1_jRi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore15SVGListPropertyINS_12SVGPointListEE14canReplaceItemERS1_jRi@Base 2.2.0
@@ -28085,6 +28085,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIiiE7isEmptyEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIiiE8findNodeERKiPj@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QListI7QStringE4sizeEv@Base 2.2.0
+ (optional=templinst)_ZNK5QListI7QStringE7indexOfERKS0_i@Base 2.2.1
  _ZNK5QListI7QStringEeqERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QListI7QStringEixEi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QListIN17QInputMethodEvent9AttributeEE2atEi@Base 2.2.0
@@ -28099,6 +28100,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QListIP13QGraphicsViewE2atEi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QListIP13QGraphicsViewE5valueEi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QListIP19QWebSettingsPrivateE5countEv@Base 2.2.0
+ (optional=templinst)_ZNK5QListIP19QWebSettingsPrivateE7indexOfERKS1_i@Base 2.2.1
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QListIP7QActionE2atEi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QListIP7QActionE5countEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QListIP9QWebFrameE10constBeginEv@Base 2.2.0
