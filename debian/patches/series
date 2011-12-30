@@ -12,3 +12,4 @@ no_gc_sections.diff
 #linux_amd64_no_overcommit.diff
 defines_qt_webkit.diff
 glibc_mkspec.diff
+hurd.diff
