@@ -1,12 +1,13 @@
-qtwebkit (2.2.0-3) UNRELEASED; urgency=low
+qtwebkit (2.2.0-3) unstable; urgency=low
 
+  [ Fathi Boudra ]
   * Update the symbols file for ia64 and mipsel architectures.
 
   [ Pino Toscano ]
   * Add patch hurd.diff to temporarly workaround build failure on Hurd.
   * Update the symbols file for hurd-i386, sh4, and sparc64 architectures.
 
- -- Fathi Boudra <fabo@debian.org>  Wed, 28 Dec 2011 10:10:59 +0200
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 28 Dec 2011 10:10:59 +0200
 
 qtwebkit (2.2.0-2) unstable; urgency=low
 
