@@ -1,5 +1,7 @@
 qtwebkit (2.2.0-4) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Add -Wl,--no-relax to the LDFLAGS on alpha. (Closes: #656056)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 16 Jan 2012 10:29:18 +0100
 

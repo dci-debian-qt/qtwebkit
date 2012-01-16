@@ -12,6 +12,9 @@ ifneq (,$(filter $(DEB_HOST_ARCH),s390 s390x armel mips mipsel))
     export CFLAGS := $(filter-out -g,$(CFLAGS)) -gstabs
     export CXXFLAGS := $(filter-out -g,$(CXXFLAGS)) -gstabs
 endif
+ifneq (,$(filter $(DEB_HOST_ARCH),alpha))
+    export LDFLAGS := $(LDFLAGS) -Wl,--no-relax
+endif
 
 %:
 	dh $@ --sourcedirectory=Source --buildsystem=qmake --parallel --list-missing --dbg-package=libqtwebkit4-dbg --with pkgkde_symbolshelper
