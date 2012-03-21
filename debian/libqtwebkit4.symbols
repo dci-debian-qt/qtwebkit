@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 2.2.0 alpha amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390 s390x sh4 sparc sparc64
+# SymbolsHelper-Confirmed: 2.2.0 alpha amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390 s390x sh4 sparc sparc64
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
  JSClassCreate@Base 2.1.0~2011week13
@@ -252,8 +252,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN11QWebHistoryD1Ev@Base 2.1.0~2011week13
  _ZN11QWebHistoryD2Ev@Base 2.1.0~2011week13
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN12QMetaTypeId2I11QTextFormatE14qt_metatype_idEv@Base 2.2.0
- (optional=templinst|arch=alpha ia64 sh4 sparc sparc64)_ZN12QWeakPointerI15QGraphicsObjectED1Ev@Base 2.2.0
- (optional=templinst|arch=alpha ia64 sh4 sparc sparc64)_ZN12QWeakPointerI15QGraphicsObjectED2Ev@Base 2.2.0
+ (optional=templinst|arch=alpha armhf ia64 sh4 sparc sparc64)_ZN12QWeakPointerI15QGraphicsObjectED1Ev@Base 2.2.0
+ (optional=templinst|arch=alpha armhf ia64 sh4 sparc sparc64)_ZN12QWeakPointerI15QGraphicsObjectED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN12QWeakPointerI7QWidgetE11internalSetEPN15QtSharedPointer20ExternalRefCountDataEPS0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN12QWeakPointerI7QWidgetE5clearEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN12QWeakPointerI7QWidgetEC1Ev@Base 2.2.0
@@ -934,10 +934,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN24QWebHapticFeedbackPlayerD2Ev@Base 2.2.0
  _ZN24QWebHitTestResultPrivateC1ERKN7WebCore13HitTestResultE@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC1ERKS_@Base 2.2.0
- (arch=alpha armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC1Ev@Base 2.2.0
+ (arch=alpha armel armhf mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC1Ev@Base 2.2.0
  _ZN24QWebHitTestResultPrivateC2ERKN7WebCore13HitTestResultE@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC2ERKS_@Base 2.2.0
- (arch=alpha armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC2Ev@Base 2.2.0
+ (arch=alpha armel armhf mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC2Ev@Base 2.2.0
  _ZN24QWebHitTestResultPrivateD1Ev@Base 2.2.0
  _ZN24QWebHitTestResultPrivateD2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateaSERKS_@Base 2.2.0
@@ -991,7 +991,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEaSEPS0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEaSERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEptEv@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel powerpc ppc64 s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateE13detach_helperEv@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel powerpc ppc64 s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateE13detach_helperEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateE5cloneEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateE6detachEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateEC1EPS0_@Base 2.2.0
@@ -1724,7 +1724,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC18getStaticValueSlotIN7WebCore6JSAttrENS1_6JSNodeEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC18getStaticValueSlotIN7WebCore6JSBlobENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC18getStaticValueSlotIN7WebCore6JSFileENS1_6JSBlobEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
- (optional=templinst|arch=armel)_ZN3JSC18getStaticValueSlotIN7WebCore6JSNodeENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
+ (optional=templinst|arch=armel armhf)_ZN3JSC18getStaticValueSlotIN7WebCore6JSNodeENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC18getStaticValueSlotIN7WebCore6JSRectENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC18getStaticValueSlotIN7WebCore6JSTextENS1_15JSCharacterDataEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC18getStaticValueSlotIN7WebCore7JSEventENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
@@ -1742,7 +1742,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC18getStaticValueSlotIN7WebCore9JSHistoryENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC18getStaticValueSlotIN7WebCore9JSSVGRectENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC18getStaticValueSlotIN7WebCore9JSUIEventENS1_7JSEventEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC21getStaticFunctionSlotINS_8JSObjectEEEbPNS_9ExecStateEPKNS_9HashTableEPS1_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
+ (optional=templinst|arch=armel armhf mips mipsel s390 s390x)_ZN3JSC21getStaticFunctionSlotINS_8JSObjectEEEbPNS_9ExecStateEPKNS_9HashTableEPS1_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC21getStaticPropertySlotIN7WebCore15JSNodePrototypeENS_8JSObjectEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC21getStaticPropertySlotIN7WebCore16JSEventPrototypeENS_8JSObjectEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC21getStaticPropertySlotIN7WebCore16JSRangePrototypeENS_8JSObjectEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_12PropertySlotE@Base 2.2.0
@@ -2493,7 +2493,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC24getStaticValueDescriptorIN7WebCore6JSAttrENS1_6JSNodeEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_18PropertyDescriptorE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC24getStaticValueDescriptorIN7WebCore6JSBlobENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_18PropertyDescriptorE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC24getStaticValueDescriptorIN7WebCore6JSFileENS1_6JSBlobEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_18PropertyDescriptorE@Base 2.2.0
- (optional=templinst|arch=armel)_ZN3JSC24getStaticValueDescriptorIN7WebCore6JSNodeENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_18PropertyDescriptorE@Base 2.2.0
+ (optional=templinst|arch=armel armhf)_ZN3JSC24getStaticValueDescriptorIN7WebCore6JSNodeENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_18PropertyDescriptorE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC24getStaticValueDescriptorIN7WebCore6JSRectENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_18PropertyDescriptorE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC24getStaticValueDescriptorIN7WebCore6JSTextENS1_15JSCharacterDataEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_18PropertyDescriptorE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC24getStaticValueDescriptorIN7WebCore7JSEventENS1_12JSDOMWrapperEEEbPNS_9ExecStateEPKNS_9HashTableEPT_RKNS_10IdentifierERNS_18PropertyDescriptorE@Base 2.2.0
@@ -2565,7 +2565,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel s390 s390x)_ZN3JSC7JSValueC2Es@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN3JSC7JSValueC2Et@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN3JSC7JSValueC2Ey@Base 2.2.0
- (arch=hurd-i386 i386 kfreebsd-i386 powerpc)_ZN3JSC8JSObject9putDirectERNS_12JSGlobalDataERKNS_10IdentifierENS_7JSValueEj@Base 2.2.0
+ (arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc)_ZN3JSC8JSObject9putDirectERNS_12JSGlobalDataERKNS_10IdentifierENS_7JSValueEj@Base 2.2.0
  (arch=sh4 sparc)_ZN3JSC9ExecState8argumentEi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC9lookupPutIN7WebCore10JSCSSValueEEEbPNS_9ExecStateERKNS_10IdentifierENS_7JSValueEPKNS_9HashTableEPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3JSC9lookupPutIN7WebCore10JSCSSValueENS1_12JSDOMWrapperEEEvPNS_9ExecStateERKNS_10IdentifierENS_7JSValueEPKNS_9HashTableEPT_RNS_15PutPropertySlotE@Base 2.2.0
@@ -4000,11 +4000,11 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF11addIteratorIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_10SVGElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_EEvPKNS_9HashTableIT_T0_T1_T2_T3_T4_EEPNS_22HashTableConstIteratorISS_ST_SU_SV_SW_SX_EE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF11addIteratorIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_EEvPKNS_9HashTableIT_T0_T1_T2_T3_T4_EEPNS_22HashTableConstIteratorISS_ST_SU_SV_SW_SX_EE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF11addIteratorIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_EEvPKNS_9HashTableIT_T0_T1_T2_T3_T4_EEPNS_22HashTableConstIteratorISF_SG_SH_SI_SJ_SK_EE@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF12StringHasher11computeHashItEEjPKT_j@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF12StringHasher11computeHashItEEjPKT_j@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF12VectorBufferIN7WebCore13MimeClassInfoEL{size_t}0EEC1E{size_t}@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF12VectorBufferIN7WebCore13MimeClassInfoEL{size_t}0EEC2E{size_t}@Base 2.2.0
- (arch=!armel !mips !mipsel !ppc64 !s390 !s390x !sparc64|subst)_ZN3WTF12VectorBufferIN7WebCore13MimeClassInfoEL{size_t}0EED1Ev@Base 2.2.0
- (arch=!armel !mips !mipsel !ppc64 !s390 !s390x !sparc64|subst)_ZN3WTF12VectorBufferIN7WebCore13MimeClassInfoEL{size_t}0EED2Ev@Base 2.2.0
+ (arch=!armel !armhf !mips !mipsel !ppc64 !s390 !s390x !sparc64|subst)_ZN3WTF12VectorBufferIN7WebCore13MimeClassInfoEL{size_t}0EED1Ev@Base 2.2.0
+ (arch=!armel !armhf !mips !mipsel !ppc64 !s390 !s390x !sparc64|subst)_ZN3WTF12VectorBufferIN7WebCore13MimeClassInfoEL{size_t}0EED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF12VectorBufferINS_6RefPtrIN3JSC11ProfileNodeEEEL{size_t}0EED1Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF12VectorBufferINS_6RefPtrIN3JSC11ProfileNodeEEEL{size_t}0EED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF12VectorBufferINS_6RefPtrIN7WebCore11HistoryItemEEEL{size_t}0EEC1E{size_t}@Base 2.2.0
@@ -4212,7 +4212,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore11PopupMenuQtEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore11SVGAElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore11SVGGElementEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc)_ZN3WTF14derefIfNotNullIN7WebCore11TextMetricsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc)_ZN3WTF14derefIfNotNullIN7WebCore11TextMetricsEEEvPT_@Base 2.2.0
  (arch=!armel !mips !mipsel !s390 !s390x)_ZN3WTF14derefIfNotNullIN7WebCore11WebKitPointEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore12DOMStringMapEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore12DOMTokenListEEEvPT_@Base 2.2.0
@@ -4269,8 +4269,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore16SVGFETileElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore16SVGFilterElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore16SVGMarkerElementEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore16SVGPathSegArcAbsEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore16SVGPathSegArcRelEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore16SVGPathSegArcAbsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore16SVGPathSegArcRelEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore16SVGSwitchElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore16SVGSymbolElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore17DOMImplementationEEEvPT_@Base 2.2.0
@@ -4320,10 +4320,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore19HTMLTextAreaElementEEEvPT_@Base 2.2.0
  (arch=!armel !mips !mipsel !s390 !s390x)_ZN3WTF14derefIfNotNullIN7WebCore19SQLResultSetRowListEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore19SVGAnimationElementEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore19SVGPathSegClosePathEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore19SVGPathSegLinetoAbsEEEvPT_@Base 2.2.0
- (optional=templinst|arch=alpha hurd-i386 i386 kfreebsd-i386 powerpc ppc64 sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore19SVGPathSegLinetoRelEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore19SVGPathSegMovetoAbsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore19SVGPathSegClosePathEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore19SVGPathSegLinetoAbsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=alpha armhf hurd-i386 i386 kfreebsd-i386 powerpc ppc64 sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore19SVGPathSegLinetoRelEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore19SVGPathSegMovetoAbsEEEvPT_@Base 2.2.0
  (arch=!alpha !armel !ia64 !mips !mipsel !ppc64 !s390 !s390x !sparc64)_ZN3WTF14derefIfNotNullIN7WebCore19SVGPathSegMovetoRelEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore20HTMLDirectoryElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore20HTMLParagraphElementEEEvPT_@Base 2.2.0
@@ -4361,33 +4361,34 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore24SVGLinearGradientElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore24SVGRadialGradientElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore24SVGStaticPropertyTearOffINS1_13SVGSVGElementENS1_10FloatPointEEEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore25SVGPathSegCurvetoCubicAbsEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore25SVGPathSegCurvetoCubicRelEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore25SVGPathSegCurvetoCubicAbsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore25SVGPathSegCurvetoCubicRelEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore25SVGTextPositioningElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore26SVGAnimateTransformElementEEEvPT_@Base 2.2.0
+#MISSING: 2.2.0# (optional=templinst|arch=sh4)_ZN3WTF14derefIfNotNullIN7WebCore26SVGAnimatedPropertyTearOffINS1_9FloatRectEEEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore26SVGFEConvolveMatrixElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore27SVGFEDiffuseLightingElementEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore27SVGFEDisplacementMapElementEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc sparc64)_ZN3WTF14derefIfNotNullIN7WebCore27SVGPathSegLinetoVerticalAbsEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 ia64 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore27SVGPathSegLinetoVerticalRelEEEvPT_@Base 2.2.0
- _ZN3WTF14derefIfNotNullIN7WebCore28JSSQLTransactionSyncCallbackEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc sparc64)_ZN3WTF14derefIfNotNullIN7WebCore27SVGPathSegLinetoVerticalAbsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 ia64 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore27SVGPathSegLinetoVerticalRelEEEvPT_@Base 2.2.0
+ (arch=!armhf)_ZN3WTF14derefIfNotNullIN7WebCore28JSSQLTransactionSyncCallbackEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore28SVGFESpecularLightingElementEEEvPT_@Base 2.2.0
  _ZN3WTF14derefIfNotNullIN7WebCore28SVGStaticListPropertyTearOffINS1_13SVGStringListEEEEEvPT_@Base 2.2.0
  _ZN3WTF14derefIfNotNullIN7WebCore29JSSQLTransactionErrorCallbackEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore29SVGFEComponentTransferElementEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore29SVGPathSegCurvetoQuadraticAbsEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore29SVGPathSegCurvetoQuadraticRelEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore29SVGPathSegLinetoHorizontalAbsEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore29SVGPathSegLinetoHorizontalRelEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore29SVGPathSegCurvetoQuadraticAbsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore29SVGPathSegCurvetoQuadraticRelEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore29SVGPathSegLinetoHorizontalAbsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore29SVGPathSegLinetoHorizontalRelEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore30SVGAnimatedListPropertyTearOffINS1_16SVGTransformListEEEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore31SVGPathSegCurvetoCubicSmoothAbsEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore31SVGPathSegCurvetoCubicSmoothRelEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore31SVGPathSegCurvetoCubicSmoothAbsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore31SVGPathSegCurvetoCubicSmoothRelEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore31SVGTransformListPropertyTearOffEEEvPT_@Base 2.2.0
  (arch=!armel !mips !mipsel !s390 !s390x)_ZN3WTF14derefIfNotNullIN7WebCore32SVGAnimatedStaticPropertyTearOffIbEEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore34SVGStaticPropertyWithParentTearOffINS1_12SVGTransformENS1_9SVGMatrixEEEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore35SVGComponentTransferFunctionElementEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore35SVGPathSegCurvetoQuadraticSmoothAbsEEEvPT_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore35SVGPathSegCurvetoQuadraticSmoothRelEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore35SVGPathSegCurvetoQuadraticSmoothAbsEEEvPT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF14derefIfNotNullIN7WebCore35SVGPathSegCurvetoQuadraticSmoothRelEEEvPT_@Base 2.2.0
  (arch=!armel !mips !mipsel !s390 !s390x)_ZN3WTF14derefIfNotNullIN7WebCore39SVGAnimatedTransformListPropertyTearOffEEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF14derefIfNotNullIN7WebCore8RGBColorEEEvPT_@Base 2.2.0
  _ZN3WTF14derefIfNotNullIN7WebCore9DOMParserEEEvPT_@Base 2.2.0
@@ -4746,7 +4747,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF6RefPtrIN7WebCore9NavigatorEEC2IS2_EERKNS_10PassRefPtrIT_EE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF6RefPtrIN7WebCore9PopupMenuEEC1IS2_EERKNS_10PassRefPtrIT_EE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF6RefPtrIN7WebCore9PopupMenuEEC2IS2_EERKNS_10PassRefPtrIT_EE@Base 2.2.0
- (arch=alpha amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc ppc64 sh4 sparc sparc64|subst)_ZN3WTF6VectorIN7WebCore10FloatPointEL{size_t}0EE14expandCapacityE{size_t}PKS2_@Base 2.2.0
+ (arch=alpha amd64 armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 powerpc ppc64 sh4 sparc sparc64|subst)_ZN3WTF6VectorIN7WebCore10FloatPointEL{size_t}0EE14expandCapacityE{size_t}PKS2_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore10FloatPointEL{size_t}0EE6insertIS2_EEv{size_t}RKT_@Base 2.2.0
  (subst|arch=!ppc64 !sparc64)_ZN3WTF6VectorIN7WebCore10PluginInfoEL{size_t}0EE14expandCapacityE{size_t}@Base 2.2.0
  (subst|arch=!ppc64 !sparc64)_ZN3WTF6VectorIN7WebCore10PluginInfoEL{size_t}0EE14expandCapacityE{size_t}PKS2_@Base 2.2.0
@@ -4756,8 +4757,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore12SVGTransformEL{size_t}0EE6insertIS2_EEv{size_t}RKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore12SVGTransformEL{size_t}0EE6removeE{size_t}@Base 2.2.0
  (arch=!armel !mips !mipsel !ppc64 !s390 !s390x !sparc64|subst)_ZN3WTF6VectorIN7WebCore13MimeClassInfoEL{size_t}0EE14expandCapacityE{size_t}PKS2_@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore13MimeClassInfoEL{size_t}0EEC1ERKS3_@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore13MimeClassInfoEL{size_t}0EEC2ERKS3_@Base 2.2.0
+ (optional=templinst|arch=armel armhf mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore13MimeClassInfoEL{size_t}0EEC1ERKS3_@Base 2.2.0
+ (optional=templinst|arch=armel armhf mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore13MimeClassInfoEL{size_t}0EEC2ERKS3_@Base 2.2.0
+ (optional=templinst|arch=sparc64)_ZN3WTF6VectorIN7WebCore20CompositionUnderlineELm0EE15reserveCapacityEm@Base 2.2.0
  (subst)_ZN3WTF6VectorIN7WebCore20CompositionUnderlineEL{size_t}0EE14expandCapacityE{size_t}@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore20CompositionUnderlineEL{size_t}0EE14expandCapacityE{size_t}PKS2_@Base 2.2.0
  (arch=amd64 ia64 kfreebsd-amd64 sparc|subst)_ZN3WTF6VectorIN7WebCore20CompositionUnderlineEL{size_t}0EE15reserveCapacityE{size_t}@Base 2.2.0
@@ -4784,7 +4786,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN7WebCore18SVGPropertyTearOffINS2_12SVGTransformEEEEEL{size_t}0EE6insertIS6_EEv{size_t}RKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN7WebCore18SVGPropertyTearOffINS2_12SVGTransformEEEEEL{size_t}0EE6removeE{size_t}@Base 2.2.0
  (subst)_ZN3WTF6VectorINS_6RefPtrIN7WebCore18SVGPropertyTearOffINS2_9SVGLengthEEEEEL{size_t}0EE14expandCapacityE{size_t}@Base 2.2.0
- (subst|arch=alpha amd64 armel hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 390 s390x sh4 sparc sparc64)_ZN3WTF6VectorINS_6RefPtrIN7WebCore18SVGPropertyTearOffINS2_9SVGLengthEEEEEL{size_t}0EE14expandCapacityE{size_t}PKS6_@Base 2.2.0
+ (subst)_ZN3WTF6VectorINS_6RefPtrIN7WebCore18SVGPropertyTearOffINS2_9SVGLengthEEEEEL{size_t}0EE14expandCapacityE{size_t}PKS6_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN7WebCore18SVGPropertyTearOffINS2_9SVGLengthEEEEEL{size_t}0EE6insertIS6_EEv{size_t}RKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN7WebCore18SVGPropertyTearOffINS2_9SVGLengthEEEEEL{size_t}0EE6removeE{size_t}@Base 2.2.0
  (subst)_ZN3WTF6VectorINS_6RefPtrIN7WebCore18SVGPropertyTearOffIfEEEEL{size_t}0EE14expandCapacityE{size_t}@Base 2.2.0
@@ -4803,8 +4805,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6StringEL{size_t}0EE6insertIA44_cEEv{size_t}RKT_@Base 2.2.0
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6StringEL{size_t}0EE6insertIA45_cEEv{size_t}RKT_@Base 2.2.0
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6StringEL{size_t}0EE6insertIA46_cEEv{size_t}RKT_@Base 2.2.0
- (arch=alpha amd64 hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc ppc64 sh4 sparc sparc64|subst)_ZN3WTF6VectorIPN7WebCore5XPath10ExpressionEL{size_t}0EE14expandCapacityE{size_t}PKS4_@Base 2.2.0
+ (arch=alpha amd64 armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 powerpc ppc64 sh4 sparc sparc64|subst)_ZN3WTF6VectorIPN7WebCore5XPath10ExpressionEL{size_t}0EE14expandCapacityE{size_t}PKS4_@Base 2.2.0
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIPN7WebCore5XPath10ExpressionEL{size_t}0EEnwE{size_t}@Base 2.2.0
+ (optional=templinst|arch=armhf)_ZN3WTF6VectorIPN7WebCore5XPath9PredicateELj0EED1Ev@Base 2.2.0
+ (optional=templinst|arch=armhf)_ZN3WTF6VectorIPN7WebCore5XPath9PredicateELj0EED2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIPN7WebCore5XPath9PredicateEL{size_t}0EEnwE{size_t}@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIfL{size_t}0EE6insertIfEEv{size_t}RKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIfL{size_t}0EE6removeE{size_t}@Base 2.2.0
@@ -5068,7 +5072,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableINS_6StringESt4pairIS1_MN7WebCore26InspectorBackendDispatcherEFvlPNS3_15InspectorObjectEEENS_18PairFirstExtractorIS9_EENS_10StringHashENS_14PairHashTraitsINS_10HashTraitsIS1_EENSE_IS8_EEEESF_EC2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF9HashTableINS_6StringESt4pairIS1_NS_6VectorIS1_L{size_t}0EEEENS_18PairFirstExtractorIS5_EENS_10StringHashENS_14PairHashTraitsINS_10HashTraitsIS1_EENSA_IS4_EEEESB_E6lookupERKS1_@Base 2.2.0
  (optional=templinst|arch=hurd-i386 i386 ia64 sparc sparc64)_ZN3WTF9HashTableIPKN3JSC9ClassInfoESt4pairIS4_NS1_12WriteBarrierINS1_8JSObjectEEEENS_18PairFirstExtractorIS9_EENS_7PtrHashIS4_EENS_14PairHashTraitsINS_10HashTraitsIS4_EENSF_IS8_EEEESG_E3addIS4_S8_NS_17HashMapTranslatorIS9_SI_SD_EEEES5_INS_17HashTableIteratorIS4_S9_SB_SD_SI_SG_EEbERKT_RKT0_@Base 2.2.0
- (optional=templinst|arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF9HashTableIPKN3JSC9ClassInfoESt4pairIS4_NS1_12WriteBarrierINS1_8JSObjectEEEENS_18PairFirstExtractorIS9_EENS_7PtrHashIS4_EENS_14PairHashTraitsINS_10HashTraitsIS4_EENSF_IS8_EEEESG_E6lookupIS4_NS_22IdentityHashTranslatorIS4_S9_SD_EEEEPS9_RKT_@Base 2.2.0
+ (optional=templinst|arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN3WTF9HashTableIPKN3JSC9ClassInfoESt4pairIS4_NS1_12WriteBarrierINS1_8JSObjectEEEENS_18PairFirstExtractorIS9_EENS_7PtrHashIS4_EENS_14PairHashTraitsINS_10HashTraitsIS4_EENSF_IS8_EEEESG_E6lookupIS4_NS_22IdentityHashTranslatorIS4_S9_SD_EEEEPS9_RKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E13allocateTableEi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E13isEmptyBucketERKSF_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E15deallocateTableEPSF_i@Base 2.2.0
@@ -5084,7 +5088,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E3addIS2_SE_NS_17HashMapTranslatorISF_SO_SJ_EEEES3_INS_17HashTableIteratorIS2_SF_SH_SJ_SO_SM_EEbERKT_RKT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E3endEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E4findERKS2_@Base 2.2.0
- (arch=!alpha !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E4findIS2_NS_22IdentityHashTranslatorIS2_SF_SJ_EEEENS_17HashTableIteratorIS2_SF_SH_SJ_SO_SM_EERKT_@Base 2.2.0
+ (arch=!alpha !armhf !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E4findIS2_NS_22IdentityHashTranslatorIS2_SF_SJ_EEEENS_17HashTableIteratorIS2_SF_SH_SJ_SO_SM_EERKT_@Base 2.2.0
  _ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E6expandEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E6lookupERKS2_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore10SVGElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEbEENS_18PairFirstExtractorISF_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSL_ISE_EEEESM_E6lookupIS2_NS_22IdentityHashTranslatorIS2_SF_SJ_EEEEPSF_RKT_@Base 2.2.0
@@ -5109,7 +5113,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore11HTMLElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEPNS5_15HTMLFormElementEbEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E3addIS2_SG_NS_17HashMapTranslatorISH_SQ_SL_EEEES3_INS_17HashTableIteratorIS2_SH_SJ_SL_SQ_SO_EEbERKT_RKT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore11HTMLElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEPNS5_15HTMLFormElementEbEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E3endEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore11HTMLElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEPNS5_15HTMLFormElementEbEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E4findERKS2_@Base 2.2.0
- (arch=!alpha !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore11HTMLElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEPNS5_15HTMLFormElementEbEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E4findIS2_NS_22IdentityHashTranslatorIS2_SH_SL_EEEENS_17HashTableIteratorIS2_SH_SJ_SL_SQ_SO_EERKT_@Base 2.2.0
+ (arch=!alpha !armhf !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore11HTMLElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEPNS5_15HTMLFormElementEbEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E4findIS2_NS_22IdentityHashTranslatorIS2_SH_SL_EEEENS_17HashTableIteratorIS2_SH_SJ_SL_SQ_SO_EERKT_@Base 2.2.0
  _ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore11HTMLElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEPNS5_15HTMLFormElementEbEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E6expandEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore11HTMLElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEPNS5_15HTMLFormElementEbEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E6lookupERKS2_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFNS_10PassRefPtrIN7WebCore11HTMLElementEEERKNS5_13QualifiedNameEPNS5_8DocumentEPNS5_15HTMLFormElementEbEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E6lookupIS2_NS_22IdentityHashTranslatorIS2_SH_SL_EEEEPSH_RKT_@Base 2.2.0
@@ -5134,7 +5138,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_10SVGElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E3addIS2_SG_NS_17HashMapTranslatorISH_SQ_SL_EEEES3_INS_17HashTableIteratorIS2_SH_SJ_SL_SQ_SO_EEbERKT_RKT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_10SVGElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E3endEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_10SVGElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E4findERKS2_@Base 2.2.0
- (arch=!alpha !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_10SVGElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E4findIS2_NS_22IdentityHashTranslatorIS2_SH_SL_EEEENS_17HashTableIteratorIS2_SH_SJ_SL_SQ_SO_EERKT_@Base 2.2.0
+ (arch=!alpha !armhf !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_10SVGElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E4findIS2_NS_22IdentityHashTranslatorIS2_SH_SL_EEEENS_17HashTableIteratorIS2_SH_SJ_SL_SQ_SO_EERKT_@Base 2.2.0
  _ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_10SVGElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E6expandEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_10SVGElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E6lookupERKS2_@Base 2.2.0
  (arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_10SVGElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E6lookupIS2_NS_22IdentityHashTranslatorIS2_SH_SL_EEEEPSH_RKT_@Base 2.2.0
@@ -5159,7 +5163,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E3addIS2_SG_NS_17HashMapTranslatorISH_SQ_SL_EEEES3_INS_17HashTableIteratorIS2_SH_SJ_SL_SQ_SO_EEbERKT_RKT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E3endEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E4findERKS2_@Base 2.2.0
- (arch=!alpha !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E4findIS2_NS_22IdentityHashTranslatorIS2_SH_SL_EEEENS_17HashTableIteratorIS2_SH_SJ_SL_SQ_SO_EERKT_@Base 2.2.0
+ (arch=!alpha !armhf !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E4findIS2_NS_22IdentityHashTranslatorIS2_SH_SL_EEEENS_17HashTableIteratorIS2_SH_SJ_SL_SQ_SO_EERKT_@Base 2.2.0
  _ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E6expandEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E6lookupERKS2_@Base 2.2.0
  (arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !sparc64)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E6lookupIS2_NS_22IdentityHashTranslatorIS2_SH_SL_EEEEPSH_RKT_@Base 2.2.0
@@ -5169,7 +5173,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_E8reinsertERSH_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_EC1Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIPNS_16AtomicStringImplESt4pairIS2_PFPN7WebCore12JSDOMWrapperEPN3JSC9ExecStateEPNS4_17JSDOMGlobalObjectENS_10PassRefPtrINS4_11HTMLElementEEEEENS_18PairFirstExtractorISH_EENS_7PtrHashIS2_EENS_14PairHashTraitsINS_10HashTraitsIS2_EENSN_ISG_EEEESO_EC2Ev@Base 2.2.0
- (optional=templinst|arch=alpha)_ZN3WTF9HashTableIPvSt4pairIS1_N3JSC4WeakIN7WebCore12JSDOMWrapperEEEENS_18PairFirstExtractorIS8_EENS_7PtrHashIS1_EENS_14PairHashTraitsINS_10HashTraitsIS1_EENSE_IS7_EEEESF_E3addIS1_S7_NS_17HashMapTranslatorIS8_SH_SC_EEEES2_INS_17HashTableIteratorIS1_S8_SA_SC_SH_SF_EEbERKT_RKT0_@Base 2.2.0
+ (optional=templinst|arch=alpha armhf)_ZN3WTF9HashTableIPvSt4pairIS1_N3JSC4WeakIN7WebCore12JSDOMWrapperEEEENS_18PairFirstExtractorIS8_EENS_7PtrHashIS1_EENS_14PairHashTraitsINS_10HashTraitsIS1_EENSE_IS7_EEEESF_E3addIS1_S7_NS_17HashMapTranslatorIS8_SH_SC_EEEES2_INS_17HashTableIteratorIS1_S8_SA_SC_SH_SF_EEbERKT_RKT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E13allocateTableEi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E13isEmptyBucketERKS4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E15deallocateTableEPS4_i@Base 2.2.0
@@ -5185,11 +5189,11 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E3addIiS3_NS_17HashMapTranslatorIS4_SD_S8_EEEES1_INS_17HashTableIteratorIiS4_S6_S8_SD_SB_EEbERKT_RKT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E3endEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E4findERKi@Base 2.2.0
- (optional=templinst|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !sh4 !sparc !sparc64)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E4findIiNS_22IdentityHashTranslatorIiS4_S8_EEEENS_17HashTableIteratorIiS4_S6_S8_SD_SB_EERKT_@Base 2.2.0
+ (optional=templinst|arch=!alpha !amd64 !armhf !ia64 !kfreebsd-amd64 !ppc64 !sh4 !sparc !sparc64)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E4findIiNS_22IdentityHashTranslatorIiS4_S8_EEEENS_17HashTableIteratorIiS4_S6_S8_SD_SB_EERKT_@Base 2.2.0
  _ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E6expandEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E6lookupERKi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E6lookupIiNS_22IdentityHashTranslatorIiS4_S8_EEEEPS4_RKT_@Base 2.2.0
- (arch=!hurd-i386 !i386 !kfreebsd-i386 !powerpc !sh4 !sparc)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E6rehashEi@Base 2.2.0
+ (arch=!armhf !hurd-i386 !i386 !kfreebsd-i386 !powerpc !sh4 !sparc)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E6rehashEi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E8checkKeyIiNS_17HashMapTranslatorIS4_SD_S8_EEEEvRKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E8checkKeyIiNS_22IdentityHashTranslatorIiS4_S8_EEEEvRKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN3WTF9HashTableIiSt4pairIiPKcENS_18PairFirstExtractorIS4_EENS_7IntHashIjEENS_14PairHashTraitsINS_10HashTraitsIiEENSA_IS3_EEEESB_E8reinsertERS4_@Base 2.2.0
@@ -5500,7 +5504,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIN17QInputMethodEvent9AttributeEE4Node1tEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIN17QWebPluginFactory6PluginEE13node_destructEPNS2_4NodeES4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIN17QWebPluginFactory6PluginEE4Node1tEv@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIN17QWebPluginFactory6PluginEE4freeEPN9QListData4DataE@Base 2.2.0
+ (optional=templinst|arch=armel armhf mips mipsel s390 s390x)_ZN5QListIN17QWebPluginFactory6PluginEE4freeEPN9QListData4DataE@Base 2.2.0
  _ZN5QListIN17QWebPluginFactory6PluginEED1Ev@Base 2.2.0
  _ZN5QListIN17QWebPluginFactory6PluginEED2Ev@Base 2.2.0
  _ZN5QListIN17QWebPluginFactory8MimeTypeEE13detach_helperEi@Base 2.2.0
@@ -5535,10 +5539,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIN3WTF6RefPtrIN7WebCore12VoidCallbackEEEED1Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIN3WTF6RefPtrIN7WebCore12VoidCallbackEEEED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIN3WTF6RefPtrIN7WebCore12VoidCallbackEEEEaSERKS5_@Base 2.2.0
- (optional=templinst|arch=alpha sh4 sparc sparc64)_ZN5QListIN7WebCore15ContextMenuItemEE9node_copyEPNS2_4NodeES4_S4_@Base 2.2.0
+ (optional=templinst|arch=alpha armhf sh4 sparc sparc64)_ZN5QListIN7WebCore15ContextMenuItemEE9node_copyEPNS2_4NodeES4_S4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE12detachSharedEv@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE13detach_helperEi@Base 2.2.0
- (optional=templinst|arch=!alpha)_ZN5QListIP19QWebSettingsPrivateE13detach_helperEv@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE13detach_helperEi@Base 2.2.0
+ (arch=!alpha !armhf)_ZN5QListIP19QWebSettingsPrivateE13detach_helperEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE13node_destructEPNS2_4NodeE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE13node_destructEPNS2_4NodeES4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE14node_constructEPNS2_4NodeERKS1_@Base 2.2.0
@@ -5561,9 +5565,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP7QActionE4freeEPN9QListData4DataE@Base 2.2.0
  _ZN5QListIP7QActionED1Ev@Base 2.2.0
  _ZN5QListIP7QActionED2Ev@Base 2.2.0
- (arch=!alpha !armel !mips !mipsel !s390 !s390x)_ZN5QListIP7QObjectE13detach_helperEi@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x)_ZN5QListIP9QWebFrameE13detach_helperEi@Base 2.2.0
- (optional=templinst|arch=!alpha)_ZN5QListIP9QWebFrameE13detach_helperEv@Base 2.2.0
+ (arch=!alpha !armel !armhf !mips !mipsel !s390 !s390x)_ZN5QListIP7QObjectE13detach_helperEi@Base 2.2.0
+ (optional=templinst|arch=alpha rmel armhf mips mipsel s390 s390x)_ZN5QListIP9QWebFrameE13detach_helperEi@Base 2.2.0
+ (arch=!alpha !armhf)_ZN5QListIP9QWebFrameE13detach_helperEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP9QWebFrameE13node_destructEPNS2_4NodeE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP9QWebFrameE13node_destructEPNS2_4NodeES4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP9QWebFrameE14const_iteratorC1EPNS2_4NodeE@Base 2.2.0
@@ -5750,15 +5754,15 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore10JSDatabaseD2Ev@Base 2.2.0
  _ZN7WebCore10JSDocument14getConstructorEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
  _ZN7WebCore10JSDocument15createPrototypeEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
- (arch=armel)_ZN7WebCore10JSDocument18getOwnPropertySlotEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_12PropertySlotE@Base 2.2.0
- (arch=armel)_ZN7WebCore10JSDocument24getOwnPropertyDescriptorEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_18PropertyDescriptorE@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore10JSDocument18getOwnPropertySlotEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_12PropertySlotE@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore10JSDocument24getOwnPropertyDescriptorEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_18PropertyDescriptorE@Base 2.2.0
  _ZN7WebCore10JSDocument3putEPN3JSC9ExecStateERKNS1_10IdentifierENS1_7JSValueERNS1_15PutPropertySlotE@Base 2.2.0
  _ZN7WebCore10JSDocument6s_infoE@Base 2.2.0
  _ZN7WebCore10JSDocumentC1EPN3JSC9StructureEPNS_17JSDOMGlobalObjectEN3WTF10PassRefPtrINS_8DocumentEEE@Base 2.2.0
  _ZN7WebCore10JSDocumentC2EPN3JSC9StructureEPNS_17JSDOMGlobalObjectEN3WTF10PassRefPtrINS_8DocumentEEE@Base 2.2.0
- (arch=armel)_ZN7WebCore10JSDocumentD0Ev@Base 2.2.0
- (arch=armel)_ZN7WebCore10JSDocumentD1Ev@Base 2.2.0
- (arch=armel)_ZN7WebCore10JSDocumentD2Ev@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore10JSDocumentD0Ev@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore10JSDocumentD1Ev@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore10JSDocumentD2Ev@Base 2.2.0
  _ZN7WebCore10JSFileList11indexGetterEPN3JSC9ExecStateENS1_7JSValueEj@Base 2.2.0
  _ZN7WebCore10JSFileList14getConstructorEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
  _ZN7WebCore10JSFileList15createPrototypeEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
@@ -5894,7 +5898,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore10XMLNSNames17xmlnsNamespaceURIE@Base 2.2.0
  _ZN7WebCore10XMLNSNames4initEv@Base 2.2.0
  _ZN7WebCore10XMLNSNames9xmlnsAttrE@Base 2.2.0
- (arch=!armel !mips !mipsel !s390 !s390x)_ZN7WebCore10eventNamesEv@Base 2.2.0
+ (arch=!armel !armhf !mips !mipsel !s390 !s390x)_ZN7WebCore10eventNamesEv@Base 2.2.0
  _ZN7WebCore10jsAttrIsIdEPN3JSC9ExecStateENS0_7JSValueERKNS0_10IdentifierE@Base 2.2.0
  _ZN7WebCore10jsAttrNameEPN3JSC9ExecStateENS0_7JSValueERKNS0_10IdentifierE@Base 2.2.0
  _ZN7WebCore10jsBlobSizeEPN3JSC9ExecStateENS0_7JSValueERKNS0_10IdentifierE@Base 2.2.0
@@ -6428,44 +6432,46 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore12Notification8contentsEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore12Notification8iconDataEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore12Notification9ondisplayEv@Base 2.2.0
+ (arch=armhf)_ZN7WebCore12SQLResultSetD1Ev@Base 2.2.0
+ (arch=armhf)_ZN7WebCore12SQLResultSetD2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore12SVGTransform9svgMatrixEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore12SVGUnitTypesD1Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore12SVGUnitTypesD2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperIN3JSC11ProfileNodeEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10ClientRectEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10FileReaderEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10FileReaderEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10MediaErrorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10MemoryInfoEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10NodeFilterEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_10SVGElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10StyleMediaEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10StyleMediaEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10TimeRangesEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_10TreeWalkerEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11ArrayBufferEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11CSSRuleListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11ArrayBufferEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11CSSRuleListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11CoordinatesEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11DOMFormDataEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11DOMMimeTypeEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11EventSourceEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11EventSourceEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_11HTMLElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11MessagePortEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11MessagePortEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_11SVGAElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_11SVGGElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11TextMetricsEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11WebKitPointEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_11XPathResultEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12DOMSelectionEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12DOMSelectionEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_12DOMStringMapEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_12DOMTokenListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12DatabaseSyncEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12NamedNodeMapEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12NamedNodeMapEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12NodeIteratorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12NotificationEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12NotificationEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12SQLExceptionEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12SQLResultSetEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12SVGExceptionEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12SVGUnitTypesEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12SharedWorkerEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12SharedWorkerEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_12VoidCallbackEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_13CanvasPatternEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_13DOMStringListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
@@ -6481,7 +6487,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_13XMLSerializerEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14CanvasGradientEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14ClientRectListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14DOMPluginArrayEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14DOMPluginArrayEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14EventExceptionEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14FileReaderSyncEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_14HTMLDivElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
@@ -6503,9 +6509,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_14SVGTRefElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_14SVGTextElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_14SVGViewElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14StyleSheetListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14WorkerLocationEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN7WebCore12cacheWrapperINS_14XMLHttpRequestEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14StyleSheetListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14WorkerLocationEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZN7WebCore12cacheWrapperINS_14XMLHttpRequestEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14XPathEvaluatorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_14XPathExceptionEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_15HTMLAreaElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
@@ -6526,11 +6532,11 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_15SVGVKernElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_15WebKitAnimationEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=sh4 sparc)_ZN7WebCore12cacheWrapperINS_15WebKitCSSMatrixEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_15WorkerNavigatorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_15WorkerNavigatorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_15XPathExpressionEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_15XPathNSResolverEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_16DOMCoreExceptionEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_16DOMMimeTypeArrayEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_16DOMMimeTypeArrayEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_16HTMLAudioElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_16HTMLDListElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_16HTMLEmbedElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
@@ -6555,7 +6561,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_16SVGScriptElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_16SVGSwitchElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_16SVGSymbolElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_17DOMImplementationEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_17DOMImplementationEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=sh4 sparc)_ZN7WebCore12cacheWrapperINS_17HTMLAllCollectionEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_17HTMLAnchorElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_17HTMLAppletElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
@@ -6588,7 +6594,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_18HTMLIsIndexElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_18HTMLMarqueeElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_18InjectedScriptHostEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_18NotificationCenterEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_18NotificationCenterEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_18SQLTransactionSyncEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_18SVGAltGlyphElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_18SVGClipPathElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
@@ -6607,8 +6613,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_18SVGPropertyTearOffIfEEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_18SVGRenderingIntentEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_18SVGTextPathElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_19CSSStyleDeclarationEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_19DOMApplicationCacheEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_19CSSStyleDeclarationEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_19DOMApplicationCacheEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_19HTMLBaseFontElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_19HTMLDataListElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_19HTMLFieldSetElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
@@ -6625,7 +6631,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_20HTMLDirectoryElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_20HTMLParagraphElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_20HTMLTableCellElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_20XMLHttpRequestUploadEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_20XMLHttpRequestUploadEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_21HTMLBlockquoteElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_21InspectorFrontendHostEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore12cacheWrapperINS_21SVGFECompositeElementEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
@@ -6675,22 +6681,22 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_32SVGAnimatedStaticPropertyTearOffIiEEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_32SVGAnimatedStaticPropertyTearOffIlEEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_39SVGAnimatedTransformListPropertyTearOffEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_4BlobEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_4BlobEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_4FileEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_4RectEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_5RangeEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=sh4 sparc)_ZN7WebCore12cacheWrapperINS_5TouchEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_6CryptoEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_6DOMURLEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_6ScreenEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_6WorkerEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_7BarInfoEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_7ConsoleEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_6ScreenEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_6WorkerEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_7BarInfoEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_7ConsoleEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_7CounterEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_7StorageEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_7StorageEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_8DatabaseEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_8FileListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_8NodeListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_8NodeListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_8RGBColorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_8SQLErrorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_9ClipboardEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
@@ -6698,10 +6704,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_9DOMPluginEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_9FileErrorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_9InternalsEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_9MediaListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_9NavigatorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_9MediaListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_9NavigatorEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x sh4 sparc)_ZN7WebCore12cacheWrapperINS_9TouchListEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
- (optional=templinst|arch=alpha sh4 sparc)_ZN7WebCore12cacheWrapperINS_9WebSocketEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
+ (optional=templinst|arch=alpha armhf sh4 sparc)_ZN7WebCore12cacheWrapperINS_9WebSocketEEEvPNS_15DOMWrapperWorldEPT_PNS_12JSDOMWrapperE@Base 2.2.0
  _ZN7WebCore12findPropertyEPKcj@Base 2.2.0
  _ZN7WebCore12getValueNameEt@Base 2.2.0
  _ZN7WebCore12jsEventCLICKEPN3JSC9ExecStateENS0_7JSValueERKNS0_10IdentifierE@Base 2.2.0
@@ -7082,7 +7088,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_15JSSVGStringListENS_28SVGStaticListPropertyTearOffINS_13SVGStringListEEEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_15JSSVGUseElementENS_13SVGUseElementEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_15JSScriptProfileENS_13ScriptProfileEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
- (arch=!alpha !ia64 !sparc64)_ZN7WebCore13createWrapperINS_15JSValidityStateENS_13ValidityStateEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
+ (arch=!alpha !armhf !ia64 !sparc64)_ZN7WebCore13createWrapperINS_15JSValidityStateENS_13ValidityStateEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_15JSXMLSerializerENS_13XMLSerializerEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_16JSCanvasGradientENS_14CanvasGradientEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_16JSClientRectListENS_14ClientRectListEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
@@ -7225,7 +7231,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_21JSJavaScriptCallFrameENS_19JavaScriptCallFrameEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_21JSSQLResultSetRowListENS_19SQLResultSetRowListEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_21JSWebKitAnimationListENS_19WebKitAnimationListEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
- (arch=!alpha !ia64 !sparc64)_ZN7WebCore13createWrapperINS_22JSDOMSettableTokenListENS_20DOMSettableTokenListEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
+ (arch=!alpha !armhf !ia64 !sparc64)_ZN7WebCore13createWrapperINS_22JSDOMSettableTokenListENS_20DOMSettableTokenListEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_22JSHTMLDirectoryElementENS_20HTMLDirectoryElementEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_22JSHTMLParagraphElementENS_20HTMLParagraphElementEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore13createWrapperINS_22JSHTMLTableCellElementENS_20HTMLTableCellElementEEEPNS_12JSDOMWrapperEPN3JSC9ExecStateEPNS_17JSDOMGlobalObjectEPT0_@Base 2.2.0
@@ -7919,8 +7925,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore15CookiesStrategyD0Ev@Base 2.2.0
  _ZN7WebCore15CookiesStrategyD1Ev@Base 2.2.0
  _ZN7WebCore15CookiesStrategyD2Ev@Base 2.2.0
- (arch=!armel !mips !mipsel !s390 !s390x)_ZN7WebCore15DatabaseDetailsD1Ev@Base 2.2.0
- (arch=!armel !mips !mipsel !s390 !s390x)_ZN7WebCore15DatabaseDetailsD2Ev@Base 2.2.0
+ (arch=!armel !armhf !mips !mipsel !s390 !s390x)_ZN7WebCore15DatabaseDetailsD1Ev@Base 2.2.0
+ (arch=!armel !armhf !mips !mipsel !s390 !s390x)_ZN7WebCore15DatabaseDetailsD2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore15HTMLBodyElement10onpopstateEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore15HTMLBodyElement11setOnonlineEN3WTF10PassRefPtrINS_13EventListenerEEE@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore15HTMLBodyElement11setOnresizeEN3WTF10PassRefPtrINS_13EventListenerEEE@Base 2.2.0
@@ -8270,10 +8276,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore15JSXMLSerializerD0Ev@Base 2.2.0
  _ZN7WebCore15JSXMLSerializerD1Ev@Base 2.2.0
  _ZN7WebCore15JSXMLSerializerD2Ev@Base 2.2.0
- (arch=alpha amd64 kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC1ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
- (arch=alpha amd64 kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC1Ev@Base 2.2.0
- (arch=alpha amd64 kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC2ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
- (arch=alpha amd64 kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC2Ev@Base 2.2.0
+ (arch=alpha amd64 armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC1ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
+ (arch=alpha amd64 armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC1Ev@Base 2.2.0
+ (arch=alpha amd64 armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC2ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
+ (arch=alpha amd64 armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore15SVGListPropertyINS_12SVGPointListEE10canGetItemERS1_jRi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore15SVGListPropertyINS_12SVGPointListEE13canRemoveItemERS1_jRi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore15SVGListPropertyINS_12SVGPointListEE14canReplaceItemERS1_jRi@Base 2.2.0
@@ -11472,7 +11478,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore18SVGPropertyTearOffINS_9SVGLengthEED2Ev@Base 2.2.0
  _ZN7WebCore18SVGPropertyTearOffINS_9SVGMatrixEE12commitChangeEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore18SVGPropertyTearOffINS_9SVGMatrixEE17propertyReferenceEv@Base 2.2.0
- (optional=templinst|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !powerpc !ppc64 !sparc !sparc64)_ZN7WebCore18SVGPropertyTearOffINS_9SVGMatrixEE6createERKS1_@Base 2.2.0
+ (optional=templinst|arch=!alpha !amd64 !armhf !ia64 !kfreebsd-amd64 !powerpc !ppc64 !sparc !sparc64)_ZN7WebCore18SVGPropertyTearOffINS_9SVGMatrixEE6createERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore18SVGPropertyTearOffINS_9SVGMatrixEEC1EPNS_19SVGAnimatedPropertyENS_15SVGPropertyRoleERS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore18SVGPropertyTearOffINS_9SVGMatrixEEC1ERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore18SVGPropertyTearOffINS_9SVGMatrixEEC2EPNS_19SVGAnimatedPropertyENS_15SVGPropertyRoleERS1_@Base 2.2.0
@@ -13976,6 +13982,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore21toSQLResultSetRowListEN3JSC7JSValueE@Base 2.2.0
  _ZN7WebCore21toSharedWorkerContextEN3JSC7JSValueE@Base 2.2.0
  _ZN7WebCore21toWebKitAnimationListEN3JSC7JSValueE@Base 2.2.0
+ (arch=armhf)_ZN7WebCore21ustringToAtomicStringERKN3JSC7UStringE@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore22DedicatedWorkerContext12setOnmessageEN3WTF10PassRefPtrINS_13EventListenerEEE@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore22DedicatedWorkerContext9onmessageEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore22FrameNetworkingContextC1EPNS_5FrameE@Base 2.2.0
@@ -25709,15 +25716,15 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore6JSFileD2Ev@Base 2.2.0
  _ZN7WebCore6JSNode14getConstructorEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
  _ZN7WebCore6JSNode15createPrototypeEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
- (arch=armel)_ZN7WebCore6JSNode18getOwnPropertySlotEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_12PropertySlotE@Base 2.2.0
- (arch=armel)_ZN7WebCore6JSNode24getOwnPropertyDescriptorEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_18PropertyDescriptorE@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore6JSNode18getOwnPropertySlotEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_12PropertySlotE@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore6JSNode24getOwnPropertyDescriptorEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_18PropertyDescriptorE@Base 2.2.0
  _ZN7WebCore6JSNode3putEPN3JSC9ExecStateERKNS1_10IdentifierENS1_7JSValueERNS1_15PutPropertySlotE@Base 2.2.0
  _ZN7WebCore6JSNode6s_infoE@Base 2.2.0
  _ZN7WebCore6JSNodeC1EPN3JSC9StructureEPNS_17JSDOMGlobalObjectEN3WTF10PassRefPtrINS_4NodeEEE@Base 2.2.0
  _ZN7WebCore6JSNodeC2EPN3JSC9StructureEPNS_17JSDOMGlobalObjectEN3WTF10PassRefPtrINS_4NodeEEE@Base 2.2.0
- (arch=armel)_ZN7WebCore6JSNodeD0Ev@Base 2.2.0
- (arch=armel)_ZN7WebCore6JSNodeD1Ev@Base 2.2.0
- (arch=armel)_ZN7WebCore6JSNodeD2Ev@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore6JSNodeD0Ev@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore6JSNodeD1Ev@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore6JSNodeD2Ev@Base 2.2.0
  _ZN7WebCore6JSRect14getConstructorEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
  _ZN7WebCore6JSRect15createPrototypeEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN7WebCore6JSRect15createStructureERN3JSC12JSGlobalDataENS1_7JSValueE@Base 2.2.0
@@ -27008,15 +27015,15 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore9JSCounterD2Ev@Base 2.2.0
  _ZN7WebCore9JSElement14getConstructorEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
  _ZN7WebCore9JSElement15createPrototypeEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
- (arch=armel)_ZN7WebCore9JSElement18getOwnPropertySlotEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_12PropertySlotE@Base 2.2.0
- (arch=armel)_ZN7WebCore9JSElement24getOwnPropertyDescriptorEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_18PropertyDescriptorE@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore9JSElement18getOwnPropertySlotEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_12PropertySlotE@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore9JSElement24getOwnPropertyDescriptorEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_18PropertyDescriptorE@Base 2.2.0
  _ZN7WebCore9JSElement3putEPN3JSC9ExecStateERKNS1_10IdentifierENS1_7JSValueERNS1_15PutPropertySlotE@Base 2.2.0
  _ZN7WebCore9JSElement6s_infoE@Base 2.2.0
  _ZN7WebCore9JSElementC1EPN3JSC9StructureEPNS_17JSDOMGlobalObjectEN3WTF10PassRefPtrINS_7ElementEEE@Base 2.2.0
  _ZN7WebCore9JSElementC2EPN3JSC9StructureEPNS_17JSDOMGlobalObjectEN3WTF10PassRefPtrINS_7ElementEEE@Base 2.2.0
- (arch=armel)_ZN7WebCore9JSElementD0Ev@Base 2.2.0
- (arch=armel)_ZN7WebCore9JSElementD1Ev@Base 2.2.0
- (arch=armel)_ZN7WebCore9JSElementD2Ev@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore9JSElementD0Ev@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore9JSElementD1Ev@Base 2.2.0
+ (arch=armel armhf)_ZN7WebCore9JSElementD2Ev@Base 2.2.0
  _ZN7WebCore9JSHistory15createPrototypeEPN3JSC9ExecStateEPNS1_14JSGlobalObjectE@Base 2.2.0
  _ZN7WebCore9JSHistory18getOwnPropertySlotEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_12PropertySlotE@Base 2.2.0
  _ZN7WebCore9JSHistory24getOwnPropertyDescriptorEPN3JSC9ExecStateERKNS1_10IdentifierERNS1_18PropertyDescriptorE@Base 2.2.0
@@ -27126,7 +27133,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel s390 s390x)_ZN8QToolTip8hideTextEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN8QVariant8data_ptrEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN8QVariant8setValueI7QStringEEvRKT_@Base 2.2.0
- (arch=!hurd-i386 !i386 !kfreebsd-i386 !powerpc)_ZN8QVariant9fromValueI11QWebElementEES_RKT_@Base 2.2.0
+ (arch=!armhf !hurd-i386 !i386 !kfreebsd-i386 !powerpc)_ZN8QVariant9fromValueI11QWebElementEES_RKT_@Base 2.2.0
  (optional=templinst|arch=alpha amd64 armel ia64 kfreebsd-amd64 mips mipsel ppc64 s390 s390x sh4 sparc sparc64)_ZN8QVariant9fromValueI5QListIP7QObjectEEES_RKT_@Base 2.1.0~2011week13
  (optional=templinst|arch=alpha amd64 armel ia64 kfreebsd-amd64 mips mipsel ppc64 s390 s390x sh4 sparc sparc64)_ZN8QVariant9fromValueI5QListIiEEES_RKT_@Base 2.1.0~2011week13
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN8QVariant9fromValueI6QImageEES_RKT_@Base 2.2.0
@@ -27576,7 +27583,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateEntEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateEptEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZNK3JSC14TimeoutChecker15timeoutIntervalEv@Base 2.2.0
- (arch=hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZNK3JSC9ExecState12hadExceptionEv@Base 2.2.0
+ (arch=armhf hurd-i386 i386 kfreebsd-i386 powerpc sh4 sparc)_ZNK3JSC9ExecState12hadExceptionEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK3WTF10PassOwnPtrI14QWebPageClientE7leakPtrEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK3WTF10PassOwnPtrI15QSystemTrayIconE7leakPtrEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK3WTF10PassOwnPtrI25QWebNotificationPresenterE7leakPtrEv@Base 2.2.0
@@ -28057,15 +28064,15 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore12NotificationEPNS0_19NotificationWrapperEE3endEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore12NotificationEPNS0_19NotificationWrapperEE5beginEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore12NotificationEPNS0_19NotificationWrapperEE7isEmptyEv@Base 2.2.0
- (arch=!alpha !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZNK5QHashIPN7WebCore12NotificationEPNS0_19NotificationWrapperEE8findNodeERKS2_Pj@Base 2.2.0
+ (arch=!alpha !armhf !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZNK5QHashIPN7WebCore12NotificationEPNS0_19NotificationWrapperEE8findNodeERKS2_Pj@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore12NotificationEPNS0_19NotificationWrapperEE8iterator3keyEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore12NotificationEPNS0_19NotificationWrapperEE8iteratoreqERKS6_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore12NotificationEPNS0_19NotificationWrapperEE8iteratorneERKS6_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_21NotificationPresenter10PermissionEE5valueERKS2_RKS4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_21NotificationPresenter10PermissionEE7isEmptyEv@Base 2.2.0
- (arch=!alpha !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_21NotificationPresenter10PermissionEE8findNodeERKS2_Pj@Base 2.2.0
+ (arch=!alpha !armhf !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_21NotificationPresenter10PermissionEE8findNodeERKS2_Pj@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_29NotificationPresenterClientQt13CallbacksInfoEE7isEmptyEv@Base 2.2.0
- (arch=!alpha !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_29NotificationPresenterClientQt13CallbacksInfoEE8findNodeERKS2_Pj@Base 2.2.0
+ (arch=alpha !armhf !hurd-i386 !i386 !ia64 !kfreebsd-i386 !powerpc !sh4 !sparc !sparc64)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_29NotificationPresenterClientQt13CallbacksInfoEE8findNodeERKS2_Pj@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_29NotificationPresenterClientQt13CallbacksInfoEE8iterator3keyEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_29NotificationPresenterClientQt13CallbacksInfoEE8iterator5valueEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK5QHashIPN7WebCore22ScriptExecutionContextENS0_29NotificationPresenterClientQt13CallbacksInfoEE8iteratorcvP9QHashNodeIS2_S4_EEv@Base 2.2.0
@@ -28595,7 +28602,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK8QVariant5valueI8QDRTNodeEET_v@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK8QVariant5valueI9QDateTimeEET_v@Base 2.2.0
  (optional=templinst)_ZNK8QVariant5valueIP7QObjectEET_v@Base 2.1.0~2011week13
- (optional=templinst|arch=!powerpc)_ZNK8QVariant5valueIS_EET_v@Base 2.1.0~2011week13
+ (optional=templinst|arch=!armhf !powerpc)_ZNK8QVariant5valueIS_EET_v@Base 2.1.0~2011week13
  (optional=templinst)_ZNK8QVariant5valueIiEET_v@Base 2.1.0~2011week13
  _ZNK8QWebPage10isModifiedEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10metaObjectEv@Base 2.1.0~2011week13
@@ -28716,7 +28723,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTIN7WebCore10JSCSSValueE@Base 2.2.0
  _ZTIN7WebCore10JSDataViewE@Base 2.2.0
  _ZTIN7WebCore10JSDatabaseE@Base 2.2.0
- (arch=armel)_ZTIN7WebCore10JSDocumentE@Base 2.2.0
+ (arch=armel armhf)_ZTIN7WebCore10JSDocumentE@Base 2.2.0
  _ZTIN7WebCore10JSFileListE@Base 2.2.0
  _ZTIN7WebCore10JSLocationE@Base 2.2.0
  _ZTIN7WebCore10JSNodeListE@Base 2.2.0
@@ -29884,7 +29891,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTIN7WebCore6JSAttrE@Base 2.2.0
  _ZTIN7WebCore6JSBlobE@Base 2.2.0
  _ZTIN7WebCore6JSFileE@Base 2.2.0
- (arch=armel)_ZTIN7WebCore6JSNodeE@Base 2.2.0
+ (arch=armel armhf)_ZTIN7WebCore6JSNodeE@Base 2.2.0
  _ZTIN7WebCore6JSRectE@Base 2.2.0
  _ZTIN7WebCore6JSTextE@Base 2.2.0
  _ZTIN7WebCore7JSEventE@Base 2.2.0
@@ -29900,7 +29907,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTIN7WebCore9JSCommentE@Base 2.2.0
  _ZTIN7WebCore9JSConsoleE@Base 2.2.0
  _ZTIN7WebCore9JSCounterE@Base 2.2.0
- (arch=armel)_ZTIN7WebCore9JSElementE@Base 2.2.0
+ (arch=armel armhf)_ZTIN7WebCore9JSElementE@Base 2.2.0
  _ZTIN7WebCore9JSHistoryE@Base 2.2.0
  _ZTIN7WebCore9JSSVGRectE@Base 2.2.0
  _ZTIN7WebCore9JSStorageE@Base 2.2.0
@@ -29932,7 +29939,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTSN7WebCore10JSCSSValueE@Base 2.2.0
  _ZTSN7WebCore10JSDataViewE@Base 2.2.0
  _ZTSN7WebCore10JSDatabaseE@Base 2.2.0
- (arch=armel)_ZTSN7WebCore10JSDocumentE@Base 2.2.0
+ (arch=armel armhf)_ZTSN7WebCore10JSDocumentE@Base 2.2.0
  _ZTSN7WebCore10JSFileListE@Base 2.2.0
  _ZTSN7WebCore10JSLocationE@Base 2.2.0
  _ZTSN7WebCore10JSNodeListE@Base 2.2.0
@@ -31100,7 +31107,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTSN7WebCore6JSAttrE@Base 2.2.0
  _ZTSN7WebCore6JSBlobE@Base 2.2.0
  _ZTSN7WebCore6JSFileE@Base 2.2.0
- (arch=armel)_ZTSN7WebCore6JSNodeE@Base 2.2.0
+ (arch=armel armhf)_ZTSN7WebCore6JSNodeE@Base 2.2.0
  _ZTSN7WebCore6JSRectE@Base 2.2.0
  _ZTSN7WebCore6JSTextE@Base 2.2.0
  _ZTSN7WebCore7JSEventE@Base 2.2.0
@@ -31116,7 +31123,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTSN7WebCore9JSCommentE@Base 2.2.0
  _ZTSN7WebCore9JSConsoleE@Base 2.2.0
  _ZTSN7WebCore9JSCounterE@Base 2.2.0
- (arch=armel)_ZTSN7WebCore9JSElementE@Base 2.2.0
+ (arch=armel armhf)_ZTSN7WebCore9JSElementE@Base 2.2.0
  _ZTSN7WebCore9JSHistoryE@Base 2.2.0
  _ZTSN7WebCore9JSSVGRectE@Base 2.2.0
  _ZTSN7WebCore9JSStorageE@Base 2.2.0
@@ -31144,7 +31151,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTVN7WebCore10JSCSSValueE@Base 2.2.0
  _ZTVN7WebCore10JSDataViewE@Base 2.2.0
  _ZTVN7WebCore10JSDatabaseE@Base 2.2.0
- (arch=armel)_ZTVN7WebCore10JSDocumentE@Base 2.2.0
+ (arch=armel armhf)_ZTVN7WebCore10JSDocumentE@Base 2.2.0
  _ZTVN7WebCore10JSFileListE@Base 2.2.0
  _ZTVN7WebCore10JSLocationE@Base 2.2.0
  _ZTVN7WebCore10JSNodeListE@Base 2.2.0
@@ -32311,7 +32318,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTVN7WebCore6JSAttrE@Base 2.2.0
  _ZTVN7WebCore6JSBlobE@Base 2.2.0
  _ZTVN7WebCore6JSFileE@Base 2.2.0
- (arch=armel)_ZTVN7WebCore6JSNodeE@Base 2.2.0
+ (arch=armel armhf)_ZTVN7WebCore6JSNodeE@Base 2.2.0
  _ZTVN7WebCore6JSRectE@Base 2.2.0
  _ZTVN7WebCore6JSTextE@Base 2.2.0
  _ZTVN7WebCore7JSEventE@Base 2.2.0
@@ -32327,7 +32334,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTVN7WebCore9JSCommentE@Base 2.2.0
  _ZTVN7WebCore9JSConsoleE@Base 2.2.0
  _ZTVN7WebCore9JSCounterE@Base 2.2.0
- (arch=armel)_ZTVN7WebCore9JSElementE@Base 2.2.0
+ (arch=armel armhf)_ZTVN7WebCore9JSElementE@Base 2.2.0
  _ZTVN7WebCore9JSHistoryE@Base 2.2.0
  _ZTVN7WebCore9JSSVGRectE@Base 2.2.0
  _ZTVN7WebCore9JSStorageE@Base 2.2.0
@@ -32371,7 +32378,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel s390 s390x)_Zeq5QCharS_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZeqI9QWebFrameEbPT_RK8QPointerIS1_E@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZeqP9QKeyEventN12QKeySequence11StandardKeyE@Base 2.2.0
- (arch=!armel !mips !mipsel !s390 !s390x !sh4 !sparc !sparc64)_ZeqRK10QByteArrayPKc@Base 2.2.0
+ (arch=!armel !armhf !mips !mipsel !s390 !s390x !sh4 !sparc !sparc64)_ZeqRK10QByteArrayPKc@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_Zge5QCharS_@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_Zle5QCharS_@Base 2.2.0
  _ZlsR11QDataStreamRK11QWebHistory@Base 2.1.0~2011week13

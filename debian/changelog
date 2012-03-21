@@ -2,8 +2,8 @@ qtwebkit (2.2.0-4) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Add -Wl,--no-relax to the LDFLAGS on alpha. (Closes: #656056)
-  * Update the symbols file for alpha and ppc64, and for all the other archs
-    from their build logs. (Closes: #653905, #656056)
+  * Update the symbols file for alpha, armhf and ppc64, and for all the other
+    archs from their build logs. (Closes: #653905, #656056)
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 16 Jan 2012 10:29:18 +0100
 
