@@ -5,6 +5,10 @@ qtwebkit (2.2.0-4) UNRELEASED; urgency=low
   * Update the symbols file for alpha, armhf and ppc64, and for all the other
     archs from their build logs. (Closes: #653905, #656056, #664897)
 
+  [ Felix Geyer ]
+  * Add Fix_build_with_GLib_2.31_changeset_r97269.patch, cherry-picked from
+    upstream. (Closes: #665679)
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 16 Jan 2012 10:29:18 +0100
 
 qtwebkit (2.2.0-3) unstable; urgency=low
