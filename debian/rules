@@ -7,13 +7,15 @@ QWEBVIEW_DIR=debian/plugins/qwebview
 
 # Filter -g from environment on troublesome arches. Replace it with -gstabs
 # See also: stabs_format_debug_info.diff
-DEB_HOST_ARCH := $(shell dpkg-architecture -qDEB_HOST_ARCH)
+DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
 ifneq (,$(filter $(DEB_HOST_ARCH),s390 s390x armel mips mipsel))
-    export CFLAGS := $(filter-out -g,$(CFLAGS)) -gstabs
-    export CXXFLAGS := $(filter-out -g,$(CXXFLAGS)) -gstabs
+    export DEB_CFLAGS_MAINT_STRIP := -g
+    export DEB_CFLAGS_MAINT_APPEND := -gstabs
+    export DEB_CXXFLAGS_MAINT_STRIP := -g
+    export DEB_CXXFLAGS_MAINT_APPEND := -gstabs
 endif
 ifneq (,$(filter $(DEB_HOST_ARCH),alpha))
-    export LDFLAGS := $(LDFLAGS) -Wl,--no-relax
+    export DEB_LDFLAGS_MAINT_APPEND := -Wl,--no-relax
 endif
 
 %:
