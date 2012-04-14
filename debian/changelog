@@ -4,6 +4,8 @@ qtwebkit (2.2.0-4) UNRELEASED; urgency=low
   * Add -Wl,--no-relax to the LDFLAGS on alpha. (Closes: #656056)
   * Update the symbols file for alpha, armhf and ppc64, and for all the other
     archs from their build logs. (Closes: #653905, #656056, #664897)
+  * Backport (parts of) upstream r93631 and r113848 to fix building with
+    GCC 4.7. (Closes: #667346)
 
   [ Felix Geyer ]
   * Add Fix_build_with_GLib_2.31_changeset_r97269.patch, cherry-picked from
