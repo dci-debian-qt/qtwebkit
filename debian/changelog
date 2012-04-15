@@ -1,4 +1,6 @@
-qtwebkit (2.2.0-4) UNRELEASED; urgency=low
+qtwebkit (2.2.0-4) unstable; urgency=low
+
+  * Team upload.
 
   [ Pino Toscano ]
   * Add -Wl,--no-relax to the LDFLAGS on alpha. (Closes: #656056)
@@ -20,7 +22,7 @@ qtwebkit (2.2.0-4) UNRELEASED; urgency=low
   * Mark '^ _ZN7WebCore' symbols as optional=private. They are not part of
     public API.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 16 Jan 2012 10:29:18 +0100
+ -- Modestas Vainius <modax@debian.org>  Sun, 15 Apr 2012 21:16:49 +0300
 
 qtwebkit (2.2.0-3) unstable; urgency=low
 
