@@ -15,6 +15,9 @@ qtwebkit (2.2.0-4) UNRELEASED; urgency=low
       directly.
   * Bump Standards-Version to 3.9.3, no changes needed.
 
+  [ Modestas Vainius ]
+  * Mark symbols having 'Private' in their name as optional=private.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 16 Jan 2012 10:29:18 +0100
 
 qtwebkit (2.2.0-3) unstable; urgency=low

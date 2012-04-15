@@ -266,9 +266,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN12QWeakPointerI7QWidgetEaSIS0_EERS1_PT_@Base 2.2.0
  _ZN12QWebDatabase14removeDatabaseERKS_@Base 2.1.0~2011week13
  _ZN12QWebDatabase18removeAllDatabasesEv@Base 2.1.0~2011week13
- _ZN12QWebDatabaseC1EP19QWebDatabasePrivate@Base 2.1.0~2011week13
+ (optional=private)_ZN12QWebDatabaseC1EP19QWebDatabasePrivate@Base 2.1.0~2011week13
  _ZN12QWebDatabaseC1ERKS_@Base 2.1.0~2011week13
- _ZN12QWebDatabaseC2EP19QWebDatabasePrivate@Base 2.1.0~2011week13
+ (optional=private)_ZN12QWebDatabaseC2EP19QWebDatabasePrivate@Base 2.1.0~2011week13
  _ZN12QWebDatabaseC2ERKS_@Base 2.1.0~2011week13
  _ZN12QWebDatabaseD1Ev@Base 2.1.0~2011week13
  _ZN12QWebDatabaseD2Ev@Base 2.1.0~2011week13
@@ -382,74 +382,74 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel s390 s390x)_ZN15QTextCharFormatD1Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN15QTextCharFormatD2Ev@Base 2.2.0
  _ZN15QWebHistoryItem11setUserDataERK8QVariant@Base 2.1.0~2011week13
- _ZN15QWebHistoryItemC1EP22QWebHistoryItemPrivate@Base 2.1.0~2011week13
+ (optional=private)_ZN15QWebHistoryItemC1EP22QWebHistoryItemPrivate@Base 2.1.0~2011week13
  _ZN15QWebHistoryItemC1ERKS_@Base 2.1.0~2011week13
- _ZN15QWebHistoryItemC2EP22QWebHistoryItemPrivate@Base 2.1.0~2011week13
+ (optional=private)_ZN15QWebHistoryItemC2EP22QWebHistoryItemPrivate@Base 2.1.0~2011week13
  _ZN15QWebHistoryItemC2ERKS_@Base 2.1.0~2011week13
  _ZN15QWebHistoryItemD1Ev@Base 2.1.0~2011week13
  _ZN15QWebHistoryItemD2Ev@Base 2.1.0~2011week13
  _ZN15QWebHistoryItemaSERKS_@Base 2.1.0~2011week13
- _ZN15QWebPagePrivate10leaveEventEP6QEvent@Base 2.2.0
- _ZN15QWebPagePrivate10timerEventEP11QTimerEvent@Base 2.2.0
- _ZN15QWebPagePrivate10touchEventEP11QTouchEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate10leaveEventEP6QEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate10timerEventEP11QTimerEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate10touchEventEP11QTouchEvent@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN15QWebPagePrivate10wheelEventI11QWheelEventEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN15QWebPagePrivate10wheelEventI24QGraphicsSceneWheelEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate12focusInEventEP11QFocusEvent@Base 2.2.0
- _ZN15QWebPagePrivate12setInspectorEP13QWebInspector@Base 2.2.0
- _ZN15QWebPagePrivate12updateActionEN8QWebPage9WebActionE@Base 2.2.0
- _ZN15QWebPagePrivate13TouchAdjusterC1Ejjjj@Base 2.2.0
- _ZN15QWebPagePrivate13TouchAdjusterC2Ejjjj@Base 2.2.0
- _ZN15QWebPagePrivate13dragMoveEventI14QDragMoveEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate13dragMoveEventI27QGraphicsSceneDragDropEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate13focusOutEventEP11QFocusEvent@Base 2.2.0
- _ZN15QWebPagePrivate13keyPressEventEP9QKeyEvent@Base 2.2.0
- _ZN15QWebPagePrivate14dragEnterEventI15QDragEnterEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate14dragEnterEventI27QGraphicsSceneDragDropEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate12focusInEventEP11QFocusEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate12setInspectorEP13QWebInspector@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate12updateActionEN8QWebPage9WebActionE@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate13TouchAdjusterC1Ejjjj@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate13TouchAdjusterC2Ejjjj@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate13dragMoveEventI14QDragMoveEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate13dragMoveEventI27QGraphicsSceneDragDropEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate13focusOutEventEP11QFocusEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate13keyPressEventEP9QKeyEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate14dragEnterEventI15QDragEnterEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate14dragEnterEventI27QGraphicsSceneDragDropEventEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN15QWebPagePrivate14dragLeaveEventI15QDragLeaveEventEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN15QWebPagePrivate14dragLeaveEventI27QGraphicsSceneDragDropEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate14mouseMoveEventI11QMouseEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate14mouseMoveEventI11QMouseEventEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN15QWebPagePrivate14mouseMoveEventI24QGraphicsSceneMouseEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate15createMainFrameEv@Base 2.2.0
- _ZN15QWebPagePrivate15handleClipboardEP6QEventN2Qt11MouseButtonE@Base 2.2.0
- _ZN15QWebPagePrivate15handleScrollingEP9QKeyEventPN7WebCore5FrameE@Base 2.2.0
- _ZN15QWebPagePrivate15keyReleaseEventEP9QKeyEvent@Base 2.2.0
- _ZN15QWebPagePrivate15mousePressEventI11QMouseEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate15mousePressEventI24QGraphicsSceneMouseEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate16contextMenuEventERK6QPoint@Base 2.2.0
- _ZN15QWebPagePrivate16inputMethodEventEP17QInputMethodEvent@Base 2.2.0
- _ZN15QWebPagePrivate17createContextMenuEPKN7WebCore11ContextMenuEPK5QListINS0_15ContextMenuItemEEP9QBitArray@Base 2.2.0
- _ZN15QWebPagePrivate17mouseReleaseEventI11QMouseEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate17mouseReleaseEventI24QGraphicsSceneMouseEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate17viewportArgumentsEv@Base 2.2.0
- _ZN15QWebPagePrivate19inspectorControllerEv@Base 2.2.0
- _ZN15QWebPagePrivate19inspectorServerPortEv@Base 2.2.0
- _ZN15QWebPagePrivate19updateEditorActionsEv@Base 2.2.0
- _ZN15QWebPagePrivate20getOrCreateInspectorEv@Base 2.2.0
- _ZN15QWebPagePrivate21_q_webActionTriggeredEb@Base 2.2.0
- _ZN15QWebPagePrivate21mouseDoubleClickEventI11QMouseEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate15createMainFrameEv@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate15handleClipboardEP6QEventN2Qt11MouseButtonE@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate15handleScrollingEP9QKeyEventPN7WebCore5FrameE@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate15keyReleaseEventEP9QKeyEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate15mousePressEventI11QMouseEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate15mousePressEventI24QGraphicsSceneMouseEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate16contextMenuEventERK6QPoint@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate16inputMethodEventEP17QInputMethodEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate17createContextMenuEPKN7WebCore11ContextMenuEPK5QListINS0_15ContextMenuItemEEP9QBitArray@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate17mouseReleaseEventI11QMouseEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate17mouseReleaseEventI24QGraphicsSceneMouseEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate17viewportArgumentsEv@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate19inspectorControllerEv@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate19inspectorServerPortEv@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate19updateEditorActionsEv@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate20getOrCreateInspectorEv@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate21_q_webActionTriggeredEb@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate21mouseDoubleClickEventI11QMouseEventEEvPT_@Base 2.2.0
  (optional=templinst|arch=!alpha !amd64 !ia64 !kfreebsd-amd64 !ppc64 !sh4 !sparc !sparc64)_ZN15QWebPagePrivate21mouseDoubleClickEventI24QGraphicsSceneMouseEventEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN15QWebPagePrivate21mouseTripleClickEventI11QMouseEventEEvPT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN15QWebPagePrivate21mouseTripleClickEventI24QGraphicsSceneMouseEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate21shortcutOverrideEventEP9QKeyEvent@Base 2.2.0
- _ZN15QWebPagePrivate22_q_cleanupLeakMessagesEv@Base 2.2.0
- _ZN15QWebPagePrivate22adjustPointForClickingEP11QMouseEvent@Base 2.2.0
- _ZN15QWebPagePrivate22adjustPointForClickingEP24QGraphicsSceneMouseEvent@Base 2.2.0
- _ZN15QWebPagePrivate23acceptNavigationRequestEP9QWebFrameRK15QNetworkRequestN8QWebPage14NavigationTypeE@Base 2.2.0
- _ZN15QWebPagePrivate23editorActionForKeyEventEP9QKeyEvent@Base 2.2.0
- _ZN15QWebPagePrivate23updateNavigationActionsEv@Base 2.2.0
- _ZN15QWebPagePrivate24_q_onLoadProgressChangedEi@Base 2.2.0
- _ZN15QWebPagePrivate24handleSoftwareInputPanelEN2Qt11MouseButtonERK6QPoint@Base 2.2.0
- _ZN15QWebPagePrivate26dynamicPropertyChangeEventEP27QDynamicPropertyChangeEvent@Base 2.2.0
- _ZN15QWebPagePrivate26editorCommandForWebActionsEN8QWebPage9WebActionE@Base 2.2.0
- _ZN15QWebPagePrivate4coreEPK8QWebPage@Base 2.2.0
- _ZN15QWebPagePrivate4privEP8QWebPage@Base 2.2.0
- _ZN15QWebPagePrivate6drtRunE@Base 2.2.0
- _ZN15QWebPagePrivate9dropEventI10QDropEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivate9dropEventI27QGraphicsSceneDragDropEventEEvPT_@Base 2.2.0
- _ZN15QWebPagePrivateC1EP8QWebPage@Base 2.2.0
- _ZN15QWebPagePrivateC2EP8QWebPage@Base 2.2.0
- _ZN15QWebPagePrivateD1Ev@Base 2.2.0
- _ZN15QWebPagePrivateD2Ev@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate21shortcutOverrideEventEP9QKeyEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate22_q_cleanupLeakMessagesEv@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate22adjustPointForClickingEP11QMouseEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate22adjustPointForClickingEP24QGraphicsSceneMouseEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate23acceptNavigationRequestEP9QWebFrameRK15QNetworkRequestN8QWebPage14NavigationTypeE@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate23editorActionForKeyEventEP9QKeyEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate23updateNavigationActionsEv@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate24_q_onLoadProgressChangedEi@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate24handleSoftwareInputPanelEN2Qt11MouseButtonERK6QPoint@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate26dynamicPropertyChangeEventEP27QDynamicPropertyChangeEvent@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate26editorCommandForWebActionsEN8QWebPage9WebActionE@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate4coreEPK8QWebPage@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate4privEP8QWebPage@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate6drtRunE@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate9dropEventI10QDropEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivate9dropEventI27QGraphicsSceneDragDropEventEEvPT_@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivateC1EP8QWebPage@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivateC2EP8QWebPage@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivateD1Ev@Base 2.2.0
+ (optional=private)_ZN15QWebPagePrivateD2Ev@Base 2.2.0
  _ZN15QWebScriptWorldC1ERKS_@Base 2.2.0
  _ZN15QWebScriptWorldC1Ev@Base 2.2.0
  _ZN15QWebScriptWorldC2ERKS_@Base 2.2.0
@@ -457,13 +457,13 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN15QWebScriptWorldD1Ev@Base 2.2.0
  _ZN15QWebScriptWorldD2Ev@Base 2.2.0
  _ZN15QWebScriptWorldaSERKS_@Base 2.2.0
- _ZN15QWebViewPrivate16_q_pageDestroyedEv@Base 2.2.0
- _ZN15QWebViewPrivate17detachCurrentPageEv@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN15QWebViewPrivateC1EP8QWebView@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN15QWebViewPrivateC2EP8QWebView@Base 2.2.0
- _ZN15QWebViewPrivateD0Ev@Base 2.2.0
- _ZN15QWebViewPrivateD1Ev@Base 2.2.0
- _ZN15QWebViewPrivateD2Ev@Base 2.2.0
+ (optional=private)_ZN15QWebViewPrivate16_q_pageDestroyedEv@Base 2.2.0
+ (optional=private)_ZN15QWebViewPrivate17detachCurrentPageEv@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN15QWebViewPrivateC1EP8QWebView@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN15QWebViewPrivateC2EP8QWebView@Base 2.2.0
+ (optional=private)_ZN15QWebViewPrivateD0Ev@Base 2.2.0
+ (optional=private)_ZN15QWebViewPrivateD1Ev@Base 2.2.0
+ (optional=private)_ZN15QWebViewPrivateD2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN16QCoreApplication9sendEventEP7QObjectP6QEvent@Base 2.2.0
  _ZN16QGraphicsWebView10itemChangeEN13QGraphicsItem18GraphicsItemChangeERK8QVariant@Base 2.1.0~2011week13
  _ZN16QGraphicsWebView10sceneEventEP6QEvent@Base 2.1.0~2011week13
@@ -523,20 +523,20 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN16QGraphicsWebViewD1Ev@Base 2.1.0~2011week13
  _ZN16QGraphicsWebViewD2Ev@Base 2.1.0~2011week13
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN16QVectorTypedDataI6QPointE4freeEPS1_i@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivate11parentFrameEv@Base 2.2.0
- _ZN16QWebFramePrivate14emitUrlChangedEv@Base 2.2.0
- _ZN16QWebFramePrivate17renderFrameExtrasEPN7WebCore15GraphicsContextE6QFlagsIN9QWebFrame11RenderLayerEERK7QRegion@Base 2.2.0
- _ZN16QWebFramePrivate20renderRelativeCoordsEPN7WebCore15GraphicsContextE6QFlagsIN9QWebFrame11RenderLayerEERK7QRegion@Base 2.2.0
- _ZN16QWebFramePrivate21_q_orientationChangedEv@Base 2.2.0
- _ZN16QWebFramePrivate27renderFromTiledBackingStoreEPN7WebCore15GraphicsContextERK7QRegion@Base 2.2.0
- _ZN16QWebFramePrivate3kitEPKN7WebCore5FrameE@Base 2.2.0
- _ZN16QWebFramePrivate4coreEPK9QWebFrame@Base 2.2.0
- _ZN16QWebFramePrivate4initEP9QWebFrameP13QWebFrameData@Base 2.2.0
- _ZN16QWebFramePrivate7setPageEP8QWebPage@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivateC1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivateC2Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivateD1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivateD2Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivate11parentFrameEv@Base 2.2.0
+ (optional=private)_ZN16QWebFramePrivate14emitUrlChangedEv@Base 2.2.0
+ (optional=private)_ZN16QWebFramePrivate17renderFrameExtrasEPN7WebCore15GraphicsContextE6QFlagsIN9QWebFrame11RenderLayerEERK7QRegion@Base 2.2.0
+ (optional=private)_ZN16QWebFramePrivate20renderRelativeCoordsEPN7WebCore15GraphicsContextE6QFlagsIN9QWebFrame11RenderLayerEERK7QRegion@Base 2.2.0
+ (optional=private)_ZN16QWebFramePrivate21_q_orientationChangedEv@Base 2.2.0
+ (optional=private)_ZN16QWebFramePrivate27renderFromTiledBackingStoreEPN7WebCore15GraphicsContextERK7QRegion@Base 2.2.0
+ (optional=private)_ZN16QWebFramePrivate3kitEPKN7WebCore5FrameE@Base 2.2.0
+ (optional=private)_ZN16QWebFramePrivate4coreEPK9QWebFrame@Base 2.2.0
+ (optional=private)_ZN16QWebFramePrivate4initEP9QWebFrameP13QWebFrameData@Base 2.2.0
+ (optional=private)_ZN16QWebFramePrivate7setPageEP8QWebPage@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivateC1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivateC2Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivateD1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN16QWebFramePrivateD2Ev@Base 2.2.0
  _ZN16QWebSelectMethod10selectItemEibb@Base 2.2.0
  _ZN16QWebSelectMethod11qt_metacallEN11QMetaObject4CallEiPPv@Base 2.2.0
  _ZN16QWebSelectMethod11qt_metacastEPKc@Base 2.2.0
@@ -549,10 +549,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN16QWebSelectMethodD2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN17QStyleOptionFrameD1Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN17QStyleOptionFrameD2Ev@Base 2.2.0
- _ZN17QWebHitTestResultC1EP24QWebHitTestResultPrivate@Base 2.1.0~2011week13
+ (optional=private)_ZN17QWebHitTestResultC1EP24QWebHitTestResultPrivate@Base 2.1.0~2011week13
  _ZN17QWebHitTestResultC1ERKS_@Base 2.1.0~2011week13
  _ZN17QWebHitTestResultC1Ev@Base 2.1.0~2011week13
- _ZN17QWebHitTestResultC2EP24QWebHitTestResultPrivate@Base 2.1.0~2011week13
+ (optional=private)_ZN17QWebHitTestResultC2EP24QWebHitTestResultPrivate@Base 2.1.0~2011week13
  _ZN17QWebHitTestResultC2ERKS_@Base 2.1.0~2011week13
  _ZN17QWebHitTestResultC2Ev@Base 2.1.0~2011week13
  _ZN17QWebHitTestResultD1Ev@Base 2.1.0~2011week13
@@ -596,11 +596,11 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN18QStyleOptionButtonD2Ev@Base 2.1.0~2011week13
  _ZN18QStyleOptionSliderD1Ev@Base 2.1.0~2011week13
  _ZN18QStyleOptionSliderD2Ev@Base 2.1.0~2011week13
- _ZN18QWebHistoryPrivate4pageEv@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN18QWebHistoryPrivateC1EPN7WebCore19BackForwardListImplE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN18QWebHistoryPrivateC2EPN7WebCore19BackForwardListImplE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN18QWebHistoryPrivateD1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN18QWebHistoryPrivateD2Ev@Base 2.2.0
+ (optional=private)_ZN18QWebHistoryPrivate4pageEv@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN18QWebHistoryPrivateC1EPN7WebCore19BackForwardListImplE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN18QWebHistoryPrivateC2EPN7WebCore19BackForwardListImplE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN18QWebHistoryPrivateD1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN18QWebHistoryPrivateD2Ev@Base 2.2.0
  _ZN18QWebPluginDatabase11qt_metacallEN11QMetaObject4CallEiPPv@Base 2.1.0~2011week13
  _ZN18QWebPluginDatabase11qt_metacastEPKc@Base 2.1.0~2011week13
  _ZN18QWebPluginDatabase13addSearchPathERK7QString@Base 2.1.0~2011week13
@@ -621,9 +621,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN18QWebSecurityOrigin16setDatabaseQuotaEx@Base 2.1.0~2011week13
  _ZN18QWebSecurityOrigin17removeLocalSchemeERK7QString@Base 2.1.0~2011week13
  _ZN18QWebSecurityOrigin24setApplicationCacheQuotaEx@Base 2.2.0
- _ZN18QWebSecurityOriginC1EP25QWebSecurityOriginPrivate@Base 2.1.0~2011week13
+ (optional=private)_ZN18QWebSecurityOriginC1EP25QWebSecurityOriginPrivate@Base 2.1.0~2011week13
  _ZN18QWebSecurityOriginC1ERKS_@Base 2.1.0~2011week13
- _ZN18QWebSecurityOriginC2EP25QWebSecurityOriginPrivate@Base 2.1.0~2011week13
+ (optional=private)_ZN18QWebSecurityOriginC2EP25QWebSecurityOriginPrivate@Base 2.1.0~2011week13
  _ZN18QWebSecurityOriginC2ERKS_@Base 2.1.0~2011week13
  _ZN18QWebSecurityOriginD1Ev@Base 2.1.0~2011week13
  _ZN18QWebSecurityOriginD2Ev@Base 2.1.0~2011week13
@@ -641,23 +641,23 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel s390 s390x)_ZN19QStyleOptionComplexD2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN19QStyleOptionFrameV2D1Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN19QStyleOptionFrameV2D2Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN19QWebDatabasePrivateC1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN19QWebDatabasePrivateC2Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN19QWebDatabasePrivateD1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN19QWebDatabasePrivateD2Ev@Base 2.2.0
- _ZN19QWebSettingsPrivate5applyEv@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN19QWebSettingsPrivateC1EPN7WebCore8SettingsE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN19QWebSettingsPrivateC2EPN7WebCore8SettingsE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN19QWebSettingsPrivateD1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN19QWebSettingsPrivateD2Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN19QWebDatabasePrivateC1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN19QWebDatabasePrivateC2Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN19QWebDatabasePrivateD1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN19QWebDatabasePrivateD2Ev@Base 2.2.0
+ (optional=private)_ZN19QWebSettingsPrivate5applyEv@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN19QWebSettingsPrivateC1EPN7WebCore8SettingsE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN19QWebSettingsPrivateC2EPN7WebCore8SettingsE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN19QWebSettingsPrivateD1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN19QWebSettingsPrivateD2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN20QGlobalStaticDeleterI5QHashIi7QPixmapEEC1ER13QGlobalStaticIS2_E@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN20QGlobalStaticDeleterI5QHashIi7QPixmapEEC2ER13QGlobalStaticIS2_E@Base 2.2.0
  _ZN20QGlobalStaticDeleterI5QHashIi7QPixmapEED1Ev@Base 2.2.0
  _ZN20QGlobalStaticDeleterI5QHashIi7QPixmapEED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN20QGlobalStaticDeleterI5QListIP19QWebSettingsPrivateEEC1ER13QGlobalStaticIS3_E@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN20QGlobalStaticDeleterI5QListIP19QWebSettingsPrivateEEC2ER13QGlobalStaticIS3_E@Base 2.2.0
- _ZN20QGlobalStaticDeleterI5QListIP19QWebSettingsPrivateEED1Ev@Base 2.2.0
- _ZN20QGlobalStaticDeleterI5QListIP19QWebSettingsPrivateEED2Ev@Base 2.2.0
+ (optional=private)_ZN20QGlobalStaticDeleterI5QListIP19QWebSettingsPrivateEED1Ev@Base 2.2.0
+ (optional=private)_ZN20QGlobalStaticDeleterI5QListIP19QWebSettingsPrivateEED2Ev@Base 2.2.0
  _ZN20QStyleOptionComboBoxD1Ev@Base 2.1.0~2011week13
  _ZN20QStyleOptionComboBoxD2Ev@Base 2.1.0~2011week13
  _ZN20QWebHistoryInterface11qt_metacallEN11QMetaObject4CallEiPPv@Base 2.1.0~2011week13
@@ -670,12 +670,12 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN20QWebHistoryInterfaceD0Ev@Base 2.1.0~2011week13
  _ZN20QWebHistoryInterfaceD1Ev@Base 2.1.0~2011week13
  _ZN20QWebHistoryInterfaceD2Ev@Base 2.1.0~2011week13
- _ZN20QWebInspectorPrivate11setFrontendEP7QWidget@Base 2.2.0
- _ZN20QWebInspectorPrivate18adjustFrontendSizeERK5QSize@Base 2.2.0
- _ZN20QWebInspectorPrivate20detachRemoteFrontendEv@Base 2.2.0
- _ZN20QWebInspectorPrivate30attachAndReplaceRemoteFrontendEP7QObject@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN20QWebInspectorPrivateC1EP13QWebInspector@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN20QWebInspectorPrivateC2EP13QWebInspector@Base 2.2.0
+ (optional=private)_ZN20QWebInspectorPrivate11setFrontendEP7QWidget@Base 2.2.0
+ (optional=private)_ZN20QWebInspectorPrivate18adjustFrontendSizeERK5QSize@Base 2.2.0
+ (optional=private)_ZN20QWebInspectorPrivate20detachRemoteFrontendEv@Base 2.2.0
+ (optional=private)_ZN20QWebInspectorPrivate30attachAndReplaceRemoteFrontendEP7QObject@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN20QWebInspectorPrivateC1EP13QWebInspector@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN20QWebInspectorPrivateC2EP13QWebInspector@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN20QWebNotificationDataC1Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN20QWebNotificationDataC2Ev@Base 2.2.0
  _ZN20QWebNotificationDataD0Ev@Base 2.2.0
@@ -800,15 +800,15 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN21WebPlatformStrategiesD0Ev@Base 2.2.0
  _ZN21WebPlatformStrategiesD1Ev@Base 2.2.0
  _ZN21WebPlatformStrategiesD2Ev@Base 2.2.0
- _ZN22QWebHistoryItemPrivate4coreEPK15QWebHistoryItem@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN22QWebHistoryItemPrivateC1EPN7WebCore11HistoryItemE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN22QWebHistoryItemPrivateC2EPN7WebCore11HistoryItemE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN22QWebHistoryItemPrivateD1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN22QWebHistoryItemPrivateD2Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN22QWebScriptWorldPrivateC1EN3WTF10PassRefPtrIN7WebCore15DOMWrapperWorldEEE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN22QWebScriptWorldPrivateC2EN3WTF10PassRefPtrIN7WebCore15DOMWrapperWorldEEE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN22QWebScriptWorldPrivateD1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN22QWebScriptWorldPrivateD2Ev@Base 2.2.0
+ (optional=private)_ZN22QWebHistoryItemPrivate4coreEPK15QWebHistoryItem@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN22QWebHistoryItemPrivateC1EPN7WebCore11HistoryItemE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN22QWebHistoryItemPrivateC2EPN7WebCore11HistoryItemE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN22QWebHistoryItemPrivateD1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN22QWebHistoryItemPrivateD2Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN22QWebScriptWorldPrivateC1EN3WTF10PassRefPtrIN7WebCore15DOMWrapperWorldEEE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN22QWebScriptWorldPrivateC2EN3WTF10PassRefPtrIN7WebCore15DOMWrapperWorldEEE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN22QWebScriptWorldPrivateD1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN22QWebScriptWorldPrivateD2Ev@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt10findStringEP8QWebPageRK7QStringRK11QStringList@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt10shadowRootERK11QWebElement@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt11clearOpenerEP9QWebFrame@Base 2.2.0
@@ -910,18 +910,18 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN23DumpRenderTreeSupportQtC2Ev@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQtD1Ev@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQtD2Ev@Base 2.1.0~2011week13
- _ZN23QGraphicsWebViewPrivate10syncLayersEv@Base 2.2.0
- _ZN23QGraphicsWebViewPrivate15_q_scaleChangedEv@Base 2.2.0
- _ZN23QGraphicsWebViewPrivate16_q_pageDestroyedEv@Base 2.2.0
- _ZN23QGraphicsWebViewPrivate17_q_doLoadFinishedEb@Base 2.2.0
- _ZN23QGraphicsWebViewPrivate17detachCurrentPageEv@Base 2.2.0
- _ZN23QGraphicsWebViewPrivate22_q_contentsSizeChangedERK5QSize@Base 2.2.0
- _ZN23QGraphicsWebViewPrivate30updateResizesToContentsForPageEv@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN23QGraphicsWebViewPrivateC1EP16QGraphicsWebView@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN23QGraphicsWebViewPrivateC2EP16QGraphicsWebView@Base 2.2.0
- _ZN23QGraphicsWebViewPrivateD0Ev@Base 2.2.0
- _ZN23QGraphicsWebViewPrivateD1Ev@Base 2.2.0
- _ZN23QGraphicsWebViewPrivateD2Ev@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivate10syncLayersEv@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivate15_q_scaleChangedEv@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivate16_q_pageDestroyedEv@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivate17_q_doLoadFinishedEb@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivate17detachCurrentPageEv@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivate22_q_contentsSizeChangedERK5QSize@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivate30updateResizesToContentsForPageEv@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN23QGraphicsWebViewPrivateC1EP16QGraphicsWebView@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN23QGraphicsWebViewPrivateC2EP16QGraphicsWebView@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivateD0Ev@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivateD1Ev@Base 2.2.0
+ (optional=private)_ZN23QGraphicsWebViewPrivateD2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN23QStyleOptionProgressBarD1Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN23QStyleOptionProgressBarD2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN24QStyleOptionGraphicsItemD1Ev@Base 2.2.0
@@ -932,15 +932,15 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN24QWebHapticFeedbackPlayerD0Ev@Base 2.2.0
  _ZN24QWebHapticFeedbackPlayerD1Ev@Base 2.2.0
  _ZN24QWebHapticFeedbackPlayerD2Ev@Base 2.2.0
- _ZN24QWebHitTestResultPrivateC1ERKN7WebCore13HitTestResultE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC1ERKS_@Base 2.2.0
- (arch=alpha armel armhf mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC1Ev@Base 2.2.0
- _ZN24QWebHitTestResultPrivateC2ERKN7WebCore13HitTestResultE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC2ERKS_@Base 2.2.0
- (arch=alpha armel armhf mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC2Ev@Base 2.2.0
- _ZN24QWebHitTestResultPrivateD1Ev@Base 2.2.0
- _ZN24QWebHitTestResultPrivateD2Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateaSERKS_@Base 2.2.0
+ (optional=private)_ZN24QWebHitTestResultPrivateC1ERKN7WebCore13HitTestResultE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC1ERKS_@Base 2.2.0
+ (optional=private|arch=alpha armel armhf mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC1Ev@Base 2.2.0
+ (optional=private)_ZN24QWebHitTestResultPrivateC2ERKN7WebCore13HitTestResultE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC2ERKS_@Base 2.2.0
+ (optional=private|arch=alpha armel armhf mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateC2Ev@Base 2.2.0
+ (optional=private)_ZN24QWebHitTestResultPrivateD1Ev@Base 2.2.0
+ (optional=private)_ZN24QWebHitTestResultPrivateD2Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN24QWebHitTestResultPrivateaSERKS_@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN24QXmlStreamEntityResolverC1Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN24QXmlStreamEntityResolverC2Ev@Base 2.2.0
  _ZN25QStyleOptionProgressBarV2D1Ev@Base 2.1.0~2011week13
@@ -953,24 +953,24 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN25QWebNotificationPresenterD0Ev@Base 2.2.0
  _ZN25QWebNotificationPresenterD1Ev@Base 2.2.0
  _ZN25QWebNotificationPresenterD2Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN25QWebSecurityOriginPrivateC1EPN7WebCore14SecurityOriginE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN25QWebSecurityOriginPrivateC2EPN7WebCore14SecurityOriginE@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN25QWebSecurityOriginPrivateD1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN25QWebSecurityOriginPrivateD2Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN25QWebSecurityOriginPrivateC1EPN7WebCore14SecurityOriginE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN25QWebSecurityOriginPrivateC2EPN7WebCore14SecurityOriginE@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN25QWebSecurityOriginPrivateD1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN25QWebSecurityOriginPrivateD2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateEC1ERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateEC1Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateEC2ERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateEC2Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateED1Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateED2Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateED1Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateEaSEPS0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI19QWebDatabasePrivateEaSERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateEC1ERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateEC1Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateEC2ERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateEC2Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateED1Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateED2Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateED1Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateEaSEPS0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateEaSERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateEptEv@Base 2.2.0
@@ -978,16 +978,16 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateEC1Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateEC2ERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateEC2Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateED1Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateED2Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateED1Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateEaSEPS0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateEaSERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEC1ERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEC1Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEC2ERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEC2Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateED1Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateED2Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateED1Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEaSEPS0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEaSERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEptEv@Base 2.2.0
@@ -1000,17 +1000,17 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateEC2EPS0_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateEC2ERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateEC2Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateED1Ev@Base 2.2.0
- _ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateED2Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateED1Ev@Base 2.2.0
+ (optional=private)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateEaSERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateEptEv@Base 2.2.0
- _ZN28QWebElementCollectionPrivate6createERKN3WTF10PassRefPtrIN7WebCore4NodeEEERK7QString@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateC1ERKS_@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateC1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateC2ERKS_@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateC2Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateD1Ev@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateD2Ev@Base 2.2.0
+ (optional=private)_ZN28QWebElementCollectionPrivate6createERKN3WTF10PassRefPtrIN7WebCore4NodeEEERK7QString@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateC1ERKS_@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateC1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateC2ERKS_@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateC2Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateD1Ev@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZN28QWebElementCollectionPrivateD2Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN38qCleanupResources_WebKit__dest_class__C1Ev@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZN38qCleanupResources_WebKit__dest_class__C2Ev@Base 2.2.0
  _ZN38qCleanupResources_WebKit__dest_class__D1Ev@Base 2.2.0
@@ -5543,14 +5543,14 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=alpha armhf sh4 sparc sparc64)_ZN5QListIN7WebCore15ContextMenuItemEE9node_copyEPNS2_4NodeES4_S4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE12detachSharedEv@Base 2.2.0
  (optional=templinst|arch=alpha armel armhf mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE13detach_helperEi@Base 2.2.0
- (arch=!alpha !armhf)_ZN5QListIP19QWebSettingsPrivateE13detach_helperEv@Base 2.2.0
+ (optional=private|arch=!alpha !armhf)_ZN5QListIP19QWebSettingsPrivateE13detach_helperEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE13node_destructEPNS2_4NodeE@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE13node_destructEPNS2_4NodeES4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE14node_constructEPNS2_4NodeERKS1_@Base 2.2.0
- _ZN5QListIP19QWebSettingsPrivateE18detach_helper_growEii@Base 2.2.0
+ (optional=private)_ZN5QListIP19QWebSettingsPrivateE18detach_helper_growEii@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE4Node1tEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE4freeEPN9QListData4DataE@Base 2.2.0
- _ZN5QListIP19QWebSettingsPrivateE6appendERKS1_@Base 2.2.0
+ (optional=private)_ZN5QListIP19QWebSettingsPrivateE6appendERKS1_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE6detachEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE9node_copyEPNS2_4NodeES4_S4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateE9removeAllERKS1_@Base 2.2.0
@@ -5558,8 +5558,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateEC1Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateEC2ERKS2_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateEC2Ev@Base 2.2.0
- _ZN5QListIP19QWebSettingsPrivateED1Ev@Base 2.2.0
- _ZN5QListIP19QWebSettingsPrivateED2Ev@Base 2.2.0
+ (optional=private)_ZN5QListIP19QWebSettingsPrivateED1Ev@Base 2.2.0
+ (optional=private)_ZN5QListIP19QWebSettingsPrivateED2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP19QWebSettingsPrivateEixEi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP7QActionE13node_destructEPNS2_4NodeES4_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN5QListIP7QActionE4Node1tEv@Base 2.2.0
@@ -27503,7 +27503,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK15QWebHistoryItem5titleEv@Base 2.1.0~2011week13
  _ZNK15QWebHistoryItem7isValidEv@Base 2.1.0~2011week13
  _ZNK15QWebHistoryItem8userDataEv@Base 2.1.0~2011week13
- _ZNK15QWebPagePrivate13TouchAdjuster26findCandidatePointForTouchERKN7WebCore8IntPointEPNS1_8DocumentE@Base 2.2.0
+ (optional=private)_ZNK15QWebPagePrivate13TouchAdjuster26findCandidatePointForTouchERKN7WebCore8IntPointEPNS1_8DocumentE@Base 2.2.0
  _ZNK15QWebScriptWorld5worldEv@Base 2.2.0
  _ZNK16QGraphicsWebView10isModifiedEv@Base 2.1.0~2011week13
  _ZNK16QGraphicsWebView10metaObjectEv@Base 2.1.0~2011week13
@@ -27521,8 +27521,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK16QGraphicsWebView7historyEv@Base 2.1.0~2011week13
  _ZNK16QGraphicsWebView8settingsEv@Base 2.1.0~2011week13
  _ZNK16QGraphicsWebView8sizeHintEN2Qt8SizeHintERK6QSizeF@Base 2.1.0~2011week13
- _ZNK16QWebFramePrivate17verticalScrollBarEv@Base 2.2.0
- _ZNK16QWebFramePrivate19horizontalScrollBarEv@Base 2.2.0
+ (optional=private)_ZNK16QWebFramePrivate17verticalScrollBarEv@Base 2.2.0
+ (optional=private)_ZNK16QWebFramePrivate19horizontalScrollBarEv@Base 2.2.0
  _ZNK16QWebSelectMethod10metaObjectEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZNK17QInputMethodEvent10attributesEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x)_ZNK17QInputMethodEvent12commitStringEv@Base 2.2.0
@@ -27571,14 +27571,14 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK21QWebElementCollection5countEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollection6toListEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollectionplERKS_@Base 2.1.0~2011week13
- (arch=armel mips mipsel s390 s390x)_ZNK23QGraphicsWebViewPrivate10pageClientEv@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZNK23QGraphicsWebViewPrivate7overlayEv@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZNK23QGraphicsWebViewPrivate10pageClientEv@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZNK23QGraphicsWebViewPrivate7overlayEv@Base 2.2.0
  _ZNK24QWebHapticFeedbackPlayer10metaObjectEv@Base 2.2.0
  _ZNK25QWebNotificationPresenter10metaObjectEv@Base 2.2.0
  (arch=armel mips mipsel s390 s390x sh4 sparc sparc64)_ZNK27QDynamicPropertyChangeEvent12propertyNameEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK28QExplicitlySharedDataPointerI19QWebDatabasePrivateEptEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK28QExplicitlySharedDataPointerI22QWebHistoryItemPrivateEptEv@Base 2.2.0
- (arch=armel mips mipsel s390 s390x)_ZNK28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateEcvbEv@Base 2.2.0
+ (optional=private|arch=armel mips mipsel s390 s390x)_ZNK28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateEcvbEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK28QExplicitlySharedDataPointerI22QWebScriptWorldPrivateEptEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK28QExplicitlySharedDataPointerI25QWebSecurityOriginPrivateEptEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZNK28QExplicitlySharedDataPointerI28QWebElementCollectionPrivateEntEv@Base 2.2.0
@@ -28702,7 +28702,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTI13QWebInspector@Base 2.1.0~2011week13
  _ZTI14QWebPageClient@Base 2.2.0
  _ZTI14QWebSelectData@Base 2.2.0
- _ZTI15QWebViewPrivate@Base 2.2.0
+ (optional=private)_ZTI15QWebViewPrivate@Base 2.2.0
  _ZTI16QGraphicsWebView@Base 2.1.0~2011week13
  _ZTI16QWebSelectMethod@Base 2.2.0
  _ZTI17QWebPluginFactory@Base 2.1.0~2011week13
@@ -28711,7 +28711,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTI20QWebHistoryInterface@Base 2.1.0~2011week13
  _ZTI20QWebNotificationData@Base 2.2.0
  _ZTI21WebPlatformStrategies@Base 2.2.0
- _ZTI23QGraphicsWebViewPrivate@Base 2.2.0
+ (optional=private)_ZTI23QGraphicsWebViewPrivate@Base 2.2.0
  _ZTI24QWebHapticFeedbackPlayer@Base 2.2.0
  _ZTI25QWebNotificationPresenter@Base 2.2.0
  _ZTI8QWebPage@Base 2.1.0~2011week13
@@ -29918,7 +29918,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTS13QWebInspector@Base 2.1.0~2011week13
  _ZTS14QWebPageClient@Base 2.2.0
  _ZTS14QWebSelectData@Base 2.2.0
- _ZTS15QWebViewPrivate@Base 2.2.0
+ (optional=private)_ZTS15QWebViewPrivate@Base 2.2.0
  _ZTS16QGraphicsWebView@Base 2.1.0~2011week13
  _ZTS16QWebSelectMethod@Base 2.2.0
  _ZTS17QWebPluginFactory@Base 2.1.0~2011week13
@@ -29927,7 +29927,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTS20QWebHistoryInterface@Base 2.1.0~2011week13
  _ZTS20QWebNotificationData@Base 2.2.0
  _ZTS21WebPlatformStrategies@Base 2.2.0
- _ZTS23QGraphicsWebViewPrivate@Base 2.2.0
+ (optional=private)_ZTS23QGraphicsWebViewPrivate@Base 2.2.0
  _ZTS24QWebHapticFeedbackPlayer@Base 2.2.0
  _ZTS25QWebNotificationPresenter@Base 2.2.0
  _ZTS8QWebPage@Base 2.1.0~2011week13
@@ -31134,7 +31134,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTV13QWebInspector@Base 2.1.0~2011week13
  _ZTV14QWebPageClient@Base 2.2.0
  _ZTV14QWebSelectData@Base 2.2.0
- _ZTV15QWebViewPrivate@Base 2.2.0
+ (optional=private)_ZTV15QWebViewPrivate@Base 2.2.0
  _ZTV16QGraphicsWebView@Base 2.1.0~2011week13
  _ZTV16QWebSelectMethod@Base 2.2.0
  _ZTV17QWebPluginFactory@Base 2.1.0~2011week13
@@ -31143,7 +31143,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTV20QWebHistoryInterface@Base 2.1.0~2011week13
  _ZTV20QWebNotificationData@Base 2.2.0
  _ZTV21WebPlatformStrategies@Base 2.2.0
- _ZTV23QGraphicsWebViewPrivate@Base 2.2.0
+ (optional=private)_ZTV23QGraphicsWebViewPrivate@Base 2.2.0
  _ZTV24QWebHapticFeedbackPlayer@Base 2.2.0
  _ZTV25QWebNotificationPresenter@Base 2.2.0
  _ZTV8QWebPage@Base 2.1.0~2011week13
