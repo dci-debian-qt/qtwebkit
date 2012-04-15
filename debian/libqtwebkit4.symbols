@@ -4759,7 +4759,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=!armel !mips !mipsel !ppc64 !s390 !s390x !sparc64|subst)_ZN3WTF6VectorIN7WebCore13MimeClassInfoEL{size_t}0EE14expandCapacityE{size_t}PKS2_@Base 2.2.0
  (optional=templinst|arch=armel armhf mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore13MimeClassInfoEL{size_t}0EEC1ERKS3_@Base 2.2.0
  (optional=templinst|arch=armel armhf mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore13MimeClassInfoEL{size_t}0EEC2ERKS3_@Base 2.2.0
- (optional=templinst|arch=sparc64)_ZN3WTF6VectorIN7WebCore20CompositionUnderlineELm0EE15reserveCapacityEm@Base 2.2.0
  (subst)_ZN3WTF6VectorIN7WebCore20CompositionUnderlineEL{size_t}0EE14expandCapacityE{size_t}@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore20CompositionUnderlineEL{size_t}0EE14expandCapacityE{size_t}PKS2_@Base 2.2.0
  (arch=amd64 ia64 kfreebsd-amd64 sparc|subst)_ZN3WTF6VectorIN7WebCore20CompositionUnderlineEL{size_t}0EE15reserveCapacityE{size_t}@Base 2.2.0
@@ -4767,9 +4766,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore9SVGLengthEL{size_t}0EE2atE{size_t}@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore9SVGLengthEL{size_t}0EE6insertIS2_EEv{size_t}RKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIN7WebCore9SVGLengthEL{size_t}0EE6removeE{size_t}@Base 2.2.0
- (subst|arch=!ppc64 !sparc64)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE14expandCapacityE{size_t}@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE14expandCapacityIKNS_10PassOwnPtrIS3_EEEEPT_{size_t}SB_@Base 2.2.0
- (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE15reserveCapacityE{size_t}@Base 2.2.0
+ (optional=templinst|subst|arch=!amd64 !ppc64 !sparc64)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE14expandCapacityE{size_t}@Base 2.2.0
+ (optional=templinst|arch=amd64 armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE14expandCapacityIKNS_10PassOwnPtrIS3_EEEEPT_{size_t}SB_@Base 2.2.0
+ (optional=templinst|arch=amd64 armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore13MediaQueryExpEEEL{size_t}0EE15reserveCapacityE{size_t}@Base 2.2.0
+ (optional=templinst|arch=amd64)_ZN3WTF6VectorINS_6OwnPtrIN7WebCore17CSSParserSelectorEEELm0EE14expandCapacityIKNS_10PassOwnPtrIS3_EEEEPT_mSB_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN3JSC11ProfileNodeEEEL{size_t}0EE3endEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN3JSC11ProfileNodeEEEL{size_t}0EE4dataEv@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorINS_6RefPtrIN3JSC11ProfileNodeEEEL{size_t}0EE5beginEv@Base 2.2.0
@@ -4809,6 +4809,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIPN7WebCore5XPath10ExpressionEL{size_t}0EEnwE{size_t}@Base 2.2.0
  (optional=templinst|arch=armhf)_ZN3WTF6VectorIPN7WebCore5XPath9PredicateELj0EED1Ev@Base 2.2.0
  (optional=templinst|arch=armhf)_ZN3WTF6VectorIPN7WebCore5XPath9PredicateELj0EED2Ev@Base 2.2.0
+ (optional=templinst|arch=amd64)_ZN3WTF6VectorIPN7WebCore5XPath9PredicateELm0EE15reserveCapacityEm@Base 2.2.0
  (arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIPN7WebCore5XPath9PredicateEL{size_t}0EEnwE{size_t}@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIfL{size_t}0EE6insertIfEEv{size_t}RKT_@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x|subst)_ZN3WTF6VectorIfL{size_t}0EE6removeE{size_t}@Base 2.2.0
@@ -8277,9 +8278,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN7WebCore15JSXMLSerializerD1Ev@Base 2.2.0
  _ZN7WebCore15JSXMLSerializerD2Ev@Base 2.2.0
  (arch=alpha amd64 armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC1ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
- (arch=alpha amd64 armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC1Ev@Base 2.2.0
+ (arch=alpha armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC1Ev@Base 2.2.0
  (arch=alpha amd64 armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC2ERKNS_4KURLERKN3WTF6StringENS_26ResourceRequestCachePolicyE@Base 2.2.0
- (arch=alpha amd64 armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC2Ev@Base 2.2.0
+ (arch=alpha armhf kfreebsd-amd64 powerpc ppc64 sh4 sparc sparc64)_ZN7WebCore15ResourceRequestC2Ev@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore15SVGListPropertyINS_12SVGPointListEE10canGetItemERS1_jRi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore15SVGListPropertyINS_12SVGPointListEE13canRemoveItemERS1_jRi@Base 2.2.0
  (optional=templinst|arch=armel mips mipsel s390 s390x)_ZN7WebCore15SVGListPropertyINS_12SVGPointListEE14canReplaceItemERS1_jRi@Base 2.2.0
@@ -32700,7 +32701,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (c++)"non-virtual thunk to WebPlatformStrategies::AXTextFieldActionVerb()@Base" 2.2.0
  (c++)"non-virtual thunk to WebPlatformStrategies::AXUncheckedCheckBoxActionVerb()@Base" 2.2.0
  (c++)"non-virtual thunk to WebPlatformStrategies::AXWebAreaText()@Base" 2.2.0
- (c++|subst|arch=amd64 kfreebsd-amd64 ppc64 sparc64)"non-virtual thunk to WebPlatformStrategies::addVisitedLink(WebCore::Page*, unsigned long)@Base" 2.2.0
  (c++|subst|arch=!ppc64 !sparc64)"non-virtual thunk to WebPlatformStrategies::addVisitedLink(WebCore::Page*, {c++:uint64_t})@Base" 2.2.0
  (c++)"non-virtual thunk to WebPlatformStrategies::contextMenuItemTagBold()@Base" 2.2.0
  (c++)"non-virtual thunk to WebPlatformStrategies::contextMenuItemTagCheckGrammarWithSpelling()@Base" 2.2.0
@@ -32759,7 +32759,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (c++|arch=alpha amd64 ia64 kfreebsd-amd64 ppc64 s390 s390x sparc64)"non-virtual thunk to WebPlatformStrategies::getPluginInfo(WebCore::Page const*, WTF::Vector<WebCore::PluginInfo, 0ul>&)@Base" 2.2.0
  (c++)"non-virtual thunk to WebPlatformStrategies::imageTitle(WTF::String const&, WebCore::IntSize const&)@Base" 2.2.0
  (c++)"non-virtual thunk to WebPlatformStrategies::inputElementAltText()@Base" 2.2.0
- (c++|subst|arch=amd64 kfreebsd-amd64 ppc64 sparc64)"non-virtual thunk to WebPlatformStrategies::isLinkVisited(WebCore::Page*, unsigned long)@Base" 2.2.0
  (c++|subst|arch=!ppc64 !sparc64)"non-virtual thunk to WebPlatformStrategies::isLinkVisited(WebCore::Page*, {c++:uint64_t})@Base" 2.2.0
  (c++)"non-virtual thunk to WebPlatformStrategies::localizedMediaControlElementHelpText(WTF::String const&)@Base" 2.2.0
  (c++)"non-virtual thunk to WebPlatformStrategies::localizedMediaControlElementString(WTF::String const&)@Base" 2.2.0
