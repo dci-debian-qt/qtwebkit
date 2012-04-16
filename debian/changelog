@@ -1,6 +1,8 @@
 qtwebkit (2.2.0-5) UNRELEASED; urgency=low
 
   * Update symbol file with the latest changes from the build logs.
+  * Mark a bunch of other internal WebCore namespace symbols as
+    optional=private.
 
  -- Modestas Vainius <modax@debian.org>  Mon, 16 Apr 2012 23:09:05 +0300
 
