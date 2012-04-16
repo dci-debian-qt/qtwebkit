@@ -27624,13 +27624,13 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=private)_ZZN7WebCore18DocTypeStringsHash21doctype_hash_functionEPKcjE11asso_values@Base 2.2.0
  (optional=private)_ZZN7WebCore20CSSPropertyNamesHash21propery_hash_functionEPKcjE11asso_values@Base 2.2.0
  (optional=private)_ZZN7WebCore20CSSValueKeywordsHash19value_hash_functionEPKcjE11asso_values@Base 2.2.0
- (arch=s390x)_ZdlPvS_@Base 2.2.0
- (arch=s390x)_Zeq5QCharS_@Base 2.2.0
+ (optional=external|arch=s390x)_ZdlPvS_@Base 2.2.0
+ (optional=external|arch=s390x)_Zeq5QCharS_@Base 2.2.0
  (optional=templinst|arch=s390x)_ZeqI9QWebFrameEbPT_RK8QPointerIS1_E@Base 2.2.0
- (arch=s390x)_ZeqP9QKeyEventN12QKeySequence11StandardKeyE@Base 2.2.0
- (arch=!armel !armhf !s390x !sh4 !sparc !sparc64)_ZeqRK10QByteArrayPKc@Base 2.2.0
- (arch=s390x)_Zge5QCharS_@Base 2.2.0
- (arch=s390x)_Zle5QCharS_@Base 2.2.0
+ (optional=external|arch=s390x)_ZeqP9QKeyEventN12QKeySequence11StandardKeyE@Base 2.2.0
+ (optional=external|arch=!armel !armhf !s390x !sh4 !sparc !sparc64)_ZeqRK10QByteArrayPKc@Base 2.2.0
+ (optional=external|arch=s390x)_Zge5QCharS_@Base 2.2.0
+ (optional=external|arch=s390x)_Zle5QCharS_@Base 2.2.0
  _ZlsR11QDataStreamRK11QWebHistory@Base 2.1.0~2011week13
  (arch=s390x)_ZmiRK6QPointS1_@Base 2.2.0
  (arch=s390x)_ZmiRK7QPointFS1_@Base 2.2.0
