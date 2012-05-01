@@ -3,6 +3,10 @@ Author: Ahmad Sharif <asharif@chromium.org>
 Bug: https://bugs.webkit.org/show_bug.cgi?id=62168
 Origin: upstream, http://trac.webkit.org/changeset/93631
 
+---
+ Source/WebCore/dom/Element.cpp |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 --- a/Source/WebCore/dom/Element.cpp
 +++ b/Source/WebCore/dom/Element.cpp
 @@ -1080,7 +1080,7 @@ void Element::recalcStyle(StyleChange ch

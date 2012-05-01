@@ -8,7 +8,7 @@ Author: Fathi Boudra <fabo@debian.org>
 
 --- a/Source/WebKit.pri
 +++ b/Source/WebKit.pri
-@@ -27,6 +27,8 @@ CONFIG(standalone_package): DEFINES *= N
+@@ -36,6 +36,8 @@ CONFIG(standalone_package): DEFINES *= N
  CONFIG += depend_includepath
  DEPENDPATH += $$OUT_PWD
  

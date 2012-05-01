@@ -9,7 +9,7 @@ Author: Sune Vuorela <sune@debian.org>
 
 --- a/Source/WebKit.pri
 +++ b/Source/WebKit.pri
-@@ -94,6 +94,7 @@ CONFIG -= warn_on
+@@ -103,6 +103,7 @@ CONFIG -= warn_on
  *-g++*:QMAKE_CXXFLAGS += -Wall -Wextra -Wreturn-type -fno-strict-aliasing -Wcast-align -Wchar-subscripts -Wformat-security -Wreturn-type -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-switch-enum -Wundef -Wmissing-noreturn -Winit-self
  
  *-g++*:QMAKE_LFLAGS += -Wl,--as-needed
