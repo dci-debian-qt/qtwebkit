@@ -8,6 +8,7 @@ qtwebkit (2.2.1-2) UNRELEASED; urgency=low
     apply also to the hurd-g++ mkspec.
   * Bump Qt build dependency to 4:4.8.1~ (for the change in paths of QML
     imports).
+    - update debian/libqtwebkit-qmlwebkitplugin.install accordingly
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 01 May 2012 15:07:39 +0300
 
