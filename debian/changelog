@@ -4,6 +4,13 @@ qtwebkit (2.2.1-2) UNRELEASED; urgency=low
   * Build with -gstabs on armhf instead of -g, like armel.
   * Re-add adjust_symbols_visibility_for_webcore.diff.
 
+  [ Pino Toscano ]
+  * glibc_mkspec.diff: rename to glibc_hurd_mkspecs.diff, and extend to
+    apply also to the hurd-g++ mkspec.
+  * Bump Qt build dependency to 4:4.8.1~ (for the change in paths of QML
+    imports).
+    - update debian/libqtwebkit-qmlwebkitplugin.install accordingly
+
  -- Fathi Boudra <fabo@debian.org>  Tue, 01 May 2012 15:07:39 +0300
 
 qtwebkit (2.2.1-1) experimental; urgency=low
