@@ -1,10 +1,11 @@
 Author: Pino Toscano <pino@debian.org>
-Description: Use the glibc mkspec when necessary.
+Description: Use the glibc and hurd mkspecs when necessary.
  - wtf.pri: enable the glib support (needed to compile the GStreamer support)
  - WebKit.pri: add -Werror on non-Linux i386/amd64 archs, and -Wno-c++0x-compat
    for all the non-Linux ones
- This is Debian-specific, as upstream does not have the glibc-g++ mkspec.
-Last-Update: 2011-09-20
+ The glibc part is Debian-specific, as upstream does not have the glibc-g++
+ mkspec, while the hurd part could be upstreamed.
+Last-Update: 2012-05-01
 Origin: vendor
 Forwarded: not-needed
 
@@ -20,7 +21,7 @@ Forwarded: not-needed
      wtf/unicode/UTF8.cpp
  
 -linux-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {
-+linux-*|glibc-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {
++linux-*|glibc-*|hurd-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {
      !contains(QT_CONFIG, no-pkg-config):system(pkg-config --exists glib-2.0 gio-2.0 gstreamer-0.10): {
          DEFINES += ENABLE_GLIB_SUPPORT=1
          PKGCONFIG += glib-2.0 gio-2.0
@@ -31,7 +32,7 @@ Forwarded: not-needed
  
  # Treat warnings as errors on x86/Linux/GCC
 -linux-g++* {
-+linux-g++*|glibc-* {
++linux-g++*|glibc-*|hurd-* {
      isEqual(QT_ARCH,x86_64)|isEqual(QT_ARCH,i386): QMAKE_CXXFLAGS += -Werror
  
      greaterThan(QT_GCC_MAJOR_VERSION, 3):greaterThan(QT_GCC_MINOR_VERSION, 5) {
