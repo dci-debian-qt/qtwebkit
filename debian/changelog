@@ -1,6 +1,8 @@
-qtwebkit (2.2.1-2) UNRELEASED; urgency=low
+qtwebkit (2.2.1-2) unstable; urgency=low
 
   * Upload to Sid.
+
+  [ Fathi Boudra ]
   * Build with -gstabs on armhf instead of -g, like armel.
 
   [ Pino Toscano ]
@@ -12,7 +14,7 @@ qtwebkit (2.2.1-2) UNRELEASED; urgency=low
     - mark libqtwebkit-qmlwebkitplugin as Multi-Arch: same
   * Remove ${shlibs:Depends} from libqtwebkit4-dbg.
 
- -- Fathi Boudra <fabo@debian.org>  Tue, 01 May 2012 15:07:39 +0300
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 01 May 2012 15:07:39 +0300
 
 qtwebkit (2.2.1-1) experimental; urgency=low
 
