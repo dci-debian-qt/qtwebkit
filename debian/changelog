@@ -2,6 +2,7 @@ qtwebkit (2.2.1-2) UNRELEASED; urgency=low
 
   * Upload to Sid.
   * Build with -gstabs on armhf instead of -g, like armel.
+  * Re-add adjust_symbols_visibility_for_webcore.diff.
 
  -- Fathi Boudra <fabo@debian.org>  Tue, 01 May 2012 15:07:39 +0300
 

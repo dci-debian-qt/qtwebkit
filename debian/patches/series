@@ -1,4 +1,5 @@
 # upstream patches
+adjust_symbols_visibility_for_webcore.diff
 Fix_build_with_GLib_2.31_changeset_r97269.patch
 upstream_changeset_r93631.diff
 upstream_changeset_r113848.diff
