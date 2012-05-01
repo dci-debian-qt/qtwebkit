@@ -16,7 +16,7 @@ Bug-Debian: http://bugs.debian.org/618325
  }
  
 +equals(QT_ARCH, s390)|equals(QT_ARCH, arm)|equals(QT_ARCH, mips) {
-+	message("s390, armel, mipsel workaround for QtWebkit: do not build with -g, but with -gstabs")
++	message("s390, armel, armhf, mipsel workaround for QtWebkit: do not build with -g, but with -gstabs")
 +	QMAKE_CXXFLAGS -= -g
 +	QMAKE_CXXFLAGS += -gstabs
 +}
