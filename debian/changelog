@@ -1,3 +1,9 @@
+qtwebkit (2.2.1-2) UNRELEASED; urgency=low
+
+  * Upload to Sid.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 01 May 2012 15:07:39 +0300
+
 qtwebkit (2.2.1-1) experimental; urgency=low
 
   * New upstream release.
