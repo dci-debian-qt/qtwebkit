@@ -2,7 +2,6 @@ qtwebkit (2.2.1-2) UNRELEASED; urgency=low
 
   * Upload to Sid.
   * Build with -gstabs on armhf instead of -g, like armel.
-  * Re-add adjust_symbols_visibility_for_webcore.diff.
 
   [ Pino Toscano ]
   * glibc_mkspec.diff: rename to glibc_hurd_mkspecs.diff, and extend to
