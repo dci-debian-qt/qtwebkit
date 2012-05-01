@@ -58,7 +58,7 @@ Package: libqtwebkit4-dbg
 Priority: extra
 Architecture: any
 Section: debug
-Depends: libqtwebkit4 (= ${binary:Version}), ${misc:Depends},
+Depends: libqtwebkit4 (= ${binary:Version}), ${misc:Depends}
 Replaces: libqt4-webkit-dbg (<= 4:4.7.0~beta1)
 Description: Web content engine library for Qt - debugging symbols
  QtWebKit provides a Web browser engine that makes it easy to embed content
