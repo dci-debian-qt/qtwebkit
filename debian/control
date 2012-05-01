@@ -47,6 +47,7 @@ Description: Web content engine library for Qt
 
 Package: libqtwebkit-qmlwebkitplugin
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Qt WebKit QML plugin
  QtWebKit provides a Web browser engine that makes it easy to embed content
