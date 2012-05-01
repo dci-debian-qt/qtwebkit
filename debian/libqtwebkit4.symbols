@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 2.2.0 alpha amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 s390 s390x sh4 sparc sparc64
+# SymbolsHelper-Confirmed: 2.2.1 amd64
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
  JSClassCreate@Base 2.1.0~2011week13
@@ -1002,6 +1002,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=private|arch=!alpha !armel !armhf !mips !mipsel !s390 !s390x)_ZN5QListIP19QWebSettingsPrivateE13detach_helperEv@Base 2.2.0
  (optional=private)_ZN5QListIP19QWebSettingsPrivateE18detach_helper_growEii@Base 2.2.0
  (optional=private)_ZN5QListIP19QWebSettingsPrivateE6appendERKS1_@Base 2.2.0
+ (optional=templinst)_ZN5QListIP19QWebSettingsPrivateE9removeAllERKS1_@Base 2.2.1
  (optional=private)_ZN5QListIP19QWebSettingsPrivateED1Ev@Base 2.2.0
  (optional=private)_ZN5QListIP19QWebSettingsPrivateED2Ev@Base 2.2.0
  _ZN5QListIP7QActionED1Ev@Base 2.2.0
@@ -23344,6 +23345,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=s390x)_ZNK5QHashIiiE7isEmptyEv@Base 2.2.0
  (optional=templinst|arch=s390x)_ZNK5QHashIiiE8findNodeERKiPj@Base 2.2.0
  (optional=templinst|arch=s390x)_ZNK5QListI7QStringE4sizeEv@Base 2.2.0
+ (optional=templinst)_ZNK5QListI7QStringE7indexOfERKS0_i@Base 2.2.1
  _ZNK5QListI7QStringEeqERKS1_@Base 2.2.0
  (optional=templinst|arch=s390x)_ZNK5QListI7QStringEixEi@Base 2.2.0
  (optional=templinst|arch=s390x)_ZNK5QListIN17QInputMethodEvent9AttributeEE2atEi@Base 2.2.0
@@ -23358,6 +23360,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=templinst|arch=s390x)_ZNK5QListIP13QGraphicsViewE2atEi@Base 2.2.0
  (optional=templinst|arch=s390x)_ZNK5QListIP13QGraphicsViewE5valueEi@Base 2.2.0
  (optional=templinst|arch=s390x)_ZNK5QListIP19QWebSettingsPrivateE5countEv@Base 2.2.0
+ (optional=templinst)_ZNK5QListIP19QWebSettingsPrivateE7indexOfERKS1_i@Base 2.2.1
  (optional=templinst|arch=s390x)_ZNK5QListIP7QActionE2atEi@Base 2.2.0
  (optional=templinst|arch=s390x)_ZNK5QListIP7QActionE5countEv@Base 2.2.0
  (optional=templinst|arch=s390x)_ZNK5QListIP9QWebFrameE10constBeginEv@Base 2.2.0
