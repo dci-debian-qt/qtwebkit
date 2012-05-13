@@ -1,9 +1,12 @@
-qtwebkit (2.2.1-4) UNRELEASED; urgency=low
+qtwebkit (2.2.1-4) unstable; urgency=high
 
   * Confirm new symbol file on all arches except armel and mipsel. However,
     hopefully, it will work on those two as well.
+  * Urgency=high because we need multi-arch capable QtWebKit in testing as
+    multi-arch Qt4 and non-multiarch QtWebKit do not play well for development
+    purposes.
 
- -- Modestas Vainius <modax@debian.org>  Sun, 13 May 2012 12:22:44 +0300
+ -- Modestas Vainius <modax@debian.org>  Sun, 13 May 2012 12:24:37 +0300
 
 qtwebkit (2.2.1-3) unstable; urgency=low
 
