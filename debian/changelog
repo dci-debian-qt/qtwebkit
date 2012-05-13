@@ -1,5 +1,7 @@
 qtwebkit (2.2.1-4) UNRELEASED; urgency=low
 
+  * Confirm new symbol file on all arches except armel and mipsel. However,
+    hopefully, it will work on those two as well.
 
  -- Modestas Vainius <modax@debian.org>  Sun, 13 May 2012 12:22:44 +0300
 
