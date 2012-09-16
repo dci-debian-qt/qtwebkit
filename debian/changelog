@@ -1,6 +1,10 @@
 qtwebkit (2.2.1-5) UNRELEASED; urgency=low
 
-
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * UNFINISHED!!!!
+    Rewrite debian/copyright to DEP-5 (Closes: #673268).
+    Thanks Elena ``of Valhalla'' Grandi and Tobias Bengfort.
+    UNFINISHED!!!!
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 16 Sep 2012 17:13:21 -0300
 
