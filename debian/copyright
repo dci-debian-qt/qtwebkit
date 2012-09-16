@@ -1,48 +1,264 @@
-This work was packaged for Debian by:
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: http://trac.webkit.org/wiki/QtWebKitJournal
 
-    Fathi Boudra <fabo@debian.org> on Tue, 30 Mar 2010 08:48:54 +0200
+Files: wscript
+Copyright: 2009 Kevin Ollivier
+License: BSD-2-apple
 
-It was downloaded from:
+Files: Examples/NetscapeCocoaPlugin/* Examples/NetscapeCoreAnimationPlugin/*
+ Examples/NetscapeInputMethodPlugin/*
+Copyright: Apple Computer, Inc.
+License: permissive-apple_computer_inc
 
-    http://trac.webkit.org/wiki/QtWebKitJournal
+Files: Examples/NetscapeCoreAnimationMoviePlugin
+Copyright: 2009 Apple Inc.
+License: permissive-apple_inc
 
-Upstream Authors:
+Files: Source/autotools/dolt.m4
+Copyright: 2007-2008 Josh Triplett <josh@freedesktop.org>
+License: permissive-dolt
 
-    Apple Inc.
-    Google Inc.
-    Nokia Corporation and/or its subsidiary(-ies)
+Files: Source/cmake/FindFontconfig.cmake
+Copyright: 2006,2007 Laurent Montel, <montel@kde.org>
+License: BSD-3-clause
 
-Copyright:
+Files: Source/cmake/FindLibSoup2.cmake
+Copyright: 2007 Daniel Gollub <gollub@b1-systems.de>
+ 2008 Bjoern Ricks  <bjoern.ricks@gmail.com>
+License: BSD-3-clause
 
-    Copyright (C) 2005-2010 Apple Inc. All rights reserved.
-    Copyright (C) 2005-2010 Google Inc. All rights reserved.
-    Copyright (C) 2008-2010 Nokia Corporation and/or its subsidiary(-ies)
+Files: Source/gyp/configure
+Copyright: 2011 Google Inc.
+License: BSD-3-google
 
-License:
+Files: WebKitLibraries/WebCoreSQLite3/*
+Copyright: 2001, 2006 D. Richard Hipp <drh@hwaci.com>
+License: copyright-disclaimer
 
-    Redistribution and use in source and binary forms, with or without
-    modification, are permitted provided that the following conditions
-    are met:
-    1.  Redistributions of source code must retain the above copyright
-        notice, this list of conditions and the following disclaimer.
-    2.  Redistributions in binary form must reproduce the above copyright
-        notice, this list of conditions and the following disclaimer in the
-        documentation and/or other materials provided with the distribution.
+Files: Source/JavaScriptCore/API/APICast.h
+ Source/JavaScriptCore/API/APIShims.h
+ Source/JavaScriptCore/API/JavaScriptCore.h
+ Source/JavaScriptCore/API/JSBase.*
+ Source/JavaScriptCore/API/JSBasePrivate.h
+ Source/JavaScriptCore/API/JSCallbackConstructor.*
+ Source/JavaScriptCore/API/JSCallbackFunction.*
+ Source/JavaScriptCore/API/JSClassRef.*
+ Source/JavaScriptCore/API/JSContextRef.h
+ Source/JavaScriptCore/API/JSContextRefPrivate.h
+ Source/JavaScriptCore/API/JSStringRefCF.*
+ Source/JavaScriptCore/API/JSStringRef.h
+ Source/JavaScriptCore/API/JSValueRef.h
+Copyright: 2006-2009 Apple Computer, Inc.
+License: BSD-2-apple_computer_inc
 
-    THIS SOFTWARE IS PROVIDED BY APPLE INC. AND ITS CONTRIBUTORS ``AS IS'' AND ANY
-    EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-    DISCLAIMED. IN NO EVENT SHALL APPLE INC. OR ITS CONTRIBUTORS BE LIABLE FOR ANY
-    DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
-    ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Files: Source/JavaScriptCore/API/JSContextRef.cpp
+ Source/JavaScriptCore/API/JSObjectRefPrivate.h
+ Source/JavaScriptCore/API/JSProfilerPrivate.*
+ Source/JavaScriptCore/API/JSStringRef.cpp
+ Source/JavaScriptCore/API/JSValueRef.cpp
+ Source/JavaScriptCore/API/JSWeakObjectMapRefInternal.h
+ Source/JavaScriptCore/API/JSWeakObjectMapRefPrivate.*
+ Source/JavaScriptCore/API/OpaqueJSString.*
+ Source/JavaScriptCore/API/WebKitAvailability.h
+Copyright: 2005-2010 Apple Inc.
+License: BSD-2-apple_computer_inc
 
-The Debian packaging is:
+Files: Source/JavaScriptCore/API/JSCallbackObject.cpp
+ Source/JavaScriptCore/API/JSCallbackObjectFunctions.h
+ Source/JavaScriptCore/API/JSCallbackObject.h
+Copyright: 2006-2008,2010 Apple Computer, Inc.
+ 2007 Eric Seidel <eric@webkit.org>
+License: BSD-2-apple_computer_inc
 
-    Copyright (C) 2010 Fathi Boudra <fabo@debian.org>
+Files: Source/JavaScriptCore/API/JavaScript.h
+Copyright: 2006 Apple Inc.
+ 2008 Alp Toker <alp@atoker.com>
+License: BSD-2-apple_computer_inc
 
-and is licensed under the LGPL version 2 or later,
-see "/usr/share/common-licenses/LGPL-2".
+Files: Source/JavaScriptCore/API/JSObjectRef.cpp
+ Source/JavaScriptCore/API/JSObjectRef.h
+Copyright: 2006, 2007, 2008 Apple Inc.
+ 2008 Kelvin W Sherlock (ksherlock@gmail.com)
+License: BSD-2-apple_computer_inc
+
+Files: Tools/QtTestBrowser/fpstimer.*
+Copyright: 2010 Nokia Corporation and/or its subsidiary(-ies)
+License: BSD-2-apple_computer_inc
+
+Files: Tools/QtTestBrowser/launcherwindow.*
+ Tools/QtTestBrowser/main.*
+ Tools/QtTestBrowser/mainwindow.*
+ Tools/QtTestBrowser/webpage.*
+ Tools/QtTestBrowser/webview.*
+Copyright: 2009-2010 Nokia Corporation and/or its subsidiary(-ies)
+ 2009 Girish Ramakrishnan <girish@forwardbias.in>
+ 2006 George Staikos <staikos@kde.org>
+ 2006 Dirk Mueller <mueller@kde.org>
+ 2006 Zack Rusin <zack@kde.org>
+ 2006 Simon Hausmann <hausmann@kde.org>
+License: BSD-2-apple_computer_inc
+
+Files: Tools/QtTestBrowser/locationedit.*
+Copyright: 2010 Nokia Corporation and/or its subsidiary(-ies)
+ 2011 Andreas Kling <kling@webkit.org>
+License: BSD-2-apple_computer_inc
+
+Files: Tools/QtTestBrowser/urlloader.*
+Copyright: 2010 Nokia Corporation and/or its subsidiary(-ies)
+ 2009 University of Szeged
+License: BSD-2-apple_computer_inc
+
+Files: Tools/QtTestBrowser/utils.*
+ Tools/QtTestBrowser/webinspector.h
+Copyright: 2010 Nokia Corporation and/or its subsidiary(-ies)
+License: BSD-2-apple_computer_inc
+
+Files: WebKitLibraries/win/include/WebKitSystemInterface/WebKitSystemInterface.h
+ WebKitLibraries/win/tools/scripts/auto-version.sh
+ WebKitLibraries/win/tools/scripts/feature-defines.sh
+Copyright: 2007-2010 Apple Inc.
+License: BSD-2-apple_computer_inc
+
+Files: Source/JavaScriptCore/API/JSRetainPtr.h
+ Source/JavaScriptCore/API/JSStringRefBSTR.cpp
+ Source/JavaScriptCore/API/JSStringRefBSTR.h
+Copyright: 2005, 2006, 2007, 2010 Apple Inc.
+License: BSD-3-apple_computer_inc
+
+
+
+
+
+
+
+
+
+
+License: BSD-2-apple-inc
+ All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1.  Redistributions of source code must retain the above copyright
+     notice, this list of conditions and the following disclaimer.
+ 2.  Redistributions in binary form must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY APPLE INC. AND ITS CONTRIBUTORS ``AS IS'' AND ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL APPLE INC. OR ITS CONTRIBUTORS BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: permissive-apple_computer_inc
+ IMPORTANT:  This Apple software is supplied to you by Apple Computer, Inc.
+ ("Apple") in consideration of your agreement to the following terms, and
+ your use, installation, modification or redistribution of this Apple software
+ constitutes acceptance of these terms.  If you do not agree with these terms,
+ please do not use, install, modify or redistribute this Apple software.
+ .
+ In consideration of your agreement to abide by the following terms, and
+ subject to these terms, Apple grants you a personal, non-exclusive license,
+ under Apple’s copyrights in this original Apple software (the "Apple
+ Software"), to use, reproduce, modify and redistribute the Apple Software,
+ with or without modifications, in source and/or binary forms; provided that
+ if you redistribute the Apple Software in its entirety and without
+ modifications, you must retain this notice and the following text and
+ disclaimers in all such redistributions of the Apple Software.
+ Neither the name, trademarks, service marks or logos of Apple Computer,
+ Inc. may be used to endorse or promote products derived from the Apple
+ Software without specific prior written permission from Apple. Except as
+ expressly stated in this notice, no other rights or licenses, express or
+ implied, are granted by Apple herein, including but not limited to any
+ patent rights that may be infringed by your derivative works or by other
+ works in which the Apple Software may be incorporated.
+ .
+ The Apple Software is provided by Apple on an "AS IS" basis.  APPLE MAKES
+ NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED
+ WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND OPERATION ALONE OR IN
+ COMBINATION WITH YOUR PRODUCTS.
+ .
+ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, MODIFICATION
+ AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER
+ THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR
+ OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: permissive-apple_inc
+ All rights reserved.
+ .
+ Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple
+ Inc. ("Apple") in consideration of your agreement to the following
+ terms, and your use, installation, modification or redistribution of
+ this Apple software constitutes acceptance of these terms.  If you do
+ not agree with these terms, please do not use, install, modify or
+ redistribute this Apple software.
+ .
+ In consideration of your agreement to abide by the following terms, and
+ subject to these terms, Apple grants you a personal, non-exclusive
+ license, under Apple's copyrights in this original Apple software (the
+ "Apple Software"), to use, reproduce, modify and redistribute the Apple
+ Software, with or without modifications, in source and/or binary forms;
+ provided that if you redistribute the Apple Software in its entirety and
+ without modifications, you must retain this notice and the following
+ text and disclaimers in all such redistributions of the Apple Software.
+ Neither the name, trademarks, service marks or logos of Apple Inc. may
+ be used to endorse or promote products derived from the Apple Software
+ without specific prior written permission from Apple.  Except as
+ expressly stated in this notice, no other rights or licenses, express or
+ implied, are granted by Apple herein, including but not limited to any
+ patent rights that may be infringed by your derivative works or by other
+ works in which the Apple Software may be incorporated.
+ .
+ The Apple Software is provided by Apple on an "AS IS" basis.  APPLE
+ MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
+ OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
+ .
+ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
+ OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
+ MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
+ AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+ STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+License: permissive-dolt
+ Copying and distribution of this file, with or without modification,
+ are permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved.
+
+License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE O
