@@ -1,4 +1,4 @@
-qtwebkit (2.2.1-5) UNRELEASED; urgency=low
+qtwebkit (2.2.1-5) unstable; urgency=low
 
   * Team upload.
 
@@ -7,7 +7,7 @@ qtwebkit (2.2.1-5) UNRELEASED; urgency=low
     (Closes: #676162).
   * This upload will get rebuilt with xz compression (Closes: #687036).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 06 Nov 2012 18:12:32 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 06 Nov 2012 18:20:35 -0300
 
 qtwebkit (2.2.1-4) unstable; urgency=high
 
