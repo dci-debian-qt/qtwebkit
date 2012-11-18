@@ -1,6 +1,6 @@
-qtwebkit (2.2.1-5) UNRELEASED; urgency=low
+qtwebkit (2.2.1-5) unstable; urgency=low
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Team upload.
   * Re upload the package to fix the M-A uninstallability due to a binNMU
     (Closes: #676162).
   * This upload will get rebuilt with xz compression (Closes: #687036).
@@ -10,7 +10,7 @@ qtwebkit (2.2.1-5) UNRELEASED; urgency=low
     The current copyright is *huge*: 12637 lines. I have reviewed it but
     there still could be errors.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 16 Sep 2012 17:13:21 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Sun, 18 Nov 2012 15:56:21 -0300
 
 qtwebkit (2.2.1-4) unstable; urgency=high
 
