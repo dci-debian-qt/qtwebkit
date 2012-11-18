@@ -7,8 +7,8 @@ qtwebkit (2.2.1-5) UNRELEASED; urgency=low
     Thanks Ansgar Burchardt for the patch.
   * Rewrite debian/copyright to DEP-5 (Closes: #673268).
     Thanks Elena ``of Valhalla'' Grandi and Tobias Bengfort.
-    The current copyright is *huge*: 12637 lines. I have reviewed it but the
-    file is *huge*: 12000+ lines, so there still could be errors.
+    The current copyright is *huge*: 12637 lines. I have reviewed it but
+    there still could be errors.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 16 Sep 2012 17:13:21 -0300
 
