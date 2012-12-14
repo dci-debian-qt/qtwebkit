@@ -7,6 +7,8 @@ License: BSD-2-clause
 
 Files: debian/*
 Copyright: 2010 Fathi Boudra <fabo@debian.org>
+           2012 Zolt√°n Balogh <zoltan.balogh@ubuntu.com>
+           2012 Timo Jyrinki <timo@debian.org>
 License: LGPL-2+
 
 Files: WebKitLibraries/WebCoreSQLite3/*
@@ -3474,7 +3476,7 @@ License: LGPL-2+
 Files: Source/WebCore/dom/MappedAttributeEntry.h
 Copyright: 1999 Lars Knoll <knoll@kde.org>
  2003, 2004, 2005, 2006 Apple Computer, Inc.
- 2010 François Sausset <sausset@gmail.com>.
+ 2010 Fran√ßois Sausset <sausset@gmail.com>.
 License: LGPL-2+
 
 Files: Source/WebCore/dom/SpaceSplitString.h
@@ -12474,18 +12476,18 @@ License: FreeB-1.1
  in source code form, the Notice must appear in every file that can
  include a text comments field; in executable form, the Notice and a copy
  of this License must appear in related documentation or collateral where
- the Recipientøs rights relating to Covered Code are described. Any
+ the Recipient's rights relating to Covered Code are described. Any
  Additional Notice Provisions which actually appears in the Original Code
  must also be retained or included in any and all redistributions of
  Covered Code.
  .
  Alternative License. Provided that Recipient is in compliance with the
  terms of this License, Recipient may, so long as without derogation of
- any of SGIøs rights in and to the Original Code, distribute the source
+ any of SGI's rights in and to the Original Code, distribute the source
  code and/or executable version(s) of Covered Code under (1) this
  License; (2) a license identical to this License but for only such
- changes as are necessary in order to clarify Recipientøs role as
- licensor of Modifications; and/or (3) a license of Recipientøs
+ changes as are necessary in order to clarify Recipient's role as
+ licensor of Modifications; and/or (3) a license of Recipient's
  choosing, containing terms different from this License, provided that
  the license terms include this Section 3 and Sections 4, 6, 7, 10, 12,
  and 13, which terms may not be modified or superseded by any other terms
