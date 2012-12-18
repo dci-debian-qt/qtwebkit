@@ -1,4 +1,4 @@
-qtwebkit-opensource-src (5.0.0~rc1-1) UNRELEASED; urgency=low
+qtwebkit-opensource-src (5.0.0~rc2-1) UNRELEASED; urgency=low
 
   * New upstream release candidate.
   * debian/control:
