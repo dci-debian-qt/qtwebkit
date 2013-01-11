@@ -30,8 +30,8 @@ override_dh_auto_install:
 	make install INSTALL_ROOT=$(CURDIR)/debian/tmp
 	
 	# Remove rpath from the offending binaries
-	chrpath -r "" $(CURDIR)/debian/tmp/usr/lib/*/qt5/libexec/QtWebProcess
-	chrpath -r "" $(CURDIR)/debian/tmp/usr/lib/*/qt5/libexec/QtWebPluginProcess
+	chrpath -d $(CURDIR)/debian/tmp/usr/lib/*/qt5/libexec/QtWebProcess
+	chrpath -d $(CURDIR)/debian/tmp/usr/lib/*/qt5/libexec/QtWebPluginProcess
 	
 	# Remove la files (http://wiki.debian.org/ReleaseGoals/LAFileRemoval)
 	rm -f debian/tmp/usr/lib/*/*.la
