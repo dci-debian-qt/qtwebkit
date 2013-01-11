@@ -1,6 +1,6 @@
 qtwebkit-opensource-src (5.0.0-1) UNRELEASED; urgency=low
 
-  * New upstream release.
+  * Initial new upstream release. (Closes: #697509)
   * debian/control:
     - Add missing Pre-Depends for xz compression
     - Rename packages by appending the major version
