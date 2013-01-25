@@ -4,6 +4,7 @@ qtwebkit-opensource-src (5.0.0-1) UNRELEASED; urgency=low
   * debian/control:
     - Add missing Pre-Depends for xz compression
     - Rename packages by appending the major version
+    - Depend on system png/jpeg libraries
   * debian/*.install:
     - Adjust to the new version and library renames
   * debian/rules:
