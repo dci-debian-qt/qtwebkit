@@ -13,6 +13,7 @@ qtwebkit-opensource-src (5.0.1-1) UNRELEASED; urgency=low
     - Remove rpath from QtWebProcess/QtWebPluginProcess
   * debian/copyright:
     - Fix invalid UTF-8
+    - Multiple additions from scanning the source
   * Drop patches:
     - 01_lflags_as-needed.diff
     - 02_add_nostrip_for_debug_packages.diff
