@@ -35,6 +35,10 @@ override_dh_auto_install:
 	
 	# Remove la files (http://wiki.debian.org/ReleaseGoals/LAFileRemoval)
 	rm -f debian/tmp/usr/lib/*/*.la
+	
+	# Fix wrong path in pkgconfig files
+	find $(CURDIR)/debian/tmp/usr/lib/*/pkgconfig -type f -name '*.pc' \
+	-exec sed -i -e 's/$(DEB_HOST_MULTIARCH)\/$(DEB_HOST_MULTIARCH)/$(DEB_HOST_MULTIARCH)/g' {} \;
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz

@@ -34,6 +34,7 @@ Build-Depends: debhelper (>= 9.0.0),
                chrpath,
                libpng12-dev,
                libjpeg-dev,
+               libfontconfig1-dev,
 Standards-Version: 3.9.4
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
