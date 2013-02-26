@@ -4,3 +4,4 @@ stabs_format_debug_info.diff
 no_gc_sections.diff
 hurd.diff
 webkit_qt_hide_symbols.diff
+save_memory.diff
