@@ -32,7 +32,7 @@ Build-Depends: debhelper (>= 9.0.0),
                pkg-config,
                pkg-kde-tools (>= 0.6.4),
                chrpath,
-               libpng12-dev,
+               libpng-dev,
                libjpeg-dev,
                libfontconfig1-dev,
 Standards-Version: 3.9.4
