@@ -34,8 +34,8 @@ override_dh_auto_install:
 	dh_auto_install --sourcedirectory=$(QWEBVIEW_DIR)
 
 override_dh_auto_clean:
-	rm -f Source/Makefile
-	dh_auto_clean
+	if [ -d Source ]; then rm -f Source/Makefile; fi
+	if [ -d Source ]; then dh_auto_clean; else dh_auto_clean --sourcedirectory=.; fi
 	dh_auto_clean --sourcedirectory=$(QWEBVIEW_DIR)
 
 override_dh_builddeb:
