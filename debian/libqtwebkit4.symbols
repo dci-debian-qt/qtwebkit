@@ -536,6 +536,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN8QWebPage23setNetworkAccessManagerEP21QNetworkAccessManager@Base 2.1.0~2011week13
  _ZN8QWebPage23swallowContextMenuEventEP17QContextMenuEvent@Base 2.1.0~2011week13
  _ZN8QWebPage23viewportChangeRequestedEv@Base 2.1.0~2011week13
+ (optional=gccinternal)_ZN8QWebPage24ErrorPageExtensionOptionD1Ev@Base 2.2.1
+ (optional=gccinternal)_ZN8QWebPage24ErrorPageExtensionOptionD2Ev@Base 2.2.1
  _ZN8QWebPage24ErrorPageExtensionReturnD1Ev@Base 2.1.0~2011week13
  _ZN8QWebPage24ErrorPageExtensionReturnD2Ev@Base 2.1.0~2011week13
  _ZN8QWebPage24javaScriptConsoleMessageERK7QStringiS2_@Base 2.1.0~2011week13
