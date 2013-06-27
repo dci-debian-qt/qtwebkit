@@ -1,7 +1,7 @@
 qtwebkit (2.2.1-6) UNRELEASED; urgency=low
 
   * Avoid auto_clean error when building with --git-overlay.
-  * New patch: ignore-unused-local-typedefs_error.diff.
+  * New patch: ignore-unused-local-typedefs_error.diff. (Closes: #701345)
   * New patch: upstream_Build-fixes-for-glib-2.31.diff.
   * Add missing misc:Pre-Depends.
 
