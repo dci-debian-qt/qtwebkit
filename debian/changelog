@@ -1,4 +1,4 @@
-qtwebkit (2.2.1-6) UNRELEASED; urgency=low
+qtwebkit (2.2.1-6) unstable; urgency=low
 
   * Avoid auto_clean error when building with --git-overlay.
   * New patch: ignore-unused-local-typedefs_error.diff. (Closes: #701345)
@@ -11,7 +11,7 @@ qtwebkit (2.2.1-6) UNRELEASED; urgency=low
   * Update copyright file.
   * Add m-a same to the dbg package.
 
- -- Maximiliano Curia <maxy@debian.org>  Thu, 20 Jun 2013 16:17:23 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 27 Jun 2013 17:19:31 +0200
 
 qtwebkit (2.2.1-5) unstable; urgency=low
 
