@@ -6,6 +6,7 @@ qtwebkit (2.2.1-6) UNRELEASED; urgency=low
   * Add missing misc:Pre-Depends.
   * Update libqtwebkit4 symbols file.
   * Update vcs fields.
+  * Add myself to uploaders.
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 20 Jun 2013 16:17:23 +0200
 
