@@ -1,0 +1,13 @@
+Index: qtwebkit-2.2.1/Source/WebKit.pri
+===================================================================
+--- qtwebkit-2.2.1.orig/Source/WebKit.pri	2013-06-27 11:20:32.399249093 +0200
++++ qtwebkit-2.2.1/Source/WebKit.pri	2013-06-27 11:23:00.173320833 +0200
+@@ -114,7 +114,7 @@
+ 
+ # Treat warnings as errors on x86/Linux/GCC
+ linux-g++*|glibc-*|hurd-* {
+-    isEqual(QT_ARCH,x86_64)|isEqual(QT_ARCH,i386): QMAKE_CXXFLAGS += -Werror
++    isEqual(QT_ARCH,x86_64)|isEqual(QT_ARCH,i386): QMAKE_CXXFLAGS += -Werror -Wno-error=unused-local-typedefs
+ 
+     greaterThan(QT_GCC_MAJOR_VERSION, 3):greaterThan(QT_GCC_MINOR_VERSION, 5) {
+         if (!contains(QMAKE_CXXFLAGS, -std=c++0x) && !contains(QMAKE_CXXFLAGS, -std=gnu++0x)) {
