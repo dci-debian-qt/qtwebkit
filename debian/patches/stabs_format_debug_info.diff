@@ -1,11 +1,13 @@
-Description: build s390, armel, mips* and sh4 debugging symbols with -gstabs
+Description: build s390, armel, mips*, sh4 and m68k debugging symbols with -gstabs
  -g exhausts memory on these arches. Thanks to Oswald Buddenhagen for the hint.
 Author: Sune Vuorela <sune@debian.org>
 Author: Modestas Vainius <modax@debian.org>
 Author: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Author: Pino Toscano <pino@debian.org>
 Bug-Debian: http://bugs.debian.org/528485
 Bug-Debian: http://bugs.debian.org/618325
 Bug-Debian: http://bugs.debian.org/694773
+Bug-Debian: http://bugs.debian.org/717685
 
 ---
  Source/WebKit.pri |    7 +++++++
@@ -17,8 +19,8 @@ Bug-Debian: http://bugs.debian.org/694773
      DEFINES += NDEBUG
  }
  
-+equals(QT_ARCH, s390)|equals(QT_ARCH, arm)|equals(QT_ARCH, mips)|equals(QT_ARCH, sh) {
-+	message("s390, armel, armhf, mipsel and sh workaround for QtWebkit: do not build with -g, but with -gstabs")
++equals(QT_ARCH, s390)|equals(QT_ARCH, arm)|equals(QT_ARCH, mips)|equals(QT_ARCH, sh)|equals(QT_ARCH, m68k) {
++	message("s390, armel, armhf, mipsel, sh and m68k workaround for QtWebkit: do not build with -g, but with -gstabs")
 +	QMAKE_CXXFLAGS -= -g
 +	QMAKE_CXXFLAGS += -gstabs
 +}
