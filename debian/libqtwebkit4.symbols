@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 2.2.1 amd64 armhf i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips powerpc s390 s390x sparc
+# SymbolsHelper-Confirmed: 2.2.1 alpha amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 s390 s390x sparc sparc64
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
  JSClassCreate@Base 2.1.0~2011week13
@@ -95,8 +95,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameiiRK6QPoint@Base 2.1.0~2011week13
  _Z36qt_drt_setJavaScriptProfilingEnabledP9QWebFrameb@Base 2.1.0~2011week13
  _Z48qt_drt_garbageCollector_collectOnAlternateThreadb@Base 2.1.0~2011week13
- (optional=external|arch=armel mips mipsel s390 s390x sh4 sparc sparc64)_Z6qDebugv@Base 2.2.0
- (optional=external|arch=armel)_Z8qWarningv@Base 2.2.0
+ (optional=external|arch=alpha mips mipsel s390 s390x sh4 sparc)_Z6qDebugv@Base 2.2.0
  _ZN11QWebElement11encloseWithERK7QString@Base 2.1.0~2011week13
  _ZN11QWebElement11encloseWithERKS_@Base 2.1.0~2011week13
  _ZN11QWebElement11removeClassERK7QString@Base 2.1.0~2011week13
@@ -194,8 +193,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN12QWebSettingsC2Ev@Base 2.1.0~2011week13
  _ZN12QWebSettingsD1Ev@Base 2.1.0~2011week13
  _ZN12QWebSettingsD2Ev@Base 2.1.0~2011week13
- (optional=templinst|arch=armel sh4)_ZN13QListIteratorIP9QWebFrameEC1ERK5QListIS1_E@Base 2.2.0
- (optional=templinst|arch=armel sh4)_ZN13QListIteratorIP9QWebFrameEC2ERK5QListIS1_E@Base 2.2.0
  _ZN13QWebInspector10closeEventEP11QCloseEvent@Base 2.1.0~2011week13
  _ZN13QWebInspector11qt_metacallEN11QMetaObject4CallEiPPv@Base 2.1.0~2011week13
  _ZN13QWebInspector11qt_metacastEPKc@Base 2.1.0~2011week13
@@ -361,8 +358,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN20QWebHistoryInterfaceD0Ev@Base 2.1.0~2011week13
  _ZN20QWebHistoryInterfaceD1Ev@Base 2.1.0~2011week13
  _ZN20QWebHistoryInterfaceD2Ev@Base 2.1.0~2011week13
- (optional=external|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips)_ZN20QXmlStreamAttributesD1Ev@Base 2.2.1
- (optional=external|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips)_ZN20QXmlStreamAttributesD2Ev@Base 2.2.1
+ (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 2.2.1
+ (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 2.2.1
  _ZN21QWebElementCollection6appendERKS_@Base 2.1.0~2011week13
  _ZN21QWebElementCollectionC1ERK11QWebElementRK7QString@Base 2.1.0~2011week13
  _ZN21QWebElementCollectionC1ERKS_@Base 2.1.0~2011week13
@@ -474,10 +471,10 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN23DumpRenderTreeSupportQtC2Ev@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQtD1Ev@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQtD2Ev@Base 2.1.0~2011week13
- (optional=external|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN23QStyleOptionProgressBarD1Ev@Base 2.2.1
- (optional=external|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN23QStyleOptionProgressBarD2Ev@Base 2.2.1
- (optional=external|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN25QStyleOptionProgressBarV2D1Ev@Base 2.2.1
- (optional=external|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZN25QStyleOptionProgressBarV2D2Ev@Base 2.2.1
+ (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN23QStyleOptionProgressBarD1Ev@Base 2.2.1
+ (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN23QStyleOptionProgressBarD2Ev@Base 2.2.1
+ (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN25QStyleOptionProgressBarV2D1Ev@Base 2.2.1
+ (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN25QStyleOptionProgressBarV2D2Ev@Base 2.2.1
  _ZN8QDRTNodeC1EPN7WebCore4NodeE@Base 2.2.0
  _ZN8QDRTNodeC1ERKS_@Base 2.2.0
  _ZN8QDRTNodeC1Ev@Base 2.2.0
@@ -487,9 +484,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN8QDRTNodeD1Ev@Base 2.2.0
  _ZN8QDRTNodeD2Ev@Base 2.2.0
  _ZN8QDRTNodeaSERKS_@Base 2.2.0
- (optional=templinst|arch=ia64 s390x sparc)_ZN8QVariant9fromValueI11QWebElementEES_RKT_@Base 2.2.1
- (optional=templinst|arch=ia64 s390x sparc)_ZN8QVariant9fromValueI5QListIP7QObjectEEES_RKT_@Base 2.2.1
- (optional=templinst|arch=ia64 s390x sparc)_ZN8QVariant9fromValueI5QListIiEEES_RKT_@Base 2.2.1
+ (optional=templinst|arch=alpha ia64 ppc64 s390x sparc)_ZN8QVariant9fromValueI11QWebElementEES_RKT_@Base 2.2.1
+ (optional=templinst|arch=alpha ia64 ppc64 s390x sparc)_ZN8QVariant9fromValueI5QListIP7QObjectEEES_RKT_@Base 2.2.1
+ (optional=templinst|arch=alpha ia64 ppc64 s390x sparc)_ZN8QVariant9fromValueI5QListIiEEES_RKT_@Base 2.2.1
  _ZN8QWebPage10chooseFileEP9QWebFrameRK7QString@Base 2.1.0~2011week13
  _ZN8QWebPage10setPaletteERK8QPalette@Base 2.1.0~2011week13
  _ZN8QWebPage11linkClickedERK4QUrl@Base 2.1.0~2011week13
@@ -536,8 +533,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN8QWebPage23setNetworkAccessManagerEP21QNetworkAccessManager@Base 2.1.0~2011week13
  _ZN8QWebPage23swallowContextMenuEventEP17QContextMenuEvent@Base 2.1.0~2011week13
  _ZN8QWebPage23viewportChangeRequestedEv@Base 2.1.0~2011week13
- (optional=gccinternal)_ZN8QWebPage24ErrorPageExtensionOptionD1Ev@Base 2.2.1
- (optional=gccinternal)_ZN8QWebPage24ErrorPageExtensionOptionD2Ev@Base 2.2.1
+ (optional=gccinternal|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN8QWebPage24ErrorPageExtensionOptionD1Ev@Base 2.2.1
+ (optional=gccinternal|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN8QWebPage24ErrorPageExtensionOptionD2Ev@Base 2.2.1
  _ZN8QWebPage24ErrorPageExtensionReturnD1Ev@Base 2.1.0~2011week13
  _ZN8QWebPage24ErrorPageExtensionReturnD2Ev@Base 2.1.0~2011week13
  _ZN8QWebPage24javaScriptConsoleMessageERK7QStringiS2_@Base 2.1.0~2011week13
@@ -615,8 +612,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN8QWebViewD0Ev@Base 2.1.0~2011week13
  _ZN8QWebViewD1Ev@Base 2.1.0~2011week13
  _ZN8QWebViewD2Ev@Base 2.1.0~2011week13
- (optional=external|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArrayD1Ev@Base 2.2.1
- (optional=external|arch=amd64 i386 kfreebsd-amd64 kfreebsd-i386)_ZN9QBitArrayD2Ev@Base 2.2.1
+ (optional=external|arch=amd64)_ZN9QBitArrayD1Ev@Base 2.2.1
+ (optional=external|arch=amd64)_ZN9QBitArrayD2Ev@Base 2.2.1
  _ZN9QWebFrame10setContentERK10QByteArrayRK7QStringRK4QUrl@Base 2.1.0~2011week13
  _ZN9QWebFrame10urlChangedERK4QUrl@Base 2.1.0~2011week13
  _ZN9QWebFrame11iconChangedEv@Base 2.1.0~2011week13
@@ -781,9 +778,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK21QWebElementCollection5countEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollection6toListEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollectionplERKS_@Base 2.1.0~2011week13
- (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK8QVariant5valueIP7QObjectEET_v@Base 2.2.1
- (optional=templinst|arch=armhf ia64 s390x sparc)_ZNK8QVariant5valueIS_EET_v@Base 2.2.1
- (optional=templinst|arch=!amd64 !i386 !kfreebsd-amd64 !kfreebsd-i386)_ZNK8QVariant5valueIiEET_v@Base 2.2.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNK8QVariant5valueIP7QObjectEET_v@Base 2.2.1
+ (optional=templinst|arch=alpha ia64 ppc64 s390x sparc)_ZNK8QVariant5valueIS_EET_v@Base 2.2.1
+ (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNK8QVariant5valueIiEET_v@Base 2.2.1
  _ZNK8QWebPage10isModifiedEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10metaObjectEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10totalBytesEv@Base 2.1.0~2011week13
