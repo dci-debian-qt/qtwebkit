@@ -1,5 +1,4 @@
 # upstream patches
-upstream_changeset_r113848.diff
 upstream_Build-fixes-for-glib-2.31.diff
 
 # debian patches
