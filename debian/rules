@@ -3,8 +3,6 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-QWEBVIEW_DIR=debian/plugins/qwebview
-
 # Filter -g from environment on troublesome arches. Replace it with -gstabs
 # See also: stabs_format_debug_info.diff
 DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
@@ -18,25 +16,39 @@ ifneq (,$(filter $(DEB_HOST_ARCH),alpha))
     export DEB_LDFLAGS_MAINT_APPEND := -Wl,--no-relax
 endif
 
+export QMAKEPATH=Tools/qmake
+export QTDIR=/usr
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 %:
-	dh $@ --sourcedirectory=Source --buildsystem=qmake --parallel --list-missing --dbg-package=libqtwebkit4-dbg --with pkgkde_symbolshelper
-
-override_dh_auto_configure:
-	dh_auto_configure -- DEFINES+=ENABLE_VIDEO=1 DEFINES+=WTF_USE_GSTREAMER=1
-	dh_auto_configure --sourcedirectory=$(QWEBVIEW_DIR)
-
-override_dh_auto_build:
-	dh_auto_build
-	dh_auto_build --sourcedirectory=$(QWEBVIEW_DIR)
-
-override_dh_auto_install:
-	dh_auto_install
-	dh_auto_install --sourcedirectory=$(QWEBVIEW_DIR)
+	dh $@ --parallel --list-missing --dbg-package=libqtwebkit4-dbg --with pkgkde_symbolshelper
 
 override_dh_auto_clean:
-	if [ -d Source ]; then rm -f Source/Makefile; fi
-	if [ -d Source ]; then dh_auto_clean; else dh_auto_clean --sourcedirectory=.; fi
-	dh_auto_clean --sourcedirectory=$(QWEBVIEW_DIR)
+	rm -rf WebKitBuild
+	-find . -name *.pyc | xargs rm
+
+override_dh_auto_configure:
+	true
+
+override_dh_auto_build:
+	./Tools/Scripts/build-webkit --qt
+
+override_dh_auto_install:
+	dh_install
+	mkdir -p debian/libqtwebkit4/usr/lib/$(DEB_HOST_MULTIARCH)/
+	cp --no-dereference WebKitBuild/Release/lib/libQtWebKit.so.* debian/libqtwebkit4/usr/lib/$(DEB_HOST_MULTIARCH)/
+
+	mkdir -p debian/libqtwebkit-dev/usr/lib/$(DEB_HOST_MULTIARCH)/pkgconfig/
+	cp WebKitBuild/Release/lib/libQtWebKit.prl debian/libqtwebkit-dev/usr/lib/$(DEB_HOST_MULTIARCH)/libQtWebKit.prl
+	cp WebKitBuild/Release/lib/pkgconfig/QtWebKit.pc debian/libqtwebkit-dev/usr/lib/$(DEB_HOST_MULTIARCH)/pkgconfig/QtWebKit.pc
+	mkdir -p debian/libqtwebkit-dev/usr/include/qt4/QtWebKit/
+	cp Source/WebKit/qt/Api/*h debian/libqtwebkit-dev/usr/include/qt4/QtWebKit/
+	cp WebKitBuild/Release/include/QtWebKit/Q* debian/libqtwebkit-dev/usr/include/qt4/QtWebKit/
+	rm debian/libqtwebkit-dev/usr/include/qt4/QtWebKit/*_p.h
+	cp --no-dereference WebKitBuild/Release/lib/libQtWebKit.so debian/libqtwebkit-dev/usr/lib/$(DEB_HOST_MULTIARCH)/
+
+	mkdir -p debian/libqtwebkit-qmlwebkitplugin/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/imports/QtWebKit/
+	cp WebKitBuild/Release/imports/QtWebKit/libqmlwebkitplugin.so debian/libqtwebkit-qmlwebkitplugin/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/imports/QtWebKit/
+	cp WebKitBuild/Release/imports/QtWebKit/qmldir debian/libqtwebkit-qmlwebkitplugin/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/imports/QtWebKit/
 
 override_dh_builddeb:
 	dh_builddeb -- -Zxz
