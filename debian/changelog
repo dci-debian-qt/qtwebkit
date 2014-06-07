@@ -2,6 +2,8 @@ qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
 
   * New upstream release: QtWebKit 2.3 is a backport of QtWebkit for
     Qt 5 to Qt 4
+  * Update patches:
+    - remove Fix_build_with_GLib_2.31_changeset_r97269, applied upstream
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 Jun 2014 21:18:08 +0200
 
