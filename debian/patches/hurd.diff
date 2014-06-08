@@ -11,9 +11,9 @@ Last-Update: 2011-12-30
  Source/JavaScriptCore/wtf/FastMalloc.cpp |    4 ++++
  1 file changed, 4 insertions(+)
 
---- a/Source/JavaScriptCore/wtf/FastMalloc.cpp
-+++ b/Source/JavaScriptCore/wtf/FastMalloc.cpp
-@@ -1595,6 +1595,9 @@ ALWAYS_INLINE void TCMalloc_PageHeap::su
+--- a/Source/WTF/wtf/FastMalloc.cpp
++++ b/Source/WTF/wtf/FastMalloc.cpp
+@@ -1744,6 +1744,9 @@
  void TCMalloc_PageHeap::initializeScavenger()
  {
      // Create a non-recursive mutex.
@@ -23,7 +23,7 @@ Last-Update: 2011-12-30
  #if !defined(PTHREAD_MUTEX_NORMAL) || PTHREAD_MUTEX_NORMAL == PTHREAD_MUTEX_DEFAULT
      pthread_mutex_init(&m_scavengeMutex, 0);
  #else
-@@ -1606,6 +1609,7 @@ void TCMalloc_PageHeap::initializeScaven
+@@ -1755,6 +1758,7 @@
  
      pthread_mutexattr_destroy(&attr);
  #endif
