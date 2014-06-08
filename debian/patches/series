@@ -1,3 +1,5 @@
+# upstream patches
+upstream_changeset_119798.diff
 # debian patches
 01_lflags_as-needed.diff
 02_add_nostrip_for_debug_packages.diff
