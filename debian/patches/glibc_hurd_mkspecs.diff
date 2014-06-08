@@ -14,25 +14,25 @@ Forwarded: not-needed
  Source/WebKit.pri                 |    2 +-
  2 files changed, 2 insertions(+), 2 deletions(-)
 
---- a/Source/JavaScriptCore/wtf/wtf.pri
-+++ b/Source/JavaScriptCore/wtf/wtf.pri
-@@ -41,7 +41,7 @@ SOURCES += \
-     wtf/unicode/icu/CollatorICU.cpp \
-     wtf/unicode/UTF8.cpp
+--- a/Tools/qmake/mkspecs/features/features.prf
++++ b/Tools/qmake/mkspecs/features/features.prf
+@@ -185,7 +185,7 @@
+             DEFINES += ENABLE_VIDEO=1
+             DEFINES += WTF_USE_QTKIT=1
+         }
+-    } else: linux-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {
++    } else: linux-*|glibc-*|hurd-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {
+         !contains(QT_CONFIG, no-pkg-config):system(pkg-config --exists glib-2.0 gio-2.0 \'gstreamer-0.10 >= 0.10.30\' \'gstreamer-plugins-base-0.10 >= 0.10.30\'): {
+             DEFINES += ENABLE_VIDEO=1
+             DEFINES += WTF_USE_GSTREAMER=1
+--- a/Tools/qmake/mkspecs/features/unix/default_post.prf
++++ b/Tools/qmake/mkspecs/features/unix/default_post.prf
+@@ -16,7 +16,7 @@
+     QMAKE_CXXFLAGS += -march=pentium4 -msse2 -mfpmath=sse -mtune=generic
+ }
  
--linux-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {
-+linux-*|glibc-*|hurd-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {
-     !contains(QT_CONFIG, no-pkg-config):system(pkg-config --exists glib-2.0 gio-2.0 gstreamer-0.10): {
-         DEFINES += ENABLE_GLIB_SUPPORT=1
-         PKGCONFIG += glib-2.0 gio-2.0
---- a/Source/WebKit.pri
-+++ b/Source/WebKit.pri
-@@ -113,7 +113,7 @@ CONFIG -= warn_on
- *-g++*:QMAKE_LFLAGS += -Wl,--version-script,$$PWD/symbols.filter
- 
- # Treat warnings as errors on x86/Linux/GCC
--linux-g++* {
-+linux-g++*|glibc-*|hurd-* {
-     isEqual(QT_ARCH,x86_64)|isEqual(QT_ARCH,i386): QMAKE_CXXFLAGS += -Werror
- 
-     greaterThan(QT_GCC_MAJOR_VERSION, 3):greaterThan(QT_GCC_MINOR_VERSION, 5) {
+-linux-*g++* {
++linux-*g++*|glibc-*|hurd-* {
+     !production_build {
+         # Treat warnings as errors on x86/Linux/GCC
+         isEqual(QT_ARCH,x86_64)|isEqual(QT_ARCH,i386): QMAKE_CXXFLAGS += -Werror
