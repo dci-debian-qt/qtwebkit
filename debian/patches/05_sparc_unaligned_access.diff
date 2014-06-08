@@ -2,12 +2,12 @@ Description: fix some alignment problems on sparc.
 Author: Mike Hommey <glandium@debian.org>
 
 ---
- Source/JavaScriptCore/wtf/ListHashSet.h |    9 +++------
+ Source/WTF/wtf/ListHashSet.h |    9 +++------
  1 file changed, 3 insertions(+), 6 deletions(-)
 
---- a/Source/JavaScriptCore/wtf/ListHashSet.h
-+++ b/Source/JavaScriptCore/wtf/ListHashSet.h
-@@ -145,7 +145,7 @@ namespace WTF {
+--- a/Source/WTF/wtf/ListHashSet.h
++++ b/Source/WTF/wtf/ListHashSet.h
+@@ -168,7 +168,7 @@
              : m_freeList(pool())
              , m_isDoneWithInitialFreeList(false)
          { 
@@ -16,7 +16,7 @@ Author: Mike Hommey <glandium@debian.org>
          }
  
          Node* allocate()
-@@ -189,7 +189,7 @@ namespace WTF {
+@@ -217,16 +217,13 @@
          }
  
      private:
@@ -24,8 +24,6 @@ Author: Mike Hommey <glandium@debian.org>
 +        Node* pool() { return reinterpret_cast_ptr<Node*>(m_pool); }
          Node* pastPool() { return pool() + m_poolSize; }
  
-         bool inPool(Node* node)
-@@ -200,10 +200,7 @@ namespace WTF {
          Node* m_freeList;
          bool m_isDoneWithInitialFreeList;
          static const size_t m_poolSize = inlineCapacity;
