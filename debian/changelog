@@ -8,6 +8,8 @@ qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
     - remove upstream_changeset_r113848.diff, applied upstream 
     - remove upstream_Build-fixes-for-glib-2.31.diff, applied upstream
     - add build fix: upstream_changeset_119798.patch
+    - remove 01_lflags_as-needed.diff
+      and set --as-needed linker flag, to avoid useless linking, in debian/rules
   * Switch to building with ./Tools/Scripts/build-webkit as recommended
     by upstream
 
