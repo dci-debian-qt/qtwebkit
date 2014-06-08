@@ -10,6 +10,7 @@ qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
     - add build fix: upstream_changeset_119798.patch
     - remove 01_lflags_as-needed.diff
       and set --as-needed linker flag, to avoid useless linking, in debian/rules
+    - remove stabs_format_debug_info.diff, flags set in debian/rules
   * Switch to building with ./Tools/Scripts/build-webkit as recommended
     by upstream
 
