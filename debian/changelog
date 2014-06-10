@@ -13,6 +13,9 @@ qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
     - remove stabs_format_debug_info.diff, flags set in debian/rules
   * Switch to building with ./Tools/Scripts/build-webkit as recommended
     by upstream
+  * Build with gstreamer-1.x, bump build dependencies
+    - libgstreamer-plugins-base1.0-dev
+    - libgstreamer1.0-dev
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 Jun 2014 21:18:08 +0200
 
