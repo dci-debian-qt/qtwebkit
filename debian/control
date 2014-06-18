@@ -5,6 +5,8 @@ Uploaders: Fathi Boudra <fabo@debian.org>,
            Maximiliano Curia <maxy@debian.org>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 Build-Depends: debhelper (>= 9),
+               flex,
+               bison,
                gperf,
                libgstreamer-plugins-base1.0-dev,
                libgstreamer1.0-dev,
