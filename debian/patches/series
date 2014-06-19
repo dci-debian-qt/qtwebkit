@@ -15,3 +15,4 @@ ignore-unused-local-typedefs_error.diff
 ignore-new_gcc_warnings.diff
 gstreamer-1.0.diff
 hide_wtf_symbols.diff
+hide_jsc_symbols.diff

@@ -1,0 +1,14 @@
+Description: do not make the JSC symbols in webkit public.
+Author: Andreas Cord-Landwehr <cordlandwehr@kde.org>
+
+--- a/Tools/qmake/mkspecs/features/symbols.filter
++++ b/Tools/qmake/mkspecs/features/symbols.filter
+@@ -4,4 +4,8 @@
+ _ZNSt*;
+ _ZNK3WTF*;
+ _ZN3WTF*;
++_ZN3JSC*;
++_ZNK3JSC*;
++_ZTSN3JSC*;
++_ZTVN3JSC*;
+ };
