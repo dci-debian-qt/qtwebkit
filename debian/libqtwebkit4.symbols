@@ -1,9 +1,23 @@
-# SymbolsHelper-Confirmed: 2.2.1 alpha amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc powerpcspe ppc64 s390 s390x sparc sparc64
+# SymbolsHelper-Confirmed: 2.3.2 amd64
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
+ JSCheckScriptSyntax@Base 2.3.2
  JSClassCreate@Base 2.1.0~2011week13
  JSClassRelease@Base 2.1.0~2011week13
  JSClassRetain@Base 2.1.0~2011week13
+ JSContextCreateBacktrace@Base 2.3.2
+ JSContextGetGlobalContext@Base 2.3.2
+ JSContextGetGlobalObject@Base 2.3.2
+ JSContextGetGroup@Base 2.3.2
+ JSContextGroupCreate@Base 2.3.2
+ JSContextGroupRelease@Base 2.3.2
+ JSContextGroupRetain@Base 2.3.2
+ JSEvaluateScript@Base 2.3.2
+ JSGarbageCollect@Base 2.3.2
+ JSGlobalContextCreate@Base 2.3.2
+ JSGlobalContextCreateInGroup@Base 2.3.2
+ JSGlobalContextRelease@Base 2.3.2
+ JSGlobalContextRetain@Base 2.3.2
  JSObjectCallAsConstructor@Base 2.1.0~2011week13
  JSObjectCallAsFunction@Base 2.1.0~2011week13
  JSObjectCopyPropertyNames@Base 2.1.0~2011week13
@@ -35,6 +49,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  JSPropertyNameArrayGetNameAtIndex@Base 2.1.0~2011week13
  JSPropertyNameArrayRelease@Base 2.1.0~2011week13
  JSPropertyNameArrayRetain@Base 2.1.0~2011week13
+ JSReportExtraMemoryCost@Base 2.3.2
  JSStringCreateWithCharacters@Base 2.1.0~2011week13
  JSStringCreateWithUTF8CString@Base 2.1.0~2011week13
  JSStringGetCharactersPtr@Base 2.1.0~2011week13
@@ -69,6 +84,25 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  JSValueToObject@Base 2.1.0~2011week13
  JSValueToStringCopy@Base 2.1.0~2011week13
  JSValueUnprotect@Base 2.1.0~2011week13
+ JSWeakObjectMapClear@Base 2.3.2
+ JSWeakObjectMapCreate@Base 2.3.2
+ JSWeakObjectMapGet@Base 2.3.2
+ JSWeakObjectMapRemove@Base 2.3.2
+ JSWeakObjectMapSet@Base 2.3.2
+ WTFGetBacktrace@Base 2.3.2
+ WTFInstallReportBacktraceOnCrashHook@Base 2.3.2
+ WTFInvokeCrashHook@Base 2.3.2
+ WTFLog@Base 2.3.2
+ WTFLogAlways@Base 2.3.2
+ WTFLogVerbose@Base 2.3.2
+ WTFPrintBacktrace@Base 2.3.2
+ WTFReportArgumentAssertionFailure@Base 2.3.2
+ WTFReportAssertionFailure@Base 2.3.2
+ WTFReportAssertionFailureWithMessage@Base 2.3.2
+ WTFReportBacktrace@Base 2.3.2
+ WTFReportError@Base 2.3.2
+ WTFReportFatalError@Base 2.3.2
+ WTFSetCrashHook@Base 2.3.2
  _Z10qt_drt_runb@Base 2.1.0~2011week13
  _Z14qWebKitVersionv@Base 2.1.0~2011week13
  _Z19qWebKitMajorVersionv@Base 2.1.0~2011week13
@@ -89,11 +123,11 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _Z31qt_dump_resource_load_callbacksb@Base 2.1.0~2011week13
  _Z32qt_drt_pauseTransitionOfPropertyP9QWebFrameRK7QStringdS3_@Base 2.1.0~2011week13
  _Z32qt_drt_whiteListAccessFromOriginRK7QStringS1_S1_b@Base 2.1.0~2011week13
- _Z32qtwebkit_webframe_scrollOverflowP9QWebFrameiiRK6QPoint@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _Z32qtwebkit_webframe_scrollOverflowP9QWebFrameiiRK6QPoint@Base 2.1.0~2011week13
  _Z33qt_drt_overwritePluginDirectoriesv@Base 2.1.0~2011week13
  _Z34qt_drt_resetOriginAccessWhiteListsv@Base 2.1.0~2011week13
- _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameiiRK6QPoint@Base 2.1.0~2011week13
- _Z36qt_drt_setJavaScriptProfilingEnabledP9QWebFrameb@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _Z35qtwebkit_webframe_scrollRecursivelyP9QWebFrameiiRK6QPoint@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _Z36qt_drt_setJavaScriptProfilingEnabledP9QWebFrameb@Base 2.1.0~2011week13
  _Z48qt_drt_garbageCollector_collectOnAlternateThreadb@Base 2.1.0~2011week13
  (optional=external|arch=alpha mips mipsel s390 s390x sh4 sparc)_Z6qDebugv@Base 2.2.0
  _ZN11QWebElement11encloseWithERK7QString@Base 2.1.0~2011week13
@@ -181,6 +215,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN12QWebSettings22setMaximumPagesInCacheEi@Base 2.1.0~2011week13
  _ZN12QWebSettings23enablePersistentStorageERK7QString@Base 2.1.0~2011week13
  _ZN12QWebSettings24setObjectCacheCapacitiesEiii@Base 2.1.0~2011week13
+ _ZN12QWebSettings25setThirdPartyCookiePolicyENS_22ThirdPartyCookiePolicyE@Base 2.3.2
  _ZN12QWebSettings26offlineStorageDefaultQuotaEv@Base 2.1.0~2011week13
  _ZN12QWebSettings29setOfflineStorageDefaultQuotaEx@Base 2.1.0~2011week13
  _ZN12QWebSettings30offlineWebApplicationCachePathEv@Base 2.1.0~2011week13
@@ -207,6 +242,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN13QWebInspectorD0Ev@Base 2.1.0~2011week13
  _ZN13QWebInspectorD1Ev@Base 2.1.0~2011week13
  _ZN13QWebInspectorD2Ev@Base 2.1.0~2011week13
+ _ZN14OpaqueJSString6createERKN3WTF6StringE@Base 2.3.2
  _ZN14QWebPluginInfo10setEnabledEb@Base 2.1.0~2011week13
  _ZN14QWebPluginInfoC1EPN7WebCore13PluginPackageE@Base 2.1.0~2011week13
  _ZN14QWebPluginInfoC1ERKS_@Base 2.1.0~2011week13
@@ -219,9 +255,9 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN14QWebPluginInfoaSERKS_@Base 2.1.0~2011week13
  (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt3refEv@Base 2.2.0
  (optional=external|arch=sh4 sparc)_ZN15QBasicAtomicInt5derefEv@Base 2.2.0
- _ZN15QGraphicsObjectD0Ev@Base 2.1.0~2011week13
- _ZN15QGraphicsObjectD1Ev@Base 2.1.0~2011week13
- _ZN15QGraphicsObjectD2Ev@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN15QGraphicsObjectD0Ev@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN15QGraphicsObjectD1Ev@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN15QGraphicsObjectD2Ev@Base 2.1.0~2011week13
  _ZN15QWebHistoryItem11setUserDataERK8QVariant@Base 2.1.0~2011week13
  (optional=private)_ZN15QWebHistoryItemC1EP22QWebHistoryItemPrivate@Base 2.1.0~2011week13
  _ZN15QWebHistoryItemC1ERKS_@Base 2.1.0~2011week13
@@ -317,8 +353,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN17QWebPluginFactoryD2Ev@Base 2.1.0~2011week13
  _ZN18QStyleOptionButtonD1Ev@Base 2.1.0~2011week13
  _ZN18QStyleOptionButtonD2Ev@Base 2.1.0~2011week13
- _ZN18QStyleOptionSliderD1Ev@Base 2.1.0~2011week13
- _ZN18QStyleOptionSliderD2Ev@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN18QStyleOptionSliderD1Ev@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN18QStyleOptionSliderD2Ev@Base 2.1.0~2011week13
  _ZN18QWebPluginDatabase11qt_metacallEN11QMetaObject4CallEiPPv@Base 2.1.0~2011week13
  _ZN18QWebPluginDatabase11qt_metacastEPKc@Base 2.1.0~2011week13
  _ZN18QWebPluginDatabase13addSearchPathERK7QString@Base 2.1.0~2011week13
@@ -370,63 +406,79 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN21QWebElementCollectionD1Ev@Base 2.1.0~2011week13
  _ZN21QWebElementCollectionD2Ev@Base 2.1.0~2011week13
  _ZN21QWebElementCollectionaSERKS_@Base 2.1.0~2011week13
+ _ZN22QWebHistoryItemPrivate4coreEPK15QWebHistoryItem@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt10findStringEP8QWebPageRK7QStringRK11QStringList@Base 2.2.0
- _ZN23DumpRenderTreeSupportQt10shadowRootERK11QWebElement@Base 2.2.0
+ _ZN23DumpRenderTreeSupportQt10initializeEv@Base 2.3.2
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt10shadowRootERK11QWebElement@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt11clearOpenerEP9QWebFrame@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt11contextMenuEP8QWebPage@Base 2.2.0
+ _ZN23DumpRenderTreeSupportQt11scalePageByEP9QWebFramefRK6QPoint@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt11shouldCloseEP9QWebFrame@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt12isTargetItemERK15QWebHistoryItem@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt12pagePropertyEP9QWebFrameRK7QStringi@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt12setMediaTypeEP9QWebFrameRK7QString@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt13nodesFromRectERK11QWebElementiijjjjb@Base 2.2.0
- _ZN23DumpRenderTreeSupportQt13numberOfPagesEP9QWebFrameff@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt12pagePropertyEP9QWebFrameRK7QStringi@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt12setMediaTypeEP9QWebFrameRK7QString@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt13nodesFromRectERK11QWebElementiijjjjb@Base 2.2.0
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt13numberOfPagesEP9QWebFrameff@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt13selectedRangeEP8QWebPage@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt13setAutofilledERK11QWebElementb@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt14clearFrameNameEP9QWebFrame@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt14pauseAnimationEP9QWebFrameRK7QStringdS4_@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt14viewportAsTextEP8QWebPageiRK5QSizeS4_@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt15dumpFrameLoaderEb@Base 2.1.0~2011week13
+ _ZN23DumpRenderTreeSupportQt15layerTreeAsTextEP9QWebFrame@Base 2.3.2
+ _ZN23DumpRenderTreeSupportQt15setValueForUserERK11QWebElementRK7QString@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt16addURLToRedirectERK7QStringS2_@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt16dumpNotificationEb@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt16ensureShadowRootERK11QWebElement@Base 2.2.0
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt16ensureShadowRootERK11QWebElement@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt16isCommandEnabledEP8QWebPageRK7QString@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt16isPageBoxVisibleEP9QWebFramei@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt16removeShadowRootERK11QWebElement@Base 2.2.0
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt16isPageBoxVisibleEP9QWebFramei@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt16removeShadowRootERK11QWebElement@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt16responseMimeTypeEP9QWebFrame@Base 2.2.0
- _ZN23DumpRenderTreeSupportQt16resumeAnimationsEP9QWebFrame@Base 2.2.0
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt16resumeAnimationsEP9QWebFrame@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt16setAlternateHtmlEP9QWebFrameRK7QStringRK4QUrlS7_@Base 2.2.0
+ _ZN23DumpRenderTreeSupportQt16setDefersLoadingEP8QWebPageb@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt16webInspectorShowEP8QWebPage@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt16webPageGroupNameEP8QWebPage@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt17addUserStyleSheetEP8QWebPageRK7QString@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt17clearScriptWorldsEv@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt17historyItemTargetERK15QWebHistoryItem@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt17pauseSVGAnimationEP9QWebFrameRK7QStringdS4_@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt17suspendAnimationsEP9QWebFrame@Base 2.2.0
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt17pauseSVGAnimationEP9QWebFrameRK7QStringdS4_@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt17suspendAnimationsEP9QWebFrame@Base 2.2.0
+ _ZN23DumpRenderTreeSupportQt17trackRepaintRectsEP9QWebFrame@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt17webInspectorCloseEP8QWebPage@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt17workerThreadCountEv@Base 2.1.0~2011week13
+ _ZN23DumpRenderTreeSupportQt18confirmCompositionEP8QWebPagePKc@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt18hasDocumentElementEP9QWebFrame@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt18setEditingBehaviorEP8QWebPageRK7QString@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt18setEditingBehaviorEP8QWebPageRK7QString@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt19webPageSetGroupNameEP8QWebPageRK7QString@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt20dumpEditingCallbacksEb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt20dumpHistoryCallbacksEb@Base 2.2.0
+ _ZN23DumpRenderTreeSupportQt20enableMockScrollbarsEv@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt20getChildHistoryItemsERK15QWebHistoryItem@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt20resetGeolocationMockEP8QWebPage@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt20resetInternalsObjectEP9QWebFrame@Base 2.2.0
+ _ZN23DumpRenderTreeSupportQt20resetInternalsObjectEPK15OpaqueJSContext@Base 2.3.2
+ _ZN23DumpRenderTreeSupportQt20setTrackRepaintRectsEP9QWebFrameb@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt21dumpSetAcceptsEditingEb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt21injectInternalsObjectEP9QWebFrame@Base 2.2.0
+ _ZN23DumpRenderTreeSupportQt21injectInternalsObjectEPK15OpaqueJSContext@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt21markerTextForListItemERK11QWebElement@Base 2.1.0~2011week13
+ _ZN23DumpRenderTreeSupportQt21removeUserStyleSheetsEP8QWebPage@Base 2.3.2
+ _ZN23DumpRenderTreeSupportQt22getTrackedRepaintRectsEP9QWebFrameR7QVectorI5QRectE@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt22javaScriptObjectsCountEv@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt22resumeActiveDOMObjectsEP9QWebFrame@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt23garbageCollectorCollectEv@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt23setCaretBrowsingEnabledEP8QWebPageb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt23setCustomPolicyDelegateEbb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt23setMinimumTimerIntervalEP8QWebPaged@Base 2.2.0
- _ZN23DumpRenderTreeSupportQt23setMockGeolocationErrorEP8QWebPageiRK7QString@Base 2.2.0
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt23setMockGeolocationErrorEP8QWebPageiRK7QString@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt23suspendActiveDOMObjectsEP9QWebFrame@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt24executeCoreCommandByNameEP8QWebPageRK7QStringS4_@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt24numberOfActiveAnimationsEP9QWebFrame@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt24pageNumberForElementByIdEP9QWebFrameRK7QStringff@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt24setMockDeviceOrientationEbdbdbd@Base 2.2.0
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt24pageNumberForElementByIdEP9QWebFrameRK7QStringff@Base 2.1.0~2011week13
+ _ZN23DumpRenderTreeSupportQt24paintPagesWithBoundariesEP9QWebFrame@Base 2.3.2
+ _ZN23DumpRenderTreeSupportQt24setMockDeviceOrientationEP8QWebPagebdbdbd@Base 2.3.2
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt24setMockDeviceOrientationEbdbdbd@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt25clearAllApplicationCachesEv@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt25dumpResourceLoadCallbacksEb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt25dumpVisitedLinksCallbacksEb@Base 2.2.0
@@ -434,39 +486,46 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN23DumpRenderTreeSupportQt25setFrameFlatteningEnabledEP8QWebPageb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt25webInspectorExecuteScriptEP8QWebPagelRK7QString@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt25whiteListAccessFromOriginERK7QStringS2_S2_b@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt26counterValueForElementByIdEP9QWebFrameRK7QString@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt26counterValueForElementByIdEP9QWebFrameRK7QString@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt26firstRectForCharacterRangeEP8QWebPageii@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt26mediaContentUrlByElementIdEP9QWebFrameRK7QString@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt26overwritePluginDirectoriesEv@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt26pageSizeAndMarginsInPixelsEP9QWebFrameiiiiiii@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt26pageSizeAndMarginsInPixelsEP9QWebFrameiiiiiii@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt26setMockGeolocationPositionEP8QWebPageddd@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt27defaultMinimumTimerIntervalEv@Base 2.2.0
- _ZN23DumpRenderTreeSupportQt27removeMockDeviceOrientationEv@Base 2.2.0
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt27removeMockDeviceOrientationEv@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt27resetOriginAccessWhiteListsEv@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt27setSmartInsertDeleteEnabledEP8QWebPageb@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt27setTimelineProfilingEnabledEP8QWebPageb@Base 2.1.0~2011week13
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt27setTimelineProfilingEnabledEP8QWebPageb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt28dumpProgressFinishedCallbackEb@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt28dumpUserGestureInFrameLoaderEb@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt28setDeferMainResourceDataLoadEb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt28setDumpRenderTreeModeEnabledEb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt28setMockGeolocationPermissionEP8QWebPageb@Base 2.2.0
+ _ZN23DumpRenderTreeSupportQt28thirdPartyCookiePolicyAllowsEP8QWebPageRK4QUrlS4_@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt29dumpResourceLoadCallbacksPathERK7QString@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt29dumpResourceResponseMIMETypesEb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt29evaluateScriptInIsolatedWorldEP9QWebFrameiRK7QString@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt29setJavaScriptProfilingEnabledEP9QWebFrameb@Base 2.1.0~2011week13
+ _ZN23DumpRenderTreeSupportQt29setAuthorAndUserStylesEnabledEP8QWebPageb@Base 2.3.2
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt29setJavaScriptProfilingEnabledEP9QWebFrameb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt29setWillSendRequestReturnsNullEb@Base 2.1.0~2011week13
+ _ZN23DumpRenderTreeSupportQt30dumpWillCacheResponseCallbacksEb@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt30setWillSendRequestClearHeadersERK11QStringList@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt31removeWhiteListAccessFromOriginERK7QStringS2_S2_b@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt32simulateDesktopNotificationClickERK7QString@Base 2.1.0~2011week13
- _ZN23DumpRenderTreeSupportQt33activeMockDeviceOrientationClientEb@Base 2.2.0
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt33activeMockDeviceOrientationClientEb@Base 2.2.0
  _ZN23DumpRenderTreeSupportQt33computedStyleIncludingVisitedInfoERK11QWebElement@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt34setSelectTrailingWhitespaceEnabledEP8QWebPageb@Base 2.1.0~2011week13
+ _ZN23DumpRenderTreeSupportQt35setInteractiveFormValidationEnabledEP8QWebPageb@Base 2.3.2
+ _ZN23DumpRenderTreeSupportQt35setWindowsBehaviorAsEditingBehaviorEP8QWebPage@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt39elementDoesAutoCompleteForElementWithIdEP9QWebFrameRK7QString@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt39setWillSendRequestReturnsNullOnRedirectEb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt40garbageCollectorCollectOnAlternateThreadEb@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQt40setDomainRelaxationForbiddenForURLSchemeEbRK7QString@Base 2.1.0~2011week13
+ _ZN23DumpRenderTreeSupportQt42setMockGeolocationPositionUnavailableErrorEP8QWebPageRK7QString@Base 2.3.2
  _ZN23DumpRenderTreeSupportQt44numberOfPendingGeolocationPermissionRequestsEP8QWebPage@Base 2.2.0
- _ZN23DumpRenderTreeSupportQt9plainTextERK8QVariant@Base 2.2.0
+ _ZN23DumpRenderTreeSupportQt6goBackEP8QWebPage@Base 2.3.2
+#MISSING: 2.3.2# _ZN23DumpRenderTreeSupportQt9plainTextERK8QVariant@Base 2.2.0
  _ZN23DumpRenderTreeSupportQtC1Ev@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQtC2Ev@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQtD1Ev@Base 2.1.0~2011week13
@@ -475,6 +534,12 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN23QStyleOptionProgressBarD2Ev@Base 2.2.1
  (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN25QStyleOptionProgressBarV2D1Ev@Base 2.2.1
  (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN25QStyleOptionProgressBarV2D2Ev@Base 2.2.1
+ _ZN6WebKit13QtTestSupport17clearMemoryCachesEv@Base 2.3.2
+ _ZN6WebKit13QtTestSupport19initializeTestFontsEv@Base 2.3.2
+ _ZN6WebKit22initializeWebKit2ThemeEv@Base 2.3.2
+ _ZN7WebCore17JSDOMGlobalObject6s_infoE@Base 2.3.2
+ _ZN7WebCore19initializeWebCoreQtEv@Base 2.3.2
+ _ZN7WebCore6JSNode6s_infoE@Base 2.3.2
  _ZN8QDRTNodeC1EPN7WebCore4NodeE@Base 2.2.0
  _ZN8QDRTNodeC1ERKS_@Base 2.2.0
  _ZN8QDRTNodeC1Ev@Base 2.2.0
@@ -533,8 +598,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN8QWebPage23setNetworkAccessManagerEP21QNetworkAccessManager@Base 2.1.0~2011week13
  _ZN8QWebPage23swallowContextMenuEventEP17QContextMenuEvent@Base 2.1.0~2011week13
  _ZN8QWebPage23viewportChangeRequestedEv@Base 2.1.0~2011week13
- (optional=gccinternal|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN8QWebPage24ErrorPageExtensionOptionD1Ev@Base 2.2.1
- (optional=gccinternal|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN8QWebPage24ErrorPageExtensionOptionD2Ev@Base 2.2.1
+#MISSING: 2.3.2# (optional=gccinternal|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN8QWebPage24ErrorPageExtensionOptionD1Ev@Base 2.2.1
+#MISSING: 2.3.2# (optional=gccinternal|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN8QWebPage24ErrorPageExtensionOptionD2Ev@Base 2.2.1
  _ZN8QWebPage24ErrorPageExtensionReturnD1Ev@Base 2.1.0~2011week13
  _ZN8QWebPage24ErrorPageExtensionReturnD2Ev@Base 2.1.0~2011week13
  _ZN8QWebPage24javaScriptConsoleMessageERK7QStringiS2_@Base 2.1.0~2011week13
@@ -544,6 +609,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN8QWebPage26restoreFrameStateRequestedEP9QWebFrame@Base 2.1.0~2011week13
  _ZN8QWebPage28setForwardUnsupportedContentEb@Base 2.1.0~2011week13
  _ZN8QWebPage29applicationCacheQuotaExceededEP18QWebSecurityOriginy@Base 2.2.0
+ _ZN8QWebPage29applicationCacheQuotaExceededEP18QWebSecurityOriginyy@Base 2.3.2
  _ZN8QWebPage30updatePositionDependentActionsERK6QPoint@Base 2.1.0~2011week13
  _ZN8QWebPage32featurePermissionRequestCanceledEP9QWebFrameNS_7FeatureE@Base 2.1.0~2011week13
  _ZN8QWebPage32menuBarVisibilityChangeRequestedEb@Base 2.1.0~2011week13
@@ -612,8 +678,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN8QWebViewD0Ev@Base 2.1.0~2011week13
  _ZN8QWebViewD1Ev@Base 2.1.0~2011week13
  _ZN8QWebViewD2Ev@Base 2.1.0~2011week13
- (optional=external|arch=amd64)_ZN9QBitArrayD1Ev@Base 2.2.1
- (optional=external|arch=amd64)_ZN9QBitArrayD2Ev@Base 2.2.1
+#MISSING: 2.3.2# (optional=external|arch=amd64)_ZN9QBitArrayD1Ev@Base 2.2.1
+#MISSING: 2.3.2# (optional=external|arch=amd64)_ZN9QBitArrayD2Ev@Base 2.2.1
  _ZN9QWebFrame10setContentERK10QByteArrayRK7QStringRK4QUrl@Base 2.1.0~2011week13
  _ZN9QWebFrame10urlChangedERK4QUrl@Base 2.1.0~2011week13
  _ZN9QWebFrame11iconChangedEv@Base 2.1.0~2011week13
@@ -708,10 +774,12 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK12QWebSettings16localStoragePathEv@Base 2.1.0~2011week13
  _ZNK12QWebSettings17userStyleSheetUrlEv@Base 2.1.0~2011week13
  _ZNK12QWebSettings19defaultTextEncodingEv@Base 2.1.0~2011week13
+ _ZNK12QWebSettings22thirdPartyCookiePolicyEv@Base 2.3.2
  _ZNK12QWebSettings8fontSizeENS_8FontSizeE@Base 2.1.0~2011week13
  _ZNK13QWebInspector10metaObjectEv@Base 2.1.0~2011week13
  _ZNK13QWebInspector4pageEv@Base 2.1.0~2011week13
  _ZNK13QWebInspector8sizeHintEv@Base 2.1.0~2011week13
+ _ZNK14OpaqueJSString6stringEv@Base 2.3.2
  _ZNK14QWebPluginInfo11descriptionEv@Base 2.1.0~2011week13
  _ZNK14QWebPluginInfo16supportsMimeTypeERK7QString@Base 2.1.0~2011week13
  _ZNK14QWebPluginInfo4nameEv@Base 2.1.0~2011week13
@@ -863,6 +931,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK9QWebFrame8hasFocusEv@Base 2.1.0~2011week13
  _ZNK9QWebFrame8metaDataEv@Base 2.1.0~2011week13
  _ZNK9QWebFrame9frameNameEv@Base 2.1.0~2011week13
+ (optional=templinst)_ZNKSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 2.3.2
+ (optional=templinst)_ZNSs12_S_constructIPcEES0_T_S1_RKSaIcESt20forward_iterator_tag@Base 2.3.2
  _ZTI13QWebInspector@Base 2.1.0~2011week13
  _ZTI16QGraphicsWebView@Base 2.1.0~2011week13
  _ZTI17QWebPluginFactory@Base 2.1.0~2011week13
@@ -871,6 +941,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTI8QWebPage@Base 2.1.0~2011week13
  _ZTI8QWebView@Base 2.1.0~2011week13
  _ZTI9QWebFrame@Base 2.1.0~2011week13
+ _ZTIN3JSC15WeakHandleOwnerE@Base 2.3.2
+ _ZTIN3JSC8DebuggerE@Base 2.3.2
  _ZTS13QWebInspector@Base 2.1.0~2011week13
  _ZTS16QGraphicsWebView@Base 2.1.0~2011week13
  _ZTS17QWebPluginFactory@Base 2.1.0~2011week13
@@ -1010,7 +1082,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (arch=armel mips mipsel sh4)cti_vm_lazyLinkConstruct@Base 2.2.0
  (arch=armel mips mipsel sh4)cti_vm_throw@Base 2.2.0
  kJSClassDefinitionEmpty@Base 2.1.0~2011week13
- (c++)"non-virtual thunk to QGraphicsObject::~QGraphicsObject()@Base" 2.1.0~2011week13
+ (c++)"non-virtual thunk to JSC::CodeBlock::~CodeBlock()@Base" 2.3.2
+#MISSING: 2.3.2# (c++)"non-virtual thunk to QGraphicsObject::~QGraphicsObject()@Base" 2.1.0~2011week13
  (c++)"non-virtual thunk to QGraphicsWebView::contextMenuEvent(QGraphicsSceneContextMenuEvent*)@Base" 2.1.0~2011week13
  (c++)"non-virtual thunk to QGraphicsWebView::dragEnterEvent(QGraphicsSceneDragDropEvent*)@Base" 2.1.0~2011week13
  (c++)"non-virtual thunk to QGraphicsWebView::dragLeaveEvent(QGraphicsSceneDragDropEvent*)@Base" 2.1.0~2011week13
@@ -1038,3 +1111,4 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (c++)"non-virtual thunk to QGraphicsWebView::~QGraphicsWebView()@Base" 2.1.0~2011week13
  (c++)"non-virtual thunk to QWebInspector::~QWebInspector()@Base" 2.1.0~2011week13
  (c++)"non-virtual thunk to QWebView::~QWebView()@Base" 2.1.0~2011week13
+ nullptr@Base 2.3.2
