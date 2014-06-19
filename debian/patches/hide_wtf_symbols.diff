@@ -1,0 +1,12 @@
+Description: do not make the WTF symbols in webkit public.
+Author: Andreas Cord-Landwehr <cordlandwehr@kde.org>
+
+--- a/Tools/qmake/mkspecs/features/symbols.filter
++++ b/Tools/qmake/mkspecs/features/symbols.filter
+@@ -2,4 +2,6 @@
+ local:
+ _ZSt*;
+ _ZNSt*;
++_ZNK3WTF*;
++_ZN3WTF*;
+ };

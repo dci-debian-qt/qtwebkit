@@ -11,6 +11,7 @@ qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
     - remove 01_lflags_as-needed.diff
       and set --as-needed linker flag, to avoid useless linking, in debian/rules
     - remove stabs_format_debug_info.diff, flags set in debian/rules
+    - new patch hide_wtf_symbols.diff, to hide WTF symbols
   * Switch to building with ./Tools/Scripts/build-webkit as recommended
     by upstream
   * Build with gstreamer-1.x:
