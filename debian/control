@@ -21,7 +21,7 @@ Build-Depends: debhelper (>= 9),
                pkg-config,
                pkg-kde-tools (>= 0.6.4),
                ruby
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Section: libs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtwebkit.git

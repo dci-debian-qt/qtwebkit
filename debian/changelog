@@ -24,6 +24,7 @@ qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
   * Add ruby build-dependency
   * Add libfontconfig build-dependency
   * Add libjpeg build dependency.
+  * Bump standards version to 3.9.5, no changes needed
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 Jun 2014 21:18:08 +0200
 
