@@ -18,3 +18,4 @@ glibc_hurd_mkspecs.diff
 hurd.diff
 webkit_qt_hide_symbols.diff
 ignore-unused-local-typedefs_error.diff
+ignore-new_gcc_warnings.diff

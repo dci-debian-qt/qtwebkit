@@ -1,3 +1,10 @@
+qtwebkit (2.2.1-7.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Ignore warnings introduced by GCC 4.9. Closes: #746907.
+
+ -- Matthias Klose <doko@debian.org>  Sat, 09 Aug 2014 13:23:55 +0200
+
 qtwebkit (2.2.1-7) unstable; urgency=low
 
   [ Nobuhiro Iwamatsu ]
