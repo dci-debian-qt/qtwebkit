@@ -35,7 +35,6 @@ override_dh_auto_build:
 	./Tools/Scripts/build-webkit --qt
 
 override_dh_auto_install:
-	dh_install
 	mkdir -p debian/libqtwebkit4/usr/lib/$(DEB_HOST_MULTIARCH)/
 	cp --no-dereference WebKitBuild/Release/lib/libQtWebKit.so.* debian/libqtwebkit4/usr/lib/$(DEB_HOST_MULTIARCH)/
 
