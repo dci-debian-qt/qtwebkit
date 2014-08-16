@@ -52,5 +52,3 @@ override_dh_auto_install:
 	cp WebKitBuild/Release/imports/QtWebKit/libqmlwebkitplugin.so debian/libqtwebkit-qmlwebkitplugin/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/imports/QtWebKit/
 	cp WebKitBuild/Release/imports/QtWebKit/qmldir debian/libqtwebkit-qmlwebkitplugin/usr/lib/$(DEB_HOST_MULTIARCH)/qt4/imports/QtWebKit/
 
-override_dh_builddeb:
-	dh_builddeb -- -Zxz
