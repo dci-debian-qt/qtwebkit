@@ -32,7 +32,12 @@ override_dh_auto_configure:
 	true
 
 override_dh_auto_build:
+#disable forcing SSE2 on all other platforms
+ifneq (,$(filter arm64 powerpc ppc64el armhf,$(DEB_HOST_ARCH)))
 	./Tools/Scripts/build-webkit --qt
+else
+	./Tools/Scripts/build-webkit --qt --no-force-sse2
+endif
 
 override_dh_auto_install:
 	dh_auto_install -- INSTALL_ROOT=$(CURDIR)/debian/tmp -C WebKitBuild/Release install
