@@ -4190,6 +4190,10 @@ Files: Source/WebCore/rendering/svg/RenderSVGResourceMasker.h
 Copyright: 2009-2010.
 License: LGPL-2+
 
+Files: Source/WebCore/platform/image-decoders/gif/GIFImageReader.*
+Copyright: 1998 Netscape Communications Corporation, Apple Computer
+License: LGPL-2+
+
 Files: Source/WebCore/rendering/svg/RenderSVGContainer.cpp
 Copyright: 2004, 2005, 2007 Nikolas Zimmermann <zimmermann@kde.org>
  2004, 2005, 2007, 2008 Rob Buis <buis@kde.org>
@@ -4676,6 +4680,7 @@ Files: Source/WebCore/platform/Length.h
 Copyright: 1999 Lars Knoll <knoll@kde.org>
  2006, 2008 Apple Inc.
  2011 Rik Cabanier <cabanier@adobe.com>
+ 2011 Adobe Systems Incorporated.
 License: LGPL-2+
 
 Files: Source/WebCore/platform/network/MIMESniffing.cpp
@@ -6951,9 +6956,10 @@ License: LGPL-2+
 
 Files: Source/JavaScriptCore/parser/Lexer.cpp
 Copyright: 1999-2000 Harri Porten <porten@kde.org>
- 2006, 2007, 2008, 2009 Apple Inc.
+ 2006, 2007, 2008, 2009, 2011, 2012 Apple Inc.
  2007 Cameron Zwarich <cwzwarich@uwaterloo.ca>
  2010 Zoltan Herczeg <zherczeg@inf.u-szeged.hu>
+ 2012 Mathias Bynens
 License: LGPL-2+
 
 Files: Source/JavaScriptCore/runtime/Error.cpp
@@ -12265,6 +12271,650 @@ Files: Source/autotools/dolt.m4
 Copyright: 2007-2008 Josh Triplett <josh@freedesktop.org>
 License: all-permissive
 
+Files: Source/WebCore/inspector/front-end/cssNamedFlows.css
+ Source/WebCore/inspector/front-end/CSSNamedFlowView.js
+ Source/WebCore/inspector/front-end/CSSNamedFlowCollectionsView.js
+ Source/WebCore/platform/graphics/filters/CustomFilterValidatedProgram.h
+ Source/WebCore/platform/graphics/filters/CustomFilterValidatedProgram.cpp
+ Source/WebCore/platform/graphics/filters/CustomFilterCompiledProgram.h
+ Source/WebCore/platform/graphics/filters/CustomFilterOperation.h
+ Source/WebCore/platform/graphics/filters/FECustomFilter.h
+ Source/WebCore/platform/graphics/filters/CustomFilterProgramInfo.cpp
+ Source/WebCore/platform/graphics/filters/CustomFilterCompiledProgram.cpp
+ Source/WebCore/platform/graphics/filters/CustomFilterNumberParameter.h
+ Source/WebCore/platform/graphics/filters/CustomFilterMesh.cpp
+ Source/WebCore/platform/graphics/filters/CustomFilterGlobalContext.cpp
+ Source/WebCore/platform/graphics/filters/CustomFilterMeshGenerator.cpp
+ Source/WebCore/platform/graphics/filters/ValidatedCustomFilterOperation.h
+ Source/WebCore/platform/graphics/filters/CustomFilterParameterList.cpp
+ Source/WebCore/platform/graphics/filters/CustomFilterRenderer.cpp
+ Source/WebCore/platform/graphics/filters/CustomFilterMesh.h
+ Source/WebCore/platform/graphics/filters/CustomFilterProgram.cpp
+ Source/WebCore/platform/graphics/filters/CustomFilterGlobalContext.h
+ Source/WebCore/platform/graphics/filters/CustomFilterMeshGenerator.h
+ Source/WebCore/platform/graphics/filters/ValidatedCustomFilterOperation.cpp
+ Source/WebCore/platform/graphics/filters/CustomFilterParameter.h
+ Source/WebCore/platform/graphics/filters/CustomFilterRenderer.h
+ Source/WebCore/platform/graphics/filters/CustomFilterTransformParameter.h
+ Source/WebCore/platform/graphics/filters/CustomFilterParameterList.h
+ Source/WebCore/platform/graphics/filters/CustomFilterProgram.h
+ Source/WebCore/platform/graphics/filters/CustomFilterOperation.cpp
+ Source/WebCore/platform/graphics/filters/texmap/CustomFilterValidatedProgramTextureMapper.cpp
+ Source/WebCore/platform/graphics/filters/texmap/TextureMapperPlatformCompiledProgram.h
+ Source/WebCore/platform/graphics/filters/CustomFilterProgramInfo.h
+ Source/WebCore/platform/graphics/filters/CustomFilterConstants.h
+ Source/WebCore/platform/graphics/filters/CustomFilterArrayParameter.h
+ Source/WebCore/platform/graphics/filters/CustomFilterProgramClient.h
+ Source/WebCore/platform/graphics/filters/FECustomFilter.cpp
+ Source/WebCore/rendering/RenderLayerFilterInfo.cpp
+ Source/WebCore/rendering/FlowThreadController.h
+ Source/WebCore/rendering/ExclusionInterval.h
+ Source/WebCore/rendering/RenderFlowThread.cpp
+ Source/WebCore/rendering/ExclusionShapeInsideInfo.h
+ Source/WebCore/rendering/RenderLayerFilterInfo.h
+ Source/WebCore/rendering/FlowThreadController.cpp
+ Source/WebCore/rendering/ExclusionPolygon.h
+ Source/WebCore/rendering/RenderFlowThread.h
+ Source/WebCore/rendering/ExclusionRectangle.cpp
+ Source/WebCore/rendering/style/StyleCachedShader.cpp
+ Source/WebCore/rendering/style/BasicShapes.h
+ Source/WebCore/rendering/style/BasicShapes.cpp
+ Source/WebCore/rendering/style/StylePendingShader.h
+ Source/WebCore/rendering/style/StyleCustomFilterProgram.h
+ Source/WebCore/rendering/style/ExclusionShapeValue.h
+ Source/WebCore/rendering/style/StyleShader.h
+ Source/WebCore/rendering/style/StyleCachedShader.h
+ Source/WebCore/rendering/ExclusionShapeInsideInfo.cpp
+ Source/WebCore/rendering/ExclusionRectangle.h
+ Source/WebCore/rendering/RenderRegion.cpp
+ Source/WebCore/rendering/ClipPathOperation.h
+ Source/WebCore/rendering/ExclusionShape.h
+ Source/WebCore/rendering/ExclusionInterval.cpp
+ Source/WebCore/rendering/ExclusionPolygon.cpp
+ Source/WebCore/rendering/ExclusionShape.cpp
+ Source/WebCore/rendering/RenderRegion.h
+ Source/WebCore/loader/cache/CachedShader.cpp
+ Source/WebCore/loader/cache/CachedShader.h
+ Source/WebCore/dom/WebKitNamedFlow.idl
+ Source/WebCore/dom/DOMNamedFlowCollection.h
+ Source/WebCore/dom/DOMNamedFlowCollection.cpp
+ Source/WebCore/dom/NamedFlowCollection.h
+ Source/WebCore/dom/NamedFlowCollection.cpp
+ Source/WebCore/dom/WebKitNamedFlow.cpp
+ Source/WebCore/dom/DOMNamedFlowCollection.idl
+ Source/WebCore/dom/WebKitNamedFlow.h
+ Source/WebCore/css/WebKitCSSShaderValue.h
+ Source/WebCore/css/WebKitCSSArrayFunctionValue.h
+ Source/WebCore/css/WebKitCSSRegionRule.idl
+ Source/WebCore/css/WebKitCSSShaderValue.cpp
+ Source/WebCore/css/WebKitCSSArrayFunctionValue.cpp
+ Source/WebCore/css/CSSBasicShapes.h
+ Source/WebCore/css/WebKitCSSMixFunctionValue.h
+ Source/WebCore/css/BasicShapeFunctions.h
+ Source/WebCore/css/BasicShapeFunctions.cpp
+ Source/WebCore/css/CSSBasicShapes.cpp
+ Source/WebCore/css/WebKitCSSMixFunctionValue.cpp
+ Source/WebCore/css/WebKitCSSMixFunctionValue.idl
+ Source/WebKit2/Shared/CoordinatedGraphics/WebCustomFilterProgramProxy.cpp
+ Source/WebKit2/Shared/CoordinatedGraphics/WebCustomFilterProgramProxy.h
+ Source/WebKit2/Shared/CoordinatedGraphics/WebCustomFilterOperation.h
+Copyright: 2011-2012 Adobe Systems Incorporated
+License: BSD-2-clause
+
+Files: Source/WebCore/platform/network/curl/ResourceHandleManager.cpp
+ Source/WebKit/win/WebView.cpp
+ Source/WebKit/win/WebView.h
+ Tools/WinLauncher/WinLauncher.cpp
+Copyright: 2004-2012 Apple Computer, Inc.
+           2006 Michael Emmel
+           2007 Alp Toker
+           2007 Holger Hans Peter Freyther
+           2008 Collabora Ltd.
+           2008 Nuanti Ltd.
+           2009-2011 Appcelerator Inc.
+           2009-2011 Brent Fulgham
+License: BSD-2-clause
+
+Files: Source/ThirdParty/qunit/qunit/qunit.js
+Copyright: 2008 Ariel Flesler
+           2011 John Resig, Jörn Zaefferer
+License: Mixed MIT + BSD
+ Copyright 2013 jQuery Foundation and other contributors
+ http://jquery.com/
+ .
+ Permission is hereby granted, free of charge, to any person obtaining
+ a copy of this software and associated documentation files (the
+ "Software"), to deal in the Software without restriction, including
+ without limitation the rights to use, copy, modify, merge, publish,
+ distribute, sublicense, and/or sell copies of the Software, and to
+ permit persons to whom the Software is furnished to do so, subject to
+ the following conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+ OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Redistribution and use in source and binary forms, with or without 
+ modification, are permitted provided that the following conditions 
+ are met:
+ .
+    Redistributions of source code must retain the above copyright 
+    notice, this list of conditions and the following disclaimer.
+    Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in 
+    the documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+ FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE 
+ COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+Files: Source/WebKit/gtk/webkit/webkitgeolocationpolicydecision.cpp
+ Source/WebKit/gtk/webkit/webkitgeolocationpolicydecision.h
+ Source/WebKit/gtk/tests/test_utils.c
+Copyright: 2010 Arno Renevier
+License: LGPL-2+
+
+Files: Source/WebCore/platform/win/DragDataWin.cpp
+ Tools/DumpRenderTree/win/DRTDropSource.h
+ Tools/DumpRenderTree/win/EventSender.cpp
+ Tools/DumpRenderTree/win/DRTDropSource.cpp
+ Tools/DumpRenderTree/win/DRTDataObject.h
+ Tools/DumpRenderTree/win/DRTDataObject.cpp
+Copyright: 2012 Baidu Inc
+           2007-2008 Apple Inc
+License: BSD-2-clause
+
+Files: Tools/Scripts/webkitpy/common/checksvnconfigfile.py
+ Tools/Scripts/webkitpy/tool/steps/addsvnmimetypeforpng.py
+ Tools/Scripts/webkitpy/tool/steps/addsvnmimetypeforpng_unittest.py
+ Tools/Scripts/webkitpy/style/checkers/png.py
+ Tools/Scripts/webkitpy/style/checkers/png_unittest.py
+Copyright: 2012 Balazs Ankes University of Szeged
+License: BSD-2-clause
+
+Files: Tools/DumpRenderTree/win/ImageDiffCairo.cpp
+ Tools/DumpRenderTree/cg/ImageDiffCG.cpp
+Copyright: 2005, 2007 Apple Inc.
+           2005 Ben La Monica
+           2011 Brent Fulgham
+License: BSD-2-clause
+
+Files: Source/WebCore/inspector/front-end/Spectrum.js
+Copyright: 2011 Brian Grinstead
+License: BSD-3-clause
+
+Files: Tools/Scripts/update-webkit-wincairo-libs
+ Tools/Scripts/update-webkit-dependency
+Copyright: 2005, 2006, 2007 Apple Computer, Inc.
+           2011 Carl Lobo
+           2012 Brent Fulgham
+License: BSD-3-clause
+
+Files: Source/WebCore/platform/graphics/opengl/GraphicsContext3DOpenGLES.cpp
+ Source/WebCore/platform/graphics/opengl/GraphicsContext3DOpenGLCommon.cpp
+ Source/WebCore/platform/gtk/AsyncFileSystemGtk.h
+ Source/WebCore/platform/gtk/AsyncFileSystemGtk.cpp
+ Tools/DumpRenderTree/gtk/EventSender.cpp
+Copyright: 2007, 2008 Apple Inc.
+           2011 Google Inc.
+           2012 ChangSeok Oh
+           2010 Igalia S.L.
+           2009 Holger Hans Peter Freyther
+           2009 Zan Dobersek
+           2012 Research In Motion Limited.
+License: BSD-3-clause
+
+Files: Tools/Scripts/webkitperl/VCSUtils_unittest/parseSvnProperty.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/parseDiffHeader.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/parseSvnDiffHeader.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/parseSvnDiffFooter.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/parseSvnPropertyValue.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/parseChunkRange.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/generatePatchCommand.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/runPatchCommand.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/fixChangeLogPatch.pl
+ Tools/Scripts/webkitpy/common/system/autoinstall.py
+ Tools/Scripts/webkitpy/common/multiprocessing_bootstrap.py
+ Tools/Scripts/webkitpy/style/patchreader.py
+ Tools/Scripts/webkitpy/style/checkers/cpp_unittest.py
+ Tools/Scripts/webkitpy/style/checkers/text.py
+ Tools/Scripts/webkitpy/style/checkers/cpp.py
+ Tools/Scripts/webkitpy/style/patchreader_unittest.py
+ Tools/Scripts/webkitpy/style/checker_unittest.py
+ Tools/Scripts/webkitpy/style/filereader.py
+ Tools/Scripts/webkitpy/style/checker.py
+ Tools/Scripts/webkit-patch
+ Tools/Scripts/test-webkit-scripts
+ Tools/Scripts/test-webkitpy
+ Tools/Scripts/check-webkit-style
+ Tools/Scripts/svn-apply
+ Tools/Scripts/test-webkitperl
+ Tools/Scripts/VCSUtils.pm
+ Tools/Scripts/svn-unapply
+Copyright: 2009-2010 Chris Jerdonek
+           2010-2011 Research in Motion Limited
+           2012 Daniel Bates
+           2009 Daniel Krech
+           2005-2011 Apple Inc.
+           2009, 2011, 2012 Google Inc.
+           2010 ProFUSION embedded systems
+           2009 Torch Mobile Inc.
+           2011 Code Aurora Forum
+           2009 Cameron McCormack
+License: BSD-3-clause
+
+Files: Tools/Scripts/webkitperl/VCSUtils_unittest/setChangeLogDateAndReviewer.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/parseDiff.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/parseGitDiffHeader.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/prepareParsedPatch.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/fixChangeLogPatchThenSetChangeLogDateAndReviewer.pl
+ Tools/Scripts/webkitperl/VCSUtils_unittest/parsePatch.pl
+ Tools/Scripts/webkitpy/thirdparty/__init__.py
+ Tools/Scripts/webkitpy/common/system/logutils_unittest.py
+ Tools/Scripts/webkitpy/common/system/logutils.py
+ Tools/Scripts/webkitpy/common/system/logtesting.py
+ Tools/Scripts/webkitpy/test/finder.py
+ Tools/Scripts/webkitpy/test/main.py
+ Tools/Scripts/webkitpy/test/printer.py
+ Tools/Scripts/webkitpy/style/main_unittest.py
+ Tools/Scripts/webkitpy/style/filter.py
+ Tools/Scripts/webkitpy/style/main.py
+ Tools/Scripts/webkitpy/style/filter_unittest.py
+ Tools/Scripts/webkitpy/style/optparser_unittest.py
+ Tools/Scripts/webkitpy/style/error_handlers.py
+ Tools/Scripts/webkitpy/style/checkers/common.py
+ Tools/Scripts/webkitpy/style/checkers/python_unittest.py
+ Tools/Scripts/webkitpy/style/checkers/common_unittest.py
+ Tools/Scripts/webkitpy/style/checkers/python.py
+ Tools/Scripts/webkitpy/style/error_handlers_unittest.py
+ Tools/Scripts/webkitpy/style/filereader_unittest.py
+ Tools/Scripts/webkitpy/style/optparser.py
+Copyright: 2010 Chris Jerdonek
+           2010 Research in Motion Limited
+           2012 Google Inc.
+License: BSD-2-clause
+
+Files: Source/WebCore/loader/cache/CachedSVGDocument.h
+ Source/WebCore/loader/cache/CachedSVGDocument.cpp
+Copyright: 2011 Cosmin Truta
+           2012 University of Szeged
+           2012 Renata Hodovan
+License: LGPL-2+
+
+Files: Tools/TestResultServer/static-dashboards/*
+Copyright: 2012 Google Inc.
+           2012 Zan Dobersek
+License: BSD-3-clause
+
+Files: Tools/TestResultServer/static-dashboards/dygraph-combined.js
+Copyright: 2006-2009 Dan Vanderkam
+License: MIT
+
+Files: Source/WebKit/chromium/scripts/jsmin.py
+Copyright: 2002 Douglas Crockford
+License: BSD-3-clause
+
+Files: Tools/Scripts/prepare-ChangeLog
+Copyright: 2000, 2001 Eazel, Inc.
+           2002, 2003, 2004, 2005, 2006, 2007 Apple Inc.
+           2009 Torch Mobile, Inc.
+           2009 Cameron McCormack
+License: LGPL-2+
+
+Files: Source/WebCore/platform/graphics/cpu/arm/filters/FECompositeArithmeticNEON.h
+Copyright: 2011 University of Szeged
+           2011 Felician Marton
+License: BSD-2-clause 
+
+Files: Source/WebKit/qt/WebCoreSupport/InitWebCoreQt.cpp
+ Source/WebKit/qt/WebCoreSupport/InitWebCoreQt.h
+Copyright: 2011 Hewlett-Packard Development Company, L.P.
+License: BSD-3-clause
+
+Files: Source/WebCore/platform/graphics/pango/FontPango.cpp
+Copyright: 2006 Apple Computer, Inc.
+           2006 Michael Emmel
+           2007 Hiroyuki Ikezoe
+           2007 Kouhei Sutou
+           2007 Alp Toker
+           2008 Xan Lopez
+           2008 Nuanti Ltd.
+           2011 ProFUSION embedded systems
+License: BSD-2-clause
+
+Files: Tools/EWebLauncher/main.c
+ Source/WebKit/efl/WebCoreSupport/DragClientEfl.cpp
+ Source/WebKit/efl/WebCoreSupport/EditorClientEfl.h
+ Source/WebKit/efl/WebCoreSupport/FrameLoaderClientEfl.h
+ Source/WebCore/page/efl/EventHandlerEfl.cpp
+ Source/WebCore/plugins/efl/PluginPackageEfl.cpp
+ Source/WebCore/plugins/efl/PluginViewEfl.cpp
+ Source/WebCore/platform/qt/GamepadsQt.cpp
+ Source/WebCore/platform/qt/LocalizedStringsQt.cpp
+ Source/WebCore/platform/efl/ScrollbarThemeEfl.h
+ Source/WebCore/platform/efl/SoundEfl.cpp
+ Source/WebCore/platform/efl/LocalizedStringsEfl.cpp
+ Source/WebCore/platform/efl/LanguageEfl.cpp
+ Source/WebCore/platform/efl/PlatformWheelEventEfl.cpp
+ Source/WebCore/platform/efl/PlatformMouseEventEfl.cpp
+ Source/WebCore/platform/efl/ContextMenuItemEfl.cpp
+ Source/WebCore/platform/efl/ScrollbarThemeEfl.cpp
+ Source/WebCore/platform/efl/ScrollViewEfl.cpp
+ Source/WebCore/platform/efl/ScrollbarEfl.h
+ Source/WebCore/platform/graphics/efl/IconEfl.cpp
+Copyright: 2008 INdT - Instituto Nokia de Tecnologia
+           2009-2010 Samsung Electronics
+           2009-2010 ProFUSION embedded systems
+           2012 Intel Corporation
+           2006 Zack Rusin
+           2006-2011 Apple Inc.
+           2008 Nuanti Ltd.
+           2010 Nokia Corporation and/or its subsidiary(-ies).
+           2007 Staikos Computing Services Inc.
+           2006 Michael Emmel
+           2008 Christian Dywan
+           2008 Kenneth Rohde Christiansen
+License: BSD-2-clause
+
+Files: Source/WebKit/efl/WebCoreSupport/InspectorClientEfl.h
+ Source/WebKit/efl/WebCoreSupport/DragClientEfl.h
+ Source/WebCore/platform/efl/PlatformScreenEfl.cpp
+Copyright: 2007 Apple Inc.
+           2008 INdT - Instituto Nokia de Tecnologia
+           2009-2010 ProFUSION embedded systems
+           2009-2010 Samsung Electronics
+           2007 Holger Hans Peter Freyther
+           2012 Intel Corporation
+           2010 Nokia Corporation and/or its subsidiary(-ies).
+License: BSD-3-clause
+
+Files: Source/WebKit/efl/WebCoreSupport/PlatformStrategiesEfl.cpp
+ Source/WebKit/efl/WebCoreSupport/SearchPopupMenuEfl.cpp
+ Source/WebKit/efl/WebCoreSupport/EditorClientEfl.cpp
+ Source/WebKit/efl/WebCoreSupport/InspectorClientEfl.cpp
+ Source/WebKit/efl/WebCoreSupport/ChromeClientEfl.h
+ Source/WebKit/efl/WebCoreSupport/PopupMenuEfl.cpp
+ Source/WebKit/efl/ewk/EWebKit.h
+ Source/WebKit/efl/DefaultTheme/default.edc
+ widget/mediacontrol/seekbackwardbutton/seekbackward_button.edc
+ Source/WebKit/efl/DefaultTheme/widget/mediacontrol/mutebutton/mute_button.edc
+ Source/WebKit/efl/DefaultTheme/widget/mediacontrol/playpausebutton/playpause_button.ed
+ Source/WebKit/efl/DefaultTheme/widget/radio/radio.edc
+ Source/WebKit/efl/DefaultTheme/widget/search/cancel/search_cancel.edc
+ Source/WebKit/efl/DefaultTheme/widget/search/field/search_field.edc
+ Source/WebKit/efl/DefaultTheme/widget/search/decoration/search_decoration.edc
+ Source/WebKit/efl/DefaultTheme/widget/file/file.edc
+ Source/WebKit/efl/DefaultTheme/widget/button/button.edc
+ Source/WebKit/efl/DefaultTheme/widget/slider/slider.edc
+ Source/WebKit/efl/DefaultTheme/widget/entry/entry.edc
+ Source/WebKit/efl/DefaultTheme/widget/check/check.edc
+ Source/WebKit/efl/DefaultTheme/widget/combo/combo.edc
+ Source/WebKit/efl/DefaultTheme/widget/scrollbar/scrollbar.edc
+ Source/WebKit/efl/DefaultTheme/widget/mediacontrol/seekforwardbutton/seekforward_button.edc
+ Source/WebCore/platform/efl/PasteboardEfl.cpp
+ Source/WebCore/platform/efl/ClipboardEfl.cpp
+ Source/WebCore/platform/efl/ScrollbarEfl.cpp
+ Source/WebCore/platform/efl/ContextMenuEfl.cpp
+ Source/WebCore/platform/efl/LoggingEfl.cpp
+ Source/WebCore/platform/efl/RenderThemeEfl.cpp
+ Source/WebCore/platform/efl/RenderThemeEfl.h
+ Source/WebCore/platform/efl/DragDataEfl.cpp
+ Source/WebCore/platform/efl/EventLoopEfl.cpp
+ Source/WebCore/platform/efl/ClipboardEfl.h
+ Source/WebCore/platform/efl/DragImageEfl.cpp
+ Source/WebCore/platform/graphics/efl/IntPointEfl.cpp
+Copyright: 2007 Holger Hans Peter Freyther
+           2006-2008 Apple Inc.
+           2008 INdT - Instituto Nokia de Tecnologia
+           2009-2010 Samsung Electronics
+           2009-2010 ProFUSION embedded systems
+           2007 Alp Toker <alp@atoker.com>
+           2008 Collabora
+           2010 Nokia Corporation and/or its subsidiary(-ies).
+           2008 Trolltech ASA
+           2012 Intel Corporation
+           2006 Nikolas Zimmermann
+           2006 Zack Rusin
+           2008 Nuanti Ltd.
+License: LGPL-2+
+
+Files: Source/WebCore/platform/graphics/cairo/GraphicsContextPlatformPrivateCairo.h
+ Source/WebCore/platform/graphics/cairo/FontCairoHarfbuzzNG.cpp
+ Source/WebCore/platform/graphics/cairo/ImageCairo.cpp
+ Source/WebCore/platform/graphics/cairo/FontCairo.cpp
+ Source/WebCore/platform/graphics/cairo/BitmapImageCairo.cpp
+ Source/WebCore/platform/graphics/cairo/GraphicsContext3DCairo.cpp
+ Source/WebCore/platform/graphics/cairo/PlatformContextCairo.cpp
+ Source/WebCore/platform/graphics/cairo/DrawingBufferCairo.cpp
+ Source/WebCore/platform/graphics/cairo/ImageBufferCairo.cpp
+ Source/WebCore/platform/graphics/cairo/TransformationMatrixCairo.cpp
+ Source/WebCore/platform/graphics/cairo/PlatformContextCairo.h
+ Source/WebCore/platform/graphics/cairo/GraphicsContextCairo.cpp
+ Source/WebCore/platform/graphics/cairo/FloatRectCairo.cpp
+ Source/WebCore/platform/graphics/cairo/CairoUtilities.cpp
+ Source/WebCore/platform/graphics/cairo/GradientCairo.cpp
+ Source/WebCore/platform/graphics/cairo/PatternCairo.cpp
+ Source/WebCore/platform/graphics/cairo/CairoUtilities.h
+ Source/WebCore/platform/graphics/cairo/ImageBufferDataCairo.h
+Copyright: 2006, 2007, 2008, 2009 Apple Inc.
+           2012 Intel Corporation
+           2007 Alp Toker
+           2008, 2009 Dirk Schulze
+           2008 Nuanti Ltd.
+           2009 Brent Fulgham
+           2010, 2011 Igalia S.L.
+           2010 Research In Motion Limited
+           2008 Google Inc.
+License: BSD-2-clause
+
+Files: Source/WebKit/chromium/src/default/WebRenderTheme.cpp
+ Source/WebKit/chromium/src/linux/WebRenderTheme.cpp
+ Source/WebKit/chromium/public/default/WebRenderTheme.h
+ Source/WebKit/chromium/public/linux/WebRenderTheme.h
+Copyright: 2009-2010 Joel Stanley
+License: BSD-3-clause
+
+Files: Source/WebCore/platform/network/soup/ResourceHandleSoup.cpp
+Copyright:  2004, 2005, 2006, 2007, 2009, 2010, 2011 Apple Inc.
+            2008 Alp Toker
+            2008 Xan Lopez
+            2008, 2010 Collabora Ltd.
+            2009 Holger Hans Peter Freyther
+            2009 Gustavo Noronha Silva
+            2009 Christian Dywan
+            2009, 2010, 2011, 2012 Igalia S.L.
+            2009 John Kjellberg
+            2012 Intel Corporation
+License: LGPL-2+
+
+Files: Source/WebCore/bindings/objc/DOMEvents.mm
+Copyright: 2004, 2008, 2009 Apple Inc.
+           2006 Jonas Witt
+           2006 Samuel Weinig
+License: BSD-2-clause
+
+Files: Tools/DumpRenderTree/mac/EventSendingController.mm
+Copyright: 2005, 2006, 2007, 2008 Apple Inc.
+           2006 Jonas Witt
+           2006 Samuel Weinig
+           2006 Alexey Proskuryakov
+License: BSD-3-clause
+
+Files: Source/WebCore/platform/graphics/opentype/OpenTypeVerticalData.cpp
+ Source/WebCore/platform/graphics/opentype/OpenTypeTypes.h
+ Source/WebCore/platform/graphics/opentype/OpenTypeVerticalData.h
+ Source/WebKit/chromium/tests/OpenTypeVerticalDataTest.cpp
+Copyright: 2012 Koji Ishii
+License: BSD-2-clause
+
+Files: Tools/Scripts/webkitpy/thirdparty/BeautifulSoup.py
+Copyright: 2004-2010 Leonard Richardson
+License: BSD-3-clause
+
+Files: Source/WebKit/gtk/webkit/webkitapplicationcache.cpp Source/WebKit/gtk/webkit/webkitapplicationcache.h Source/WebKit/gtk/tests/testapplicationcache.c
+Copyright: 2009 Jan Michael Alonzo 
+           2011 Lukasz Slachciak
+License: LGPL-2+
+
+Files: Tools/mangleme/*
+Copyright: 2004 Michal Zalewski
+License: LGPL-2+
+
+Files: Source/WebKit/gtk/webkit/webkitwebsettings.cpp Source/WebKit/gtk/webkit/webkitwebview.cpp
+Copyright: 2007, 2008 Holger Hans Peter Freyther
+           2007, 2008, 2009 Christian Dywan
+           2007 Xan Lopez
+           2007, 2008 Alp Toker <alp@atoker.com>
+           2008 Collabora Ltd
+           2008 Jan Alonzo
+           2008 Gustavo Noronha Silva
+           2008 Nuanti Ltd.
+           2008, 2009, 2010 Collabora Ltd.
+           2009, 2010, 2012 Igalia S.L.
+           2009 Movial Creative Technologies Inc.
+           2009 Bobby Powers
+           2010 Joone Hur <joone@kldp.org>
+License: LGPL-2+
+
+Files: Source/WebCore/plugins/gtk/PluginPackageGtk.cpp
+Copyright: 2006, 2007 Apple Inc.
+           2008 Collabora Ltd.
+           2008 Nuanti Ltd.
+           2008 Novell Inc.
+License: BSD-2-clause
+
+Files: Tools/DumpRenderTree/chromium/DRTTestRunner.cpp
+ Tools/DumpRenderTree/chromium/DRTTestRunner.h
+ Tools/DumpRenderTree/chromium/TestRunner/src/TestRunner.h
+ Tools/DumpRenderTree/chromium/TestRunner/src/TestRunner.cpp
+ Tools/DumpRenderTree/chromium/TestRunner/src/CppBoundClass.h
+ Tools/DumpRenderTree/chromium/TestRunner/src/CppBoundClass.cpp
+Copyright: 2010 Google Inc. 
+           2009-2010 Pawel Hajdan
+           2012 Apple Inc.
+License: BSD-3-clause
+
+Files: Source/WebCore/inspector/front-end/jsdifflib.js
+Copyright: 2007 Snowtide Informatics Systems, Inc.
+License: BSD-3-clause
+
+Files: Source/WebCore/testing/MallocStatistics.h
+Copyright: 2012 SoftAtHome
+License: BSD-2-clause
+
+Files: Source/JavaScriptCore/KeywordLookupGenerator.py
+Copyright: 2011 Apple Inc.
+           2012 Sony Network Entertainment.
+License: BSD-2-clause
+
+Files: Source/WebCore/accessibility/atk/WebKitAccessibleInterfaceEditableText.cpp
+ Source/WebCore/accessibility/atk/WebKitAccessibleInterfaceAction.cpp
+ Source/WebCore/accessibility/atk/WebKitAccessibleInterfaceText.cpp
+ Source/WebCore/accessibility/atk/WebKitAccessibleInterfaceComponent.cpp
+ Source/WebCore/accessibility/atk/WebKitAccessibleInterfaceDocument.cpp
+ Source/WebCore/accessibility/atk/WebKitAccessibleInterfaceTable.cpp
+ Source/WebCore/accessibility/atk/WebKitAccessibleUtil.cpp
+ Source/WebCore/accessibility/atk/WebKitAccessibleInterfaceImage.cpp
+ Source/WebCore/accessibility/atk/WebKitAccessibleInterfaceSelection.cpp
+ Source/WebCore/accessibility/atk/WebKitAccessibleWrapperAtk.cpp
+ Source/WebCore/plugins/gtk/gtk2xtbin.c
+ Source/WebCore/plugins/gtk/xembed.h
+ Source/WebCore/plugins/gtk/gtk2xtbin.h
+Copyright: 2002 Sun Microsystems, Inc.
+           2008 Nuanti Ltd.
+           2009 Jan Alonzo
+           2011, 2012 Igalia S.L.
+           1999 Lars Knoll
+           1999 Antti Koivisto
+           2003, 2004, 2005, 2006, 2007, 2008 Apple Inc.
+           1999-2000 Harri Porten
+License: LGPL-2+
+
+Files: Source/WebCore/platform/graphics/gpu/opencl/OpenCLFETurbulence.cpp
+ Source/WebCore/platform/graphics/gpu/opencl/OpenCLFESourceAlpha.cpp
+ Source/WebCore/platform/graphics/gpu/opencl/FilterContextOpenCL.cpp
+ Source/WebCore/platform/graphics/gpu/opencl/FilterContextOpenCL.h
+ Source/WebCore/platform/graphics/gpu/opencl/OpenCLFESourceGraphic.cpp
+Copyright: 2012 Tamas Czene
+           2012 University of Szeged
+License: BSD-2-clause
+
+Files: Source/WTF/wtf/wx/StringWx.cpp
+Copyright: 2007 Vaclav Slavik
+           2007 Kevin Ollivier
+License: BSD-2-clause
+
+Files: Source/WebCore/dom/GenericEventQueue.h
+       Source/WebCore/rendering/RenderTextTrackCue.cpp
+       Source/WebCore/rendering/RenderTextTrackCue.h
+       Source/WebCore/dom/GenericEventQueue.cpp
+Copyright: 2012 Victor Carbune
+License: BSD-2-clause
+
+Files: Source/JavaScriptCore/disassembler/udis86/*
+Copyright: 2002-2009 Vivek Thampi
+License: BSD-2-clause
+
+Files: Source/WebCore/platform/graphics/surfaces/win/GraphicsSurfaceWin.cpp
+ Source/WebKit2/UIProcess/API/qt/qquicknetworkrequest_p.h
+ Source/WebKit2/UIProcess/API/qt/qquicknetworkreply.cpp
+ Source/WebKit2/UIProcess/API/qt/qquicknetworkrequest.cpp
+ Source/WebKit2/UIProcess/API/qt/qquickurlschemedelegate_p.h
+ Source/WebKit2/UIProcess/API/qt/qquickurlschemedelegate.cpp
+ Source/WebKit2/UIProcess/API/qt/qquicknetworkreply_p.h
+Copyright: 2011-2012 Zeno Albisser
+License: LGPL-2+
+
+Files: Source/WebKit2/WebProcess/qt/QtNetworkReply.h
+ Source/WebKit2/WebProcess/qt/QtNetworkAccessManager.cpp
+ Source/WebKit2/WebProcess/qt/QtNetworkReply.cpp
+ Source/WebKit2/WebProcess/qt/QtNetworkAccessManager.h
+ Source/WebKit2/Shared/qt/QtNetworkRequestData.cpp
+ Source/WebKit2/Shared/qt/QtNetworkRequestData.h
+ Source/WebKit2/Shared/qt/QtNetworkReplyData.cpp
+ Source/WebKit2/Shared/qt/QtNetworkReplyData.h
+Copyright: 2011 Zeno Albisser
+           2012 Nokia Corporation and/or its subsidiary(-ies)
+License: BSD-2-clause
+
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation
+ files (the "Software"), to deal in the Software without
+ restriction, including without limitation the rights to use,
+ copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following
+ conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ OTHER DEALINGS IN THE SOFTWARE.
 
 License: MIT-apple
  IMPORTANT:  This Apple software is supplied to you by Apple
