@@ -32,9 +32,12 @@ override_dh_auto_configure:
 	true
 
 override_dh_auto_build:
+#disable WTF_USE_3D_GRAPHICS on ARM where it doesn't compile
 #disable forcing SSE2 on all other platforms
-ifneq (,$(filter arm64 powerpc ppc64el armhf,$(DEB_HOST_ARCH)))
+ifneq (,$(filter arm64 powerpc ppc64el,$(DEB_HOST_ARCH)))
 	./Tools/Scripts/build-webkit --qt
+else ifeq ($(DEB_HOST_ARCH),armhf)
+	./Tools/Scripts/build-webkit --qt DEFINES+=WTF_USE_3D_GRAPHICS=0
 else
 	./Tools/Scripts/build-webkit --qt --no-force-sse2
 endif
