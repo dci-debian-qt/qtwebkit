@@ -34,7 +34,6 @@ override_dh_auto_configure:
 override_dh_auto_build:
 	./Tools/Scripts/build-webkit --qt
 
-override_dh_install:
-	make INSTALL_ROOT=$(CURDIR)/debian/tmp -C WebKitBuild/Release install
-	dh_install
+override_dh_auto_install:
+	dh_auto_install -- INSTALL_ROOT=$(CURDIR)/debian/tmp -C WebKitBuild/Release install
 
