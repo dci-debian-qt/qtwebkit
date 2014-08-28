@@ -1,5 +1,6 @@
 qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
 
+  [ Andreas Cord-Landwehr ]
   * New upstream release: QtWebKit 2.3 is a backport of QtWebkit for
     Qt 5 to Qt 4
   * Update patches:
