@@ -28,6 +28,11 @@ qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
   * Bump standards version to 3.9.5, no changes needed
   * Update copyright file.
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Acknowledge previous NMU (thanks Matthias!).
+    - Remove ignore-new_gcc_warnings.diff introduced in the NMU, as the code
+      that it patches is no longer there.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 Jun 2014 21:18:08 +0200
 
 qtwebkit (2.2.1-7.1) unstable; urgency=medium
