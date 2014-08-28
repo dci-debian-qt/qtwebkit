@@ -12401,21 +12401,21 @@ License: Mixed MIT + BSD
  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  .
- Redistribution and use in source and binary forms, with or without 
- modification, are permitted provided that the following conditions 
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
  are met:
  .
-    Redistributions of source code must retain the above copyright 
+    Redistributions of source code must retain the above copyright
     notice, this list of conditions and the following disclaimer.
     Redistributions in binary form must reproduce the above copyright
-    notice, this list of conditions and the following disclaimer in 
+    notice, this list of conditions and the following disclaimer in
     the documentation and/or other materials provided with the distribution.
  .
- THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS 
- "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
- LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
- FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE 
- COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
@@ -12580,7 +12580,7 @@ License: LGPL-2+
 Files: Source/WebCore/platform/graphics/cpu/arm/filters/FECompositeArithmeticNEON.h
 Copyright: 2011 University of Szeged
            2011 Felician Marton
-License: BSD-2-clause 
+License: BSD-2-clause
 
 Files: Source/WebKit/qt/WebCoreSupport/InitWebCoreQt.cpp
  Source/WebKit/qt/WebCoreSupport/InitWebCoreQt.h
@@ -12768,7 +12768,7 @@ Copyright: 2004-2010 Leonard Richardson
 License: BSD-3-clause
 
 Files: Source/WebKit/gtk/webkit/webkitapplicationcache.cpp Source/WebKit/gtk/webkit/webkitapplicationcache.h Source/WebKit/gtk/tests/testapplicationcache.c
-Copyright: 2009 Jan Michael Alonzo 
+Copyright: 2009 Jan Michael Alonzo
            2011 Lukasz Slachciak
 License: LGPL-2+
 
@@ -12805,7 +12805,7 @@ Files: Tools/DumpRenderTree/chromium/DRTTestRunner.cpp
  Tools/DumpRenderTree/chromium/TestRunner/src/TestRunner.cpp
  Tools/DumpRenderTree/chromium/TestRunner/src/CppBoundClass.h
  Tools/DumpRenderTree/chromium/TestRunner/src/CppBoundClass.cpp
-Copyright: 2010 Google Inc. 
+Copyright: 2010 Google Inc.
            2009-2010 Pawel Hajdan
            2012 Apple Inc.
 License: BSD-3-clause
