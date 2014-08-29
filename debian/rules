@@ -18,7 +18,7 @@ export QMAKEPATH=Tools/qmake
 export QTDIR=/usr
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 %:
-	dh $@ --parallel --list-missing --dbg-package=libqtwebkit4-dbg --with pkgkde_symbolshelper
+	dh $@ --parallel --fail-missing --dbg-package=libqtwebkit4-dbg --with pkgkde_symbolshelper
 
 override_dh_auto_clean:
 	rm -rf WebKitBuild
