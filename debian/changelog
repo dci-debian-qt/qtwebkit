@@ -1,4 +1,4 @@
-qtwebkit (2.3.2+dfsg-1) UNRELEASED; urgency=medium
+qtwebkit (2.3.2.dfsg-1) UNRELEASED; urgency=medium
 
   [ Andreas Cord-Landwehr ]
   * New upstream release: QtWebKit 2.3 is a backport of QtWebkit for
