@@ -1,4 +1,4 @@
-qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
+qtwebkit (2.3.2+dfsg-1) UNRELEASED; urgency=medium
 
   [ Andreas Cord-Landwehr ]
   * New upstream release: QtWebKit 2.3 is a backport of QtWebkit for
@@ -33,6 +33,8 @@ qtwebkit (2.3.2-0) UNRELEASED; urgency=medium
   * Acknowledge previous NMU (thanks Matthias!).
     - Remove ignore-new_gcc_warnings.diff introduced in the NMU, as the code
       that it patches is no longer there.
+  * The source package needs to be repackaged to comply with the DFSG, so
+    adding +dfsg to the version.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 Jun 2014 21:18:08 +0200
 
