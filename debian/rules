@@ -42,3 +42,8 @@ endif
 override_dh_auto_install:
 	dh_auto_install -- INSTALL_ROOT=$(CURDIR)/debian/tmp -C WebKitBuild/Release
 
+prune-nonfree:
+	rm -fv ManualTests/plugins/test.swf
+	rm -fv ManualTests/plugins/timeout-dialog-displayed-over-navigation.swf
+	rm -fv ManualTests/resources/spinbox.swf
+	rm -fv Tools/TestResultServer/static-dashboards/dygraph-combined.js
