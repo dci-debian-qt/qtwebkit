@@ -16,7 +16,7 @@ qtwebkit (2.3.2.dfsg-1) UNRELEASED; urgency=medium
     - new patch hide_jsc_symbols.diff, to hide JSC symbols
   * Switch to building with ./Tools/Scripts/build-webkit as recommended
     by upstream
-  * Build with gstreamer-1.x:
+  * Build with gstreamer-1.x: (Closes: #756098)
     - bump build dependencies to
       - libgstreamer-plugins-base1.0-dev
       - libgstreamer1.0-dev
