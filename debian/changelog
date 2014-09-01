@@ -2,7 +2,7 @@ qtwebkit (2.3.2.dfsg-1) UNRELEASED; urgency=medium
 
   [ Andreas Cord-Landwehr ]
   * New upstream release: QtWebKit 2.3 is a backport of QtWebkit for
-    Qt 5 to Qt 4
+    Qt 5 to Qt 4 (Closes: #755396)
   * Update patches:
     - remove Fix_build_with_GLib_2.31_changeset_r97269, applied upstream
     - remove upstream_changeset_r93631.diff, applied upstream
