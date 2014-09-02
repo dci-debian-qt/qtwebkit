@@ -34,7 +34,8 @@ qtwebkit (2.3.2.dfsg-1) UNRELEASED; urgency=medium
     - Remove ignore-new_gcc_warnings.diff introduced in the NMU, as the code
       that it patches is no longer there.
   * The source package needs to be repackaged to comply with the DFSG, so
-    adding +dfsg to the version.
+    adding .dfsg to the version. Note we can't use +dfsg because the build
+    system doesn't likes it.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 Jun 2014 21:18:08 +0200
 
