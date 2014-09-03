@@ -8,6 +8,8 @@ qtwebkit (2.3.2.dfsg-2) UNRELEASED; urgency=medium
     - Added fix_nonlinux_glibc_linkage.diff,
       double_conversion_correct_double_operations.patch and
       reduce_memory_usage.patch.
+  * Add armel, mips and mipsel to the list of archs that should not build the
+    JIT asembler.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Sep 2014 09:04:23 -0300
 
