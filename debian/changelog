@@ -1,4 +1,4 @@
-qtwebkit (2.3.2.dfsg-1) UNRELEASED; urgency=medium
+qtwebkit (2.3.2.dfsg-1) unstable; urgency=medium
 
   [ Andreas Cord-Landwehr ]
   * New upstream release: QtWebKit 2.3 is a backport of QtWebkit for
@@ -37,7 +37,7 @@ qtwebkit (2.3.2.dfsg-1) UNRELEASED; urgency=medium
     adding .dfsg to the version. Note we can't use +dfsg because the build
     system doesn't likes it.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 07 Jun 2014 21:18:08 +0200
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Tue, 02 Sep 2014 18:33:38 -0300
 
 qtwebkit (2.2.1-7.1) unstable; urgency=medium
 
