@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 2.3.2 amd64
+# SymbolsHelper-Confirmed: 2.3.2 amd64 armhf powerpc
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
  JSCheckScriptSyntax@Base 2.3.2
@@ -386,8 +386,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN20QWebHistoryInterfaceD0Ev@Base 2.1.0~2011week13
  _ZN20QWebHistoryInterfaceD1Ev@Base 2.1.0~2011week13
  _ZN20QWebHistoryInterfaceD2Ev@Base 2.1.0~2011week13
- (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD1Ev@Base 2.2.1
- (optional=external|arch=!alpha !amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !mips !mipsel !sparc64)_ZN20QXmlStreamAttributesD2Ev@Base 2.2.1
  _ZN21QWebElementCollection6appendERKS_@Base 2.1.0~2011week13
  _ZN21QWebElementCollectionC1ERK11QWebElementRK7QString@Base 2.1.0~2011week13
  _ZN21QWebElementCollectionC1ERKS_@Base 2.1.0~2011week13
@@ -500,10 +498,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN23DumpRenderTreeSupportQtC2Ev@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQtD1Ev@Base 2.1.0~2011week13
  _ZN23DumpRenderTreeSupportQtD2Ev@Base 2.1.0~2011week13
- (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN23QStyleOptionProgressBarD1Ev@Base 2.2.1
- (optional=external|arch=amd64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 sparc64)_ZN23QStyleOptionProgressBarD2Ev@Base 2.2.1
- (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN25QStyleOptionProgressBarV2D1Ev@Base 2.2.1
- (optional=external|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZN25QStyleOptionProgressBarV2D2Ev@Base 2.2.1
+ (optional=external)_ZN23QStyleOptionProgressBarD1Ev@Base 2.2.1
+ (optional=external)_ZN23QStyleOptionProgressBarD2Ev@Base 2.2.1
  _ZN6WebKit13QtTestSupport17clearMemoryCachesEv@Base 2.3.2
  _ZN6WebKit13QtTestSupport19initializeTestFontsEv@Base 2.3.2
  _ZN6WebKit22initializeWebKit2ThemeEv@Base 2.3.2
@@ -812,9 +808,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK21QWebElementCollection5countEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollection6toListEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollectionplERKS_@Base 2.1.0~2011week13
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNK8QVariant5valueIP7QObjectEET_v@Base 2.2.1
  (optional=templinst|arch=alpha ia64 ppc64 s390x sparc)_ZNK8QVariant5valueIS_EET_v@Base 2.2.1
- (optional=templinst|arch=!amd64 !armel !armhf !hurd-i386 !i386 !kfreebsd-amd64 !kfreebsd-i386 !sparc64)_ZNK8QVariant5valueIiEET_v@Base 2.2.1
  _ZNK8QWebPage10isModifiedEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10metaObjectEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10totalBytesEv@Base 2.1.0~2011week13
@@ -897,8 +891,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK9QWebFrame8hasFocusEv@Base 2.1.0~2011week13
  _ZNK9QWebFrame8metaDataEv@Base 2.1.0~2011week13
  _ZNK9QWebFrame9frameNameEv@Base 2.1.0~2011week13
- (optional=templinst)_ZNKSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 2.3.2
- (optional=templinst)_ZNSs12_S_constructIPcEES0_T_S1_RKSaIcESt20forward_iterator_tag@Base 2.3.2
+ (optional=templinst|arch=!armhf)_ZNKSt8_Rb_treeISsSt4pairIKSs9TBehaviorESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_@Base 2.3.2
+ (optional=templinst|arch=!armhf)_ZNSs12_S_constructIPcEES0_T_S1_RKSaIcESt20forward_iterator_tag@Base 2.3.2
  _ZTI13QWebInspector@Base 2.1.0~2011week13
  _ZTI16QGraphicsWebView@Base 2.1.0~2011week13
  _ZTI17QWebPluginFactory@Base 2.1.0~2011week13
