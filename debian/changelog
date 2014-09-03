@@ -1,5 +1,10 @@
 qtwebkit (2.3.2.dfsg-2) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Update patches from qtwebkit-opensource-src, we are having the same
+    codebase here.
+    - Updated no_gc_sections.diff.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Sep 2014 09:04:23 -0300
 
 qtwebkit (2.3.2.dfsg-1) unstable; urgency=medium
