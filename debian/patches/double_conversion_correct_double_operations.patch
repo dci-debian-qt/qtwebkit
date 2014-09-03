@@ -1,0 +1,22 @@
+Description: Add archs to the list of archs that define DOUBLE_CONVERSION_CORRECT_DOUBLE_OPERATIONS
+ This patch is an acumulative of all the archs that need to specify this flag.
+ The works is based on various patches.
+Author: John David Anglin <dave.anglin@bell.net>
+Author: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Forwarded: https://codereview.qt-project.org/88932
+Bug-Debian: http://bugs.debian.org/753409
+Reviewed-By: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+
+---
+
+--- qtwebkit-opensource-src-5.3.1+dfsg.orig/Source/WTF/wtf/dtoa/utils.h
++++ qtwebkit-opensource-src-5.3.1+dfsg/Source/WTF/wtf/dtoa/utils.h
+@@ -49,7 +49,7 @@
+ defined(__ARMEL__) || \
+ defined(_MIPS_ARCH_MIPS32R2)
+ #define DOUBLE_CONVERSION_CORRECT_DOUBLE_OPERATIONS 1
+-#elif CPU(MIPS) || CPU(PPC) || CPU(PPC64) || OS(WINCE) || CPU(SH4) || CPU(S390) || CPU(S390X) || CPU(IA64) || CPU(SPARC) || CPU(ALPHA)
++#elif CPU(MIPS) || CPU(PPC) || CPU(PPC64) || OS(WINCE) || CPU(SH4) || CPU(S390) || CPU(S390X) || CPU(IA64) || CPU(SPARC) || CPU(ALPHA) || CPU(MIPS64) || CPU(AARCH64) || CPU(HPPA)
+ #define DOUBLE_CONVERSION_CORRECT_DOUBLE_OPERATIONS 1
+ #elif defined(_M_IX86) || defined(__i386__)
+ #if defined(_WIN32)
