@@ -1,5 +1,8 @@
 qtwebkit (2.3.2.dfsg-3) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Disable JIT also in s390x.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Sep 2014 20:42:51 -0300
 
 qtwebkit (2.3.2.dfsg-2) unstable; urgency=medium
