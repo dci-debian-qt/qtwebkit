@@ -12,6 +12,8 @@ qtwebkit (2.3.2.dfsg-3) UNRELEASED; urgency=medium
   * Update symbols files with buildds' logs.
   * Add x32_support.patch to support x32 (Closes: #700093).
     - Also disable JIT on x32.
+  * Add arm64.patch (taken from Ubuntu's aarch64.patch) and modify it to
+    properly detect arm64.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Sep 2014 20:42:51 -0300
 
