@@ -7,6 +7,8 @@ qtwebkit (2.3.2.dfsg-3) UNRELEASED; urgency=medium
     memory.
   * Ensure ppc64el is built in little endian mode with
     Colin Watson's ppc64el.patch.
+  * Bound CPU usage on unknown platforms with bound_cpu_usage.patch
+    (Closes: #760519). Thanks Samuel Thibault for the patch.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Sep 2014 20:42:51 -0300
 

@@ -1,0 +1,29 @@
+Description: bound CPU usage
+ qtwebkit currently puts hurd buildds on their knees because its
+ build systems uses "make -j", i.e. without specifying the requested
+ parallelism level, which means unbound parallelism, which when building
+ c++ code basically means filling dozens of gigabytes of memory.
+ .
+ This apparently comes from ./Tools/Scripts/webkitdirs.pm which for
+ unknown platforms makes numberOfCPUs() return an empty string, which
+ thus ends up with "make -j".
+ .
+ This patch makes qtwebkit default to 1 instead of defaulting to
+ unbound parallelism.
+Author: Samuel Thibault <sthibault@debian.org>
+Bug-Debian: #760519
+Forwarded: no
+
+--- ./Tools/Scripts/webkitdirs.pm.original	2014-09-05 00:09:09.000000000 +0200
++++ ./Tools/Scripts/webkitdirs.pm	2014-09-05 00:10:34.000000000 +0200
+@@ -362,6 +362,10 @@
+     } elsif (isDarwin() || isFreeBSD()) {
+         chomp($numberOfCPUs = `sysctl -n hw.ncpu`);
+     }
++    if (!defined($numberOfCPUs) or $numberOfCPUs eq "")
++    {
++      $numberOfCPUs = "1";
++    }
+ }
+ 
+ sub jscPath($)
