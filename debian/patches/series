@@ -20,3 +20,4 @@ double_conversion_correct_double_operations.patch
 reduce_memory_usage.patch
 ppc64el.patch
 bound_cpu_usage.patch
+x32_support.patch
