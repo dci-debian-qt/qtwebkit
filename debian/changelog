@@ -11,6 +11,7 @@ qtwebkit (2.3.2.dfsg-3) UNRELEASED; urgency=medium
     (Closes: #760519). Thanks Samuel Thibault for the patch.
   * Update symbols files with buildds' logs.
   * Add x32_support.patch to support x32 (Closes: #700093).
+    - Also disable JIT on x32.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 04 Sep 2014 20:42:51 -0300
 
