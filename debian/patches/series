@@ -18,3 +18,4 @@ hide_jsc_symbols.diff
 fix_nonlinux_glibc_linkage.diff
 double_conversion_correct_double_operations.patch
 reduce_memory_usage.patch
+ppc64el.patch
