@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 2.3.2 amd64 armhf powerpc
+# SymbolsHelper-Confirmed: 2.3.2 amd64 armel armhf mips mipsel powerpc s390x
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
  JSCheckScriptSyntax@Base 2.3.2
@@ -126,7 +126,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _Z33qt_drt_overwritePluginDirectoriesv@Base 2.1.0~2011week13
  _Z34qt_drt_resetOriginAccessWhiteListsv@Base 2.1.0~2011week13
  _Z48qt_drt_garbageCollector_collectOnAlternateThreadb@Base 2.1.0~2011week13
- (optional=external|arch=alpha mips mipsel s390 s390x sh4 sparc)_Z6qDebugv@Base 2.2.0
  _ZN11QWebElement11encloseWithERK7QString@Base 2.1.0~2011week13
  _ZN11QWebElement11encloseWithERKS_@Base 2.1.0~2011week13
  _ZN11QWebElement11removeClassERK7QString@Base 2.1.0~2011week13
@@ -515,9 +514,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN8QDRTNodeD1Ev@Base 2.2.0
  _ZN8QDRTNodeD2Ev@Base 2.2.0
  _ZN8QDRTNodeaSERKS_@Base 2.2.0
- (optional=templinst|arch=alpha ia64 ppc64 s390x sparc)_ZN8QVariant9fromValueI11QWebElementEES_RKT_@Base 2.2.1
- (optional=templinst|arch=alpha ia64 ppc64 s390x sparc)_ZN8QVariant9fromValueI5QListIP7QObjectEEES_RKT_@Base 2.2.1
- (optional=templinst|arch=alpha ia64 ppc64 s390x sparc)_ZN8QVariant9fromValueI5QListIiEEES_RKT_@Base 2.2.1
  _ZN8QWebPage10chooseFileEP9QWebFrameRK7QString@Base 2.1.0~2011week13
  _ZN8QWebPage10setPaletteERK8QPalette@Base 2.1.0~2011week13
  _ZN8QWebPage11linkClickedERK4QUrl@Base 2.1.0~2011week13
@@ -564,8 +560,8 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZN8QWebPage23setNetworkAccessManagerEP21QNetworkAccessManager@Base 2.1.0~2011week13
  _ZN8QWebPage23swallowContextMenuEventEP17QContextMenuEvent@Base 2.1.0~2011week13
  _ZN8QWebPage23viewportChangeRequestedEv@Base 2.1.0~2011week13
- _ZN8QWebPage24ErrorPageExtensionReturnD1Ev@Base 2.1.0~2011week13
- _ZN8QWebPage24ErrorPageExtensionReturnD2Ev@Base 2.1.0~2011week13
+ (arch=!armel)_ZN8QWebPage24ErrorPageExtensionReturnD1Ev@Base 2.3.2
+ (arch=!armel)_ZN8QWebPage24ErrorPageExtensionReturnD2Ev@Base 2.3.2
  _ZN8QWebPage24javaScriptConsoleMessageERK7QStringiS2_@Base 2.1.0~2011week13
  _ZN8QWebPage25createStandardContextMenuEv@Base 2.1.0~2011week13
  _ZN8QWebPage25shouldInterruptJavaScriptEv@Base 2.1.0~2011week13
@@ -808,7 +804,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK21QWebElementCollection5countEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollection6toListEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollectionplERKS_@Base 2.1.0~2011week13
- (optional=templinst|arch=alpha ia64 ppc64 s390x sparc)_ZNK8QVariant5valueIS_EET_v@Base 2.2.1
  _ZNK8QWebPage10isModifiedEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10metaObjectEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10totalBytesEv@Base 2.1.0~2011week13
@@ -921,126 +916,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTV9QWebFrame@Base 2.1.0~2011week13
  _ZlsR11QDataStreamRK11QWebHistory@Base 2.1.0~2011week13
  _ZrsR11QDataStreamR11QWebHistory@Base 2.1.0~2011week13
- (arch=hurd-i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel)ctiOpThrowNotCaught@Base 2.2.0
- (arch=hurd-i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel)ctiTrampoline@Base 2.2.0
- (arch=hurd-i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel)ctiVMThrowTrampoline@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_has_property@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_add@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_bitand@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_bitnot@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_bitor@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_bitxor@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_call_NotJSFunction@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_call_arityCheck@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_call_eval@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_call_jitCompile@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_check_has_instance@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_construct_NotJSConstruct@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_construct_arityCheck@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_construct_jitCompile@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_convert_this@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_convert_this_strict@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_create_arguments@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_create_arguments_no_params@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_create_this@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_debug@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_del_by_id@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_del_by_val@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_div@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_ensure_property_exists@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_eq@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_eq_strings@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_array_fail@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_custom_stub@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_generic@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_getter_stub@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_method_check@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_proto_fail@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_proto_list@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_proto_list_full@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_self_fail@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_id_string_fail@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_val@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_val_byte_array@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_by_val_string@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_get_pnames@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_in@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_instanceof@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_is_boolean@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_is_function@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_is_number@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_is_object@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_is_string@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_is_undefined@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_jless@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_jlesseq@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_jmp_scopes@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_jtrue@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_less@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_lesseq@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_load_varargs@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_loop_if_lesseq@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_lshift@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_mod@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_mul@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_negate@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_new_array@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_new_func@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_new_func_exp@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_new_object@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_new_regexp@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_not@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_nstricteq@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_pop_scope@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_post_dec@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_post_inc@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_pre_dec@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_pre_inc@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_profile_did_call@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_profile_will_call@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_push_activation@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_push_new_scope@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_push_scope@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_id@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_id_direct@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_id_direct_fail@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_id_direct_generic@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_id_fail@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_id_generic@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_id_transition_realloc@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_index@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_val@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_by_val_byte_array@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_getter@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_put_setter@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_resolve@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_resolve_base@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_resolve_base_strict_put@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_resolve_global@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_resolve_skip@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_resolve_with_base@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_rshift@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_strcat@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_stricteq@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_sub@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_switch_char@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_switch_imm@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_switch_string@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_tear_off_activation@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_tear_off_arguments@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_throw@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_throw_reference_error@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_to_jsnumber@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_to_primitive@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_typeof@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_op_urshift@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_register_file_check@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_timeout_check@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_to_object@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_vm_lazyLinkCall@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_vm_lazyLinkConstruct@Base 2.2.0
- (arch=armel mips mipsel sh4)cti_vm_throw@Base 2.2.0
  kJSClassDefinitionEmpty@Base 2.1.0~2011week13
  (c++)"non-virtual thunk to JSC::CodeBlock::~CodeBlock()@Base" 2.3.2
  (c++)"non-virtual thunk to QGraphicsWebView::contextMenuEvent(QGraphicsSceneContextMenuEvent*)@Base" 2.1.0~2011week13
