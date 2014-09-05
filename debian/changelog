@@ -2,9 +2,9 @@ qtwebkit (2.3.2.dfsg-3) UNRELEASED; urgency=medium
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Disable JIT also in s390x.
-  * Build depend upon libqt4-dev >= 4:4.8.6+git64-g5dc8b2b+dfsg-2~ so as to be
-    sure to be using the version of xmlpatterns that does not consumes alot of
-    memory.
+  * Build depend upon libqt4-dev >= 4:4.8.6+git64-g5dc8b2b+dfsg-2~ so as to
+    be sure to be using the version of xmlpatterns that does not consumes a
+    lot of memory.
   * Ensure ppc64el is built in little endian mode with
     Colin Watson's ppc64el.patch.
   * Bound CPU usage on unknown platforms with bound_cpu_usage.patch
