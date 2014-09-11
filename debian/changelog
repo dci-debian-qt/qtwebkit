@@ -3,6 +3,8 @@ qtwebkit (2.3.2.dfsg-4) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Also disable JIT on hppa and add support for it in Platform.h trough
     hppa_support.patch (Closes: #760759).
+  * Add Steven Chamberlain's nonlinux_enable_glib_support.patch to use glibc in
+    kFreeBSD-* and Hurd (Closes: #760727). Thanks *a lot* to everyone involved.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 07 Sep 2014 15:22:09 -0300
 
