@@ -3,16 +3,28 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-export LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
+export DEB_CFLAGS_MAINT_STRIP = -g
+export DEB_CXXFLAGS_MAINT_STRIP = -g
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
 # only enable debugging symbols on archs supporting -gstabs
 DEB_HOST_ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
 ifeq ($(DEB_HOST_ARCH),$(findstring $(DEB_HOST_ARCH), amd64 i386 powerpc s390x))
-    QMAKE_CXXFLAGS := "--qmakearg=\"QMAKE_CXXFLAGS+=-gstabs\""
+    export DEB_CFLAGS_MAINT_APPEND = -gstabs
+    export DEB_CXXFLAGS_MAINT_APPEND = -gstabs
 endif
 ifneq (,$(filter $(DEB_HOST_ARCH),alpha))
-    export DEB_LDFLAGS_MAINT_APPEND := -Wl,--no-relax
+    export DEB_LDFLAGS_MAINT_APPEND += -Wl,--no-relax
 endif
+
+CFLAGS := $(shell dpkg-buildflags --get CFLAGS)
+CXXFLAGS := $(shell dpkg-buildflags --get CXXFLAGS)
+CPPFLAGS := $(shell dpkg-buildflags --get CPPFLAGS)
+LDFLAGS := $(shell dpkg-buildflags --get LDFLAGS)
+
+QMAKE_ARGS := "--qmakearg=\"QMAKE_CFLAGS_RELEASE=$(CFLAGS) $(CPPFLAGS)\""
+QMAKE_ARGS += "--qmakearg=\"QMAKE_CXXFLAGS_RELEASE=$(CXXFLAGS) $(CPPFLAGS)\""
+QMAKE_ARGS += "--qmakearg=\"QMAKE_LFLAGS_RELEASE=$(LDFLAGS)\""
 
 export QMAKEPATH=Tools/qmake
 export QTDIR=/usr
@@ -32,11 +44,11 @@ override_dh_auto_build:
 #disable WTF_USE_3D_GRAPHICS on ARM where it doesn't compile
 #disable forcing SSE2 on all other platforms
 ifneq (,$(filter arm64 armel hppa mips mipsel powerpc ppc64el s390x x32,$(DEB_HOST_ARCH)))
-	./Tools/Scripts/build-webkit --qt DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_CXXFLAGS)
+	./Tools/Scripts/build-webkit --qt DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_ARGS)
 else ifeq ($(DEB_HOST_ARCH),armhf)
-	./Tools/Scripts/build-webkit --qt DEFINES+=WTF_USE_3D_GRAPHICS=0 DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_CXXFLAGS)
+	./Tools/Scripts/build-webkit --qt DEFINES+=WTF_USE_3D_GRAPHICS=0 DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_ARGS)
 else
-	./Tools/Scripts/build-webkit --qt $(QMAKE_CXXFLAGS) --no-force-sse2
+	./Tools/Scripts/build-webkit --qt $(QMAKE_ARGS) --no-force-sse2
 endif
 
 override_dh_auto_install:
