@@ -26,6 +26,12 @@ QMAKE_ARGS := "--qmakearg=\"QMAKE_CFLAGS_RELEASE=$(CFLAGS) $(CPPFLAGS)\""
 QMAKE_ARGS += "--qmakearg=\"QMAKE_CXXFLAGS_RELEASE=$(CXXFLAGS) $(CPPFLAGS)\""
 QMAKE_ARGS += "--qmakearg=\"QMAKE_LFLAGS_RELEASE=$(LDFLAGS)\""
 
+# Respect the number of parallel jobs
+ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
+        NUMJOBS := $(patsubst parallel=%,%,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
+        MAKE_ARGS := --makeargs="-j$(NUMJOBS)"
+endif
+
 export QMAKEPATH=Tools/qmake
 export QTDIR=/usr
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
@@ -45,11 +51,11 @@ override_dh_auto_build:
 	#disable WTF_USE_3D_GRAPHICS on ARM where it doesn't compile
 	#disable forcing SSE2 on all other platforms
 ifneq (,$(filter arm64 armel hppa mips mipsel powerpc ppc64el s390x x32,$(DEB_HOST_ARCH)))
-	./Tools/Scripts/build-webkit --qt DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_ARGS)
+	./Tools/Scripts/build-webkit --qt DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_ARGS) $(MAKE_ARGS)
 else ifeq ($(DEB_HOST_ARCH),armhf)
-	./Tools/Scripts/build-webkit --qt DEFINES+=WTF_USE_3D_GRAPHICS=0 DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_ARGS)
+	./Tools/Scripts/build-webkit --qt DEFINES+=WTF_USE_3D_GRAPHICS=0 DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_ARGS) $(MAKE_ARGS)
 else
-	./Tools/Scripts/build-webkit --qt $(QMAKE_ARGS) --no-force-sse2
+	./Tools/Scripts/build-webkit --qt $(QMAKE_ARGS) $(MAKE_ARGS) --no-force-sse2
 endif
 
 override_dh_auto_install:
