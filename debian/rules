@@ -29,6 +29,7 @@ QMAKE_ARGS += "--qmakearg=\"QMAKE_LFLAGS_RELEASE=$(LDFLAGS)\""
 export QMAKEPATH=Tools/qmake
 export QTDIR=/usr
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
 %:
 	dh $@ --parallel --fail-missing --dbg-package=libqtwebkit4-dbg --with pkgkde_symbolshelper
 
