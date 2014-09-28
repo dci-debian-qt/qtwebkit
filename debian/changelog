@@ -3,6 +3,7 @@ qtwebkit (2.3.2.dfsg-5) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Respect the number of parralel builds specified in DEB_BUILD_OPTIONS
     (Closes: #761821).
+    - Remove bound_cpu_usage.patch as this is now not needed.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Sep 2014 11:20:39 -0300
 

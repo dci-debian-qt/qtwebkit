@@ -19,7 +19,6 @@ fix_nonlinux_glibc_linkage.diff
 double_conversion_correct_double_operations.patch
 reduce_memory_usage.patch
 ppc64el.patch
-bound_cpu_usage.patch
 x32_support.patch
 arm64.patch
 hppa_support.patch
