@@ -17,6 +17,8 @@ qtwebkit (2.3.4.dfsg-1) UNRELEASED; urgency=medium
   * Update glibc_hurd_mkspecs.diff. I removed the first part of the patch
     because now the source uses unix* which should work. The rest was just a
     refresh.
+  * Remove nonlinux_enable_glib_support.patch. It now doesn't applies and the
+    gstreamer stuff is setted up in other places.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Sep 2014 11:20:39 -0300
 
