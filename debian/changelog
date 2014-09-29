@@ -9,6 +9,7 @@ qtwebkit (2.3.4.dfsg-1) UNRELEASED; urgency=medium
     - upstream_changeset_119798.diff
     - double_conversion_correct_double_operations.patch
     - ppc64el.patch
+    - gstreamer-1.0.diff
   * Refresh patches.
   * Update glibc_hurd_mkspecs.diff. I removed the first part of the patch
     because now the source uses unix* which should work. The rest was just a
