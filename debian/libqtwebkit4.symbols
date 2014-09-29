@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 2.3.2 amd64 armel armhf mips mipsel powerpc s390x
+# SymbolsHelper-Confirmed: 2.3.2 amd64 armel armhf hurd-i386 mips mipsel powerpc s390x
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
  JSCheckScriptSyntax@Base 2.3.2
@@ -916,6 +916,11 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZTV9QWebFrame@Base 2.1.0~2011week13
  _ZlsR11QDataStreamRK11QWebHistory@Base 2.1.0~2011week13
  _ZrsR11QDataStreamR11QWebHistory@Base 2.1.0~2011week13
+ (arch=hurd-i386)ctiOpThrowNotCaught@Base 2.3.2
+ (arch=hurd-i386)ctiTrampoline@Base 2.3.2
+ (arch=hurd-i386)ctiTrampolineEnd@Base 2.3.2
+ (arch=hurd-i386)ctiVMThrowTrampoline@Base 2.3.2
+ (arch=hurd-i386)getHostCallReturnValue@Base 2.3.2
  kJSClassDefinitionEmpty@Base 2.1.0~2011week13
  (c++)"non-virtual thunk to JSC::CodeBlock::~CodeBlock()@Base" 2.3.2
  (c++)"non-virtual thunk to QGraphicsWebView::contextMenuEvent(QGraphicsSceneContextMenuEvent*)@Base" 2.1.0~2011week13

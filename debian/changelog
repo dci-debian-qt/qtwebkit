@@ -21,6 +21,7 @@ qtwebkit (2.3.4.dfsg-1) UNRELEASED; urgency=medium
     gstreamer stuff is setted up in other places.
   * Backport jsobject_ensure_indexingtype_should_handle_InterceptsGetOwn.patch
     (Closes: #762636).
+  * Update symbols files with buildds' logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Sep 2014 11:20:39 -0300
 
