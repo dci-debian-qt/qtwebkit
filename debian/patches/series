@@ -1,5 +1,5 @@
 # upstream patches
-upstream_changeset_119798.diff
+
 # debian patches
 02_add_nostrip_for_debug_packages.diff
 03_hide_std_symbols.diff
