@@ -1,34 +1,18 @@
 Author: Pino Toscano <pino@debian.org>
 Description: Use the glibc and hurd mkspecs when necessary.
- - wtf.pri: enable the glib support (needed to compile the GStreamer support)
- - WebKit.pri: add -Werror on non-Linux i386/amd64 archs, and -Wno-c++0x-compat
-   for all the non-Linux ones
- The glibc part is Debian-specific, as upstream does not have the glibc-g++
- mkspec, while the hurd part could be upstreamed.
-Last-Update: 2012-05-01
+Last-Update: 2014-09-29
 Origin: vendor
 Forwarded: not-needed
+Reviewed-By: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
 
 ---
- Source/JavaScriptCore/wtf/wtf.pri |    2 +-
- Source/WebKit.pri                 |    2 +-
- 2 files changed, 2 insertions(+), 2 deletions(-)
+ Tools/qmake/mkspecs/features/unix/default_post.prf |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
---- a/Tools/qmake/mkspecs/features/features.prf
-+++ b/Tools/qmake/mkspecs/features/features.prf
-@@ -185,7 +185,7 @@
-             DEFINES += ENABLE_VIDEO=1
-             DEFINES += WTF_USE_QTKIT=1
-         }
--    } else: linux-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {
-+    } else: linux-*|glibc-*|hurd-*:!contains(DEFINES, USE_QTMULTIMEDIA=1) {
-         !contains(QT_CONFIG, no-pkg-config):system(pkg-config --exists glib-2.0 gio-2.0 \'gstreamer-0.10 >= 0.10.30\' \'gstreamer-plugins-base-0.10 >= 0.10.30\'): {
-             DEFINES += ENABLE_VIDEO=1
-             DEFINES += WTF_USE_GSTREAMER=1
 --- a/Tools/qmake/mkspecs/features/unix/default_post.prf
 +++ b/Tools/qmake/mkspecs/features/unix/default_post.prf
 @@ -16,7 +16,7 @@
-     QMAKE_CXXFLAGS += -march=pentium4 -msse2 -mfpmath=sse -mtune=generic
+     QMAKE_CXXFLAGS += -msse2 -mfpmath=sse
  }
  
 -linux-*g++* {
