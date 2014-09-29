@@ -15,7 +15,6 @@ ignore-unused-local-typedefs_error.diff
 hide_wtf_symbols.diff
 hide_jsc_symbols.diff
 fix_nonlinux_glibc_linkage.diff
-double_conversion_correct_double_operations.patch
 reduce_memory_usage.patch
 ppc64el.patch
 x32_support.patch
