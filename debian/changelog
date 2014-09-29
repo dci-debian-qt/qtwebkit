@@ -19,6 +19,8 @@ qtwebkit (2.3.4.dfsg-1) UNRELEASED; urgency=medium
     refresh.
   * Remove nonlinux_enable_glib_support.patch. It now doesn't applies and the
     gstreamer stuff is setted up in other places.
+  * Backport jsobject_ensure_indexingtype_should_handle_InterceptsGetOwn.patch
+    (Closes: #762636).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Sep 2014 11:20:39 -0300
 

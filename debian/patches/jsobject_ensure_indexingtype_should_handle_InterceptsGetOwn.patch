@@ -1,0 +1,300 @@
+From b1b637004971526d7b63d67409387f6195a2769f Mon Sep 17 00:00:00 2001
+From: Filip Pizlo <fpizlo@apple.com>
+Date: Mon, 29 Sep 2014 16:20:29 +0200
+Subject: [PATCH] JSObject::ensure<IndexingType> should gracefully handle InterceptsGetOwn..., and should never be called when the 'this' is not an object
+ https://bugs.webkit.org/show_bug.cgi?id=105468
+
+Reviewed by Mark Hahnenberg, Oliver Hunt, and Gavin Barraclough.
+Modified by Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org> to remove
+stuff in LayoutTests/* as it's not available in this version.
+
+Source/JavaScriptCore:
+
+Changed JSObject::ensure<IndexingType> methods to gracefully handle
+InterceptsGetOwnPropertySlotByIndexEvenWhenLengthIsNotZero. Most of them handle it by returning
+null as a result of indexingShouldBeSparse() returning true, while ensureArrayStorage handles it
+by entering dictionary indexing mode, which forces the object to behave correctly even if there
+is proxying or weird prototype stuff going on.
+
+Changed DFGOperations entrypoints to reject non-objects, so that JSObject doesn't have to deal
+with pretending to be JSString. In particular, this would go wrong in the ArrayStorage case
+since we'd try to resize a butterfly on a JSString, but JSString has something other than
+m_butterfly at that offset.
+
+Finally, removed all InterceptsGetOwnPropertySlotByIndexEvenWhenLengthIsNotZero from JIT code
+since those are now redundant.
+
+* dfg/DFGOperations.cpp:
+* dfg/DFGOperations.h:
+* dfg/DFGSpeculativeJIT.cpp:
+(JSC::DFG::SpeculativeJIT::arrayify):
+* dfg/DFGSpeculativeJIT.h:
+(JSC::DFG::SpeculativeJIT::callOperation):
+* runtime/JSObject.cpp:
+(JSC::JSObject::enterDictionaryIndexingMode):
+(JSC::JSObject::ensureInt32Slow):
+(JSC::JSObject::ensureDoubleSlow):
+(JSC::JSObject::ensureContiguousSlow):
+(JSC::JSObject::ensureArrayStorageSlow):
+(JSC):
+(JSC::JSObject::putByIndexBeyondVectorLengthWithoutAttributes):
+* runtime/JSObject.h:
+(JSObject):
+
+LayoutTests:
+
+* fast/js/dfg-ensure-array-storage-on-string-expected.txt: Added.
+* fast/js/dfg-ensure-array-storage-on-string.html: Added.
+* fast/js/dfg-ensure-contiguous-on-string-expected.txt: Added.
+* fast/js/dfg-ensure-contiguous-on-string.html: Added.
+* fast/js/jsc-test-list
+* fast/js/script-tests/dfg-ensure-array-storage-on-string.js: Added.
+(foo):
+* fast/js/script-tests/dfg-ensure-contiguous-on-string.js: Added.
+(foo):
+
+git-svn-id: http://svn.webkit.org/repository/webkit/trunk@138201 268f45cc-cd09-0410-ab3c-d52691b4dbfc
+---
+ Source/JavaScriptCore/ChangeLog                 |   38 ++++++++++++++++++++++++
+ Source/JavaScriptCore/dfg/DFGOperations.cpp     |   28 ++++++++++++-----
+ Source/JavaScriptCore/dfg/DFGOperations.h       |    9 +++--
+ Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp |    9 -----
+ Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h   |   10 ++++++
+ Source/JavaScriptCore/runtime/JSObject.cpp      |    8 +++++
+ Source/JavaScriptCore/runtime/Structure.cpp     |    6 +++
+ 7 files changed, 87 insertions(+), 21 deletions(-)
+ create mode 100644 LayoutTests/fast/js/dfg-ensure-array-storage-on-string-expected.txt
+ create mode 100644 LayoutTests/fast/js/dfg-ensure-array-storage-on-string.html
+ create mode 100644 LayoutTests/fast/js/dfg-ensure-contiguous-on-string-expected.txt
+ create mode 100644 LayoutTests/fast/js/dfg-ensure-contiguous-on-string.html
+ create mode 100644 LayoutTests/fast/js/script-tests/dfg-ensure-array-storage-on-string.js
+ create mode 100644 LayoutTests/fast/js/script-tests/dfg-ensure-contiguous-on-string.js
+
+--- a/Source/JavaScriptCore/ChangeLog
++++ b/Source/JavaScriptCore/ChangeLog
+@@ -617,6 +617,44 @@
+         * offlineasm/instructions.rb:
+         * offlineasm/mips.rb: Added.
+ 
++2012-12-19  Filip Pizlo  <fpizlo@apple.com>
++
++        JSObject::ensure<IndexingType> should gracefully handle InterceptsGetOwn..., and should never be called when the 'this' is not an object
++        https://bugs.webkit.org/show_bug.cgi?id=105468
++
++        Reviewed by Mark Hahnenberg, Oliver Hunt, and Gavin Barraclough.
++
++        Changed JSObject::ensure<IndexingType> methods to gracefully handle
++        InterceptsGetOwnPropertySlotByIndexEvenWhenLengthIsNotZero. Most of them handle it by returning
++        null as a result of indexingShouldBeSparse() returning true, while ensureArrayStorage handles it
++        by entering dictionary indexing mode, which forces the object to behave correctly even if there
++        is proxying or weird prototype stuff going on.
++        
++        Changed DFGOperations entrypoints to reject non-objects, so that JSObject doesn't have to deal
++        with pretending to be JSString. In particular, this would go wrong in the ArrayStorage case
++        since we'd try to resize a butterfly on a JSString, but JSString has something other than
++        m_butterfly at that offset.
++        
++        Finally, removed all InterceptsGetOwnPropertySlotByIndexEvenWhenLengthIsNotZero from JIT code
++        since those are now redundant.
++
++        * dfg/DFGOperations.cpp:
++        * dfg/DFGOperations.h:
++        * dfg/DFGSpeculativeJIT.cpp:
++        (JSC::DFG::SpeculativeJIT::arrayify):
++        * dfg/DFGSpeculativeJIT.h:
++        (JSC::DFG::SpeculativeJIT::callOperation):
++        * runtime/JSObject.cpp:
++        (JSC::JSObject::enterDictionaryIndexingMode):
++        (JSC::JSObject::ensureInt32Slow):
++        (JSC::JSObject::ensureDoubleSlow):
++        (JSC::JSObject::ensureContiguousSlow):
++        (JSC::JSObject::ensureArrayStorageSlow):
++        (JSC):
++        (JSC::JSObject::putByIndexBeyondVectorLengthWithoutAttributes):
++        * runtime/JSObject.h:
++        (JSObject):
++
+ 2012-12-18  Mark Hahnenberg  <mhahnenberg@apple.com>
+ 
+         Restrictions on oversize CopiedBlock allocations should be relaxed
+--- a/Source/JavaScriptCore/dfg/DFGOperations.cpp
++++ b/Source/JavaScriptCore/dfg/DFGOperations.cpp
+@@ -1478,36 +1478,48 @@ char* DFG_OPERATION operationReallocateB
+     return reinterpret_cast<char*>(result);
+ }
+ 
+-char* DFG_OPERATION operationEnsureInt32(ExecState* exec, JSObject* object)
++char* DFG_OPERATION operationEnsureInt32(ExecState* exec, JSCell* cell)
+ {
+     JSGlobalData& globalData = exec->globalData();
+     NativeCallFrameTracer tracer(&globalData, exec);
++
++    if (!cell->isObject())
++        return 0;
+     
+-    return reinterpret_cast<char*>(object->ensureInt32(globalData));
++    return reinterpret_cast<char*>(asObject(cell)->ensureInt32(globalData));
+ }
+ 
+-char* DFG_OPERATION operationEnsureDouble(ExecState* exec, JSObject* object)
++char* DFG_OPERATION operationEnsureDouble(ExecState* exec, JSCell* cell)
+ {
+     JSGlobalData& globalData = exec->globalData();
+     NativeCallFrameTracer tracer(&globalData, exec);
+     
+-    return reinterpret_cast<char*>(object->ensureDouble(globalData));
++    if (!cell->isObject())
++        return 0;
++    
++    return reinterpret_cast<char*>(asObject(cell)->ensureDouble(globalData));
+ }
+ 
+-char* DFG_OPERATION operationEnsureContiguous(ExecState* exec, JSObject* object)
++char* DFG_OPERATION operationEnsureContiguous(ExecState* exec, JSCell* cell)
+ {
+     JSGlobalData& globalData = exec->globalData();
+     NativeCallFrameTracer tracer(&globalData, exec);
+     
+-    return reinterpret_cast<char*>(object->ensureContiguous(globalData));
++    if (!cell->isObject())
++        return 0;
++    
++    return reinterpret_cast<char*>(asObject(cell)->ensureContiguous(globalData));
+ }
+ 
+-char* DFG_OPERATION operationEnsureArrayStorage(ExecState* exec, JSObject* object)
++char* DFG_OPERATION operationEnsureArrayStorage(ExecState* exec, JSCell* cell)
+ {
+     JSGlobalData& globalData = exec->globalData();
+     NativeCallFrameTracer tracer(&globalData, exec);
+ 
+-    return reinterpret_cast<char*>(object->ensureArrayStorage(globalData));
++    if (!cell->isObject())
++        return 0;
++
++    return reinterpret_cast<char*>(asObject(cell)->ensureArrayStorage(globalData));
+ }
+ 
+ double DFG_OPERATION operationFModOnInts(int32_t a, int32_t b)
+--- a/Source/JavaScriptCore/dfg/DFGOperations.h
++++ b/Source/JavaScriptCore/dfg/DFGOperations.h
+@@ -108,6 +108,7 @@ typedef void DFG_OPERATION (*V_DFGOperat
+ typedef void DFG_OPERATION (*V_DFGOperation_EPZJ)(ExecState*, void*, int32_t, EncodedJSValue);
+ typedef void DFG_OPERATION (*V_DFGOperation_W)(WatchpointSet*);
+ typedef char* DFG_OPERATION (*P_DFGOperation_E)(ExecState*);
++typedef char* DFG_OPERATION (*P_DFGOperation_EC)(ExecState*, JSCell*);
+ typedef char* DFG_OPERATION (*P_DFGOperation_EO)(ExecState*, JSObject*);
+ typedef char* DFG_OPERATION (*P_DFGOperation_EOS)(ExecState*, JSObject*, size_t);
+ typedef char* DFG_OPERATION (*P_DFGOperation_EOZ)(ExecState*, JSObject*, int32_t);
+@@ -202,10 +203,10 @@ char* DFG_OPERATION operationAllocatePro
+ char* DFG_OPERATION operationAllocatePropertyStorage(ExecState*, size_t newSize) WTF_INTERNAL;
+ char* DFG_OPERATION operationReallocateButterflyToHavePropertyStorageWithInitialCapacity(ExecState*, JSObject*) WTF_INTERNAL;
+ char* DFG_OPERATION operationReallocateButterflyToGrowPropertyStorage(ExecState*, JSObject*, size_t newSize) WTF_INTERNAL;
+-char* DFG_OPERATION operationEnsureInt32(ExecState*, JSObject*);
+-char* DFG_OPERATION operationEnsureDouble(ExecState*, JSObject*);
+-char* DFG_OPERATION operationEnsureContiguous(ExecState*, JSObject*);
+-char* DFG_OPERATION operationEnsureArrayStorage(ExecState*, JSObject*);
++char* DFG_OPERATION operationEnsureInt32(ExecState*, JSCell*);
++char* DFG_OPERATION operationEnsureDouble(ExecState*, JSCell*);
++char* DFG_OPERATION operationEnsureContiguous(ExecState*, JSCell*);
++char* DFG_OPERATION operationEnsureArrayStorage(ExecState*, JSCell*);
+ 
+ // This method is used to lookup an exception hander, keyed by faultLocation, which is
+ // the return location from one of the calls out to one of the helper operations above.
+--- a/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp
++++ b/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.cpp
+@@ -560,15 +560,6 @@ void SpeculativeJIT::arrayify(Node& node
+             MacroAssembler::Address(structureGPR, Structure::indexingTypeOffset()), tempGPR);
+         
+         done = jumpSlowForUnwantedArrayMode(tempGPR, node.arrayMode(), true);
+-
+-        // Next check that the object does not intercept indexed accesses. If it does,
+-        // then this mode won't work.
+-        speculationCheck(
+-            BadIndexingType, JSValueSource::unboxedCell(baseReg), NoNode,
+-            m_jit.branchTest8(
+-                MacroAssembler::NonZero,
+-                MacroAssembler::Address(structureGPR, Structure::typeInfoFlagsOffset()),
+-                MacroAssembler::TrustedImm32(InterceptsGetOwnPropertySlotByIndexEvenWhenLengthIsNotZero)));
+     }
+         
+     // If we're allegedly creating contiguous storage and the index is bogus, then
+--- a/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h
++++ b/Source/JavaScriptCore/dfg/DFGSpeculativeJIT.h
+@@ -1182,6 +1182,11 @@ public:
+         m_jit.setupArgumentsExecState();
+         return appendCallWithExceptionCheckSetResult(operation, result);
+     }
++    JITCompiler::Call callOperation(P_DFGOperation_EC operation, GPRReg result, GPRReg cell)
++    {
++        m_jit.setupArgumentsWithExecState(cell);
++        return appendCallWithExceptionCheckSetResult(operation, result);
++    }
+     JITCompiler::Call callOperation(P_DFGOperation_EO operation, GPRReg result, GPRReg object)
+     {
+         m_jit.setupArgumentsWithExecState(object);
+@@ -1539,6 +1544,11 @@ public:
+         m_jit.setupArgumentsExecState();
+         return appendCallWithExceptionCheckSetResult(operation, result);
+     }
++    JITCompiler::Call callOperation(P_DFGOperation_EC operation, GPRReg result, GPRReg arg1)
++    {
++        m_jit.setupArgumentsWithExecState(arg1);
++        return appendCallWithExceptionCheckSetResult(operation, result);
++    }
+     JITCompiler::Call callOperation(P_DFGOperation_EO operation, GPRReg result, GPRReg arg1)
+     {
+         m_jit.setupArgumentsWithExecState(arg1);
+--- a/Source/JavaScriptCore/runtime/JSObject.cpp
++++ b/Source/JavaScriptCore/runtime/JSObject.cpp
+@@ -930,6 +930,8 @@ void JSObject::convertDoubleToContiguous
+ 
+ WriteBarrier<Unknown>* JSObject::ensureInt32Slow(JSGlobalData& globalData)
+ {
++    ASSERT(inherits(&s_info));
++
+     switch (structure()->indexingType()) {
+     case ALL_BLANK_INDEXING_TYPES:
+         if (UNLIKELY(indexingShouldBeSparse() || structure()->needsSlowPutIndexing()))
+@@ -952,6 +954,8 @@ WriteBarrier<Unknown>* JSObject::ensureI
+ 
+ double* JSObject::ensureDoubleSlow(JSGlobalData& globalData)
+ {
++    ASSERT(inherits(&s_info));
++
+     switch (structure()->indexingType()) {
+     case ALL_BLANK_INDEXING_TYPES:
+         if (UNLIKELY(indexingShouldBeSparse() || structure()->needsSlowPutIndexing()))
+@@ -976,6 +980,8 @@ double* JSObject::ensureDoubleSlow(JSGlo
+ 
+ WriteBarrier<Unknown>* JSObject::ensureContiguousSlow(JSGlobalData& globalData)
+ {
++    ASSERT(inherits(&s_info));
++
+     switch (structure()->indexingType()) {
+     case ALL_BLANK_INDEXING_TYPES:
+         if (UNLIKELY(indexingShouldBeSparse() || structure()->needsSlowPutIndexing()))
+@@ -1002,6 +1008,8 @@ WriteBarrier<Unknown>* JSObject::ensureC
+ 
+ ArrayStorage* JSObject::ensureArrayStorageSlow(JSGlobalData& globalData)
+ {
++    ASSERT(inherits(&s_info));
++
+     switch (structure()->indexingType()) {
+     case ALL_BLANK_INDEXING_TYPES:
+         if (UNLIKELY(indexingShouldBeSparse()))
+--- a/Source/JavaScriptCore/runtime/Structure.cpp
++++ b/Source/JavaScriptCore/runtime/Structure.cpp
+@@ -646,6 +646,12 @@ Structure* Structure::flattenDictionaryS
+     }
+ 
+     m_dictionaryKind = NoneDictionaryKind;
++
++    // If the object had a Butterfly but after flattening/compacting we no longer have need of it,
++    // we need to zero it out because the collector depends on the Structure to know the size for copying.
++    if (object->butterfly() && !this->outOfLineCapacity() && !hasIndexingHeader(this->indexingType()))
++        object->setButterfly(globalData, 0, this);
++
+     return this;
+ }
+ 

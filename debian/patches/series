@@ -1,4 +1,5 @@
 # upstream patches
+jsobject_ensure_indexingtype_should_handle_InterceptsGetOwn.patch
 
 # debian patches
 02_add_nostrip_for_debug_packages.diff
