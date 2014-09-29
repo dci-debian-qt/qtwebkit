@@ -8,6 +8,7 @@ qtwebkit (2.3.4.dfsg-1) UNRELEASED; urgency=medium
   * Remove patches already present in this version.
     - upstream_changeset_119798.diff
     - double_conversion_correct_double_operations.patch
+    - ppc64el.patch
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Sep 2014 11:20:39 -0300
 
