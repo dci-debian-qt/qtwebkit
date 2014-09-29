@@ -12,6 +12,7 @@ qtwebkit (2.3.4.dfsg-1) UNRELEASED; urgency=medium
     - gstreamer-1.0.diff
     - x32_support.patch
     - arm64.patch
+    - hppa_support.patch
   * Refresh patches.
   * Update glibc_hurd_mkspecs.diff. I removed the first part of the patch
     because now the source uses unix* which should work. The rest was just a
