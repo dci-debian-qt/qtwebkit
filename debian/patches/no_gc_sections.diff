@@ -14,7 +14,7 @@ Last-Update: 2013-02-07 (add i686)
 
 --- a/Source/WebCore/WebCore.pri
 +++ b/Source/WebCore/WebCore.pri
-@@ -339,7 +339,7 @@ mac {
+@@ -352,7 +352,7 @@ mac {
      unix:!mac:*-g++*:QMAKE_CXXFLAGS += -ffunction-sections
  }
  unix:!mac:*-g++*:QMAKE_CXXFLAGS += -fdata-sections
