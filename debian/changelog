@@ -23,6 +23,8 @@ qtwebkit (2.3.4.dfsg-1) UNRELEASED; urgency=medium
     (Closes: #762636).
   * Update symbols files with buildds' logs.
   * Simplify libqtwebkit4.install.
+  * Fix clean rule: pass -f to rm in order to avoid it to fail in case no file was
+    found by the previous command. Also add -v for the sake of verbose logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 28 Sep 2014 11:20:39 -0300
 

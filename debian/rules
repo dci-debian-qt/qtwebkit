@@ -41,7 +41,7 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 override_dh_auto_clean:
 	rm -rf WebKitBuild
-	-find . -name *.pyc | xargs rm
+	find . -name *.pyc | xargs rm -vf
 
 override_dh_auto_configure:
 	true
