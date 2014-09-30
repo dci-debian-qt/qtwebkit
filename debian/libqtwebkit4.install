@@ -1,3 +1,1 @@
-usr/lib/*/libQtWebKit.so.4
-usr/lib/*/libQtWebKit.so.4.10
-usr/lib/*/libQtWebKit.so.4.10.2
+usr/lib/*/libQtWebKit.so.4*
