@@ -17,3 +17,4 @@ hide_wtf_symbols.diff
 hide_jsc_symbols.diff
 fix_nonlinux_glibc_linkage.diff
 reduce_memory_usage.patch
+fix_non64linking_issue.patch
