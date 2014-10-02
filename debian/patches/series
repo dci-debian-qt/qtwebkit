@@ -1,5 +1,6 @@
 # upstream patches
 jsobject_ensure_indexingtype_should_handle_InterceptsGetOwn.patch
+fix_linking_issue_on_some_platforms_when_building_against_gstreamer_1.0.patch
 
 # debian patches
 02_add_nostrip_for_debug_packages.diff
@@ -17,4 +18,3 @@ hide_wtf_symbols.diff
 hide_jsc_symbols.diff
 fix_nonlinux_glibc_linkage.diff
 reduce_memory_usage.patch
-fix_non64linking_issue.patch
