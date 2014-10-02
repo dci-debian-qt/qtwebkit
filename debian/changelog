@@ -1,10 +1,9 @@
-qtwebkit (2.3.4.dfsg-2) UNRELEASED; urgency=medium
+qtwebkit (2.3.4.dfsg-2) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add fix_linking_issue_[...]_gstreamer_1.0.patch to workaround the linking
     issues in most platforms (Closes: #763507).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 01 Oct 2014 14:18:25 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Thu, 02 Oct 2014 13:15:14 -0300
 
 qtwebkit (2.3.4.dfsg-1) unstable; urgency=medium
 
