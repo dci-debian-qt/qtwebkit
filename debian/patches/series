@@ -1,6 +1,7 @@
 # upstream patches
 jsobject_ensure_indexingtype_should_handle_InterceptsGetOwn.patch
 fix_linking_issue_on_some_platforms_when_building_against_gstreamer_1.0.patch
+do_not_use_jit_on_big_endian_machines.patch
 fix_cloop_on_big_endian_machines.patch
 
 # debian patches
