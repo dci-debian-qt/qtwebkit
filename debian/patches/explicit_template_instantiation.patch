@@ -1,0 +1,26 @@
+Description: Fix build with GCC5
+Author:     Allan Sandfeld Jensen <allan.jensen@theqtcompany.com>
+Description: Fix g++ 5.0 build
+ A non-inline template needs to be explicitly instantiated if used
+ outside the object where it is declared.
+ .
+ Patch suggested by Khem Raj and originally part of Qt5's Webkit module,
+ backported to this version of webkit.
+Task-number: QTBUG-44829
+Last-Update: 2015-08-02
+Forwarded: not-needed
+
+--- a/Source/JavaScriptCore/runtime/JSObject.cpp
++++ b/Source/JavaScriptCore/runtime/JSObject.cpp
+@@ -1922,6 +1922,11 @@ void JSObject::putByIndexBeyondVectorLen
+     }
+ }
+ 
++// Used in JSArray.cpp so we must instantiate explicit
++template void JSObject::putByIndexBeyondVectorLengthWithoutAttributes<Int32Shape>(ExecState* exec, unsigned i, JSValue value);
++template void JSObject::putByIndexBeyondVectorLengthWithoutAttributes<DoubleShape>(ExecState* exec, unsigned i, JSValue value);
++template void JSObject::putByIndexBeyondVectorLengthWithoutAttributes<ContiguousShape>(ExecState* exec, unsigned i, JSValue value);
++
+ void JSObject::putByIndexBeyondVectorLengthWithArrayStorage(ExecState* exec, unsigned i, JSValue value, bool shouldThrow, ArrayStorage* storage)
+ {
+     JSGlobalData& globalData = exec->globalData();

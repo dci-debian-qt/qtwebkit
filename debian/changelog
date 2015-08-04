@@ -1,5 +1,9 @@
 qtwebkit (2.3.4.dfsg-4) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Backport explicit_template_instantiation.patch to fix a build issue with
+    gcc5.
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 02 Aug 2015 21:45:48 -0300
 
 qtwebkit (2.3.4.dfsg-3) unstable; urgency=medium
