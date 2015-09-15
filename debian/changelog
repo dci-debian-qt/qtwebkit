@@ -1,3 +1,7 @@
+qtwebkit (2.3.4.dfsg-5) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 15 Sep 2015 10:02:28 -0300
+
 qtwebkit (2.3.4.dfsg-4) unstable; urgency=medium
 
   * Backport explicit_template_instantiation.patch to fix a build issue with
