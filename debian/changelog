@@ -1,10 +1,9 @@
-qtwebkit (2.3.4.dfsg-5) UNRELEASED; urgency=medium
+qtwebkit (2.3.4.dfsg-5) unstable; urgency=medium
 
-  [ Lisandro Damián Nicanor Pérez Meyer ]
   * Disable JIT on mips64 and mips64el. Thanks James Cowgill for the patch
     (Closes: #725651).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 15 Sep 2015 10:02:28 -0300
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Fri, 18 Sep 2015 09:40:51 -0300
 
 qtwebkit (2.3.4.dfsg-4) unstable; urgency=medium
 
