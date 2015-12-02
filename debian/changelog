@@ -5,6 +5,7 @@ qtwebkit (2.3.4.dfsg-6) UNRELEASED; urgency=medium
     the JIT should be disabled (Closes: #806837).
   * Add redeclare_uint32_t_for_sparc64.patch which redeclares uint32_t for
     sparc64, also part of the above bug.
+  * Update symbols files with buildds' logs.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 02 Dec 2015 10:19:22 -0300
 

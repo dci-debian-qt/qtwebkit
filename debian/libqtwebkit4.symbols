@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 2.3.4 amd64
+# SymbolsHelper-Confirmed: 2.3.4 amd64 arm64 armel armhf ppc64el s390x
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
  JSCheckScriptSyntax@Base 2.3.2
@@ -794,6 +794,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK21QWebElementCollection5countEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollection6toListEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollectionplERKS_@Base 2.1.0~2011week13
+ (optional=gccinternal|arch=!amd64)_ZNK7QPointF7toPointEv@Base 2.3.4
  _ZNK8QWebPage10isModifiedEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10metaObjectEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10totalBytesEv@Base 2.1.0~2011week13
@@ -876,7 +877,7 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK9QWebFrame8hasFocusEv@Base 2.1.0~2011week13
  _ZNK9QWebFrame8metaDataEv@Base 2.1.0~2011week13
  _ZNK9QWebFrame9frameNameEv@Base 2.1.0~2011week13
- (optional=templinst)_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_9TBehaviorESt10_Select1stIS9_ESt4lessIS5_ESaIS9_EE4findERS7_@Base 2.3.4
+ (optional=templinst|arch=!armhf)_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_9TBehaviorESt10_Select1stIS9_ESt4lessIS5_ESaIS9_EE4findERS7_@Base 2.3.4
  _ZTI13QWebInspector@Base 2.1.0~2011week13
  _ZTI16QGraphicsWebView@Base 2.1.0~2011week13
  _ZTI17QWebPluginFactory@Base 2.1.0~2011week13
