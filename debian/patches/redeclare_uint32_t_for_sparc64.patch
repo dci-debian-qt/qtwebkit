@@ -1,0 +1,35 @@
+Description: redefine uint32_t for sparc64
+ sparc64 needs a different definition for uint32_t.
+Author: David Matthew Mattli <dmm@mattli.us>
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=806837
+Forwarded: not-needed
+Reviewed-by: Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>
+Last-Update: 2015-12-02
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/Source/WTF/wtf/unicode/qt4/UnicodeQt4.h
++++ b/Source/WTF/wtf/unicode/qt4/UnicodeQt4.h
+@@ -69,8 +69,12 @@
+ #endif
+ 
+ #if !USE(ICU_UNICODE)
++#ifdef __sparc_v9__
++typedef int32_t UChar32;
++#else
+ typedef uint32_t UChar32;
+ #endif
++#endif
+ 
+ namespace WTF {
+ namespace Unicode {
+--- a/Source/WTF/wtf/Atomics.h
++++ b/Source/WTF/wtf/Atomics.h
+@@ -98,7 +98,7 @@
+ inline int atomicIncrement(int volatile* addend) { return __atomic_inc(addend) + 1; }
+ inline int atomicDecrement(int volatile* addend) { return __atomic_dec(addend) - 1; }
+ 
+-#elif COMPILER(GCC) && !CPU(SPARC64) // sizeof(_Atomic_word) != sizeof(int) on sparc64 gcc
++#elif COMPILER(GCC)
+ #define WTF_USE_LOCKFREE_THREADSAFEREFCOUNTED 1
+ 
+ inline int atomicIncrement(int volatile* addend) { return __sync_add_and_fetch(addend, 1); }
