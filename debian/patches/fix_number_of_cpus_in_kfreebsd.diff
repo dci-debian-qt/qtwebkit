@@ -1,0 +1,28 @@
+Description: Bound the number of CPUs used to compile on KFreeBSD.
+Author: Jon Boden <jon@ubuntubsd.org>
+
+Index: Tools/Scripts/webkitdirs.pm
+===================================================================
+--- Tools/Scripts/webkitdirs.pm	(revision 198974)
++++ Tools/Scripts/webkitdirs.pm	(working copy)
+@@ -409,7 +409,7 @@
+     } elsif (isAnyWindows()) {
+         # Assumes cygwin
+         $numberOfCPUs = `ls /proc/registry/HKEY_LOCAL_MACHINE/HARDWARE/DESCRIPTION/System/CentralProcessor | wc -w`;
+-    } elsif (isDarwin() || isFreeBSD()) {
++    } elsif (isDarwin() || isFreeBSD() || isKernelFreeBSD()) {
+         chomp($numberOfCPUs = `sysctl -n hw.ncpu`);
+     }
+ }
+@@ -1216,6 +1216,11 @@
+     return ($^O eq "freebsd") || ($^O eq "openbsd") || ($^O eq "netbsd") || 0;
+ }
+ 
++sub isKernelFreeBSD()
++{
++    return isFreeBSD() || ($^O eq "gnukfreebsd") || 0;
++}
++
+ sub isARM()
+ {
+     return ($Config{archname} =~ /^arm[v\-]/) || ($Config{archname} =~ /^aarch64[v\-]/);
