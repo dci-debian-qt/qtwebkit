@@ -1,0 +1,15 @@
+Description: properly detect x32 on Atomics.h.
+Author: James Clarke <jrtc27@jrtc27.com>
+Forwarded: not-needed
+
+--- a/Source/WTF/wtf/Atomics.h
++++ b/Source/WTF/wtf/Atomics.h
+@@ -170,7 +170,7 @@
+ inline bool weakCompareAndSwap(void*volatile* location, void* expected, void* newValue)
+ {
+ #if ENABLE(COMPARE_AND_SWAP)
+-#if CPU(X86_64)
++#if CPU(X86_64) && !CPU(X32)
+     bool result;
+     asm volatile(
+         "lock; cmpxchgq %3, %2\n\t"

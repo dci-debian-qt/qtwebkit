@@ -3,6 +3,7 @@ qtwebkit (2.3.4.dfsg-7) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Add fix_number_of_cpus_in_kfreebsd.diff to bound the number of CPUs used
     to compile webkit on KFreeBSD (Closes: #819868). Thanks Jon Boden!
+  * Properly detect x32 in Atomics.h (Closes: #821013). Thanks James Clarke.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 03 Apr 2016 20:33:19 -0300
 
