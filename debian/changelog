@@ -1,5 +1,9 @@
 qtwebkit (2.3.4.dfsg-8) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Disable JIT use on non-SSE2 capable machines (Closes: #824663). Thanks
+    Peter Nowee!
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 21 May 2016 17:37:14 -0300
 
 qtwebkit (2.3.4.dfsg-7) unstable; urgency=medium

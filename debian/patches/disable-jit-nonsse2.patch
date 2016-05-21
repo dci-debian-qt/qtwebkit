@@ -1,0 +1,14 @@
+--- a/Source/JavaScriptCore/runtime/JSGlobalData.cpp
++++ b/Source/JavaScriptCore/runtime/JSGlobalData.cpp
+@@ -109,6 +109,11 @@ static bool enableAssembler(ExecutableAl
+     if (!executableAllocator.isValid() || (!Options::useJIT() && !Options::useRegExpJIT()))
+         return false;
+ 
++#if CPU(X86)
++    if (!MacroAssembler::supportsFloatingPoint())
++        return false;
++#endif
++
+ #if USE(CF)
+ #if COMPILER(GCC) && !COMPILER(CLANG)
+     // FIXME: remove this once the EWS have been upgraded to LLVM.
