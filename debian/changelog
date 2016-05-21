@@ -1,3 +1,7 @@
+qtwebkit (2.3.4.dfsg-8) UNRELEASED; urgency=medium
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 21 May 2016 17:37:14 -0300
+
 qtwebkit (2.3.4.dfsg-7) unstable; urgency=medium
 
   * Add fix_number_of_cpus_in_kfreebsd.diff to bound the number of CPUs used
