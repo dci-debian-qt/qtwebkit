@@ -20,6 +20,7 @@ Build-Depends: bison,
                libxrender-dev,
                pkg-config,
                pkg-kde-tools (>= 0.6.4),
+	       python,
                ruby
 Standards-Version: 3.9.5
 Section: libs

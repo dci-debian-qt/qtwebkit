@@ -1,3 +1,12 @@
+qtwebkit (2.3.4.dfsg-8.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add python to Build-Depends in debian/control (Closes: #832844).
+  * Add powerpcspe to the list of architectures where the JIT
+    should be disabled (Closes: #781446).
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Wed, 03 Aug 2016 03:47:19 +0200
+
 qtwebkit (2.3.4.dfsg-8) unstable; urgency=medium
 
   * Disable JIT use on non-SSE2 capable machines (Closes: #824663). Thanks

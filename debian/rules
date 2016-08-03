@@ -50,7 +50,7 @@ override_dh_auto_build:
 	#disable JIT assembler on archs where it doesn't compile
 	#disable WTF_USE_3D_GRAPHICS on ARM where it doesn't compile
 	#disable forcing SSE2 on all other platforms
-ifneq (,$(filter alpha arm64 armel hppa m68k mips mips64 mips64el mipsel powerpc ppc64 ppc64el s390x sh4 sparc64 x32,$(DEB_HOST_ARCH)))
+ifneq (,$(filter alpha arm64 armel hppa m68k mips mips64 mips64el mipsel powerpc powerpcspe ppc64 ppc64el s390x sh4 sparc64 x32,$(DEB_HOST_ARCH)))
 	./Tools/Scripts/build-webkit --qt DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_ARGS) $(MAKE_ARGS)
 else ifeq ($(DEB_HOST_ARCH),armhf)
 	./Tools/Scripts/build-webkit --qt DEFINES+=WTF_USE_3D_GRAPHICS=0 DEFINES+=ENABLE_JIT=0 DEFINES+=ENABLE_YARR_JIT=0 DEFINES+=ENABLE_ASSEMBLER=0 $(QMAKE_ARGS) $(MAKE_ARGS)
