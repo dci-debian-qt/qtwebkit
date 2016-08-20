@@ -3,6 +3,9 @@ qtwebkit (2.3.4.dfsg-9) UNRELEASED; urgency=medium
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Acknowledge previous NMU which was coordinated with me. Thanks John!
 
+  [ Pino Toscano ]
+  * Update symbols file. (Closes: #812160)
+
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 03 Aug 2016 09:55:58 -0300
 
 qtwebkit (2.3.4.dfsg-8.1) unstable; urgency=medium

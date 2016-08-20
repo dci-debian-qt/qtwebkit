@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 2.3.4 amd64 arm64 armel armhf ppc64el s390x
+# SymbolsHelper-Confirmed: 2.3.4.dfsg hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64 x32
 libQtWebKit.so.4 libqtwebkit4 #MINVER#
 * Build-Depends-Package: libqtwebkit-dev
  JSCheckScriptSyntax@Base 2.3.2
@@ -794,7 +794,6 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  _ZNK21QWebElementCollection5countEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollection6toListEv@Base 2.1.0~2011week13
  _ZNK21QWebElementCollectionplERKS_@Base 2.1.0~2011week13
- (optional=gccinternal|arch=!amd64)_ZNK7QPointF7toPointEv@Base 2.3.4
  _ZNK8QWebPage10isModifiedEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10metaObjectEv@Base 2.1.0~2011week13
  _ZNK8QWebPage10totalBytesEv@Base 2.1.0~2011week13
@@ -940,4 +939,4 @@ libQtWebKit.so.4 libqtwebkit4 #MINVER#
  (c++)"non-virtual thunk to QGraphicsWebView::~QGraphicsWebView()@Base" 2.1.0~2011week13
  (c++)"non-virtual thunk to QWebInspector::~QWebInspector()@Base" 2.1.0~2011week13
  (c++)"non-virtual thunk to QWebView::~QWebView()@Base" 2.1.0~2011week13
- nullptr@Base 2.3.2
+ (optional=gccinternal)nullptr@Base 2.3.2
