@@ -25,3 +25,4 @@ redeclare_uint32_t_for_sparc64.patch
 fix_number_of_cpus_in_kfreebsd.diff
 fix_x32_cpu_detection.patch
 disable-jit-nonsse2.patch
+m68k_support.diff

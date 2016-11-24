@@ -1,0 +1,93 @@
+Description: Add support for m68k
+Author: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>
+
+--- qtwebkit-2.3.4.dfsg.orig/Source/WTF/wtf/Platform.h
++++ qtwebkit-2.3.4.dfsg/Source/WTF/wtf/Platform.h
+@@ -345,6 +345,12 @@
+ #endif
+ #endif
+ 
++/* CPU(M68K) - m68k */
++#if defined(__mc68000__)
++#define WTF_CPU_M68K 1
++#define WTF_CPU_BIG_ENDIAN 1
++#endif
++
+ #if CPU(ARM) || CPU(MIPS) || CPU(SH4) || CPU(SPARC) || CPU(MIPS64)
+ #define WTF_CPU_NEEDS_ALIGNED_ACCESS 1
+ #endif
+--- qtwebkit-2.3.4.dfsg.orig/Source/WTF/wtf/dtoa/utils.h
++++ qtwebkit-2.3.4.dfsg/Source/WTF/wtf/dtoa/utils.h
+@@ -58,6 +58,8 @@ defined(_MIPS_ARCH_MIPS32R2)
+ #else
+ #undef DOUBLE_CONVERSION_CORRECT_DOUBLE_OPERATIONS
+ #endif  // _WIN32
++#elif defined(__mc68000__)
++#undef DOUBLE_CONVERSION_CORRECT_DOUBLE_OPERATIONS
+ #else
+ #error Target architecture was not detected as supported by Double-Conversion.
+ #endif
+--- qtwebkit-2.3.4.dfsg.orig/Source/WebCore/css/CSSProperty.cpp
++++ qtwebkit-2.3.4.dfsg/Source/WebCore/css/CSSProperty.cpp
+@@ -39,7 +39,7 @@ struct SameSizeAsCSSProperty {
+     void* value;
+ };
+ 
+-COMPILE_ASSERT(sizeof(CSSProperty) == sizeof(SameSizeAsCSSProperty), CSSProperty_should_stay_small);
++COMPILE_ASSERT(sizeof(CSSProperty) <= sizeof(SameSizeAsCSSProperty), CSSProperty_should_stay_small);
+ 
+ void CSSProperty::wrapValueInCommaSeparatedList()
+ {
+--- qtwebkit-2.3.4.dfsg.orig/Source/WebCore/dom/ShadowRoot.cpp
++++ qtwebkit-2.3.4.dfsg/Source/WebCore/dom/ShadowRoot.cpp
+@@ -60,7 +60,7 @@ struct SameSizeAsShadowRoot : public Doc
+     unsigned countersAndFlags[1];
+ };
+ 
+-COMPILE_ASSERT(sizeof(ShadowRoot) == sizeof(SameSizeAsShadowRoot), shadowroot_should_stay_small);
++COMPILE_ASSERT(sizeof(ShadowRoot) <= sizeof(SameSizeAsShadowRoot), shadowroot_should_stay_small);
+ 
+ ShadowRoot::ShadowRoot(Document* document)
+     : DocumentFragment(document, CreateShadowRoot)
+--- qtwebkit-2.3.4.dfsg.orig/Source/WebCore/rendering/style/RenderStyle.cpp
++++ qtwebkit-2.3.4.dfsg/Source/WebCore/rendering/style/RenderStyle.cpp
+@@ -58,7 +58,7 @@ struct SameSizeAsBorderValue {
+     unsigned m_width;
+ };
+ 
+-COMPILE_ASSERT(sizeof(BorderValue) == sizeof(SameSizeAsBorderValue), BorderValue_should_not_grow);
++COMPILE_ASSERT(sizeof(BorderValue) <= sizeof(SameSizeAsBorderValue), BorderValue_should_not_grow);
+ 
+ struct SameSizeAsRenderStyle : public RefCounted<SameSizeAsRenderStyle> {
+     void* dataRefs[7];
+@@ -75,7 +75,7 @@ struct SameSizeAsRenderStyle : public Re
+     } noninherited_flags;
+ };
+ 
+-COMPILE_ASSERT(sizeof(RenderStyle) == sizeof(SameSizeAsRenderStyle), RenderStyle_should_stay_small);
++COMPILE_ASSERT(sizeof(RenderStyle) <= sizeof(SameSizeAsRenderStyle), RenderStyle_should_stay_small);
+ 
+ inline RenderStyle* defaultStyle()
+ {
+--- qtwebkit-2.3.4.dfsg.orig/Source/WebCore/rendering/style/StyleBoxData.cpp
++++ qtwebkit-2.3.4.dfsg/Source/WebCore/rendering/style/StyleBoxData.cpp
+@@ -33,7 +33,7 @@ struct SameSizeAsStyleBoxData : public R
+     uint32_t bitfields;
+ };
+ 
+-COMPILE_ASSERT(sizeof(StyleBoxData) == sizeof(SameSizeAsStyleBoxData), StyleBoxData_should_not_grow);
++COMPILE_ASSERT(sizeof(StyleBoxData) <= sizeof(SameSizeAsStyleBoxData), StyleBoxData_should_not_grow);
+ 
+ StyleBoxData::StyleBoxData()
+     : m_minWidth(RenderStyle::initialMinSize())
+--- qtwebkit-2.3.4.dfsg.orig/Source/WebCore/rendering/style/StyleRareInheritedData.cpp
++++ qtwebkit-2.3.4.dfsg/Source/WebCore/rendering/style/StyleRareInheritedData.cpp
+@@ -61,7 +61,7 @@ struct SameSizeAsStyleRareInheritedData
+ #endif
+ };
+ 
+-COMPILE_ASSERT(sizeof(StyleRareInheritedData) == sizeof(SameSizeAsStyleRareInheritedData), StyleRareInheritedData_should_bit_pack);
++COMPILE_ASSERT(sizeof(StyleRareInheritedData) <= sizeof(SameSizeAsStyleRareInheritedData), StyleRareInheritedData_should_bit_pack);
+ 
+ StyleRareInheritedData::StyleRareInheritedData()
+     : listStyleImage(RenderStyle::initialListStyleImage())
