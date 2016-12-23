@@ -23,7 +23,7 @@ Build-Depends: bison,
                python,
                ruby
 Standards-Version: 3.9.5
-Section: libs
+Section: oldlibs
 Homepage: http://trac.webkit.org/wiki/QtWebKit
 Vcs-Git: git://anonscm.debian.org/pkg-kde/qt/qtwebkit.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/qt/qtwebkit.git;a=summary
