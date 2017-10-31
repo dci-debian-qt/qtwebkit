@@ -1,9 +1,12 @@
-qtwebkit (2.3.4.dfsg-10) UNRELEASED; urgency=medium
+qtwebkit (2.3.4.dfsg-10~) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Change section from libs to oldlibs.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Fri, 23 Dec 2016 19:08:24 +0300
+  [ Maximiliano Curia ]
+  * Update uploaders list as requested by MIA team (Closes: #879429)
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 31 Oct 2017 18:05:26 +0100
 
 qtwebkit (2.3.4.dfsg-9.1) unstable; urgency=medium
 
