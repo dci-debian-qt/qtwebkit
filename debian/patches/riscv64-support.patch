@@ -1,0 +1,47 @@
+Index: qtwebkit-2.3.4.dfsg/Source/WTF/wtf/Platform.h
+===================================================================
+--- qtwebkit-2.3.4.dfsg.orig/Source/WTF/wtf/Platform.h
++++ qtwebkit-2.3.4.dfsg/Source/WTF/wtf/Platform.h
+@@ -345,13 +345,20 @@
+ #endif
+ #endif
+ 
++/* CPU(RISCV64) - RISC-V 64 */
++#if defined(__riscv) && (__riscv_xlen == 64)
++#define WTF_CPU_RISCV64 1
++#define ENABLE_JIT 0
++#define ENABLE_YARR_JIT 0
++#endif
++
+ /* CPU(M68K) - m68k */
+ #if defined(__mc68000__)
+ #define WTF_CPU_M68K 1
+ #define WTF_CPU_BIG_ENDIAN 1
+ #endif
+ 
+-#if CPU(ARM) || CPU(MIPS) || CPU(SH4) || CPU(SPARC) || CPU(MIPS64)
++#if CPU(ARM) || CPU(MIPS) || CPU(SH4) || CPU(SPARC) || CPU(MIPS64) || CPU(RISCV64)
+ #define WTF_CPU_NEEDS_ALIGNED_ACCESS 1
+ #endif
+ 
+@@ -914,6 +921,7 @@
+     || CPU(SPARC64) \
+     || CPU(S390X) \
+     || CPU(AARCH64) \
++    || CPU(RISCV64) \
+     || CPU(MIPS64) \
+     || CPU(PPC64)
+ #define WTF_USE_JSVALUE64 1
+Index: qtwebkit-2.3.4.dfsg/Source/WTF/wtf/dtoa/utils.h
+===================================================================
+--- qtwebkit-2.3.4.dfsg.orig/Source/WTF/wtf/dtoa/utils.h
++++ qtwebkit-2.3.4.dfsg/Source/WTF/wtf/dtoa/utils.h
+@@ -49,7 +49,7 @@
+ defined(__ARMEL__) || \
+ defined(_MIPS_ARCH_MIPS32R2)
+ #define DOUBLE_CONVERSION_CORRECT_DOUBLE_OPERATIONS 1
+-#elif CPU(MIPS) || CPU(PPC) || CPU(PPC64) || OS(WINCE) || CPU(SH4) || CPU(S390) || CPU(S390X) || CPU(IA64) || CPU(SPARC) || CPU(ALPHA) || CPU(MIPS64) || CPU(AARCH64) || CPU(HPPA)
++#elif CPU(MIPS) || CPU(PPC) || CPU(PPC64) || OS(WINCE) || CPU(SH4) || CPU(S390) || CPU(S390X) || CPU(IA64) || CPU(SPARC) || CPU(ALPHA) || CPU(MIPS64) || CPU(AARCH64) || CPU(HPPA) || CPU(RISCV64)
+ #define DOUBLE_CONVERSION_CORRECT_DOUBLE_OPERATIONS 1
+ #elif defined(_M_IX86) || defined(__i386__)
+ #if defined(_WIN32)

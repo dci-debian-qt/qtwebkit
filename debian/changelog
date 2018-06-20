@@ -6,6 +6,9 @@ qtwebkit (2.3.4.dfsg-10~) UNRELEASED; urgency=medium
   [ Maximiliano Curia ]
   * Update uploaders list as requested by MIA team (Closes: #879429)
 
+  [ Manuel A. Fernandez Montecelo ]
+  * Add riscv64-support.patch to support new arch riscv64 (Closes: #901566)
+
  -- Maximiliano Curia <maxy@debian.org>  Tue, 31 Oct 2017 18:05:26 +0100
 
 qtwebkit (2.3.4.dfsg-9.1) unstable; urgency=medium
