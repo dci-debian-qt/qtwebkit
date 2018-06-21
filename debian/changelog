@@ -1,4 +1,4 @@
-qtwebkit (2.3.4.dfsg-10~) UNRELEASED; urgency=medium
+qtwebkit (2.3.4.dfsg-10) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Change section from libs to oldlibs.
@@ -9,7 +9,7 @@ qtwebkit (2.3.4.dfsg-10~) UNRELEASED; urgency=medium
   [ Manuel A. Fernandez Montecelo ]
   * Add riscv64-support.patch to support new arch riscv64 (Closes: #901566)
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 31 Oct 2017 18:05:26 +0100
+ -- Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>  Wed, 20 Jun 2018 22:00:25 -0300
 
 qtwebkit (2.3.4.dfsg-9.1) unstable; urgency=medium
 
